@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Projection in 4D | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Projection in 4D | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="projection-in-4d">Projection in 4D</h1>
+
+<p>Projection of a 4D object is an important (and easy) concept to be understand.</p>
+<h2 id="frustum-projection">Frustum Projection</h2>
+<p>[image]</p>
+<p>In the [previous section], we have showed you a projection of a Tesseract. This kind projection is called as a frustum projection</p>
+<p>Frustum projection is similar like common camera games would - further objects get more smaller image. If the object goes out of scope, it gets culled by a set of planes, which the process is commonly known as <strong>frustum culling</strong>.</p>
+<p>[frustum cull]</p>
+<p>A frustum projection can be subdivided into perspective and orthographic projection, if distance doesn&#39;t make the object smaller, then it would be called as orthographic projection.</p>
+<h2 id="cross-section-projection">Cross section Projection</h2>
+<p>[image]</p>
+<p>Cross section takes a completely different way to project a higher dimension. The idea is greatly motivated by [Flatland], where objects in higher dimension can be <em>seen</em> by cutting the object in half.</p>
+<p>[image how it work]</p>
+<p>** If this kind of projection has been known for very long time why I don&#39;t see any games use it? **</p>
+<p>Because you need to know how to cut down something into thing that renderable to 3D graphics (i.e. triangles). Now you might wonder how&#39;s something can be sliced to bunch of triangles?</p>
+<p>The answer is <strong>tetrahedron</strong>. Tetrahedron is the simplest possible geometry shape that has volume, and when it cutted, the result is always either a triangle or quad.</p>
+<p>[image tetra cutted]</p>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>

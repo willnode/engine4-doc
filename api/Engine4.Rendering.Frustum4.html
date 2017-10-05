@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Frustum4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Frustum4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Rendering.Frustum4">
+  
+  
+  <h1 id="Engine4_Rendering_Frustum4" data-uid="Engine4.Rendering.Frustum4" class="text-break">Class Frustum4
+  </h1>
+  <div class="markdown level0 summary"><p>Projection helper using Frustum technique.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Frustum4 : Projector4</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.Rendering.html">Engine4.Rendering</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.Rendering.Projector4.html">Projector4</a></div>  
+    <div class="level2"><span class="xref">Frustum4</span></div>  
+  <div class="derivations">
+    
+  </div>
+  </div>
+  <h5 id="Engine4_Rendering_Frustum4_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Frustum behaves the same way as conventional game engine does.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Engine4_Rendering_Frustum4__ctor_" data-uid="Engine4.Rendering.Frustum4.#ctor*"></a>
+  <h4 id="Engine4_Rendering_Frustum4__ctor" data-uid="Engine4.Rendering.Frustum4.#ctor">Frustum4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Frustum4()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Engine4_Rendering_Frustum4_farClip" data-uid="Engine4.Rendering.Frustum4.farClip">farClip</h4>
+  <div class="markdown level1 summary"><p>Maximum projection distance limit </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float farClip</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Frustum4_focalLength" data-uid="Engine4.Rendering.Frustum4.focalLength">focalLength</h4>
+  <div class="markdown level1 summary"><p>Focal length of the camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float focalLength</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Frustum4_nearClip" data-uid="Engine4.Rendering.Frustum4.nearClip">nearClip</h4>
+  <div class="markdown level1 summary"><p>Minimum projection distance limit </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float nearClip</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Frustum4_perspectiveness" data-uid="Engine4.Rendering.Frustum4.perspectiveness">perspectiveness</h4>
+  <div class="markdown level1 summary"><p>Transition between orthographic (0) and perspective (1)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float perspectiveness</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Frustum4_shiftClip" data-uid="Engine4.Rendering.Frustum4.shiftClip">shiftClip</h4>
+  <div class="markdown level1 summary"><p>Backward shift of the camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float shiftClip</code></pre>
+  </div>
+  <h5 id="Engine4_Rendering_Frustum4_shiftClip_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It&apos;s equivalent to move camera in negative W direction</p>
+</div>
+  <h4 id="Engine4_Rendering_Frustum4_useFrustumCulling" data-uid="Engine4.Rendering.Frustum4.useFrustumCulling">useFrustumCulling</h4>
+  <div class="markdown level1 summary"><p>Use additional frustum culling?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool useFrustumCulling</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Rendering_Frustum4_fieldOfView_" data-uid="Engine4.Rendering.Frustum4.fieldOfView*"></a>
+  <h4 id="Engine4_Rendering_Frustum4_fieldOfView" data-uid="Engine4.Rendering.Frustum4.fieldOfView">fieldOfView</h4>
+  <div class="markdown level1 summary"><p>Access the calculated field of view angle in degree</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fieldOfView { get; set; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Rendering_Frustum4_SimplexModeForVisualizing_" data-uid="Engine4.Rendering.Frustum4.SimplexModeForVisualizing*"></a>
+  <h4 id="Engine4_Rendering_Frustum4_SimplexModeForVisualizing_Engine4_SimplexMode_" data-uid="Engine4.Rendering.Frustum4.SimplexModeForVisualizing(Engine4.SimplexMode)">SimplexModeForVisualizing(SimplexMode)</h4>
+  <div class="markdown level1 summary"><p>This method always return the same simplex mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SimplexMode SimplexModeForVisualizing(SimplexMode mode)</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_SimplexModeForVisualizing_Engine4_SimplexMode_">Projector4.SimplexModeForVisualizing(SimplexMode)</a></div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

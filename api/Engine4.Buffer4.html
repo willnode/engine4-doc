@@ -1,0 +1,466 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Buffer4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Buffer4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Buffer4">
+  
+  
+  <h1 id="Engine4_Buffer4" data-uid="Engine4.Buffer4" class="text-break">Class Buffer4
+  </h1>
+  <div class="markdown level0 summary"><p>Temporary representation of 4D mesh </p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Buffer4</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.html">Engine4</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  
+    <div class="level1"><span class="xref">Buffer4</span></div>  
+  <div class="derivations">
+    
+  </div>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Engine4_Buffer4__ctor_" data-uid="Engine4.Buffer4.#ctor*"></a>
+  <h4 id="Engine4_Buffer4__ctor" data-uid="Engine4.Buffer4.#ctor">Buffer4()</h4>
+  <div class="markdown level1 summary"><p>Create an empty buffer </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Buffer4()</code></pre>
+  </div>
+  <a id="Engine4_Buffer4__ctor_" data-uid="Engine4.Buffer4.#ctor*"></a>
+  <h4 id="Engine4_Buffer4__ctor_Engine4_SimplexMode_System_Boolean_" data-uid="Engine4.Buffer4.#ctor(Engine4.SimplexMode,System.Boolean)">Buffer4(SimplexMode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create an empty buffer </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Buffer4(SimplexMode simplex, bool useProfile)</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Engine4_Buffer4_indices" data-uid="Engine4.Buffer4.indices">indices</h4>
+  <div class="markdown level1 summary"><p>Internal simplex (indices) buffer. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;int&gt; indices</code></pre>
+  </div>
+  <h4 id="Engine4_Buffer4_offset" data-uid="Engine4.Buffer4.offset">offset</h4>
+  <div class="markdown level1 summary"><p>A handy pointer to shift simplex buffer values relatively. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int offset</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_offset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It&apos;s much recommended to control this param using Align(). </p>
+</div>
+  <h4 id="Engine4_Buffer4_profiles" data-uid="Engine4.Buffer4.profiles">profiles</h4>
+  <div class="markdown level1 summary"><p>Internal vertex profile buffer (color, uv). </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;VertexProfile&gt; profiles</code></pre>
+  </div>
+  <h4 id="Engine4_Buffer4_simplex" data-uid="Engine4.Buffer4.simplex">simplex</h4>
+  <div class="markdown level1 summary"><p>The simplex type that required by the renderer.
+Useful if you want to create a custom shape blocks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimplexMode simplex</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_simplex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Public for convenience. DO NOT SET MANUALLY. </p>
+</div>
+  <h4 id="Engine4_Buffer4_useProfile" data-uid="Engine4.Buffer4.useProfile">useProfile</h4>
+  <div class="markdown level1 summary"><p>Is it necessary to collect vertex profiles? </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool useProfile</code></pre>
+  </div>
+  <h4 id="Engine4_Buffer4_vertices" data-uid="Engine4.Buffer4.vertices">vertices</h4>
+  <div class="markdown level1 summary"><p>Internal vertex buffer </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Vector4&gt; vertices</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Buffer4_AddCube_" data-uid="Engine4.Buffer4.AddCube*"></a>
+  <h4 id="Engine4_Buffer4_AddCube_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddCube(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddCube(Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Helper to add a cube from 8 existing verts index.
+A cube is constructed from 5 trimids, v0-v1-v2-v3 must be parallel (and in the same order) with v4-v5-v6-v7</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddCube(int v0, int v1, int v2, int v3, int v4, int v5, int v6, int v7)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddPoint_" data-uid="Engine4.Buffer4.AddPoint*"></a>
+  <h4 id="Engine4_Buffer4_AddPoint_System_Int32_" data-uid="Engine4.Buffer4.AddPoint(System.Int32)">AddPoint(Int32)</h4>
+  <div class="markdown level1 summary"><p>Add an artbitrary point.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPoint(int v0)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddPrism_" data-uid="Engine4.Buffer4.AddPrism*"></a>
+  <h4 id="Engine4_Buffer4_AddPrism_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddPrism(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddPrism(Int32, Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Helper to add a triangular prism from 6 existing verts index.
+A prism is constructed from 3 trimids, v0-v1-v2 must be parallel (and in the same order) with v3-v4-v5</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPrism(int v0, int v1, int v2, int v3, int v4, int v5)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddPyramid_" data-uid="Engine4.Buffer4.AddPyramid*"></a>
+  <h4 id="Engine4_Buffer4_AddPyramid_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddPyramid(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddPyramid(Int32, Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Helper to add a pyramid from 5 existing verts index.
+A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddPyramid(int v0, int v1, int v2, int v3, int v4)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddQuad_" data-uid="Engine4.Buffer4.AddQuad*"></a>
+  <h4 id="Engine4_Buffer4_AddQuad_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddQuad(System.Int32,System.Int32,System.Int32,System.Int32)">AddQuad(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Add a flat quad. Must be either clockwise/counter-clockwise order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddQuad(int v0, int v1, int v2, int v3)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddSegment_" data-uid="Engine4.Buffer4.AddSegment*"></a>
+  <h4 id="Engine4_Buffer4_AddSegment_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddSegment(System.Int32,System.Int32)">AddSegment(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Add a segment. Order doesn&apos;t matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddSegment(int v0, int v1)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddTriangle_" data-uid="Engine4.Buffer4.AddTriangle*"></a>
+  <h4 id="Engine4_Buffer4_AddTriangle_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddTriangle(System.Int32,System.Int32,System.Int32)">AddTriangle(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Add a flat triangle. Order doesn&apos;t matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTriangle(int v0, int v1, int v2)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddTrimid_" data-uid="Engine4.Buffer4.AddTrimid*"></a>
+  <h4 id="Engine4_Buffer4_AddTrimid_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddTrimid(System.Int32,System.Int32,System.Int32,System.Int32)">AddTrimid(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Add a trimid (triangle pyramid) with given vert indexs. Order doesn&apos;t matter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTrimid(int v0, int v1, int v2, int v3)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4)">AddVert(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex with default profile and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.Vector4)">AddVert(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex with given uv and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Vector4 uv)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_Engine4_VertexProfile_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.VertexProfile)">AddVert(Vector4, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, VertexProfile profile)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color)">AddVert(Vector4, Color)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex with given color and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Color color)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)">AddVert(Vector4, Color, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex with given color, uv and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Color color, Vector4 uv)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">AddVert(Vector4, Color, Vector4, Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex with given color, uv, uv2, uv3 and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Color color, Vector4 uv, Vector4 uv2, Vector4 uv3)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vertex4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vertex4)">AddVert(Vertex4)</h4>
+  <div class="markdown level1 summary"><p>Add a vertex and return the index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(Vertex4 vertex)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
+  <h4 id="Engine4_Buffer4_AddVert_System_Int32_" data-uid="Engine4.Buffer4.AddVert(System.Int32)">AddVert(Int32)</h4>
+  <div class="markdown level1 summary"><p>Duplicate vertex and return the cloned index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddVert(int idx)</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_AddVert_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Useful for sequencing operations </p>
+</div>
+  <a id="Engine4_Buffer4_Align_" data-uid="Engine4.Buffer4.Align*"></a>
+  <h4 id="Engine4_Buffer4_Align" data-uid="Engine4.Buffer4.Align">Align()</h4>
+  <div class="markdown level1 summary"><p>Move buffer forward to the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Align()</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_Align_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Align are handy if used together with bulk operations (e.g. <a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Sequence_Engine4_SequenceMode_">Sequence(SequenceMode)</a>)</p>
+</div>
+  <a id="Engine4_Buffer4_Align_" data-uid="Engine4.Buffer4.Align*"></a>
+  <h4 id="Engine4_Buffer4_Align_System_Int32_" data-uid="Engine4.Buffer4.Align(System.Int32)">Align(Int32)</h4>
+  <div class="markdown level1 summary"><p>Move buffer toward the given snapshot.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Align(int snapshot)</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_Align_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use <a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Snapshot">Snapshot()</a> to obtain snapshot at given position.</p>
+</div>
+  <h5 id="Engine4_Buffer4_Align_System_Int32__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Snapshot">Snapshot()</a></div>
+  </div>
+  <a id="Engine4_Buffer4_Clear_" data-uid="Engine4.Buffer4.Clear*"></a>
+  <h4 id="Engine4_Buffer4_Clear" data-uid="Engine4.Buffer4.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_Clear_" data-uid="Engine4.Buffer4.Clear*"></a>
+  <h4 id="Engine4_Buffer4_Clear_Engine4_SimplexMode_" data-uid="Engine4.Buffer4.Clear(Engine4.SimplexMode)">Clear(SimplexMode)</h4>
+  <div class="markdown level1 summary"><p>Clear the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(SimplexMode mode)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_Colorize_" data-uid="Engine4.Buffer4.Colorize*"></a>
+  <h4 id="Engine4_Buffer4_Colorize_UnityEngine_Color_" data-uid="Engine4.Buffer4.Colorize(UnityEngine.Color)">Colorize(Color)</h4>
+  <div class="markdown level1 summary"><p>Set the color of vertices since last Align() </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Colorize(Color color)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_Colorize_" data-uid="Engine4.Buffer4.Colorize*"></a>
+  <h4 id="Engine4_Buffer4_Colorize_UnityEngine_Gradient_" data-uid="Engine4.Buffer4.Colorize(UnityEngine.Gradient)">Colorize(Gradient)</h4>
+  <div class="markdown level1 summary"><p>Set the color of vertices since last Align() </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Colorize(Gradient color)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_IsEmpty_" data-uid="Engine4.Buffer4.IsEmpty*"></a>
+  <h4 id="Engine4_Buffer4_IsEmpty" data-uid="Engine4.Buffer4.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"><p>Is the buffer empty? </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_Sequence_" data-uid="Engine4.Buffer4.Sequence*"></a>
+  <h4 id="Engine4_Buffer4_Sequence_Engine4_SequenceMode_" data-uid="Engine4.Buffer4.Sequence(Engine4.SequenceMode)">Sequence(SequenceMode)</h4>
+  <div class="markdown level1 summary"><p>Automatically add vertices to indices buffer 
+since last Align() using given sequencing preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sequence(SequenceMode mode)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_Sequence_" data-uid="Engine4.Buffer4.Sequence*"></a>
+  <h4 id="Engine4_Buffer4_Sequence_Engine4_SequenceMode_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.Sequence(Engine4.SequenceMode,System.Int32,System.Int32)">Sequence(SequenceMode, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Automatically add vertices to indices buffer 
+since last Align() using given sequencing preset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sequence(SequenceMode mode, int start = 0, int count = -1)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_SequenceGrid_" data-uid="Engine4.Buffer4.SequenceGrid*"></a>
+  <h4 id="Engine4_Buffer4_SequenceGrid_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.SequenceGrid(System.Int32,System.Int32,System.Int32,System.Int32)">SequenceGrid(Int32, Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Special sequencing tool when dealing with 1D, 2D, 3D or 4D grid vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SequenceGrid(int x, int y = 1, int z = 1, int w = 1)</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_SequenceGrid_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Set the grid count in the parameter.
+The nested order is for(x) =&gt; for(y) =&gt; for(z) =&gt; for(w).
+the starting point is always from the last Align()</p>
+</div>
+  <a id="Engine4_Buffer4_Snapshot_" data-uid="Engine4.Buffer4.Snapshot*"></a>
+  <h4 id="Engine4_Buffer4_Snapshot" data-uid="Engine4.Buffer4.Snapshot">Snapshot()</h4>
+  <div class="markdown level1 summary"><p>Send copy of current buffer position to be reused later.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Snapshot()</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_Snapshot_seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Align_System_Int32_">Align(Int32)</a></div>
+  </div>
+  <a id="Engine4_Buffer4_Transform_" data-uid="Engine4.Buffer4.Transform*"></a>
+  <h4 id="Engine4_Buffer4_Transform_Engine4_Matrix4x5_" data-uid="Engine4.Buffer4.Transform(Engine4.Matrix4x5)">Transform(Matrix4x5)</h4>
+  <div class="markdown level1 summary"><p>Transform vertices since last Align() </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Transform(Matrix4x5 matrix)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_Transform_" data-uid="Engine4.Buffer4.Transform*"></a>
+  <h4 id="Engine4_Buffer4_Transform_Engine4_Matrix4x5_Engine4_Vector4_" data-uid="Engine4.Buffer4.Transform(Engine4.Matrix4x5,Engine4.Vector4)">Transform(Matrix4x5, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Translate and Transform vertices since last Align() </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Transform(Matrix4x5 matrix, Vector4 center)</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_SequenceMode_System_Int32___">Buffer4Extension.AddBySequence(Buffer4, SequenceMode, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddPoint(Buffer4, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddSegment_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddSegment(Buffer4, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddTriangle_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddTriangle(Buffer4, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddQuad_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddQuad(Buffer4, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddTrimid_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddTrimid(Buffer4, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPolygon_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddPolygon(Buffer4, Int32[])</a>
+  </div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Gizmos4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Gizmos4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Rendering.Gizmos4">
+  
+  
+  <h1 id="Engine4_Rendering_Gizmos4" data-uid="Engine4.Rendering.Gizmos4" class="text-break">Class Gizmos4
+  </h1>
+  <div class="markdown level0 summary"><p>General editing-aid when working for gizmos in 4D</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Gizmos4</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.Rendering.html">Engine4.Rendering</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  
+    <div class="level1"><span class="xref">Gizmos4</span></div>  
+  <div class="derivations">
+    
+  </div>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Engine4_Rendering_Gizmos4_color" data-uid="Engine4.Rendering.Gizmos4.color">color</h4>
+  <div class="markdown level1 summary"><p>Set the gizmo color used to draw next gizmos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Color color</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Gizmos4_matrix" data-uid="Engine4.Rendering.Gizmos4.matrix">matrix</h4>
+  <div class="markdown level1 summary"><p>Set the gizmo matrix used to draw all gizmos.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4x5 matrix</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Rendering_Gizmos4_DrawCube_" data-uid="Engine4.Rendering.Gizmos4.DrawCube*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawCube_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Rendering.Gizmos4.DrawCube(Engine4.Vector4,Engine4.Vector4)">DrawCube(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Draw a solid box with center and size. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawCube(Vector4 center, Vector4 size)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawFrustum_" data-uid="Engine4.Rendering.Gizmos4.DrawFrustum*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawFrustum_Engine4_Vector4_System_Single_System_Single_System_Single_System_Single_" data-uid="Engine4.Rendering.Gizmos4.DrawFrustum(Engine4.Vector4,System.Single,System.Single,System.Single,System.Single)">DrawFrustum(Vector4, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Draw a camera frustum using the currently set Gizmos.matrix for it&apos;s location and rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawFrustum(Vector4 center, float fov, float maxRange, float minRange, float aspect)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawLine_" data-uid="Engine4.Rendering.Gizmos4.DrawLine*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawLine_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Rendering.Gizmos4.DrawLine(Engine4.Vector4,Engine4.Vector4)">DrawLine(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Draws a line starting at from towards to </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawLine(Vector4 from, Vector4 to)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawRay_" data-uid="Engine4.Rendering.Gizmos4.DrawRay*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawRay_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Rendering.Gizmos4.DrawRay(Engine4.Vector4,Engine4.Vector4)">DrawRay(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Draws a ray starting at from to from + direction </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawRay(Vector4 from, Vector4 direction)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawRay_" data-uid="Engine4.Rendering.Gizmos4.DrawRay*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawRay_UnityEngine_Ray_" data-uid="Engine4.Rendering.Gizmos4.DrawRay(UnityEngine.Ray)">DrawRay(Ray)</h4>
+  <div class="markdown level1 summary"><p>Draws a ray starting at from to from + direction </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawRay(Ray r)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawSphere_" data-uid="Engine4.Rendering.Gizmos4.DrawSphere*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawSphere_Engine4_Vector4_System_Single_" data-uid="Engine4.Rendering.Gizmos4.DrawSphere(Engine4.Vector4,System.Single)">DrawSphere(Vector4, Single)</h4>
+  <div class="markdown level1 summary"><p>Draws a solid sphere with center and radius. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawSphere(Vector4 center, float radius)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawWireCube_" data-uid="Engine4.Rendering.Gizmos4.DrawWireCube*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawWireCube_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Rendering.Gizmos4.DrawWireCube(Engine4.Vector4,Engine4.Vector4)">DrawWireCube(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Draw a wireframe box with center and size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawWireCube(Vector4 center, Vector4 size)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Gizmos4_DrawWireSphere_" data-uid="Engine4.Rendering.Gizmos4.DrawWireSphere*"></a>
+  <h4 id="Engine4_Rendering_Gizmos4_DrawWireSphere_Engine4_Vector4_System_Single_" data-uid="Engine4.Rendering.Gizmos4.DrawWireSphere(Engine4.Vector4,System.Single)">DrawWireSphere(Vector4, Single)</h4>
+  <div class="markdown level1 summary"><p>Draws a wireframe sphere with center and radius. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DrawWireSphere(Vector4 center, float radius)</code></pre>
+  </div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Visualizer4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Visualizer4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Rendering.Visualizer4">
+  
+  
+  <h1 id="Engine4_Rendering_Visualizer4" data-uid="Engine4.Rendering.Visualizer4" class="text-break">Class Visualizer4
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for custom visualizer</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Visualizer4 : MonoBehaviour4, IVisualizer</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.Rendering.html">Engine4.Rendering</a></h5>
+  </div>
+  <div class="implements">
+    <h5>Implements <a class="xref" href="Engine4.Rendering.IVisualizer.html">IVisualizer</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.MonoBehaviour4.html">MonoBehaviour4</a></div>  
+    <div class="level2"><span class="xref">Visualizer4</span></div>  
+  <div class="derivations">
+    <div class="level3"><a class="xref" href="Engine4.Rendering.ParticleExtended4.html">ParticleExtended4</a></div>  
+  </div>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Engine4_Rendering_Visualizer4__ctor_" data-uid="Engine4.Rendering.Visualizer4.#ctor*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4__ctor" data-uid="Engine4.Rendering.Visualizer4.#ctor">Visualizer4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Visualizer4()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Rendering_Visualizer4_WorkingSimplexCase_" data-uid="Engine4.Rendering.Visualizer4.WorkingSimplexCase*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4_WorkingSimplexCase" data-uid="Engine4.Rendering.Visualizer4.WorkingSimplexCase">WorkingSimplexCase</h4>
+  <div class="markdown level1 summary"><p>Is this visualizer supports given simplex case? </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract SimplexMode WorkingSimplexCase { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Rendering_Visualizer4_Clear_" data-uid="Engine4.Rendering.Visualizer4.Clear*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4_Clear_UnityEngine_Mesh_" data-uid="Engine4.Rendering.Visualizer4.Clear(UnityEngine.Mesh)">Clear(Mesh)</h4>
+  <div class="markdown level1 summary"><p>Tell to clear the buffer </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Clear(Mesh m)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Visualizer4_End_" data-uid="Engine4.Rendering.Visualizer4.End*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4_End_UnityEngine_Mesh_Engine4_VertexProfiles_" data-uid="Engine4.Rendering.Visualizer4.End(UnityEngine.Mesh,Engine4.VertexProfiles)">End(Mesh, VertexProfiles)</h4>
+  <div class="markdown level1 summary"><p>Marks the end of the visualizing function </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void End(Mesh m, VertexProfiles profile)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Visualizer4_Initialize_" data-uid="Engine4.Rendering.Visualizer4.Initialize*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4_Initialize_Engine4_Buffer3_" data-uid="Engine4.Rendering.Visualizer4.Initialize(Engine4.Buffer3)">Initialize(Buffer3)</h4>
+  <div class="markdown level1 summary"><p>Marks the beginning of the visualizing function </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Initialize(Buffer3 helper)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Visualizer4_Render_" data-uid="Engine4.Rendering.Visualizer4.Render*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4_Render_Engine4_Vector4___System_Int32_" data-uid="Engine4.Rendering.Visualizer4.Render(Engine4.Vector4[],System.Int32)">Render(Vector4[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Per-simplex visualize method
+Assume Vector4[] is Vector3[] with w = 0 each</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Render(Vector4[] buffer, int count)</code></pre>
+  </div>
+  <a id="Engine4_Rendering_Visualizer4_Render_" data-uid="Engine4.Rendering.Visualizer4.Render*"></a>
+  <h4 id="Engine4_Rendering_Visualizer4_Render_Engine4_VertexProfile___System_Int32_" data-uid="Engine4.Rendering.Visualizer4.Render(Engine4.VertexProfile[],System.Int32)">Render(VertexProfile[], Int32)</h4>
+  <div class="markdown level1 summary"><p>Per-simplex visualize method
+Assume Vector4[] is Vector3[] with w = 0 each</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Render(VertexProfile[] buffer, int count)</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Engine4.Rendering.IVisualizer.html">IVisualizer</a>
+  </div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

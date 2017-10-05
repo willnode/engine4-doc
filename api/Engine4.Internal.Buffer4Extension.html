@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Buffer4Extension
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Buffer4Extension
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Internal.Buffer4Extension">
+  
+  
+  <h1 id="Engine4_Internal_Buffer4Extension" data-uid="Engine4.Internal.Buffer4Extension" class="text-break">Class Buffer4Extension
+  </h1>
+  <div class="markdown level0 summary"><p>Buffer4 Extension</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Buffer4Extension</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.Internal.html">Engine4.Internal</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  
+    <div class="level1"><span class="xref">Buffer4Extension</span></div>  
+  <div class="derivations">
+    
+  </div>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Internal_Buffer4Extension_AddBySequence_" data-uid="Engine4.Internal.Buffer4Extension.AddBySequence*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_SequenceMode_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.SequenceMode,System.Int32[])">AddBySequence(Buffer4, SequenceMode, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add by given sequence</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddBySequence(this Buffer4 buffer, SequenceMode mode, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddPoint_" data-uid="Engine4.Internal.Buffer4Extension.AddPoint*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddPoint(Engine4.Buffer4,System.Int32[])">AddPoint(Buffer4, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPoint(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddPolygon_" data-uid="Engine4.Internal.Buffer4Extension.AddPolygon*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddPolygon_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddPolygon(Engine4.Buffer4,System.Int32[])">AddPolygon(Buffer4, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add looping polygon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPolygon(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddQuad_" data-uid="Engine4.Internal.Buffer4Extension.AddQuad*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddQuad_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddQuad(Engine4.Buffer4,System.Int32[])">AddQuad(Buffer4, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add a quads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddQuad(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddSegment_" data-uid="Engine4.Internal.Buffer4Extension.AddSegment*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddSegment_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddSegment(Engine4.Buffer4,System.Int32[])">AddSegment(Buffer4, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add segments.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddSegment(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddTriangle_" data-uid="Engine4.Internal.Buffer4Extension.AddTriangle*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddTriangle_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddTriangle(Engine4.Buffer4,System.Int32[])">AddTriangle(Buffer4, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add triangles.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddTriangle(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddTrimid_" data-uid="Engine4.Internal.Buffer4Extension.AddTrimid*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddTrimid_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddTrimid(Engine4.Buffer4,System.Int32[])">AddTrimid(Buffer4, Int32[])</h4>
+  <div class="markdown level1 summary"><p>Add a trimids</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddTrimid(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

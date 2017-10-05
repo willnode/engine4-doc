@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Matrix4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Matrix4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Matrix4">
+  
+  
+  <h1 id="Engine4_Matrix4" data-uid="Engine4.Matrix4" class="text-break">Struct Matrix4
+  </h1>
+  <div class="markdown level0 summary"><p>A 4x4 matrix to describe 4D rotations</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Matrix4</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The matrix is represented in row major order.
+Most operation that available requires the matrix to be orthogonal.
+This should not be confused with Unity&apos;s Matrix4x4.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Engine4_Matrix4__ctor_" data-uid="Engine4.Matrix4.#ctor*"></a>
+  <h4 id="Engine4_Matrix4__ctor_Engine4_Vector4_" data-uid="Engine4.Matrix4.#ctor(Engine4.Vector4)">Matrix4(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Create a diagonal matrix with given scaling value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4(Vector4 scale)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4__ctor_" data-uid="Engine4.Matrix4.#ctor*"></a>
+  <h4 id="Engine4_Matrix4__ctor_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Matrix4.#ctor(Engine4.Vector4,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">Matrix4(Vector4, Vector4, Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Create a matrix data with given individual values (in vector form).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4(Vector4 x, Vector4 y, Vector4 z, Vector4 w)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4__ctor_" data-uid="Engine4.Matrix4.#ctor*"></a>
+  <h4 id="Engine4_Matrix4__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Engine4.Matrix4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">Matrix4(Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Create a matrix data with given individual values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4(float a, float b, float c, float d, float e, float f, float g, float h, float i, float j, float k, float l, float m, float n, float o, float p)</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Engine4_Matrix4_ew" data-uid="Engine4.Matrix4.ew">ew</h4>
+  <div class="markdown level1 summary"><p>Fourth row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 ew</code></pre>
+  </div>
+  <h4 id="Engine4_Matrix4_ex" data-uid="Engine4.Matrix4.ex">ex</h4>
+  <div class="markdown level1 summary"><p>First row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 ex</code></pre>
+  </div>
+  <h4 id="Engine4_Matrix4_ey" data-uid="Engine4.Matrix4.ey">ey</h4>
+  <div class="markdown level1 summary"><p>Second row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 ey</code></pre>
+  </div>
+  <h4 id="Engine4_Matrix4_ez" data-uid="Engine4.Matrix4.ez">ez</h4>
+  <div class="markdown level1 summary"><p>Third row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 ez</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Matrix4_Column0_" data-uid="Engine4.Matrix4.Column0*"></a>
+  <h4 id="Engine4_Matrix4_Column0" data-uid="Engine4.Matrix4.Column0">Column0</h4>
+  <div class="markdown level1 summary"><p>First column of the matrix </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Column0 { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Column1_" data-uid="Engine4.Matrix4.Column1*"></a>
+  <h4 id="Engine4_Matrix4_Column1" data-uid="Engine4.Matrix4.Column1">Column1</h4>
+  <div class="markdown level1 summary"><p>Second column of the matrix </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Column1 { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Column2_" data-uid="Engine4.Matrix4.Column2*"></a>
+  <h4 id="Engine4_Matrix4_Column2" data-uid="Engine4.Matrix4.Column2">Column2</h4>
+  <div class="markdown level1 summary"><p>Third column of the matrix </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Column2 { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Column3_" data-uid="Engine4.Matrix4.Column3*"></a>
+  <h4 id="Engine4_Matrix4_Column3" data-uid="Engine4.Matrix4.Column3">Column3</h4>
+  <div class="markdown level1 summary"><p>Fourth column of the matrix </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Column3 { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Diagonal_" data-uid="Engine4.Matrix4.Diagonal*"></a>
+  <h4 id="Engine4_Matrix4_Diagonal" data-uid="Engine4.Matrix4.Diagonal">Diagonal</h4>
+  <div class="markdown level1 summary"><p>Access the diagonal row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Diagonal { get; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_identity_" data-uid="Engine4.Matrix4.identity*"></a>
+  <h4 id="Engine4_Matrix4_identity" data-uid="Engine4.Matrix4.identity">identity</h4>
+  <div class="markdown level1 summary"><p>Get an identity matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 identity { get; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Item_" data-uid="Engine4.Matrix4.Item*"></a>
+  <h4 id="Engine4_Matrix4_Item_System_Int32_" data-uid="Engine4.Matrix4.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Get Nth-row of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 this[int index] { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Item_" data-uid="Engine4.Matrix4.Item*"></a>
+  <h4 id="Engine4_Matrix4_Item_System_Int32_System_Int32_" data-uid="Engine4.Matrix4.Item(System.Int32,System.Int32)">Item[Int32, Int32]</h4>
+  <div class="markdown level1 summary"><p>Get a matrix element at given position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float this[int row, int column] { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_zero_" data-uid="Engine4.Matrix4.zero*"></a>
+  <h4 id="Engine4_Matrix4_zero" data-uid="Engine4.Matrix4.zero">zero</h4>
+  <div class="markdown level1 summary"><p>Get a zero matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 zero { get; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Matrix4_Abs_" data-uid="Engine4.Matrix4.Abs*"></a>
+  <h4 id="Engine4_Matrix4_Abs_Engine4_Matrix4_" data-uid="Engine4.Matrix4.Abs(Engine4.Matrix4)">Abs(Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Returns the absolute version of the matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Abs(Matrix4 m)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Column_" data-uid="Engine4.Matrix4.Column*"></a>
+  <h4 id="Engine4_Matrix4_Column_System_Int32_" data-uid="Engine4.Matrix4.Column(System.Int32)">Column(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get Nth column by index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Column(int i)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_Column_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It&apos;s much better to use the getter property if the index is hard-coded </p>
+</div>
+  <a id="Engine4_Matrix4_Column_" data-uid="Engine4.Matrix4.Column*"></a>
+  <h4 id="Engine4_Matrix4_Column_System_Int32_Engine4_Vector4_" data-uid="Engine4.Matrix4.Column(System.Int32,Engine4.Vector4)">Column(Int32, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Set Nth column by index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Column(int i, Vector4 value)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_Column_System_Int32_Engine4_Vector4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It&apos;s much better to use the setter property if the index is hard-coded </p>
+</div>
+  <a id="Engine4_Matrix4_Equals_" data-uid="Engine4.Matrix4.Equals*"></a>
+  <h4 id="Engine4_Matrix4_Equals_System_Object_" data-uid="Engine4.Matrix4.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  <a id="Engine4_Matrix4_Euler_" data-uid="Engine4.Matrix4.Euler*"></a>
+  <h4 id="Engine4_Matrix4_Euler_Engine4_Euler4_" data-uid="Engine4.Matrix4.Euler(Engine4.Euler4)">Euler(Euler4)</h4>
+  <div class="markdown level1 summary"><p>Convert degree euler to orthogonal matrix rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Euler(Euler4 rot)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Euler_" data-uid="Engine4.Matrix4.Euler*"></a>
+  <h4 id="Engine4_Matrix4_Euler_System_Int32_System_Single_" data-uid="Engine4.Matrix4.Euler(System.Int32,System.Single)">Euler(Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Convert given degree rotation in given axis to orthogonal matrix rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Euler(int axis, float degree)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_Euler_System_Int32_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is much optimized than Euler(new Euler4(axis, degree))</p>
+</div>
+  <a id="Engine4_Matrix4_Euler_" data-uid="Engine4.Matrix4.Euler*"></a>
+  <h4 id="Engine4_Matrix4_Euler_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Engine4.Matrix4.Euler(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">Euler(Single, Single, Single, Single, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Convert degree euler to orthogonal matrix rotation individually.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Euler(float x, float y, float z, float t, float u, float v)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_Euler_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This creates a rotation matrix that rotates a point by Y, Z, X, T, U, then V. In that order.</p>
+</div>
+  <a id="Engine4_Matrix4_GetDeterminant_" data-uid="Engine4.Matrix4.GetDeterminant*"></a>
+  <h4 id="Engine4_Matrix4_GetDeterminant_Engine4_Matrix4_" data-uid="Engine4.Matrix4.GetDeterminant(Engine4.Matrix4)">GetDeterminant(Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Get the determinant of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetDeterminant(Matrix4 m)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_ToEuler_" data-uid="Engine4.Matrix4.ToEuler*"></a>
+  <h4 id="Engine4_Matrix4_ToEuler" data-uid="Engine4.Matrix4.ToEuler">ToEuler()</h4>
+  <div class="markdown level1 summary"><p>Convert matrix into euler degree rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Euler4 ToEuler()</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_ToEuler_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The method is not valid in 90 deg singularity (WIP).
+The method won&apos;t check for orthogonality.</p>
+</div>
+  <a id="Engine4_Matrix4_Transform_" data-uid="Engine4.Matrix4.Transform*"></a>
+  <h4 id="Engine4_Matrix4_Transform_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.Transform(Engine4.Matrix4,Engine4.Matrix4)">Transform(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Perform a sandwich operation on B by A</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Transform(Matrix4 a, Matrix4 b)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_Transform_Engine4_Matrix4_Engine4_Matrix4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The product is a rotation of B that oriented relative to A coordinate axes </p>
+</div>
+  <a id="Engine4_Matrix4_Transpose_" data-uid="Engine4.Matrix4.Transpose*"></a>
+  <h4 id="Engine4_Matrix4_Transpose_Engine4_Matrix4_" data-uid="Engine4.Matrix4.Transpose(Engine4.Matrix4)">Transpose(Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Returns the transposed version of the matrix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Transpose(Matrix4 m)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_Transpose_Engine4_Matrix4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When the matrix is orthogonal, it&apos;s equivalent as the inversed version of the matrix </p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <a id="Engine4_Matrix4_op_Addition_" data-uid="Engine4.Matrix4.op_Addition*"></a>
+  <h4 id="Engine4_Matrix4_op_Addition_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Addition(Engine4.Matrix4,Engine4.Matrix4)">Addition(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Element-wisely add two matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 operator +(Matrix4 lhs, Matrix4 rhs)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_op_Addition_Engine4_Matrix4_Engine4_Matrix4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation could make the matrix not orthogonal anymore</p>
+</div>
+  <a id="Engine4_Matrix4_op_Division_" data-uid="Engine4.Matrix4.op_Division*"></a>
+  <h4 id="Engine4_Matrix4_op_Division_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Division(Engine4.Matrix4,Engine4.Matrix4)">Division(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Inversely Multiply or combine rotations between two matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 operator /(Matrix4 q, Matrix4 r)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_op_Division_Engine4_Matrix4_Engine4_Matrix4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>B * A / B returns A </p>
+</div>
+  <a id="Engine4_Matrix4_op_Division_" data-uid="Engine4.Matrix4.op_Division*"></a>
+  <h4 id="Engine4_Matrix4_op_Division_Engine4_Vector4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Division(Engine4.Vector4,Engine4.Matrix4)">Division(Vector4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Multiply or rotate a vector by the inversed version of this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 operator /(Vector4 v, Matrix4 r)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Equality_" data-uid="Engine4.Matrix4.op_Equality*"></a>
+  <h4 id="Engine4_Matrix4_op_Equality_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Equality(Engine4.Matrix4,Engine4.Matrix4)">Equality(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Check the equality between two matrices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Matrix4 a, Matrix4 b)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Implicit_" data-uid="Engine4.Matrix4.op_Implicit*"></a>
+  <h4 id="Engine4_Matrix4_op_Implicit_Engine4_Matrix4__UnityEngine_Matrix4x4" data-uid="Engine4.Matrix4.op_Implicit(Engine4.Matrix4)~UnityEngine.Matrix4x4">Implicit(Matrix4 to Matrix4x4)</h4>
+  <div class="markdown level1 summary"><p>Implicit conversion to Unity&apos;s Matrix4x4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Matrix4x4(Matrix4 v)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Implicit_" data-uid="Engine4.Matrix4.op_Implicit*"></a>
+  <h4 id="Engine4_Matrix4_op_Implicit_UnityEngine_Matrix4x4__Engine4_Matrix4" data-uid="Engine4.Matrix4.op_Implicit(UnityEngine.Matrix4x4)~Engine4.Matrix4">Implicit(Matrix4x4 to Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Implicit conversion from Unity&apos;s Matrix4x4</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Matrix4(Matrix4x4 v)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Inequality_" data-uid="Engine4.Matrix4.op_Inequality*"></a>
+  <h4 id="Engine4_Matrix4_op_Inequality_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Inequality(Engine4.Matrix4,Engine4.Matrix4)">Inequality(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Check the inequality between two matrices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Matrix4 a, Matrix4 b)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Multiply_" data-uid="Engine4.Matrix4.op_Multiply*"></a>
+  <h4 id="Engine4_Matrix4_op_Multiply_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Multiply(Engine4.Matrix4,Engine4.Matrix4)">Multiply(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Multiply or combine rotations between two matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 operator *(Matrix4 lhs, Matrix4 rhs)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Multiply_" data-uid="Engine4.Matrix4.op_Multiply*"></a>
+  <h4 id="Engine4_Matrix4_op_Multiply_Engine4_Matrix4_Engine4_Vector4_" data-uid="Engine4.Matrix4.op_Multiply(Engine4.Matrix4,Engine4.Vector4)">Multiply(Matrix4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Multiply or rotate a vector by this matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 operator *(Matrix4 lhs, Vector4 rhs)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_op_Multiply_" data-uid="Engine4.Matrix4.op_Multiply*"></a>
+  <h4 id="Engine4_Matrix4_op_Multiply_Engine4_Matrix4_System_Single_" data-uid="Engine4.Matrix4.op_Multiply(Engine4.Matrix4,System.Single)">Multiply(Matrix4, Single)</h4>
+  <div class="markdown level1 summary"><p>Scales the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 operator *(Matrix4 lhs, float f)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_op_Multiply_Engine4_Matrix4_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation could make the matrix not orthogonal anymore</p>
+</div>
+  <a id="Engine4_Matrix4_op_Subtraction_" data-uid="Engine4.Matrix4.op_Subtraction*"></a>
+  <h4 id="Engine4_Matrix4_op_Subtraction_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.op_Subtraction(Engine4.Matrix4,Engine4.Matrix4)">Subtraction(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Element-wisely subtract two matrices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 operator -(Matrix4 lhs, Matrix4 rhs)</code></pre>
+  </div>
+  <h5 id="Engine4_Matrix4_op_Subtraction_Engine4_Matrix4_Engine4_Matrix4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation could make the matrix not orthogonal anymore</p>
+</div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,251 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Transform4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Transform4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Transform4">
+  
+  
+  <h1 id="Engine4_Transform4" data-uid="Engine4.Transform4" class="text-break">Class Transform4
+  </h1>
+  <div class="markdown level0 summary"><p>Transformation component in 4D</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Transform4 : MonoBehaviour</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.html">Engine4</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  
+    <div class="level1"><span class="xref">Transform4</span></div>  
+  <div class="derivations">
+    
+  </div>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Engine4_Transform4__ctor_" data-uid="Engine4.Transform4.#ctor*"></a>
+  <h4 id="Engine4_Transform4__ctor" data-uid="Engine4.Transform4.#ctor">Transform4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform4()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Transform4_localEulerAngles_" data-uid="Engine4.Transform4.localEulerAngles*"></a>
+  <h4 id="Engine4_Transform4_localEulerAngles" data-uid="Engine4.Transform4.localEulerAngles">localEulerAngles</h4>
+  <div class="markdown level1 summary"><p>Rotation (in euler) relative to parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Euler4 localEulerAngles { get; set; }</code></pre>
+  </div>
+  <h5 id="Engine4_Transform4_localEulerAngles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Do not iteratively modify the rotation using this euler angle as gimbal lock is still happening in 4D.</p>
+</div>
+  <a id="Engine4_Transform4_localPosition_" data-uid="Engine4.Transform4.localPosition*"></a>
+  <h4 id="Engine4_Transform4_localPosition" data-uid="Engine4.Transform4.localPosition">localPosition</h4>
+  <div class="markdown level1 summary"><p>Position relative to parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 localPosition { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Transform4_localRotation_" data-uid="Engine4.Transform4.localRotation*"></a>
+  <h4 id="Engine4_Transform4_localRotation" data-uid="Engine4.Transform4.localRotation">localRotation</h4>
+  <div class="markdown level1 summary"><p>Rotation (in matrix) relative to parent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4 localRotation { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Transform4_localScale_" data-uid="Engine4.Transform4.localScale*"></a>
+  <h4 id="Engine4_Transform4_localScale" data-uid="Engine4.Transform4.localScale">localScale</h4>
+  <div class="markdown level1 summary"><p>Scaling value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 localScale { get; set; }</code></pre>
+  </div>
+  <h5 id="Engine4_Transform4_localScale_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scaling won&apos;t affect to its children.</p>
+</div>
+  <a id="Engine4_Transform4_localToWorldMatrix_" data-uid="Engine4.Transform4.localToWorldMatrix*"></a>
+  <h4 id="Engine4_Transform4_localToWorldMatrix" data-uid="Engine4.Transform4.localToWorldMatrix">localToWorldMatrix</h4>
+  <div class="markdown level1 summary"><p>The analogous localToWorldMatrix just for 4 manipulations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4x5 localToWorldMatrix { get; }</code></pre>
+  </div>
+  <h5 id="Engine4_Transform4_localToWorldMatrix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scale doesn&apos;t included in the matrix</p>
+</div>
+  <a id="Engine4_Transform4_parent_" data-uid="Engine4.Transform4.parent*"></a>
+  <h4 id="Engine4_Transform4_parent" data-uid="Engine4.Transform4.parent">parent</h4>
+  <div class="markdown level1 summary"><p>Get Transform4 in ancestor. Note that not every objects have Transform4.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Transform4 parent { get; }</code></pre>
+  </div>
+  <a id="Engine4_Transform4_position_" data-uid="Engine4.Transform4.position*"></a>
+  <h4 id="Engine4_Transform4_position" data-uid="Engine4.Transform4.position">position</h4>
+  <div class="markdown level1 summary"><p>Position relative to world space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 position { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Transform4_rotation_" data-uid="Engine4.Transform4.rotation*"></a>
+  <h4 id="Engine4_Transform4_rotation" data-uid="Engine4.Transform4.rotation">rotation</h4>
+  <div class="markdown level1 summary"><p>Rotation relative to world space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4 rotation { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Transform4_update_" data-uid="Engine4.Transform4.update*"></a>
+  <h4 id="Engine4_Transform4_update" data-uid="Engine4.Transform4.update">update</h4>
+  <div class="markdown level1 summary"><p>Event to be fired when this transform changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransformCallback update { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Transform4_worldToLocalMatrix_" data-uid="Engine4.Transform4.worldToLocalMatrix*"></a>
+  <h4 id="Engine4_Transform4_worldToLocalMatrix" data-uid="Engine4.Transform4.worldToLocalMatrix">worldToLocalMatrix</h4>
+  <div class="markdown level1 summary"><p>The analogous worldToLocalMatrix just for 4 manipulations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Matrix4x5 worldToLocalMatrix { get; }</code></pre>
+  </div>
+  <h5 id="Engine4_Transform4_worldToLocalMatrix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Scale doesn&apos;t included in the matrix</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Transform4_Rotate_" data-uid="Engine4.Transform4.Rotate*"></a>
+  <h4 id="Engine4_Transform4_Rotate_Engine4_Euler4_Engine4_Space4_" data-uid="Engine4.Transform4.Rotate(Engine4.Euler4,Engine4.Space4)">Rotate(Euler4, Space4)</h4>
+  <div class="markdown level1 summary"><p>Rotate this transform (in euler) in given space orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(Euler4 value, Space4 space)</code></pre>
+  </div>
+  <a id="Engine4_Transform4_Rotate_" data-uid="Engine4.Transform4.Rotate*"></a>
+  <h4 id="Engine4_Transform4_Rotate_Engine4_Matrix4_Engine4_Space4_" data-uid="Engine4.Transform4.Rotate(Engine4.Matrix4,Engine4.Space4)">Rotate(Matrix4, Space4)</h4>
+  <div class="markdown level1 summary"><p>Rotate this transform (in matrix) in given space orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(Matrix4 value, Space4 space)</code></pre>
+  </div>
+  <a id="Engine4_Transform4_Rotate_" data-uid="Engine4.Transform4.Rotate*"></a>
+  <h4 id="Engine4_Transform4_Rotate_UnityEngine_Quaternion_Engine4_Space4_" data-uid="Engine4.Transform4.Rotate(UnityEngine.Quaternion,Engine4.Space4)">Rotate(Quaternion, Space4)</h4>
+  <div class="markdown level1 summary"><p>Rotate this transform (in 3D quaternion) in given space orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rotate(Quaternion value, Space4 space)</code></pre>
+  </div>
+  <a id="Engine4_Transform4_Translate_" data-uid="Engine4.Transform4.Translate*"></a>
+  <h4 id="Engine4_Transform4_Translate_Engine4_Vector4_Engine4_Space4_" data-uid="Engine4.Transform4.Translate(Engine4.Vector4,Engine4.Space4)">Translate(Vector4, Space4)</h4>
+  <div class="markdown level1 summary"><p>Translate this transform in given space orientation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Translate(Vector4 value, Space4 space)</code></pre>
+  </div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
