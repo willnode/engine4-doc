@@ -3,7 +3,7 @@ sorted: true
 references:
 - uid: Basics
   name: Basics
-  href: articles/basics.html
+  href: manual/basics.html
 - uid: Engine4
   name: Engine4
   href: api/Engine4.html
@@ -619,60 +619,60 @@ references:
   commentId: Overload:Engine4.Buffer4.AddTrimid
   fullName: Engine4.Buffer4.AddTrimid
   nameWithType: Buffer4.AddTrimid
-- uid: Engine4.Buffer4.AddVert(Engine4.Vector4)
-  name: AddVert(Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vector4)
-  nameWithType: Buffer4.AddVert(Vector4)
-- uid: Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.Vector4)
-  name: AddVert(Vector4, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vector4_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vector4, Engine4.Vector4)
-  nameWithType: Buffer4.AddVert(Vector4, Vector4)
-- uid: Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.VertexProfile)
-  name: AddVert(Vector4, VertexProfile)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vector4_Engine4_VertexProfile_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.VertexProfile)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vector4, Engine4.VertexProfile)
-  nameWithType: Buffer4.AddVert(Vector4, VertexProfile)
-- uid: Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color)
-  name: AddVert(Vector4, Color)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vector4, UnityEngine.Color)
-  nameWithType: Buffer4.AddVert(Vector4, Color)
-- uid: Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)
-  name: AddVert(Vector4, Color, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vector4, UnityEngine.Color, Engine4.Vector4)
-  nameWithType: Buffer4.AddVert(Vector4, Color, Vector4)
-- uid: Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
-  name: AddVert(Vector4, Color, Vector4, Vector4, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vector4, UnityEngine.Color, Engine4.Vector4, Engine4.Vector4, Engine4.Vector4)
-  nameWithType: Buffer4.AddVert(Vector4, Color, Vector4, Vector4, Vector4)
-- uid: Engine4.Buffer4.AddVert(Engine4.Vertex4)
-  name: AddVert(Vertex4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_Engine4_Vertex4_
-  commentId: M:Engine4.Buffer4.AddVert(Engine4.Vertex4)
-  fullName: Engine4.Buffer4.AddVert(Engine4.Vertex4)
-  nameWithType: Buffer4.AddVert(Vertex4)
-- uid: Engine4.Buffer4.AddVert(System.Int32)
-  name: AddVert(Int32)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_System_Int32_
-  commentId: M:Engine4.Buffer4.AddVert(System.Int32)
-  fullName: Engine4.Buffer4.AddVert(System.Int32)
-  nameWithType: Buffer4.AddVert(Int32)
-- uid: Engine4.Buffer4.AddVert*
-  name: AddVert
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVert_
-  commentId: Overload:Engine4.Buffer4.AddVert
-  fullName: Engine4.Buffer4.AddVert
-  nameWithType: Buffer4.AddVert
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4)
+  name: AddVertex(Vector4)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4)
+  nameWithType: Buffer4.AddVertex(Vector4)
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.Vector4)
+  name: AddVertex(Vector4, Vector4)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_Vector4_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.Vector4)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, Engine4.Vector4)
+  nameWithType: Buffer4.AddVertex(Vector4, Vector4)
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.VertexProfile)
+  name: AddVertex(Vector4, VertexProfile)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_VertexProfile_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.VertexProfile)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, Engine4.VertexProfile)
+  nameWithType: Buffer4.AddVertex(Vector4, VertexProfile)
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color)
+  name: AddVertex(Vector4, Color)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, UnityEngine.Color)
+  nameWithType: Buffer4.AddVertex(Vector4, Color)
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)
+  name: AddVertex(Vector4, Color, Vector4)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, UnityEngine.Color, Engine4.Vector4)
+  nameWithType: Buffer4.AddVertex(Vector4, Color, Vector4)
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
+  name: AddVertex(Vector4, Color, Vector4, Vector4, Vector4)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, UnityEngine.Color, Engine4.Vector4, Engine4.Vector4, Engine4.Vector4)
+  nameWithType: Buffer4.AddVertex(Vector4, Color, Vector4, Vector4, Vector4)
+- uid: Engine4.Buffer4.AddVertex(Engine4.Vertex4)
+  name: AddVertex(Vertex4)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vertex4_
+  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vertex4)
+  fullName: Engine4.Buffer4.AddVertex(Engine4.Vertex4)
+  nameWithType: Buffer4.AddVertex(Vertex4)
+- uid: Engine4.Buffer4.AddVertex(System.Int32)
+  name: AddVertex(Int32)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_System_Int32_
+  commentId: M:Engine4.Buffer4.AddVertex(System.Int32)
+  fullName: Engine4.Buffer4.AddVertex(System.Int32)
+  nameWithType: Buffer4.AddVertex(Int32)
+- uid: Engine4.Buffer4.AddVertex*
+  name: AddVertex
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_
+  commentId: Overload:Engine4.Buffer4.AddVertex
+  fullName: Engine4.Buffer4.AddVertex
+  nameWithType: Buffer4.AddVertex
 - uid: Engine4.Buffer4.Align
   name: Align()
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_Align
@@ -709,24 +709,6 @@ references:
   commentId: Overload:Engine4.Buffer4.Clear
   fullName: Engine4.Buffer4.Clear
   nameWithType: Buffer4.Clear
-- uid: Engine4.Buffer4.Colorize(UnityEngine.Color)
-  name: Colorize(Color)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Colorize_UnityEngine_Color_
-  commentId: M:Engine4.Buffer4.Colorize(UnityEngine.Color)
-  fullName: Engine4.Buffer4.Colorize(UnityEngine.Color)
-  nameWithType: Buffer4.Colorize(Color)
-- uid: Engine4.Buffer4.Colorize(UnityEngine.Gradient)
-  name: Colorize(Gradient)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Colorize_UnityEngine_Gradient_
-  commentId: M:Engine4.Buffer4.Colorize(UnityEngine.Gradient)
-  fullName: Engine4.Buffer4.Colorize(UnityEngine.Gradient)
-  nameWithType: Buffer4.Colorize(Gradient)
-- uid: Engine4.Buffer4.Colorize*
-  name: Colorize
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Colorize_
-  commentId: Overload:Engine4.Buffer4.Colorize
-  fullName: Engine4.Buffer4.Colorize
-  nameWithType: Buffer4.Colorize
 - uid: Engine4.Buffer4.indices
   name: indices
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_indices
@@ -757,36 +739,6 @@ references:
   commentId: F:Engine4.Buffer4.profiles
   fullName: Engine4.Buffer4.profiles
   nameWithType: Buffer4.profiles
-- uid: Engine4.Buffer4.Sequence(Engine4.SequenceMode)
-  name: Sequence(SequenceMode)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Sequence_Engine4_SequenceMode_
-  commentId: M:Engine4.Buffer4.Sequence(Engine4.SequenceMode)
-  fullName: Engine4.Buffer4.Sequence(Engine4.SequenceMode)
-  nameWithType: Buffer4.Sequence(SequenceMode)
-- uid: Engine4.Buffer4.Sequence(Engine4.SequenceMode,System.Int32,System.Int32)
-  name: Sequence(SequenceMode, Int32, Int32)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Sequence_Engine4_SequenceMode_System_Int32_System_Int32_
-  commentId: M:Engine4.Buffer4.Sequence(Engine4.SequenceMode,System.Int32,System.Int32)
-  fullName: Engine4.Buffer4.Sequence(Engine4.SequenceMode, System.Int32, System.Int32)
-  nameWithType: Buffer4.Sequence(SequenceMode, Int32, Int32)
-- uid: Engine4.Buffer4.Sequence*
-  name: Sequence
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Sequence_
-  commentId: Overload:Engine4.Buffer4.Sequence
-  fullName: Engine4.Buffer4.Sequence
-  nameWithType: Buffer4.Sequence
-- uid: Engine4.Buffer4.SequenceGrid(System.Int32,System.Int32,System.Int32,System.Int32)
-  name: SequenceGrid(Int32, Int32, Int32, Int32)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_SequenceGrid_System_Int32_System_Int32_System_Int32_System_Int32_
-  commentId: M:Engine4.Buffer4.SequenceGrid(System.Int32,System.Int32,System.Int32,System.Int32)
-  fullName: Engine4.Buffer4.SequenceGrid(System.Int32, System.Int32, System.Int32, System.Int32)
-  nameWithType: Buffer4.SequenceGrid(Int32, Int32, Int32, Int32)
-- uid: Engine4.Buffer4.SequenceGrid*
-  name: SequenceGrid
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_SequenceGrid_
-  commentId: Overload:Engine4.Buffer4.SequenceGrid
-  fullName: Engine4.Buffer4.SequenceGrid
-  nameWithType: Buffer4.SequenceGrid
 - uid: Engine4.Buffer4.simplex
   name: simplex
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_simplex
@@ -805,24 +757,6 @@ references:
   commentId: Overload:Engine4.Buffer4.Snapshot
   fullName: Engine4.Buffer4.Snapshot
   nameWithType: Buffer4.Snapshot
-- uid: Engine4.Buffer4.Transform(Engine4.Matrix4x5)
-  name: Transform(Matrix4x5)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Transform_Engine4_Matrix4x5_
-  commentId: M:Engine4.Buffer4.Transform(Engine4.Matrix4x5)
-  fullName: Engine4.Buffer4.Transform(Engine4.Matrix4x5)
-  nameWithType: Buffer4.Transform(Matrix4x5)
-- uid: Engine4.Buffer4.Transform(Engine4.Matrix4x5,Engine4.Vector4)
-  name: Transform(Matrix4x5, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Transform_Engine4_Matrix4x5_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.Transform(Engine4.Matrix4x5,Engine4.Vector4)
-  fullName: Engine4.Buffer4.Transform(Engine4.Matrix4x5, Engine4.Vector4)
-  nameWithType: Buffer4.Transform(Matrix4x5, Vector4)
-- uid: Engine4.Buffer4.Transform*
-  name: Transform
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Transform_
-  commentId: Overload:Engine4.Buffer4.Transform
-  fullName: Engine4.Buffer4.Transform
-  nameWithType: Buffer4.Transform
 - uid: Engine4.Buffer4.useProfile
   name: useProfile
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_useProfile
@@ -1348,13 +1282,13 @@ references:
   commentId: T:Engine4.Internal.Buffer4Extension
   fullName: Engine4.Internal.Buffer4Extension
   nameWithType: Buffer4Extension
-- uid: Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.SequenceMode,System.Int32[])
+- uid: Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.Internal.SequenceMode,System.Int32[])
   name: AddBySequence(Buffer4, SequenceMode, Int32[])
-  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_SequenceMode_System_Int32___
-  commentId: M:Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.SequenceMode,System.Int32[])
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32___
+  commentId: M:Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.Internal.SequenceMode,System.Int32[])
   name.vb: AddBySequence(Buffer4, SequenceMode, Int32())
-  fullName: Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4, Engine4.SequenceMode, System.Int32[])
-  fullName.vb: Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4, Engine4.SequenceMode, System.Int32())
+  fullName: Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4, Engine4.Internal.SequenceMode, System.Int32[])
+  fullName.vb: Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4, Engine4.Internal.SequenceMode, System.Int32())
   nameWithType: Buffer4Extension.AddBySequence(Buffer4, SequenceMode, Int32[])
   nameWithType.vb: Buffer4Extension.AddBySequence(Buffer4, SequenceMode, Int32())
 - uid: Engine4.Internal.Buffer4Extension.AddBySequence*
@@ -1453,6 +1387,72 @@ references:
   commentId: Overload:Engine4.Internal.Buffer4Extension.AddTrimid
   fullName: Engine4.Internal.Buffer4Extension.AddTrimid
   nameWithType: Buffer4Extension.AddTrimid
+- uid: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Color)
+  name: Colorize(Buffer4, Color)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Color_
+  commentId: M:Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Color)
+  fullName: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4, UnityEngine.Color)
+  nameWithType: Buffer4Extension.Colorize(Buffer4, Color)
+- uid: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Gradient)
+  name: Colorize(Buffer4, Gradient)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Gradient_
+  commentId: M:Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Gradient)
+  fullName: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4, UnityEngine.Gradient)
+  nameWithType: Buffer4Extension.Colorize(Buffer4, Gradient)
+- uid: Engine4.Internal.Buffer4Extension.Colorize*
+  name: Colorize
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_
+  commentId: Overload:Engine4.Internal.Buffer4Extension.Colorize
+  fullName: Engine4.Internal.Buffer4Extension.Colorize
+  nameWithType: Buffer4Extension.Colorize
+- uid: Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4,Engine4.Internal.SequenceMode)
+  name: Sequence(Buffer4, SequenceMode)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_
+  commentId: M:Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4,Engine4.Internal.SequenceMode)
+  fullName: Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4, Engine4.Internal.SequenceMode)
+  nameWithType: Buffer4Extension.Sequence(Buffer4, SequenceMode)
+- uid: Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4,Engine4.Internal.SequenceMode,System.Int32,System.Int32)
+  name: Sequence(Buffer4, SequenceMode, Int32, Int32)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32_System_Int32_
+  commentId: M:Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4,Engine4.Internal.SequenceMode,System.Int32,System.Int32)
+  fullName: Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4, Engine4.Internal.SequenceMode, System.Int32, System.Int32)
+  nameWithType: Buffer4Extension.Sequence(Buffer4, SequenceMode, Int32, Int32)
+- uid: Engine4.Internal.Buffer4Extension.Sequence*
+  name: Sequence
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_
+  commentId: Overload:Engine4.Internal.Buffer4Extension.Sequence
+  fullName: Engine4.Internal.Buffer4Extension.Sequence
+  nameWithType: Buffer4Extension.Sequence
+- uid: Engine4.Internal.Buffer4Extension.SequenceGrid(Engine4.Buffer4,System.Int32,System.Int32,System.Int32,System.Int32)
+  name: SequenceGrid(Buffer4, Int32, Int32, Int32, Int32)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_SequenceGrid_Engine4_Buffer4_System_Int32_System_Int32_System_Int32_System_Int32_
+  commentId: M:Engine4.Internal.Buffer4Extension.SequenceGrid(Engine4.Buffer4,System.Int32,System.Int32,System.Int32,System.Int32)
+  fullName: Engine4.Internal.Buffer4Extension.SequenceGrid(Engine4.Buffer4, System.Int32, System.Int32, System.Int32, System.Int32)
+  nameWithType: Buffer4Extension.SequenceGrid(Buffer4, Int32, Int32, Int32, Int32)
+- uid: Engine4.Internal.Buffer4Extension.SequenceGrid*
+  name: SequenceGrid
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_SequenceGrid_
+  commentId: Overload:Engine4.Internal.Buffer4Extension.SequenceGrid
+  fullName: Engine4.Internal.Buffer4Extension.SequenceGrid
+  nameWithType: Buffer4Extension.SequenceGrid
+- uid: Engine4.Internal.Buffer4Extension.Transform(Engine4.Buffer4,Engine4.Matrix4x5)
+  name: Transform(Buffer4, Matrix4x5)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Transform_Engine4_Buffer4_Engine4_Matrix4x5_
+  commentId: M:Engine4.Internal.Buffer4Extension.Transform(Engine4.Buffer4,Engine4.Matrix4x5)
+  fullName: Engine4.Internal.Buffer4Extension.Transform(Engine4.Buffer4, Engine4.Matrix4x5)
+  nameWithType: Buffer4Extension.Transform(Buffer4, Matrix4x5)
+- uid: Engine4.Internal.Buffer4Extension.Transform(Engine4.Buffer4,Engine4.Matrix4x5,Engine4.Vector4)
+  name: Transform(Buffer4, Matrix4x5, Vector4)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Transform_Engine4_Buffer4_Engine4_Matrix4x5_Engine4_Vector4_
+  commentId: M:Engine4.Internal.Buffer4Extension.Transform(Engine4.Buffer4,Engine4.Matrix4x5,Engine4.Vector4)
+  fullName: Engine4.Internal.Buffer4Extension.Transform(Engine4.Buffer4, Engine4.Matrix4x5, Engine4.Vector4)
+  nameWithType: Buffer4Extension.Transform(Buffer4, Matrix4x5, Vector4)
+- uid: Engine4.Internal.Buffer4Extension.Transform*
+  name: Transform
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Transform_
+  commentId: Overload:Engine4.Internal.Buffer4Extension.Transform
+  fullName: Engine4.Internal.Buffer4Extension.Transform
+  nameWithType: Buffer4Extension.Transform
 - uid: Engine4.Internal.BufferPreset
   name: BufferPreset
   href: api/Engine4.Internal.BufferPreset.html
@@ -1696,6 +1696,120 @@ references:
   fullName.vb: Engine4.Internal.Runtime.GetOrAddComponent(Of T)(UnityEngine.GameObject)
   nameWithType: Runtime.GetOrAddComponent<T>(GameObject)
   nameWithType.vb: Runtime.GetOrAddComponent(Of T)(GameObject)
+- uid: Engine4.Internal.SequenceMode
+  name: SequenceMode
+  href: api/Engine4.Internal.SequenceMode.html
+  commentId: T:Engine4.Internal.SequenceMode
+  fullName: Engine4.Internal.SequenceMode
+  nameWithType: SequenceMode
+- uid: Engine4.Internal.SequenceMode.Cubes
+  name: Cubes
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Cubes
+  commentId: F:Engine4.Internal.SequenceMode.Cubes
+  fullName: Engine4.Internal.SequenceMode.Cubes
+  nameWithType: SequenceMode.Cubes
+- uid: Engine4.Internal.SequenceMode.CubeStrip
+  name: CubeStrip
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_CubeStrip
+  commentId: F:Engine4.Internal.SequenceMode.CubeStrip
+  fullName: Engine4.Internal.SequenceMode.CubeStrip
+  nameWithType: SequenceMode.CubeStrip
+- uid: Engine4.Internal.SequenceMode.LineFan
+  name: LineFan
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_LineFan
+  commentId: F:Engine4.Internal.SequenceMode.LineFan
+  fullName: Engine4.Internal.SequenceMode.LineFan
+  nameWithType: SequenceMode.LineFan
+- uid: Engine4.Internal.SequenceMode.LineLoop
+  name: LineLoop
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_LineLoop
+  commentId: F:Engine4.Internal.SequenceMode.LineLoop
+  fullName: Engine4.Internal.SequenceMode.LineLoop
+  nameWithType: SequenceMode.LineLoop
+- uid: Engine4.Internal.SequenceMode.Lines
+  name: Lines
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Lines
+  commentId: F:Engine4.Internal.SequenceMode.Lines
+  fullName: Engine4.Internal.SequenceMode.Lines
+  nameWithType: SequenceMode.Lines
+- uid: Engine4.Internal.SequenceMode.LineStrip
+  name: LineStrip
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_LineStrip
+  commentId: F:Engine4.Internal.SequenceMode.LineStrip
+  fullName: Engine4.Internal.SequenceMode.LineStrip
+  nameWithType: SequenceMode.LineStrip
+- uid: Engine4.Internal.SequenceMode.Points
+  name: Points
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Points
+  commentId: F:Engine4.Internal.SequenceMode.Points
+  fullName: Engine4.Internal.SequenceMode.Points
+  nameWithType: SequenceMode.Points
+- uid: Engine4.Internal.SequenceMode.Polygon
+  name: Polygon
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Polygon
+  commentId: F:Engine4.Internal.SequenceMode.Polygon
+  fullName: Engine4.Internal.SequenceMode.Polygon
+  nameWithType: SequenceMode.Polygon
+- uid: Engine4.Internal.SequenceMode.PrismFan
+  name: PrismFan
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_PrismFan
+  commentId: F:Engine4.Internal.SequenceMode.PrismFan
+  fullName: Engine4.Internal.SequenceMode.PrismFan
+  nameWithType: SequenceMode.PrismFan
+- uid: Engine4.Internal.SequenceMode.PyramidFan
+  name: PyramidFan
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_PyramidFan
+  commentId: F:Engine4.Internal.SequenceMode.PyramidFan
+  fullName: Engine4.Internal.SequenceMode.PyramidFan
+  nameWithType: SequenceMode.PyramidFan
+- uid: Engine4.Internal.SequenceMode.Quads
+  name: Quads
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Quads
+  commentId: F:Engine4.Internal.SequenceMode.Quads
+  fullName: Engine4.Internal.SequenceMode.Quads
+  nameWithType: SequenceMode.Quads
+- uid: Engine4.Internal.SequenceMode.QuadStrip
+  name: QuadStrip
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_QuadStrip
+  commentId: F:Engine4.Internal.SequenceMode.QuadStrip
+  fullName: Engine4.Internal.SequenceMode.QuadStrip
+  nameWithType: SequenceMode.QuadStrip
+- uid: Engine4.Internal.SequenceMode.TriangleFan
+  name: TriangleFan
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_TriangleFan
+  commentId: F:Engine4.Internal.SequenceMode.TriangleFan
+  fullName: Engine4.Internal.SequenceMode.TriangleFan
+  nameWithType: SequenceMode.TriangleFan
+- uid: Engine4.Internal.SequenceMode.Triangles
+  name: Triangles
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Triangles
+  commentId: F:Engine4.Internal.SequenceMode.Triangles
+  fullName: Engine4.Internal.SequenceMode.Triangles
+  nameWithType: SequenceMode.Triangles
+- uid: Engine4.Internal.SequenceMode.TriangleStrip
+  name: TriangleStrip
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_TriangleStrip
+  commentId: F:Engine4.Internal.SequenceMode.TriangleStrip
+  fullName: Engine4.Internal.SequenceMode.TriangleStrip
+  nameWithType: SequenceMode.TriangleStrip
+- uid: Engine4.Internal.SequenceMode.TrimidFan
+  name: TrimidFan
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_TrimidFan
+  commentId: F:Engine4.Internal.SequenceMode.TrimidFan
+  fullName: Engine4.Internal.SequenceMode.TrimidFan
+  nameWithType: SequenceMode.TrimidFan
+- uid: Engine4.Internal.SequenceMode.Trimids
+  name: Trimids
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_Trimids
+  commentId: F:Engine4.Internal.SequenceMode.Trimids
+  fullName: Engine4.Internal.SequenceMode.Trimids
+  nameWithType: SequenceMode.Trimids
+- uid: Engine4.Internal.SequenceMode.TrimidStrip
+  name: TrimidStrip
+  href: api/Engine4.Internal.SequenceMode.html#Engine4_Internal_SequenceMode_TrimidStrip
+  commentId: F:Engine4.Internal.SequenceMode.TrimidStrip
+  fullName: Engine4.Internal.SequenceMode.TrimidStrip
+  nameWithType: SequenceMode.TrimidStrip
 - uid: Engine4.Internal.Utility
   name: Utility
   href: api/Engine4.Internal.Utility.html
@@ -4978,6 +5092,36 @@ references:
   commentId: N:Engine4.Rendering
   fullName: Engine4.Rendering
   nameWithType: Engine4.Rendering
+- uid: Engine4.Rendering.CrossSection4
+  name: CrossSection4
+  href: api/Engine4.Rendering.CrossSection4.html
+  commentId: T:Engine4.Rendering.CrossSection4
+  fullName: Engine4.Rendering.CrossSection4
+  nameWithType: CrossSection4
+- uid: Engine4.Rendering.CrossSection4.#ctor
+  name: CrossSection4()
+  href: api/Engine4.Rendering.CrossSection4.html#Engine4_Rendering_CrossSection4__ctor
+  commentId: M:Engine4.Rendering.CrossSection4.#ctor
+  fullName: Engine4.Rendering.CrossSection4.CrossSection4()
+  nameWithType: CrossSection4.CrossSection4()
+- uid: Engine4.Rendering.CrossSection4.#ctor*
+  name: CrossSection4
+  href: api/Engine4.Rendering.CrossSection4.html#Engine4_Rendering_CrossSection4__ctor_
+  commentId: Overload:Engine4.Rendering.CrossSection4.#ctor
+  fullName: Engine4.Rendering.CrossSection4.CrossSection4
+  nameWithType: CrossSection4.CrossSection4
+- uid: Engine4.Rendering.CrossSection4.SimplexModeForVisualizing(Engine4.SimplexMode)
+  name: SimplexModeForVisualizing(SimplexMode)
+  href: api/Engine4.Rendering.CrossSection4.html#Engine4_Rendering_CrossSection4_SimplexModeForVisualizing_Engine4_SimplexMode_
+  commentId: M:Engine4.Rendering.CrossSection4.SimplexModeForVisualizing(Engine4.SimplexMode)
+  fullName: Engine4.Rendering.CrossSection4.SimplexModeForVisualizing(Engine4.SimplexMode)
+  nameWithType: CrossSection4.SimplexModeForVisualizing(SimplexMode)
+- uid: Engine4.Rendering.CrossSection4.SimplexModeForVisualizing*
+  name: SimplexModeForVisualizing
+  href: api/Engine4.Rendering.CrossSection4.html#Engine4_Rendering_CrossSection4_SimplexModeForVisualizing_
+  commentId: Overload:Engine4.Rendering.CrossSection4.SimplexModeForVisualizing
+  fullName: Engine4.Rendering.CrossSection4.SimplexModeForVisualizing
+  nameWithType: CrossSection4.SimplexModeForVisualizing
 - uid: Engine4.Rendering.Cylinder4
   name: Cylinder4
   href: api/Engine4.Rendering.Cylinder4.html
@@ -5629,6 +5773,48 @@ references:
   commentId: Overload:Engine4.Rendering.Projector4.SimplexModeForVisualizing
   fullName: Engine4.Rendering.Projector4.SimplexModeForVisualizing
   nameWithType: Projector4.SimplexModeForVisualizing
+- uid: Engine4.Rendering.SolidExtended4
+  name: SolidExtended4
+  href: api/Engine4.Rendering.SolidExtended4.html
+  commentId: T:Engine4.Rendering.SolidExtended4
+  fullName: Engine4.Rendering.SolidExtended4
+  nameWithType: SolidExtended4
+- uid: Engine4.Rendering.SolidExtended4.#ctor
+  name: SolidExtended4()
+  href: api/Engine4.Rendering.SolidExtended4.html#Engine4_Rendering_SolidExtended4__ctor
+  commentId: M:Engine4.Rendering.SolidExtended4.#ctor
+  fullName: Engine4.Rendering.SolidExtended4.SolidExtended4()
+  nameWithType: SolidExtended4.SolidExtended4()
+- uid: Engine4.Rendering.SolidExtended4.#ctor*
+  name: SolidExtended4
+  href: api/Engine4.Rendering.SolidExtended4.html#Engine4_Rendering_SolidExtended4__ctor_
+  commentId: Overload:Engine4.Rendering.SolidExtended4.#ctor
+  fullName: Engine4.Rendering.SolidExtended4.SolidExtended4
+  nameWithType: SolidExtended4.SolidExtended4
+- uid: Engine4.Rendering.SolidExtended4.refineNormals
+  name: refineNormals
+  href: api/Engine4.Rendering.SolidExtended4.html#Engine4_Rendering_SolidExtended4_refineNormals
+  commentId: F:Engine4.Rendering.SolidExtended4.refineNormals
+  fullName: Engine4.Rendering.SolidExtended4.refineNormals
+  nameWithType: SolidExtended4.refineNormals
+- uid: Engine4.Rendering.SolidExtended4.smoothNormals
+  name: smoothNormals
+  href: api/Engine4.Rendering.SolidExtended4.html#Engine4_Rendering_SolidExtended4_smoothNormals
+  commentId: F:Engine4.Rendering.SolidExtended4.smoothNormals
+  fullName: Engine4.Rendering.SolidExtended4.smoothNormals
+  nameWithType: SolidExtended4.smoothNormals
+- uid: Engine4.Rendering.SolidExtended4.WorkingSimplexCase
+  name: WorkingSimplexCase
+  href: api/Engine4.Rendering.SolidExtended4.html#Engine4_Rendering_SolidExtended4_WorkingSimplexCase
+  commentId: P:Engine4.Rendering.SolidExtended4.WorkingSimplexCase
+  fullName: Engine4.Rendering.SolidExtended4.WorkingSimplexCase
+  nameWithType: SolidExtended4.WorkingSimplexCase
+- uid: Engine4.Rendering.SolidExtended4.WorkingSimplexCase*
+  name: WorkingSimplexCase
+  href: api/Engine4.Rendering.SolidExtended4.html#Engine4_Rendering_SolidExtended4_WorkingSimplexCase_
+  commentId: Overload:Engine4.Rendering.SolidExtended4.WorkingSimplexCase
+  fullName: Engine4.Rendering.SolidExtended4.WorkingSimplexCase
+  nameWithType: SolidExtended4.WorkingSimplexCase
 - uid: Engine4.Rendering.SolidVisualizer4
   name: SolidVisualizer4
   href: api/Engine4.Rendering.SolidVisualizer4.html
@@ -6001,138 +6187,24 @@ references:
   commentId: Overload:Engine4.Rigidbody4.WakeUp
   fullName: Engine4.Rigidbody4.WakeUp
   nameWithType: Rigidbody4.WakeUp
-- uid: Engine4.SequenceMode
-  name: SequenceMode
-  href: api/Engine4.SequenceMode.html
-  commentId: T:Engine4.SequenceMode
-  fullName: Engine4.SequenceMode
-  nameWithType: SequenceMode
-- uid: Engine4.SequenceMode.Cubes
-  name: Cubes
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Cubes
-  commentId: F:Engine4.SequenceMode.Cubes
-  fullName: Engine4.SequenceMode.Cubes
-  nameWithType: SequenceMode.Cubes
-- uid: Engine4.SequenceMode.CubeStrip
-  name: CubeStrip
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_CubeStrip
-  commentId: F:Engine4.SequenceMode.CubeStrip
-  fullName: Engine4.SequenceMode.CubeStrip
-  nameWithType: SequenceMode.CubeStrip
-- uid: Engine4.SequenceMode.LineFan
-  name: LineFan
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_LineFan
-  commentId: F:Engine4.SequenceMode.LineFan
-  fullName: Engine4.SequenceMode.LineFan
-  nameWithType: SequenceMode.LineFan
-- uid: Engine4.SequenceMode.LineLoop
-  name: LineLoop
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_LineLoop
-  commentId: F:Engine4.SequenceMode.LineLoop
-  fullName: Engine4.SequenceMode.LineLoop
-  nameWithType: SequenceMode.LineLoop
-- uid: Engine4.SequenceMode.Lines
-  name: Lines
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Lines
-  commentId: F:Engine4.SequenceMode.Lines
-  fullName: Engine4.SequenceMode.Lines
-  nameWithType: SequenceMode.Lines
-- uid: Engine4.SequenceMode.LineStrip
-  name: LineStrip
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_LineStrip
-  commentId: F:Engine4.SequenceMode.LineStrip
-  fullName: Engine4.SequenceMode.LineStrip
-  nameWithType: SequenceMode.LineStrip
-- uid: Engine4.SequenceMode.Points
-  name: Points
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Points
-  commentId: F:Engine4.SequenceMode.Points
-  fullName: Engine4.SequenceMode.Points
-  nameWithType: SequenceMode.Points
-- uid: Engine4.SequenceMode.Polygon
-  name: Polygon
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Polygon
-  commentId: F:Engine4.SequenceMode.Polygon
-  fullName: Engine4.SequenceMode.Polygon
-  nameWithType: SequenceMode.Polygon
-- uid: Engine4.SequenceMode.PrismFan
-  name: PrismFan
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_PrismFan
-  commentId: F:Engine4.SequenceMode.PrismFan
-  fullName: Engine4.SequenceMode.PrismFan
-  nameWithType: SequenceMode.PrismFan
-- uid: Engine4.SequenceMode.PyramidFan
-  name: PyramidFan
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_PyramidFan
-  commentId: F:Engine4.SequenceMode.PyramidFan
-  fullName: Engine4.SequenceMode.PyramidFan
-  nameWithType: SequenceMode.PyramidFan
-- uid: Engine4.SequenceMode.Quads
-  name: Quads
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Quads
-  commentId: F:Engine4.SequenceMode.Quads
-  fullName: Engine4.SequenceMode.Quads
-  nameWithType: SequenceMode.Quads
-- uid: Engine4.SequenceMode.QuadStrip
-  name: QuadStrip
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_QuadStrip
-  commentId: F:Engine4.SequenceMode.QuadStrip
-  fullName: Engine4.SequenceMode.QuadStrip
-  nameWithType: SequenceMode.QuadStrip
-- uid: Engine4.SequenceMode.TriangleFan
-  name: TriangleFan
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_TriangleFan
-  commentId: F:Engine4.SequenceMode.TriangleFan
-  fullName: Engine4.SequenceMode.TriangleFan
-  nameWithType: SequenceMode.TriangleFan
-- uid: Engine4.SequenceMode.Triangles
-  name: Triangles
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Triangles
-  commentId: F:Engine4.SequenceMode.Triangles
-  fullName: Engine4.SequenceMode.Triangles
-  nameWithType: SequenceMode.Triangles
-- uid: Engine4.SequenceMode.TriangleStrip
-  name: TriangleStrip
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_TriangleStrip
-  commentId: F:Engine4.SequenceMode.TriangleStrip
-  fullName: Engine4.SequenceMode.TriangleStrip
-  nameWithType: SequenceMode.TriangleStrip
-- uid: Engine4.SequenceMode.TrimidFan
-  name: TrimidFan
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_TrimidFan
-  commentId: F:Engine4.SequenceMode.TrimidFan
-  fullName: Engine4.SequenceMode.TrimidFan
-  nameWithType: SequenceMode.TrimidFan
-- uid: Engine4.SequenceMode.Trimids
-  name: Trimids
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_Trimids
-  commentId: F:Engine4.SequenceMode.Trimids
-  fullName: Engine4.SequenceMode.Trimids
-  nameWithType: SequenceMode.Trimids
-- uid: Engine4.SequenceMode.TrimidStrip
-  name: TrimidStrip
-  href: api/Engine4.SequenceMode.html#Engine4_SequenceMode_TrimidStrip
-  commentId: F:Engine4.SequenceMode.TrimidStrip
-  fullName: Engine4.SequenceMode.TrimidStrip
-  nameWithType: SequenceMode.TrimidStrip
 - uid: Engine4.SimplexMode
   name: SimplexMode
   href: api/Engine4.SimplexMode.html
   commentId: T:Engine4.SimplexMode
   fullName: Engine4.SimplexMode
   nameWithType: SimplexMode
+- uid: Engine4.SimplexMode.Line
+  name: Line
+  href: api/Engine4.SimplexMode.html#Engine4_SimplexMode_Line
+  commentId: F:Engine4.SimplexMode.Line
+  fullName: Engine4.SimplexMode.Line
+  nameWithType: SimplexMode.Line
 - uid: Engine4.SimplexMode.Point
   name: Point
   href: api/Engine4.SimplexMode.html#Engine4_SimplexMode_Point
   commentId: F:Engine4.SimplexMode.Point
   fullName: Engine4.SimplexMode.Point
   nameWithType: SimplexMode.Point
-- uid: Engine4.SimplexMode.Segment
-  name: Segment
-  href: api/Engine4.SimplexMode.html#Engine4_SimplexMode_Segment
-  commentId: F:Engine4.SimplexMode.Segment
-  fullName: Engine4.SimplexMode.Segment
-  nameWithType: SimplexMode.Segment
 - uid: Engine4.SimplexMode.Tetrahedron
   name: Tetrahedron
   href: api/Engine4.SimplexMode.html#Engine4_SimplexMode_Tetrahedron
@@ -7498,36 +7570,36 @@ references:
   commentId: F:Engine4.VisualizeMode.Custom
   fullName: Engine4.VisualizeMode.Custom
   nameWithType: VisualizeMode.Custom
-- uid: Engine4.VisualizeMode.Point
-  name: Point
-  href: api/Engine4.VisualizeMode.html#Engine4_VisualizeMode_Point
-  commentId: F:Engine4.VisualizeMode.Point
-  fullName: Engine4.VisualizeMode.Point
-  nameWithType: VisualizeMode.Point
-- uid: Engine4.VisualizeMode.Segment
-  name: Segment
-  href: api/Engine4.VisualizeMode.html#Engine4_VisualizeMode_Segment
-  commentId: F:Engine4.VisualizeMode.Segment
-  fullName: Engine4.VisualizeMode.Segment
-  nameWithType: VisualizeMode.Segment
-- uid: Engine4.VisualizeMode.Triangle
-  name: Triangle
-  href: api/Engine4.VisualizeMode.html#Engine4_VisualizeMode_Triangle
-  commentId: F:Engine4.VisualizeMode.Triangle
-  fullName: Engine4.VisualizeMode.Triangle
-  nameWithType: VisualizeMode.Triangle
+- uid: Engine4.VisualizeMode.Particle
+  name: Particle
+  href: api/Engine4.VisualizeMode.html#Engine4_VisualizeMode_Particle
+  commentId: F:Engine4.VisualizeMode.Particle
+  fullName: Engine4.VisualizeMode.Particle
+  nameWithType: VisualizeMode.Particle
+- uid: Engine4.VisualizeMode.Solid
+  name: Solid
+  href: api/Engine4.VisualizeMode.html#Engine4_VisualizeMode_Solid
+  commentId: F:Engine4.VisualizeMode.Solid
+  fullName: Engine4.VisualizeMode.Solid
+  nameWithType: VisualizeMode.Solid
+- uid: Engine4.VisualizeMode.Wire
+  name: Wire
+  href: api/Engine4.VisualizeMode.html#Engine4_VisualizeMode_Wire
+  commentId: F:Engine4.VisualizeMode.Wire
+  fullName: Engine4.VisualizeMode.Wire
+  nameWithType: VisualizeMode.Wire
 - uid: Extras
   name: Extras
-  href: articles/extras.html
+  href: manual/extras.html
 - uid: Modeling
   name: Modeling
-  href: articles/modeling.html
+  href: manual/modeling.html
 - uid: Physics
   name: Physics
-  href: articles/physics.html
+  href: manual/physics.html
 - uid: Rendering
   name: Rendering
-  href: articles/rendering.html
+  href: manual/rendering.html
 - uid: Scripting
   name: Scripting
-  href: articles/scripting.html
+  href: manual/scripting.html

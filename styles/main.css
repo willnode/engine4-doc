@@ -125,3 +125,33 @@ vertical-align:bottom;
 .sidefilter {
   top: 50px;
 }
+
+.toc-filter {
+    border-radius: 0px;
+}
+
+.form-control {
+  height:50px;
+  padding:0px 20px!important;
+  background-color:rgba(0,0,0,.0);
+  color:rgb(255, 255, 255);
+  border:0px solid #ccc;
+  border-radius:0px;
+ }
+
+.navbar-form{
+  width:40%;
+  margin:0px 0px;
+  padding:0px 0px;
+}
+.navbar-collapse {
+    padding-right: 0px;
+}
+
+.navbar-brand {
+  margin-right: 15px;
+}
+
+.navbar-brand :hover {
+ background-color:black; 
+}

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Frustum | Engine4 Manual </title>
+    <title> | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Frustum | Engine4 Manual ">
+    <meta name="title" content=" | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -67,8 +67,73 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="frustum">Frustum</h1>
+<h1 id="engine4renderingfrustum4"><a class="xref" href="../../../api/Engine4.Rendering.Frustum4.html">Frustum4</a></h1>
 
+<p>Frustum projection projects higher dimensional object by making &#39;far&#39; objects smaller.</p>
+<p>[demo]</p>
+<p>This kind of projection is what most people recognize as what is 4D objects looks like.</p>
+<h2 id="visualization-depedency">Visualization Depedency</h2>
+<table>
+<thead>
+<tr>
+<th>When renderer need # (visualization type)</th>
+<th>Give me # (simplex shape)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Particle</td>
+<td>Point</td>
+</tr>
+<tr>
+<td>Wire</td>
+<td>Line</td>
+</tr>
+<tr>
+<td>Solid</td>
+<td>Triangle</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Perspectiveness</td>
+<td>Orthographic to Perspective interpolation</td>
+</tr>
+<tr>
+<td>Focal length</td>
+<td>Inverse tangent of the FOV angle</td>
+</tr>
+<tr>
+<td>Near clip</td>
+<td>Nearest possible vertex distance before clipped</td>
+</tr>
+<tr>
+<td>Far clip</td>
+<td>Furthest possible vertex distance before clipped</td>
+</tr>
+<tr>
+<td>Shift clip</td>
+<td>Underward camera location offset relative to pivot</td>
+</tr>
+<tr>
+<td>Use Frustum Culling</td>
+<td>If yes, vertex will be culled using frustum cones</td>
+</tr>
+</tbody>
+</table>
+<p>[demographic]</p>
+<blockquote><p>[WARNING]
+There are known but rare issue where frustum culling might be broken if model were too close to the camera.</p>
+</blockquote>
 </article>
           </div>
         </div>

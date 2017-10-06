@@ -69,6 +69,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="profiles">Profiles</h1>
 
+<p>Profile is a way to add more vertex metadata (for instance, <code>color</code> and <code>uv</code>) and can be done directly by using the overloaded Buffer4.AddVertex</p>
+<div class="CAUTION"><h5>Caution</h5><p>Adding a vertex profile is possible but not fully supported and there&#39;s a chance that this behaviour changed in future version</p>
+</div>
+<div class="NOTE"><h5>Note</h5><p>Even you specify profile to the buffer, It won&#39;t work if @Engine4.Renderer4.Profile is set to <code>none</code></p>
+</div>
+<div class="TIP"><h5>Tip</h5><p>You can check <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_useProfile">useProfile</a> to see if adding profiles are necessary.</p>
+</div>
 </article>
           </div>
         </div>

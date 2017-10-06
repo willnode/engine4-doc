@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Rigid4Example
+    <title>Class SolidExtended4
    | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Rigid4Example
+    <meta name="title" content="Class SolidExtended4
    | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -68,35 +68,71 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Engine4.Example.Rigid4Example">
+            <article class="content wrap" id="_content" data-uid="Engine4.Rendering.SolidExtended4">
   
   
-  <h1 id="Engine4_Example_Rigid4Example" data-uid="Engine4.Example.Rigid4Example" class="text-break">Class Rigid4Example
+  <h1 id="Engine4_Rendering_SolidExtended4" data-uid="Engine4.Rendering.SolidExtended4" class="text-break">Class SolidExtended4
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Extended particle visualizer.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Rigid4Example : MonoBehaviour4</code></pre>
+    <pre><code class="lang-csharp hljs">public class SolidExtended4 : Visualizer4, IVisualizer</code></pre>
   </div>
   <div class="namespace">
-  <h5>Namespace <a class="xref" href="Engine4.Example.html">Engine4.Example</a></h5>
+  <h5>Namespace <a class="xref" href="Engine4.Rendering.html">Engine4.Rendering</a></h5>
+  </div>
+  <div class="implements">
+    <h5>Implements <a class="xref" href="Engine4.Rendering.IVisualizer.html">IVisualizer</a></h5>
   </div>
   <div class="inheritance">
     <h5>Inheritance </h5>
-     <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.MonoBehaviour4.html">MonoBehaviour4</a></div>  
-    <div class="level2"><span class="xref">Rigid4Example</span></div>  
+     <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.MonoBehaviour4.html">MonoBehaviour4</a></div>  <div class="level2"><a class="xref" href="Engine4.Rendering.Visualizer4.html">Visualizer4</a></div>  
+    <div class="level3"><span class="xref">SolidExtended4</span></div>  
   <div class="derivations">
     
   </div>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="Engine4_Example_Rigid4Example__ctor_" data-uid="Engine4.Example.Rigid4Example.#ctor*"></a>
-  <h4 id="Engine4_Example_Rigid4Example__ctor" data-uid="Engine4.Example.Rigid4Example.#ctor">Rigid4Example()</h4>
+  <a id="Engine4_Rendering_SolidExtended4__ctor_" data-uid="Engine4.Rendering.SolidExtended4.#ctor*"></a>
+  <h4 id="Engine4_Rendering_SolidExtended4__ctor" data-uid="Engine4.Rendering.SolidExtended4.#ctor">SolidExtended4()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Rigid4Example()</code></pre>
+    <pre><code class="lang-csharp hljs">public SolidExtended4()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <h4 id="Engine4_Rendering_SolidExtended4_refineNormals" data-uid="Engine4.Rendering.SolidExtended4.refineNormals">refineNormals</h4>
+  <div class="markdown level1 summary"><p>Make normal consistent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool refineNormals</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_SolidExtended4_smoothNormals" data-uid="Engine4.Rendering.SolidExtended4.smoothNormals">smoothNormals</h4>
+  <div class="markdown level1 summary"><p>Make normal smooth by merging vertices</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool smoothNormals</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Rendering_SolidExtended4_WorkingSimplexCase_" data-uid="Engine4.Rendering.SolidExtended4.WorkingSimplexCase*"></a>
+  <h4 id="Engine4_Rendering_SolidExtended4_WorkingSimplexCase" data-uid="Engine4.Rendering.SolidExtended4.WorkingSimplexCase">WorkingSimplexCase</h4>
+  <div class="markdown level1 summary"><p>Always return <a class="xref" href="Engine4.SimplexMode.html#Engine4_SimplexMode_Triangle">Triangle</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SimplexMode WorkingSimplexCase { get; }</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Engine4.Rendering.Visualizer4.html#Engine4_Rendering_Visualizer4_WorkingSimplexCase">Visualizer4.WorkingSimplexCase</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Engine4.Rendering.IVisualizer.html">IVisualizer</a>
   </div>
 </article>
           </div>

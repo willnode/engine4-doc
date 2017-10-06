@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../logo.svg" alt="">
+                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -73,7 +73,8 @@
   
   <h1 id="Engine4_Rendering_CrossSection4" data-uid="Engine4.Rendering.CrossSection4" class="text-break">Class CrossSection4
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Projection helper using Cross section technique.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class CrossSection4 : Projector4</code></pre>
@@ -89,6 +90,10 @@
     
   </div>
   </div>
+  <h5 id="Engine4_Rendering_CrossSection4_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Cross section project model by cutting it in half. 
+<a href="/manual/rendering/projections/crosssection.md">Manual</a>.</p>
+</div>
   <h3 id="constructors">Constructors
   </h3>
   <a id="Engine4_Rendering_CrossSection4__ctor_" data-uid="Engine4.Rendering.CrossSection4.#ctor*"></a>
@@ -100,63 +105,10 @@
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Engine4_Rendering_CrossSection4_IsCullable_" data-uid="Engine4.Rendering.CrossSection4.IsCullable*"></a>
-  <h4 id="Engine4_Rendering_CrossSection4_IsCullable_Engine4_Bounds4_" data-uid="Engine4.Rendering.CrossSection4.IsCullable(Engine4.Bounds4)">IsCullable(Bounds4)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool IsCullable(Bounds4 bound)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_IsCullable_Engine4_Bounds4_">Projector4.IsCullable(Bounds4)</a></div>
-  <a id="Engine4_Rendering_CrossSection4_Project_" data-uid="Engine4.Rendering.CrossSection4.Project*"></a>
-  <h4 id="Engine4_Rendering_CrossSection4_Project_Engine4_Buffer4_Engine4_Matrix4x5_Engine4_Rendering_IVisualizer_" data-uid="Engine4.Rendering.CrossSection4.Project(Engine4.Buffer4,Engine4.Matrix4x5,Engine4.Rendering.IVisualizer)">Project(Buffer4, Matrix4x5, IVisualizer)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Project(Buffer4 source, Matrix4x5 transform, IVisualizer dest)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_Project_Engine4_Buffer4_Engine4_Matrix4x5_Engine4_Rendering_IVisualizer_">Projector4.Project(Buffer4, Matrix4x5, IVisualizer)</a></div>
-  <a id="Engine4_Rendering_CrossSection4_Project_" data-uid="Engine4.Rendering.CrossSection4.Project*"></a>
-  <h4 id="Engine4_Rendering_CrossSection4_Project_Engine4_Buffer4_System_Collections_Generic_List_Engine4_Vector4__Engine4_Rendering_IVisualizer_" data-uid="Engine4.Rendering.CrossSection4.Project(Engine4.Buffer4,System.Collections.Generic.List{Engine4.Vector4},Engine4.Rendering.IVisualizer)">Project(Buffer4, List&lt;Vector4&gt;, IVisualizer)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Project(Buffer4 source, List&lt;Vector4&gt; vectors, IVisualizer dest)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_Project_Engine4_Buffer4_System_Collections_Generic_List_Engine4_Vector4__Engine4_Rendering_IVisualizer_">Projector4.Project(Buffer4, List&lt;Vector4&gt;, IVisualizer)</a></div>
-  <a id="Engine4_Rendering_CrossSection4_Project_" data-uid="Engine4.Rendering.CrossSection4.Project*"></a>
-  <h4 id="Engine4_Rendering_CrossSection4_Project_Engine4_Vector4_" data-uid="Engine4.Rendering.CrossSection4.Project(Engine4.Vector4)">Project(Vector4)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Vector3 Project(Vector4 v)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_Project_Engine4_Vector4_">Projector4.Project(Vector4)</a></div>
-  <a id="Engine4_Rendering_CrossSection4_Project_" data-uid="Engine4.Rendering.CrossSection4.Project*"></a>
-  <h4 id="Engine4_Rendering_CrossSection4_Project_Engine4_Vector4_System_Boolean__" data-uid="Engine4.Rendering.CrossSection4.Project(Engine4.Vector4,System.Boolean@)">Project(Vector4, out Boolean)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Vector3 Project(Vector4 v, out bool culled)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_Project_Engine4_Vector4_System_Boolean__">Projector4.Project(Vector4, out Boolean)</a></div>
-  <a id="Engine4_Rendering_CrossSection4_Setup_" data-uid="Engine4.Rendering.CrossSection4.Setup*"></a>
-  <h4 id="Engine4_Rendering_CrossSection4_Setup_Engine4_Matrix4x5_" data-uid="Engine4.Rendering.CrossSection4.Setup(Engine4.Matrix4x5)">Setup(Matrix4x5)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Setup(Matrix4x5 viewer)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Engine4.Rendering.Projector4.html#Engine4_Rendering_Projector4_Setup_Engine4_Matrix4x5_">Projector4.Setup(Matrix4x5)</a></div>
   <a id="Engine4_Rendering_CrossSection4_SimplexModeForVisualizing_" data-uid="Engine4.Rendering.CrossSection4.SimplexModeForVisualizing*"></a>
   <h4 id="Engine4_Rendering_CrossSection4_SimplexModeForVisualizing_Engine4_SimplexMode_" data-uid="Engine4.Rendering.CrossSection4.SimplexModeForVisualizing(Engine4.SimplexMode)">SimplexModeForVisualizing(SimplexMode)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>This method always return the higher version from the simplex.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public override SimplexMode SimplexModeForVisualizing(SimplexMode mode)</code></pre>

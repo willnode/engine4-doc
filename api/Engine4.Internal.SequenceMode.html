@@ -68,10 +68,10 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Engine4.SequenceMode">
+            <article class="content wrap" id="_content" data-uid="Engine4.Internal.SequenceMode">
   
   
-  <h1 id="Engine4_SequenceMode" data-uid="Engine4.SequenceMode" class="text-break">Enum SequenceMode
+  <h1 id="Engine4_Internal_SequenceMode" data-uid="Engine4.Internal.SequenceMode" class="text-break">Enum SequenceMode
   </h1>
   <div class="markdown level0 summary"><p>Sequincing preset to define the order of indices </p>
 </div>
@@ -79,12 +79,12 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum SequenceMode</code></pre>
   </div>
-  <h5 id="Engine4_SequenceMode_remarks"><strong>Remarks</strong></h5>
+  <h5 id="Engine4_Internal_SequenceMode_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>It&apos;s recommended to choose based on the simplex type </p>
 </div>
-  <h5 id="Engine4_SequenceMode_seealso">See Also</h5>
+  <h5 id="Engine4_Internal_SequenceMode_seealso">See Also</h5>
   <div class="seealso">
-      <div><a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Sequence_Engine4_SequenceMode_">Sequence(SequenceMode)</a></div>
+      <div><a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_">Sequence</a>(<a class="xref" href="Engine4.Buffer4.html">Buffer4</a>, <a class="xref" href="Engine4.Internal.SequenceMode.html">SequenceMode</a>)</div>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -97,92 +97,92 @@
     <thead>
     <tbody>
       <tr>
-        <td id="Engine4_SequenceMode_Cubes">Cubes</td>
+        <td id="Engine4_Internal_SequenceMode_Cubes">Cubes</td>
         <td><p>Individual Cubes: 0,1,2,3,4 - 0,5,6,7,8 ... 0,n-3,n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_CubeStrip">CubeStrip</td>
+        <td id="Engine4_Internal_SequenceMode_CubeStrip">CubeStrip</td>
         <td><p>Continous Cube: 0,1,2,3,4 - 0,5,6,7,8 ... 0,n-3,n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_LineFan">LineFan</td>
+        <td id="Engine4_Internal_SequenceMode_LineFan">LineFan</td>
         <td><p>Branched Segments: 0,1 - 0,2 - 0,3 ... 0,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_LineLoop">LineLoop</td>
+        <td id="Engine4_Internal_SequenceMode_LineLoop">LineLoop</td>
         <td><p>Continous Cycled Segments: 0,1 - 1,2 - 2,3 ... n,0 </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_Lines">Lines</td>
+        <td id="Engine4_Internal_SequenceMode_Lines">Lines</td>
         <td><p>Individual Segments: 0,1 - 2,3 - 4,5 ... n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_LineStrip">LineStrip</td>
+        <td id="Engine4_Internal_SequenceMode_LineStrip">LineStrip</td>
         <td><p>Continous Segments: 0,1 - 1,2 - 2,3 ... n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_Points">Points</td>
+        <td id="Engine4_Internal_SequenceMode_Points">Points</td>
         <td><p>Individual Points: 0 - 1 - 2 - 3 ... n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_Polygon">Polygon</td>
+        <td id="Engine4_Internal_SequenceMode_Polygon">Polygon</td>
         <td><p>Branched Cycled Triangles: 0,1,2 - 0,2,3 ... 0,n,1 </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_PrismFan">PrismFan</td>
-        <td><p>Branched Prism: 0,1,2,3,4 - 0,5,6,7,8 ... 0,n-3,n-2,n-1,n </p>
+        <td id="Engine4_Internal_SequenceMode_PrismFan">PrismFan</td>
+        <td><p>Branched Prism: 2,3,0,5,4,1 - 6,7,0,9,8,1 ... n-3,n-2,0,n,n-1,1 </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_PyramidFan">PyramidFan</td>
+        <td id="Engine4_Internal_SequenceMode_PyramidFan">PyramidFan</td>
         <td><p>Branched Pyramids: 0,1,2,3,4 - 0,5,6,7,8 ... 0,n-3,n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_Quads">Quads</td>
+        <td id="Engine4_Internal_SequenceMode_Quads">Quads</td>
         <td><p>Individual Quads: 0,1,2,3 - 4,5,6,7 ... n-3,n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_QuadStrip">QuadStrip</td>
+        <td id="Engine4_Internal_SequenceMode_QuadStrip">QuadStrip</td>
         <td><p>Continous Quads: 0,1,3,2 - 2,3,5,4 ... n-3,n-2,n,n-1 </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_TriangleFan">TriangleFan</td>
+        <td id="Engine4_Internal_SequenceMode_TriangleFan">TriangleFan</td>
         <td><p>Branched Triangles: 0,1,2 - 0,2,3 ... 0,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_Triangles">Triangles</td>
+        <td id="Engine4_Internal_SequenceMode_Triangles">Triangles</td>
         <td><p>Individual Triangles: 0,1,2 - 3,4,5 ... n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_TriangleStrip">TriangleStrip</td>
+        <td id="Engine4_Internal_SequenceMode_TriangleStrip">TriangleStrip</td>
         <td><p>Continous Triangles: 0,1,2 - 1,2,3 ... n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_TrimidFan">TrimidFan</td>
+        <td id="Engine4_Internal_SequenceMode_TrimidFan">TrimidFan</td>
         <td><p>Branched Trimids: 0,1,2,3 - 0,4,5,6 ... 0,n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_Trimids">Trimids</td>
+        <td id="Engine4_Internal_SequenceMode_Trimids">Trimids</td>
         <td><p>Individual Trimids: 0,1,2,3 - 4,5,6,7 ... n-3,n-2,n-1,n </p>
 </td>
       </tr>
       <tr>
-        <td id="Engine4_SequenceMode_TrimidStrip">TrimidStrip</td>
+        <td id="Engine4_Internal_SequenceMode_TrimidStrip">TrimidStrip</td>
         <td><p>Continous Trimids: 0,1,2,3 - 1,2,3,4 ... n-3,n-2,n-1,n </p>
 </td>
       </tr>

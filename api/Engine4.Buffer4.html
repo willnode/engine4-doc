@@ -143,7 +143,7 @@ Useful if you want to create a custom shape blocks.</p>
     <pre><code class="lang-csharp hljs">public SimplexMode simplex</code></pre>
   </div>
   <h5 id="Engine4_Buffer4_simplex_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Public for convenience. DO NOT SET MANUALLY. </p>
+  <div class="markdown level1 remarks"><p>Public for convenience. <strong>ONLY SET WHEN ISEMPTY IS TRUE.</strong> </p>
 </div>
   <h4 id="Engine4_Buffer4_useProfile" data-uid="Engine4.Buffer4.useProfile">useProfile</h4>
   <div class="markdown level1 summary"><p>Is it necessary to collect vertex profiles? </p>
@@ -228,71 +228,71 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddTrimid(int v0, int v1, int v2, int v3)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4)">AddVert(Vector4)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4)">AddVertex(Vector4)</h4>
   <div class="markdown level1 summary"><p>Add a vertex with default profile and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.Vector4)">AddVert(Vector4, Vector4)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.Vector4)">AddVertex(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Add a vertex with given uv and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Vector4 uv)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Vector4 uv)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_Engine4_VertexProfile_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,Engine4.VertexProfile)">AddVert(Vector4, VertexProfile)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_VertexProfile_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.VertexProfile)">AddVertex(Vector4, VertexProfile)</h4>
   <div class="markdown level1 summary"><p>Add a vertex and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, VertexProfile profile)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, VertexProfile profile)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color)">AddVert(Vector4, Color)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color)">AddVertex(Vector4, Color)</h4>
   <div class="markdown level1 summary"><p>Add a vertex with given color and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Color color)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Color color)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)">AddVert(Vector4, Color, Vector4)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)">AddVertex(Vector4, Color, Vector4)</h4>
   <div class="markdown level1 summary"><p>Add a vertex with given color, uv and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Color color, Vector4 uv)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Color color, Vector4 uv)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">AddVert(Vector4, Color, Vector4, Vector4, Vector4)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">AddVertex(Vector4, Color, Vector4, Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Add a vertex with given color, uv, uv2, uv3 and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vector4 vert, Color color, Vector4 uv, Vector4 uv2, Vector4 uv3)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Color color, Vector4 uv, Vector4 uv2, Vector4 uv3)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_Engine4_Vertex4_" data-uid="Engine4.Buffer4.AddVert(Engine4.Vertex4)">AddVert(Vertex4)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vertex4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vertex4)">AddVertex(Vertex4)</h4>
   <div class="markdown level1 summary"><p>Add a vertex and return the index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(Vertex4 vertex)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(Vertex4 vertex)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_AddVert_" data-uid="Engine4.Buffer4.AddVert*"></a>
-  <h4 id="Engine4_Buffer4_AddVert_System_Int32_" data-uid="Engine4.Buffer4.AddVert(System.Int32)">AddVert(Int32)</h4>
+  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
+  <h4 id="Engine4_Buffer4_AddVertex_System_Int32_" data-uid="Engine4.Buffer4.AddVertex(System.Int32)">AddVertex(Int32)</h4>
   <div class="markdown level1 summary"><p>Duplicate vertex and return the cloned index </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVert(int idx)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddVertex(int idx)</code></pre>
   </div>
-  <h5 id="Engine4_Buffer4_AddVert_System_Int32__remarks">Remarks</h5>
+  <h5 id="Engine4_Buffer4_AddVertex_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Useful for sequencing operations </p>
 </div>
   <a id="Engine4_Buffer4_Align_" data-uid="Engine4.Buffer4.Align*"></a>
@@ -304,7 +304,7 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
     <pre><code class="lang-csharp hljs">public void Align()</code></pre>
   </div>
   <h5 id="Engine4_Buffer4_Align_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Align are handy if used together with bulk operations (e.g. <a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Sequence_Engine4_SequenceMode_">Sequence(SequenceMode)</a>)</p>
+  <div class="markdown level1 remarks"><p>Align are handy if used together with bulk operations (e.g. <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_">Sequence(Buffer4, SequenceMode)</a>)</p>
 </div>
   <a id="Engine4_Buffer4_Align_" data-uid="Engine4.Buffer4.Align*"></a>
   <h4 id="Engine4_Buffer4_Align_System_Int32_" data-uid="Engine4.Buffer4.Align(System.Int32)">Align(Int32)</h4>
@@ -337,22 +337,6 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear(SimplexMode mode)</code></pre>
   </div>
-  <a id="Engine4_Buffer4_Colorize_" data-uid="Engine4.Buffer4.Colorize*"></a>
-  <h4 id="Engine4_Buffer4_Colorize_UnityEngine_Color_" data-uid="Engine4.Buffer4.Colorize(UnityEngine.Color)">Colorize(Color)</h4>
-  <div class="markdown level1 summary"><p>Set the color of vertices since last Align() </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Colorize(Color color)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_Colorize_" data-uid="Engine4.Buffer4.Colorize*"></a>
-  <h4 id="Engine4_Buffer4_Colorize_UnityEngine_Gradient_" data-uid="Engine4.Buffer4.Colorize(UnityEngine.Gradient)">Colorize(Gradient)</h4>
-  <div class="markdown level1 summary"><p>Set the color of vertices since last Align() </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Colorize(Gradient color)</code></pre>
-  </div>
   <a id="Engine4_Buffer4_IsEmpty_" data-uid="Engine4.Buffer4.IsEmpty*"></a>
   <h4 id="Engine4_Buffer4_IsEmpty" data-uid="Engine4.Buffer4.IsEmpty">IsEmpty()</h4>
   <div class="markdown level1 summary"><p>Is the buffer empty? </p>
@@ -361,37 +345,6 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
   </div>
-  <a id="Engine4_Buffer4_Sequence_" data-uid="Engine4.Buffer4.Sequence*"></a>
-  <h4 id="Engine4_Buffer4_Sequence_Engine4_SequenceMode_" data-uid="Engine4.Buffer4.Sequence(Engine4.SequenceMode)">Sequence(SequenceMode)</h4>
-  <div class="markdown level1 summary"><p>Automatically add vertices to indices buffer 
-since last Align() using given sequencing preset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Sequence(SequenceMode mode)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_Sequence_" data-uid="Engine4.Buffer4.Sequence*"></a>
-  <h4 id="Engine4_Buffer4_Sequence_Engine4_SequenceMode_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.Sequence(Engine4.SequenceMode,System.Int32,System.Int32)">Sequence(SequenceMode, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Automatically add vertices to indices buffer 
-since last Align() using given sequencing preset.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Sequence(SequenceMode mode, int start = 0, int count = -1)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_SequenceGrid_" data-uid="Engine4.Buffer4.SequenceGrid*"></a>
-  <h4 id="Engine4_Buffer4_SequenceGrid_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.SequenceGrid(System.Int32,System.Int32,System.Int32,System.Int32)">SequenceGrid(Int32, Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Special sequencing tool when dealing with 1D, 2D, 3D or 4D grid vertices.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SequenceGrid(int x, int y = 1, int z = 1, int w = 1)</code></pre>
-  </div>
-  <h5 id="Engine4_Buffer4_SequenceGrid_System_Int32_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Set the grid count in the parameter.
-The nested order is for(x) =&gt; for(y) =&gt; for(z) =&gt; for(w).
-the starting point is always from the last Align()</p>
-</div>
   <a id="Engine4_Buffer4_Snapshot_" data-uid="Engine4.Buffer4.Snapshot*"></a>
   <h4 id="Engine4_Buffer4_Snapshot" data-uid="Engine4.Buffer4.Snapshot">Snapshot()</h4>
   <div class="markdown level1 summary"><p>Send copy of current buffer position to be reused later.</p>
@@ -404,25 +357,9 @@ the starting point is always from the last Align()</p>
   <div class="seealso">
       <div><a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Align_System_Int32_">Align(Int32)</a></div>
   </div>
-  <a id="Engine4_Buffer4_Transform_" data-uid="Engine4.Buffer4.Transform*"></a>
-  <h4 id="Engine4_Buffer4_Transform_Engine4_Matrix4x5_" data-uid="Engine4.Buffer4.Transform(Engine4.Matrix4x5)">Transform(Matrix4x5)</h4>
-  <div class="markdown level1 summary"><p>Transform vertices since last Align() </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Transform(Matrix4x5 matrix)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_Transform_" data-uid="Engine4.Buffer4.Transform*"></a>
-  <h4 id="Engine4_Buffer4_Transform_Engine4_Matrix4x5_Engine4_Vector4_" data-uid="Engine4.Buffer4.Transform(Engine4.Matrix4x5,Engine4.Vector4)">Transform(Matrix4x5, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Translate and Transform vertices since last Align() </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Transform(Matrix4x5 matrix, Vector4 center)</code></pre>
-  </div>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
-      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_SequenceMode_System_Int32___">Buffer4Extension.AddBySequence(Buffer4, SequenceMode, Int32[])</a>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32___">Buffer4Extension.AddBySequence(Buffer4, SequenceMode, Int32[])</a>
   </div>
   <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddPoint(Buffer4, Int32[])</a>
@@ -441,6 +378,27 @@ the starting point is always from the last Align()</p>
   </div>
   <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPolygon_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddPolygon(Buffer4, Int32[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Transform_Engine4_Buffer4_Engine4_Matrix4x5_">Buffer4Extension.Transform(Buffer4, Matrix4x5)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Transform_Engine4_Buffer4_Engine4_Matrix4x5_Engine4_Vector4_">Buffer4Extension.Transform(Buffer4, Matrix4x5, Vector4)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Color_">Buffer4Extension.Colorize(Buffer4, Color)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Gradient_">Buffer4Extension.Colorize(Buffer4, Gradient)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_">Buffer4Extension.Sequence(Buffer4, SequenceMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32_System_Int32_">Buffer4Extension.Sequence(Buffer4, SequenceMode, Int32, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_SequenceGrid_Engine4_Buffer4_System_Int32_System_Int32_System_Int32_System_Int32_">Buffer4Extension.SequenceGrid(Buffer4, Int32, Int32, Int32, Int32)</a>
   </div>
 </article>
           </div>

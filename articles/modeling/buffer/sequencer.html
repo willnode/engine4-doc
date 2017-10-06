@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Sequencer | Engine4 Manual </title>
+    <title>Sequence | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Sequencer | Engine4 Manual ">
+    <meta name="title" content="Sequence | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -67,8 +67,51 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="sequencer">Sequencer</h1>
+<h1 id="sequence">Sequence</h1>
 
+<p>Besides Building Blocks, Buffer4 has another concept called <strong>Sequence</strong>.</p>
+<p>To access this feature, make sure the script header contains:</p>
+<pre><code class="lang-c#">using Engine4.Internal; // Sequencer (and other tools) is an extension method inside this namespace
+</code></pre><h2 id="example">Example</h2>
+<p>Suppose you want to create a looping lines that connects 20 vertices.</p>
+<pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer)
+{
+    for(int i = 0; i &lt; 20; i++)
+        buffer.AddVertex(new Vector4(i,0,0,0)); // create vertex
+
+    for(int i = 0; i &lt; 20; i++)
+        buffer.AddSegment(i, (i + 1) % 20); // clever, doesn&#39;t it?
+}
+</code></pre><p>Instead of loop, you can simplify the segment creation with a single line.</p>
+<pre><code class="lang-c#">   // for(int i = 0; i &lt; 20; i++)
+   //     buffer.AddSegment(i, (i + 1) % 20); 
+    buffer.Sequence(SequenceMode.LineLoop); // cool!
+</code></pre><p>This is one of many <a class="xref" href="../../../api/Engine4.Internal.SequenceMode.html">sequencing presets</a>.</p>
+<p>[sequencepresets]</p>
+<h2 id="grid-sequence">Grid Sequence</h2>
+<p>With <a class="xref" href="../../../api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_SequenceGrid_Engine4_Buffer4_System_Int32_System_Int32_System_Int32_System_Int32_">GridSequence</a> Creating grid based model become a lot easier.</p>
+<pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer) // creating tesseract
+{
+    for(int x = -1; x &lt;= 1; x+=2)
+        for(int y = -1; y &lt;= 1; y+=2)
+            for(int z = -1; z &lt;= 1; z+=2)
+                for(int w = -1; w &lt;= 1; w+=2)
+                    buffer.AddVertex(new Vector4(x,y,z,w)); // create vertex
+
+    buffer.SequenceGrid(2, 2, 2, 2); // Done!
+}
+</code></pre><h2 id="direct-sequence">Direct Sequence</h2>
+<p>C# have <code>params</code> which in turn gives power for lazy developers to get things done beautifully. In another words, this allows you to call multiple <code>AddXXX()</code> in single call.</p>
+<pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer) // Read from mesh
+{
+    Mesh mesh = GetComponent&lt;MeshFilter&gt;().sharedMesh; // get mesh
+    buffer.AddVertex(Array.Convert(mesh.vertices, (v) =&gt; (Vector4)v)); // push vertices
+    buffer.AddTriangle(mesh.triangles); // push triangles
+}
+</code></pre><p>If these building blocks doesn&#39;t fit to your case, you can directly sequence over <code>params</code> by calling <a class="xref" href="../../../api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32___">AddBySequence</a>.</p>
+<pre><code class="lang-c#">buffer.AddBySequence(SequenceMode.LineLoop, a, b, c, d, e, f, g, h, x, x, x); // Do whatever you like to do
+</code></pre><div class="NOTE"><h5>Note</h5><p>While <code>params</code> usage may impacting performance, it actually doesn&#39;t. In most cases Modeler4 only be called [once] per scene lifetime.</p>
+</div>
 </article>
           </div>
         </div>

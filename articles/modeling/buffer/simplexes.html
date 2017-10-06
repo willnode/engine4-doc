@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Simplex | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Simplex | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../../../favicon.ico">
+    <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../../styles/docfx.css">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <meta property="docfx:navrel" content="../../../toc.html">
+    <meta property="docfx:tocrel" content="../../toc.html">
+    
+    <meta property="docfx:rel" content="../../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../../index.html">
+                <img id="logo" class="svg" src="../../../images/Engine4-Logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="simplex">Simplex</h1>
+
+<p>The simplest shape that you can build for the N-dimension is called <code>Simplex</code>. Alternatively, every simplex-N has it own familiar name:</p>
+<table>
+<thead>
+<tr>
+<th>#-Simplex</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-Simplex</td>
+<td>Point</td>
+</tr>
+<tr>
+<td>1-Simplex</td>
+<td>Segment</td>
+</tr>
+<tr>
+<td>2-Simplex</td>
+<td>Triangle</td>
+</tr>
+<tr>
+<td>3-Simplex</td>
+<td>Tetrahedron</td>
+</tr>
+</tbody>
+</table>
+<p>Why this is matter? While 3D mesh are built with either points, segments or triangles, Buffer4 will allow you to <strong>create models from tethrahedrons</strong>. The benefit is not just stop there, if you have seen <a class="xref" href="../../../api/Engine4.Renderer4.html">Renderer4</a> (click if you haven&#39;t read yet) then you know this legit dropdown:</p>
+<p>[visualizerchoices]</p>
+<p>Can generate the same shapes, but in different simplexes:</p>
+<p>[visualizerinaction]</p>
+<p>This can happen because in very basic level All Modeler4 should be restricted by its <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_simplex">simplex mode</a>:</p>
+<pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer)
+{
+    // Build vertices here: buffer.AddVertex()
+    switch(buffer.simplex) // The buffer mode is determined internally based on the selected visualization mode 
+    {
+        case SimplexMode.Point: /* build the model based on points: buffer.AddPoint() */ break;
+        case SimplexMode.Segment: /* build the model based on segments: buffer.AddSegment() */ break;
+        case SimplexMode.Triangle:  /* build the model based on triangles: buffer.AddTriangle() */ break;
+        case SimplexMode.Tetrahedron:  /* build the model based on tetrahedrons: buffer.AddTrimid() */ break;
+    }
+}
+</code></pre><h2 id="building-blocks">Building Blocks</h2>
+<p>To make building model easier (despite the fact <code>buffer.simplex</code> may make things harder), Buffer4 uses a better way to build a model, that is based on <strong>Building Blocks</strong>.</p>
+<p>In short summary you may use <code>AddPoint()</code> <code>AddSegment()</code> <code>AddTriangle()</code> <code>AddTrimid()</code> for each matching <code>SimplexMode</code>, but assuming these as a builing blocks, you can <em>cross-use</em> the functions together.</p>
+<h2 id="cross-use-benefits">Cross-use benefits</h2>
+<p>Suppose you write this code:</p>
+<pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer)
+{
+    buffer.AddVert(new Vector4(0,0,0,0));
+    buffer.AddVert(new Vector4(1,0,0,0));
+    buffer.AddVert(new Vector4(2,0,0,0));
+    buffer.AddTriangle(0, 1, 2); // vertex index
+}
+</code></pre><p><em>oh my bad, I didn&#39;t follow guideline. Should I fix it?</em></p>
+<p>Not necessarily. Engine4 will <em>adapt</em> the code. This code:</p>
+<pre><code class="lang-c#">    buffer.AddTriangle(0, 1, 2); // vertex index
+</code></pre><p>Is logically turned to this if <code>buffer.simplex</code> is <code>SimplexMode.Point</code>:</p>
+<pre><code class="lang-c#">    buffer.AddPoint(0); // vertex index
+    buffer.AddPoint(1); // vertex index
+    buffer.AddPoint(2); // vertex index
+</code></pre><p>Or better yet, <code>SimplexMode.Segment</code>:</p>
+<pre><code class="lang-c#">    buffer.AddPoint(0, 1); // vertex index
+    buffer.AddPoint(1, 2); // vertex index
+    buffer.AddPoint(2, 0); // vertex index
+</code></pre><p>This is because a <em>triangle</em> can be breaked down into <em>segments</em> or <em>points</em>. Engine4 will adapt the code for you.</p>
+<p>However this didn&#39;t apply if <code>buffer.simplex</code> is higher in dimension than the shape itself:</p>
+<pre><code class="lang-c#">    // How do you logically break triangles to tetrahedron? (no idea)
+</code></pre><p>If this happen, it simply does nothing.</p>
+<h2 id="better-building-blocks">Better Building Blocks</h2>
+<p>In addition to four primitive shapes, <a class="xref" href="../../../api/Engine4.Buffer4.html">Buffer4</a> also has been equipped with additional common shapes to make things easier:</p>
+<ul>
+<li><a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_AddQuad_System_Int32_System_Int32_System_Int32_System_Int32_">AddQuad</a></li>
+<li><a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_AddPyramid_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">AddPyramid</a></li>
+<li><a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_AddPrism_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">AddPrism</a></li>
+<li><a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_AddCube_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">AddCube</a></li>
+<li><a class="xref" href="../../../api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPolygon_Engine4_Buffer4_System_Int32___">AddPolygon</a></li>
+</ul>
+<p><a href="sequencer.html">There is still more here</a></p>
+<p>The illustration below explains the vertex sequence that should be follow for these additional building blocks:</p>
+<p>[illustration]</p>
+<h2 id="why-need-tetrahedron">Why need Tetrahedron?</h2>
+<p>Because cross section projection requires one higher level of given simplex mode. (<a href="/manual/basics/4d/projection.md">more info here</a>).</p>
+<p>This means while <a class="xref" href="../../../api/Engine4.Rendering.Frustum4.html">Frustum4</a> requires the same level (e.g. <code>Solid</code> -&gt; <code>Triangle</code>), <a class="xref" href="../../../api/Engine4.Rendering.CrossSection4.html">CrossSection4</a> does need its higher level (e.g. <code>Solid</code> -&gt; <code>Tetrahedron</code>). </p>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../../styles/main.js"></script>
+  </body>
+</html>
