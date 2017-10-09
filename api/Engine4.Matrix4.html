@@ -246,6 +246,30 @@ This should not be confused with Unity&apos;s Matrix4x4.</p>
   <h5 id="Engine4_Matrix4_Column_System_Int32_Engine4_Vector4__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>It&apos;s much better to use the setter property if the index is hard-coded </p>
 </div>
+  <a id="Engine4_Matrix4_Delta_" data-uid="Engine4.Matrix4.Delta*"></a>
+  <h4 id="Engine4_Matrix4_Delta_Engine4_Matrix4_Engine4_Matrix4_" data-uid="Engine4.Matrix4.Delta(Engine4.Matrix4,Engine4.Matrix4)">Delta(Matrix4, Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Create rotation matrix that rotates <em>from</em> matrix with <em>to</em> matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Delta(Matrix4 from, Matrix4 to)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Delta_" data-uid="Engine4.Matrix4.Delta*"></a>
+  <h4 id="Engine4_Matrix4_Delta_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Matrix4.Delta(Engine4.Vector4,Engine4.Vector4)">Delta(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Create rotation matrix that rotates <em>from</em> direction with <em>to</em> direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 Delta(Vector4 from, Vector4 to)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_Determinant_" data-uid="Engine4.Matrix4.Determinant*"></a>
+  <h4 id="Engine4_Matrix4_Determinant_Engine4_Matrix4_" data-uid="Engine4.Matrix4.Determinant(Engine4.Matrix4)">Determinant(Matrix4)</h4>
+  <div class="markdown level1 summary"><p>Get the determinant of the matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Determinant(Matrix4 m)</code></pre>
+  </div>
   <a id="Engine4_Matrix4_Equals_" data-uid="Engine4.Matrix4.Equals*"></a>
   <h4 id="Engine4_Matrix4_Equals_System_Object_" data-uid="Engine4.Matrix4.Equals(System.Object)">Equals(Object)</h4>
   <div class="markdown level1 summary"></div>
@@ -285,13 +309,29 @@ This should not be confused with Unity&apos;s Matrix4x4.</p>
   <h5 id="Engine4_Matrix4_Euler_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This creates a rotation matrix that rotates a point by Y, Z, X, T, U, then V. In that order.</p>
 </div>
-  <a id="Engine4_Matrix4_GetDeterminant_" data-uid="Engine4.Matrix4.GetDeterminant*"></a>
-  <h4 id="Engine4_Matrix4_GetDeterminant_Engine4_Matrix4_" data-uid="Engine4.Matrix4.GetDeterminant(Engine4.Matrix4)">GetDeterminant(Matrix4)</h4>
-  <div class="markdown level1 summary"><p>Get the determinant of the matrix</p>
+  <a id="Engine4_Matrix4_LookAt_" data-uid="Engine4.Matrix4.LookAt*"></a>
+  <h4 id="Engine4_Matrix4_LookAt_Engine4_Vector4_" data-uid="Engine4.Matrix4.LookAt(Engine4.Vector4)">LookAt(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Get rotation matrix that points identity object to given overward axis</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static float GetDeterminant(Matrix4 m)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Matrix4 LookAt(Vector4 overward)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_LookAt_" data-uid="Engine4.Matrix4.LookAt*"></a>
+  <h4 id="Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4)">LookAt(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Get rotation matrix that points identity object to given overward and forward axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 LookAt(Vector4 overward, Vector4 forward)</code></pre>
+  </div>
+  <a id="Engine4_Matrix4_LookAt_" data-uid="Engine4.Matrix4.LookAt*"></a>
+  <h4 id="Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">LookAt(Vector4, Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Get rotation matrix that points identity object to given overward and forward and upward axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Matrix4 LookAt(Vector4 overward, Vector4 forward, Vector4 upward)</code></pre>
   </div>
   <a id="Engine4_Matrix4_ToEuler_" data-uid="Engine4.Matrix4.ToEuler*"></a>
   <h4 id="Engine4_Matrix4_ToEuler" data-uid="Engine4.Matrix4.ToEuler">ToEuler()</h4>

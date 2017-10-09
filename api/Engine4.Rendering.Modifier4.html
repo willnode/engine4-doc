@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class Debugger4
+    <title>Class Modifier4
    | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class Debugger4
+    <meta name="title" content="Class Modifier4
    | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -68,66 +68,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Engine4.Debugger4">
+            <article class="content wrap" id="_content" data-uid="Engine4.Rendering.Modifier4">
   
   
-  <h1 id="Engine4_Debugger4" data-uid="Engine4.Debugger4" class="text-break">Class Debugger4
+  <h1 id="Engine4_Rendering_Modifier4" data-uid="Engine4.Rendering.Modifier4" class="text-break">Class Modifier4
   </h1>
-  <div class="markdown level0 summary"><p>Useful debugging feature</p>
+  <div class="markdown level0 summary"><p>Base class from custom 4D model modifier.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Debugger4 : MonoBehaviour4</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class Modifier4 : MonoBehaviour4</code></pre>
   </div>
   <div class="namespace">
-  <h5>Namespace <a class="xref" href="Engine4.html">Engine4</a></h5>
+  <h5>Namespace <a class="xref" href="Engine4.Rendering.html">Engine4.Rendering</a></h5>
   </div>
   <div class="inheritance">
     <h5>Inheritance </h5>
      <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.MonoBehaviour4.html">MonoBehaviour4</a></div>  
-    <div class="level2"><span class="xref">Debugger4</span></div>  
+    <div class="level2"><span class="xref">Modifier4</span></div>  
   <div class="derivations">
     
   </div>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="Engine4_Debugger4__ctor_" data-uid="Engine4.Debugger4.#ctor*"></a>
-  <h4 id="Engine4_Debugger4__ctor" data-uid="Engine4.Debugger4.#ctor">Debugger4()</h4>
+  <a id="Engine4_Rendering_Modifier4__ctor_" data-uid="Engine4.Rendering.Modifier4.#ctor*"></a>
+  <h4 id="Engine4_Rendering_Modifier4__ctor" data-uid="Engine4.Rendering.Modifier4.#ctor">Modifier4()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Debugger4()</code></pre>
+    <pre><code class="lang-csharp hljs">protected Modifier4()</code></pre>
   </div>
-  <h3 id="fields">Fields
+  <h3 id="methods">Methods
   </h3>
-  <h4 id="Engine4_Debugger4_max" data-uid="Engine4.Debugger4.max">max</h4>
-  <div class="markdown level1 summary"><p>Maximum vertex to shown</p>
-</div>
+  <a id="Engine4_Rendering_Modifier4_ModifyModel_" data-uid="Engine4.Rendering.Modifier4.ModifyModel*"></a>
+  <h4 id="Engine4_Rendering_Modifier4_ModifyModel_Engine4_Buffer4_" data-uid="Engine4.Rendering.Modifier4.ModifyModel(Engine4.Buffer4)">ModifyModel(Buffer4)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float max</code></pre>
-  </div>
-  <h4 id="Engine4_Debugger4_min" data-uid="Engine4.Debugger4.min">min</h4>
-  <div class="markdown level1 summary"><p>Minimum vertex to shown</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public float min</code></pre>
-  </div>
-  <h4 id="Engine4_Debugger4_vertexFacing" data-uid="Engine4.Debugger4.vertexFacing">vertexFacing</h4>
-  <div class="markdown level1 summary"><p>Oly show that facing to the camera.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool vertexFacing</code></pre>
-  </div>
-  <h4 id="Engine4_Debugger4_vertexLabels" data-uid="Engine4.Debugger4.vertexLabels">vertexLabels</h4>
-  <div class="markdown level1 summary"><p>Show vertex labels.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool vertexLabels</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract void ModifyModel(Buffer4 buffer)</code></pre>
   </div>
 </article>
           </div>

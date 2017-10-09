@@ -148,21 +148,40 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void AddTrimid(this Buffer4 buffer, params int[] v)</code></pre>
   </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddVertex_" data-uid="Engine4.Internal.Buffer4Extension.AddVertex*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddVertex_Engine4_Buffer4_Engine4_Vector4___" data-uid="Engine4.Internal.Buffer4Extension.AddVertex(Engine4.Buffer4,Engine4.Vector4[])">AddVertex(Buffer4, Vector4[])</h4>
+  <div class="markdown level1 summary"><p>Add multiple vertexes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int AddVertex(this Buffer4 buffer, params Vector4[] v)</code></pre>
+  </div>
+  <h5 id="Engine4_Internal_Buffer4Extension_AddVertex_Engine4_Buffer4_Engine4_Vector4____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The returning value is the vertex index for the first vertex.</p>
+</div>
   <a id="Engine4_Internal_Buffer4Extension_Colorize_" data-uid="Engine4.Internal.Buffer4Extension.Colorize*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Color_" data-uid="Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Color)">Colorize(Buffer4, Color)</h4>
-  <div class="markdown level1 summary"><p>Set the color of vertices since last Align() </p>
+  <div class="markdown level1 summary"><p>Set a solid color (without uv) to remaining indices </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Colorize(this Buffer4 buffer, Color color)</code></pre>
   </div>
-  <a id="Engine4_Internal_Buffer4Extension_Colorize_" data-uid="Engine4.Internal.Buffer4Extension.Colorize*"></a>
-  <h4 id="Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Gradient_" data-uid="Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Gradient)">Colorize(Buffer4, Gradient)</h4>
-  <div class="markdown level1 summary"><p>Set the color of vertices since last Align() </p>
+  <a id="Engine4_Internal_Buffer4Extension_CopyTo_" data-uid="Engine4.Internal.Buffer4Extension.CopyTo*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_CopyTo_Engine4_Buffer4_Engine4_Buffer4_" data-uid="Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4,Engine4.Buffer4)">CopyTo(Buffer4, Buffer4)</h4>
+  <div class="markdown level1 summary"><p>Append buffer content to another buffer</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Colorize(this Buffer4 buffer, Gradient color)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void CopyTo(this Buffer4 origin, Buffer4 dest)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_CopyTo_" data-uid="Engine4.Internal.Buffer4Extension.CopyTo*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_CopyTo_Engine4_Buffer4_Engine4_Buffer4_System_Boolean_" data-uid="Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4,Engine4.Buffer4,System.Boolean)">CopyTo(Buffer4, Buffer4, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Append or overwrite buffer content to another buffer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyTo(this Buffer4 origin, Buffer4 dest, bool overwrite)</code></pre>
   </div>
   <a id="Engine4_Internal_Buffer4Extension_Sequence_" data-uid="Engine4.Internal.Buffer4Extension.Sequence*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_" data-uid="Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4,Engine4.Internal.SequenceMode)">Sequence(Buffer4, SequenceMode)</h4>

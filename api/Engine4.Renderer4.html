@@ -117,31 +117,47 @@
   </div>
   <h3 id="properties">Properties
   </h3>
-  <a id="Engine4_Renderer4_uploaders_" data-uid="Engine4.Renderer4.uploaders*"></a>
-  <h4 id="Engine4_Renderer4_uploaders" data-uid="Engine4.Renderer4.uploaders">uploaders</h4>
-  <div class="markdown level1 summary"><p>List of uploaders</p>
+  <a id="Engine4_Renderer4_modelers_" data-uid="Engine4.Renderer4.modelers*"></a>
+  <h4 id="Engine4_Renderer4_modelers" data-uid="Engine4.Renderer4.modelers">modelers</h4>
+  <div class="markdown level1 summary"><p>List of modeler</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Modeler4&gt; uploaders { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public List&lt;Modeler4&gt; modelers { get; }</code></pre>
+  </div>
+  <a id="Engine4_Renderer4_modifiers_" data-uid="Engine4.Renderer4.modifiers*"></a>
+  <h4 id="Engine4_Renderer4_modifiers" data-uid="Engine4.Renderer4.modifiers">modifiers</h4>
+  <div class="markdown level1 summary"><p>List of modeler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Modifier4&gt; modifiers { get; }</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
-  <a id="Engine4_Renderer4_ReacquireUploaders_" data-uid="Engine4.Renderer4.ReacquireUploaders*"></a>
-  <h4 id="Engine4_Renderer4_ReacquireUploaders" data-uid="Engine4.Renderer4.ReacquireUploaders">ReacquireUploaders()</h4>
-  <div class="markdown level1 summary"><p>Invalidate list of uploaders</p>
+  <a id="Engine4_Renderer4_ReacquireModelers_" data-uid="Engine4.Renderer4.ReacquireModelers*"></a>
+  <h4 id="Engine4_Renderer4_ReacquireModelers" data-uid="Engine4.Renderer4.ReacquireModelers">ReacquireModelers()</h4>
+  <div class="markdown level1 summary"><p>Invalidate list of modeler</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void ReacquireUploaders()</code></pre>
+    <pre><code class="lang-csharp hljs">public void ReacquireModelers()</code></pre>
+  </div>
+  <a id="Engine4_Renderer4_ReacquireModifiers_" data-uid="Engine4.Renderer4.ReacquireModifiers*"></a>
+  <h4 id="Engine4_Renderer4_ReacquireModifiers" data-uid="Engine4.Renderer4.ReacquireModifiers">ReacquireModifiers()</h4>
+  <div class="markdown level1 summary"><p>Invalidate list of modifier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReacquireModifiers()</code></pre>
   </div>
   <a id="Engine4_Renderer4_SetDirty_" data-uid="Engine4.Renderer4.SetDirty*"></a>
-  <h4 id="Engine4_Renderer4_SetDirty_System_Boolean_" data-uid="Engine4.Renderer4.SetDirty(System.Boolean)">SetDirty(Boolean)</h4>
+  <h4 id="Engine4_Renderer4_SetDirty_Engine4_DirtyLevel_" data-uid="Engine4.Renderer4.SetDirty(Engine4.DirtyLevel)">SetDirty(DirtyLevel)</h4>
   <div class="markdown level1 summary"><p>Set this renderer to be validated later. Set rebake if mesh reconstruction is needed</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetDirty(bool rebake)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetDirty(DirtyLevel level)</code></pre>
   </div>
 </article>
           </div>

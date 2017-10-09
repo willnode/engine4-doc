@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Struct Vertex4
+    <title>Class Debugger4
    | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Struct Vertex4
+    <meta name="title" content="Class Debugger4
    | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
@@ -68,76 +68,80 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-12">
-            <article class="content wrap" id="_content" data-uid="Engine4.Vertex4">
+            <article class="content wrap" id="_content" data-uid="Engine4.Rendering.Debugger4">
   
   
-  <h1 id="Engine4_Vertex4" data-uid="Engine4.Vertex4" class="text-break">Struct Vertex4
+  <h1 id="Engine4_Rendering_Debugger4" data-uid="Engine4.Rendering.Debugger4" class="text-break">Class Debugger4
   </h1>
-  <div class="markdown level0 summary"><p>Unit vertex that wrapped to single data.</p>
+  <div class="markdown level0 summary"><p>Useful debugging feature for diagnosing modeler</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Vertex4</code></pre>
+    <pre><code class="lang-csharp hljs">public class Debugger4 : MonoBehaviour4</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.Rendering.html">Engine4.Rendering</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.MonoBehaviour4.html">MonoBehaviour4</a></div>  
+    <div class="level2"><span class="xref">Debugger4</span></div>  
+  <div class="derivations">
+    
+  </div>
   </div>
   <h3 id="constructors">Constructors
   </h3>
-  <a id="Engine4_Vertex4__ctor_" data-uid="Engine4.Vertex4.#ctor*"></a>
-  <h4 id="Engine4_Vertex4__ctor_Engine4_Vector4_" data-uid="Engine4.Vertex4.#ctor(Engine4.Vector4)">Vertex4(Vector4)</h4>
-  <div class="markdown level1 summary"><p>Create new vertex data with given position</p>
-</div>
+  <a id="Engine4_Rendering_Debugger4__ctor_" data-uid="Engine4.Rendering.Debugger4.#ctor*"></a>
+  <h4 id="Engine4_Rendering_Debugger4__ctor" data-uid="Engine4.Rendering.Debugger4.#ctor">Debugger4()</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vertex4(Vector4 v)</code></pre>
-  </div>
-  <a id="Engine4_Vertex4__ctor_" data-uid="Engine4.Vertex4.#ctor*"></a>
-  <h4 id="Engine4_Vertex4__ctor_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Vertex4.#ctor(Engine4.Vector4,Engine4.Vector4)">Vertex4(Vector4, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Create new vertex data with given position + uv</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vertex4(Vector4 v, Vector4 uv0)</code></pre>
-  </div>
-  <a id="Engine4_Vertex4__ctor_" data-uid="Engine4.Vertex4.#ctor*"></a>
-  <h4 id="Engine4_Vertex4__ctor_Engine4_Vector4_Engine4_VertexProfile_" data-uid="Engine4.Vertex4.#ctor(Engine4.Vector4,Engine4.VertexProfile)">Vertex4(Vector4, VertexProfile)</h4>
-  <div class="markdown level1 summary"><p>Create new vertex data with given position + profile</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vertex4(Vector4 v, VertexProfile p)</code></pre>
-  </div>
-  <a id="Engine4_Vertex4__ctor_" data-uid="Engine4.Vertex4.#ctor*"></a>
-  <h4 id="Engine4_Vertex4__ctor_Engine4_Vector4_UnityEngine_Color_" data-uid="Engine4.Vertex4.#ctor(Engine4.Vector4,UnityEngine.Color)">Vertex4(Vector4, Color)</h4>
-  <div class="markdown level1 summary"><p>Create new vertex data with given position + color</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vertex4(Vector4 v, Color c)</code></pre>
+    <pre><code class="lang-csharp hljs">public Debugger4()</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Engine4_Vertex4_position" data-uid="Engine4.Vertex4.position">position</h4>
-  <div class="markdown level1 summary"><p>Position of the vertex</p>
+  <h4 id="Engine4_Rendering_Debugger4_indiceGizmo" data-uid="Engine4.Rendering.Debugger4.indiceGizmo">indiceGizmo</h4>
+  <div class="markdown level1 summary"><p>Show kind of indice gizmo </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Vector4 position</code></pre>
+    <pre><code class="lang-csharp hljs">public Debugger4.IndiceGizmoShow indiceGizmo</code></pre>
   </div>
-  <h4 id="Engine4_Vertex4_profile" data-uid="Engine4.Vertex4.profile">profile</h4>
-  <div class="markdown level1 summary"><p>Profile of the vertex</p>
+  <h4 id="Engine4_Rendering_Debugger4_indiceLabel" data-uid="Engine4.Rendering.Debugger4.indiceLabel">indiceLabel</h4>
+  <div class="markdown level1 summary"><p>Show indice label </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public VertexProfile profile</code></pre>
+    <pre><code class="lang-csharp hljs">public bool indiceLabel</code></pre>
   </div>
-  <h3 id="operators">Operators
-  </h3>
-  <a id="Engine4_Vertex4_op_Implicit_" data-uid="Engine4.Vertex4.op_Implicit*"></a>
-  <h4 id="Engine4_Vertex4_op_Implicit_Engine4_Vector4__Engine4_Vertex4" data-uid="Engine4.Vertex4.op_Implicit(Engine4.Vector4)~Engine4.Vertex4">Implicit(Vector4 to Vertex4)</h4>
-  <div class="markdown level1 summary"><p>Wrap the vector to the vertex</p>
+  <h4 id="Engine4_Rendering_Debugger4_max" data-uid="Engine4.Rendering.Debugger4.max">max</h4>
+  <div class="markdown level1 summary"><p>Maximum filter </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static implicit operator Vertex4(Vector4 v)</code></pre>
+    <pre><code class="lang-csharp hljs">public float max</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Debugger4_min" data-uid="Engine4.Rendering.Debugger4.min">min</h4>
+  <div class="markdown level1 summary"><p>Minimum filter  </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float min</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Debugger4_vertexGizmo" data-uid="Engine4.Rendering.Debugger4.vertexGizmo">vertexGizmo</h4>
+  <div class="markdown level1 summary"><p>Show vertex gizmo. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool vertexGizmo</code></pre>
+  </div>
+  <h4 id="Engine4_Rendering_Debugger4_vertexLabels" data-uid="Engine4.Rendering.Debugger4.vertexLabels">vertexLabels</h4>
+  <div class="markdown level1 summary"><p>Show vertex label. </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool vertexLabels</code></pre>
   </div>
 </article>
           </div>

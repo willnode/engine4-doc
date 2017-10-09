@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Gizmos | Engine4 Manual </title>
+    <title>Cross and Dot operation | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Gizmos | Engine4 Manual ">
+    <meta name="title" content="Cross and Dot operation | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,10 +67,23 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gizmos">Gizmos</h1>
+<h1 id="cross-and-dot-operation">Cross and Dot operation</h1>
 
-<p>Engine4 have a gizmo solution specialized for drawing 4D objects in gizmo. Example usage are for displaying collider shapes in scene editor.</p>
-<p>In scripting, you can access via <a class="xref" href="../../api/Engine4.Rendering.Gizmos4.html">Gizmos4</a></p>
+<h2 id="dot-operation-in-4d">Dot operation in 4D</h2>
+<p>Dot operation&#39;s main usage is not broken in higher dimension. It is still useful for find vector length or project a vector by another vector.</p>
+<h2 id="cross-operation-in-4d">Cross operation in 4D</h2>
+<p>Unlike Dot, Cross product is flawed and no longer works for higher dimension. This is mainly because our mistake as 3D being living in 3D world, having the same number of axes and plane rotation, and historically naming these operations below to a similar name, simply because the function are the same in 3D, regardless the fact that each of these have really different meaning and purpose.</p>
+<p>Because higher dimension have different axes and plane rotation, cross operation is splitted to four definitions:</p>
+<h4 id="cross-operation-to-find-another-vector">Cross operation to find another vector</h4>
+<p><a class="xref" href="../../api/Engine4.Vector4.html#Engine4_Vector4_Cross_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_">Cross(Vector4, Vector4, Vector4)</a></p>
+<h4 id="cross-operation-to-find-rotation-between-two-vector">Cross operation to find rotation between two vector</h4>
+<p><a class="xref" href="../../api/Engine4.Euler4.html#Engine4_Euler4_Cross_Engine4_Vector4_Engine4_Vector4_">Cross(Vector4, Vector4)</a></p>
+<h3 id="cross-operation-to-find-rotated-vector-after-rotation">Cross operation to find rotated vector after rotation</h3>
+<p>@Engine4.Euler4.Cross(Engine4.Euler4,Engine4.Vector4)</p>
+<h3 id="cross-operation-to-combine-rotation">Cross operation to combine rotation</h3>
+<p>@Engine4.Euler4.Cross(Engine4.Euler4,Engine4.Euler4)</p>
+<div class="NOTE"><h5>Note</h5><p>Those differences are already known for a long time in mathematics world known as wedge operation in geometry algebra.</p>
+</div>
 </article>
           </div>
         </div>

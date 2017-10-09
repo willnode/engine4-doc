@@ -73,27 +73,39 @@
 <h2 id="major-features">Major Features</h2>
 <ul>
 <li>Builtin Datatypes, Camera, Transformation, Rendering, Builder, Gizmo, Physics Library.</li>
-<li>Full Scripting API and source code access without external libraries</li>
-<li>Cross platform</li>
-<li>Optimized</li>
+<li>Full Scripting API and source code access without external libraries.</li>
+<li>HTML based documentation with documented scripting APIs.</li>
+<li>Cross platform.</li>
+<li>Optimized.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
-<p>These honest limitation and issues is our TODOs for the next development of the library.</p>
+<p>These honest limitation is our TODOs for the next development of the library.</p>
 <ul>
 <li>Currently does all the hardwork in single main thread (job system?).</li>
-<li>No support for rendering via graphic acceleration (how?).</li>
+<li>No support for rendering via graphic acceleration.</li>
 <li>No particle system generator (but we have its renderer).</li>
 <li>Only limited set of shapes that supported by the Physics Engine.</li>
 <li>Physics Engine doesn&#39;t include joints and character controller.</li>
-<li>Matrix to euler (in 4d) is not work on 90 deg singularity cases (this issue only impacts editor experience).</li>
 <li>Building shapes can only done via procedural creations.</li>
-<li>Cross section doesn&#39;t really know how to play with UV.</li>
-<li>Four-dimensional gizmo isn&#39;t properly implemented.</li>
+<li>No dedicated 4D graphics solution included (skybox, lighting, fog etc.)</li>
+<li>Engine4 is not well suited for multi-scene scenarios.</li>
 <li>The documentation has many grammar mistake (contrib welcome anyway).</li>
 <li>There are no real games published with this library so far.</li>
 </ul>
+<h4 id="known-issues-to-be-resolved-during-beta-session">Known issues to be resolved during Beta Session</h4>
+<ul>
+<li>Documentation manual is still under work.</li>
+<li>Matrix to euler fail to work for 90 deg singularity cases (this issue only impacts editor experience).</li>
+<li>UvMapper4 doesn&#39;t generate UV correctly.</li>
+<li>Frustum4 doesn&#39;t correctly cull objects if too close.</li>
+<li>Components isn&#39;t organized in add component menu.</li>
+<li>Gizmos4&#39;s late update rendering.</li>
+<li>No INeedScaleTransform.</li>
+</ul>
+<div class="NOTE"><h5>Note</h5><p>Beta session run until the rest of the month. During it, APIs may updated without notice.</p>
+</div>
 <h2 id="helpful-links">Helpful Links</h2>
-<p><a href="http://u3d.as/fdm">Asset Link</a> | <a href="https://willnode.github.io/engine4-doc/index.html">Online Documentation</a> | <a href="https://forum.unity.com/threads/mesh-4d-engine-create-4d-objects-in-unity.320549/">Support Forum</a> | <a href="https://wellosoft.wordpress.com/">Developer Website</a></p>
+<p><a href="http://u3d.as/fdm">Asset Link</a> | <a href="https://willnode.github.io/engine4-doc/index.html">Online Documentation</a> | <a href="https://github.com/willnode/engine4-doc/">Offline Documentation</a> | <a href="https://forum.unity.com/threads/mesh-4d-engine-create-4d-objects-in-unity.320549/">Support Forum</a> | <a href="https://wellosoft.wordpress.com/">Developer Website</a></p>
 </article>
           </div>
         </div>

@@ -69,17 +69,65 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="release-notes">Release Notes</h1>
 
-<h4 id="v30">V3.0</h4>
+<h4 id="v30-beta---oct-10-2017">V3.0 (Beta) - Oct 10, 2017</h4>
+<p><code>Mesh 4D Engine</code> -&gt; <code>Engine4</code></p>
+<blockquote><p>V3.0 upgrade fully rewrites the library with more modular approach, better rendering system, including the brand new physics engine. The previous two diverse system now merged to one. Starting from this version the documentation have been improved as html-based. The version released as beta as few features haven&#39;t been finished.</p>
+</blockquote>
+<h4 id="v22---aug-19-2017">V2.2 - Aug 19, 2017</h4>
 <ul>
-<li><code>Mesh 4D Engine</code> -&gt; <code>Engine4</code></li>
-<li>New Rendering, Gizmo, Physics System.</li>
-<li>Full package rewrite</li>
+<li><code>NEW</code> SU4Cylinder to upload mesh to S4!</li>
+<li><code>NEW</code> Adjustable 4th view position at S4 View Shortcut</li>
+<li><code>NEW</code> S4 Primitive shape: 24-cell, 120-cell, 600-cell</li>
+<li><code>NEW</code> Default material is assigned every time S4 Renderer added to a gameobject</li>
+<li><code>NEW</code> Quaternion4.LookRotation, Matrix5x5.Transpose</li>
+<li><code>CHANGE</code> deleting Viewer world/projection functions, use matrix instead</li>
+<li><code>FIX</code> Corrected Quaternion4 multiplication</li>
+<li><code>FIX</code> Improved Transform4 scale &amp; rotation handle editor</li>
 </ul>
-<h4 id="v20">V2.0</h4>
+<h4 id="v21---jun-30-2017">V2.1 - Jun 30, 2017</h4>
+<ul>
+<li><code>NEW</code> Transform4 handle editor</li>
+<li><code>NEW</code> Viewer world/projection converter APIs</li>
+<li><code>NEW</code> Matrix5x5 inverse, TRS, MultiplyVector/Point4x5</li>
+<li><code>NEW</code> Vector5 struct (for Matrix5x5)</li>
+<li><code>NEW</code> Global TRS API for Transform4</li>
+<li><code>NEW</code> V3Helper support multiple submesh</li>
+<li><code>NEW</code> Culling and Better FOV for M4 projection</li>
+<li><code>NEW</code> Culling for S4 for better performance</li>
+<li><code>CHANGE</code> M4Renderer now always calculate lighting and added VertexProfiles.</li>
+<li><code>CHANGE</code> M4Buffer uses V3Helper instead raw mesh to keep data.</li>
+<li><code>FIX</code> Small performance optimizations</li>
+</ul>
+<h4 id="v20---jun-4-2017">V2.0 - Jun 4, 2017</h4>
 <ul>
 <li><code>Mesh 4D Engine and Morpher</code> -&gt; <code>Mesh 4D Engine</code></li>
-<li>Full package rewrite</li>
 </ul>
+<blockquote><p>V2.0 upgrade fully rewrites the library with the first, real four-dimensional manipulation with basic procedural techniques. The workflow split to two for fulfilling two different projection types. The old code has been preserved as <em>legacy</em></p>
+</blockquote>
+<h4 id="v12---feb-6-2016">V1.2 - Feb 6, 2016</h4>
+<ul>
+<li><code>NEW</code> Baking system is now done automatically</li>
+<li><code>CHANGE</code> autoUpdate property is now deprecated</li>
+<li><code>CHANGE</code> Bake button is now deleted as being unnecessary</li>
+<li><code>CHANGE</code> MeshRenderer is now included as component requirement</li>
+<li><code>FIX</code> Bug introduced in 1.1.1 where the editor not updating properly</li>
+</ul>
+<h4 id="v111">V1.1.1</h4>
+<ul>
+<li>Unity 5.6 Support</li>
+</ul>
+<h4 id="v11">V1.1</h4>
+<ul>
+<li>Unity 4.6 Support.</li>
+<li>Faster Baking Time.</li>
+<li>Faster Calculation.</li>
+<li>Fix Morph update at runtime.</li>
+<li>Better Asset Management</li>
+<li>Added Additive RGB Shader (Particles/RGB Cube)</li>
+</ul>
+<h4 id="v10---apr-21-2015">V1.0 - Apr 21, 2015</h4>
+<blockquote><p>The initial V1.0 introduces mesh-deformer that looks a like 4D shapes being transformed in 4D space.</p>
+</blockquote>
 </article>
           </div>
         </div>

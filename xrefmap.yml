@@ -511,12 +511,12 @@ references:
   commentId: M:Engine4.Buffer4.#ctor
   fullName: Engine4.Buffer4.Buffer4()
   nameWithType: Buffer4.Buffer4()
-- uid: Engine4.Buffer4.#ctor(Engine4.SimplexMode,System.Boolean)
-  name: Buffer4(SimplexMode, Boolean)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4__ctor_Engine4_SimplexMode_System_Boolean_
-  commentId: M:Engine4.Buffer4.#ctor(Engine4.SimplexMode,System.Boolean)
-  fullName: Engine4.Buffer4.Buffer4(Engine4.SimplexMode, System.Boolean)
-  nameWithType: Buffer4.Buffer4(SimplexMode, Boolean)
+- uid: Engine4.Buffer4.#ctor(Engine4.SimplexMode)
+  name: Buffer4(SimplexMode)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4__ctor_Engine4_SimplexMode_
+  commentId: M:Engine4.Buffer4.#ctor(Engine4.SimplexMode)
+  fullName: Engine4.Buffer4.Buffer4(Engine4.SimplexMode)
+  nameWithType: Buffer4.Buffer4(SimplexMode)
 - uid: Engine4.Buffer4.#ctor*
   name: Buffer4
   href: api/Engine4.Buffer4.html#Engine4_Buffer4__ctor_
@@ -559,6 +559,18 @@ references:
   commentId: Overload:Engine4.Buffer4.AddPrism
   fullName: Engine4.Buffer4.AddPrism
   nameWithType: Buffer4.AddPrism
+- uid: Engine4.Buffer4.AddProfile(Engine4.VertexProfile)
+  name: AddProfile(VertexProfile)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddProfile_Engine4_VertexProfile_
+  commentId: M:Engine4.Buffer4.AddProfile(Engine4.VertexProfile)
+  fullName: Engine4.Buffer4.AddProfile(Engine4.VertexProfile)
+  nameWithType: Buffer4.AddProfile(VertexProfile)
+- uid: Engine4.Buffer4.AddProfile*
+  name: AddProfile
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddProfile_
+  commentId: Overload:Engine4.Buffer4.AddProfile
+  fullName: Engine4.Buffer4.AddProfile
+  nameWithType: Buffer4.AddProfile
 - uid: Engine4.Buffer4.AddPyramid(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
   name: AddPyramid(Int32, Int32, Int32, Int32, Int32)
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddPyramid_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_
@@ -625,42 +637,6 @@ references:
   commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4)
   fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4)
   nameWithType: Buffer4.AddVertex(Vector4)
-- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.Vector4)
-  name: AddVertex(Vector4, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, Engine4.Vector4)
-  nameWithType: Buffer4.AddVertex(Vector4, Vector4)
-- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.VertexProfile)
-  name: AddVertex(Vector4, VertexProfile)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_VertexProfile_
-  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.VertexProfile)
-  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, Engine4.VertexProfile)
-  nameWithType: Buffer4.AddVertex(Vector4, VertexProfile)
-- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color)
-  name: AddVertex(Vector4, Color)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_
-  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color)
-  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, UnityEngine.Color)
-  nameWithType: Buffer4.AddVertex(Vector4, Color)
-- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)
-  name: AddVertex(Vector4, Color, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, UnityEngine.Color, Engine4.Vector4)
-  nameWithType: Buffer4.AddVertex(Vector4, Color, Vector4)
-- uid: Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
-  name: AddVertex(Vector4, Color, Vector4, Vector4, Vector4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_
-  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
-  fullName: Engine4.Buffer4.AddVertex(Engine4.Vector4, UnityEngine.Color, Engine4.Vector4, Engine4.Vector4, Engine4.Vector4)
-  nameWithType: Buffer4.AddVertex(Vector4, Color, Vector4, Vector4, Vector4)
-- uid: Engine4.Buffer4.AddVertex(Engine4.Vertex4)
-  name: AddVertex(Vertex4)
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_Engine4_Vertex4_
-  commentId: M:Engine4.Buffer4.AddVertex(Engine4.Vertex4)
-  fullName: Engine4.Buffer4.AddVertex(Engine4.Vertex4)
-  nameWithType: Buffer4.AddVertex(Vertex4)
 - uid: Engine4.Buffer4.AddVertex(System.Int32)
   name: AddVertex(Int32)
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_AddVertex_System_Int32_
@@ -691,6 +667,18 @@ references:
   commentId: Overload:Engine4.Buffer4.Align
   fullName: Engine4.Buffer4.Align
   nameWithType: Buffer4.Align
+- uid: Engine4.Buffer4.Clean
+  name: Clean()
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Clean
+  commentId: M:Engine4.Buffer4.Clean
+  fullName: Engine4.Buffer4.Clean()
+  nameWithType: Buffer4.Clean()
+- uid: Engine4.Buffer4.Clean*
+  name: Clean
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_Clean_
+  commentId: Overload:Engine4.Buffer4.Clean
+  fullName: Engine4.Buffer4.Clean
+  nameWithType: Buffer4.Clean
 - uid: Engine4.Buffer4.Clear
   name: Clear()
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_Clear
@@ -709,12 +697,6 @@ references:
   commentId: Overload:Engine4.Buffer4.Clear
   fullName: Engine4.Buffer4.Clear
   nameWithType: Buffer4.Clear
-- uid: Engine4.Buffer4.indices
-  name: indices
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_indices
-  commentId: F:Engine4.Buffer4.indices
-  fullName: Engine4.Buffer4.indices
-  nameWithType: Buffer4.indices
 - uid: Engine4.Buffer4.IsEmpty
   name: IsEmpty()
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_IsEmpty
@@ -727,18 +709,78 @@ references:
   commentId: Overload:Engine4.Buffer4.IsEmpty
   fullName: Engine4.Buffer4.IsEmpty
   nameWithType: Buffer4.IsEmpty
+- uid: Engine4.Buffer4.m_Indices
+  name: m_Indices
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_m_Indices
+  commentId: F:Engine4.Buffer4.m_Indices
+  fullName: Engine4.Buffer4.m_Indices
+  nameWithType: Buffer4.m_Indices
+- uid: Engine4.Buffer4.m_IndicesCount
+  name: m_IndicesCount
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_m_IndicesCount
+  commentId: F:Engine4.Buffer4.m_IndicesCount
+  fullName: Engine4.Buffer4.m_IndicesCount
+  nameWithType: Buffer4.m_IndicesCount
+- uid: Engine4.Buffer4.m_Profiles
+  name: m_Profiles
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_m_Profiles
+  commentId: F:Engine4.Buffer4.m_Profiles
+  fullName: Engine4.Buffer4.m_Profiles
+  nameWithType: Buffer4.m_Profiles
+- uid: Engine4.Buffer4.m_ProfilesCount
+  name: m_ProfilesCount
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_m_ProfilesCount
+  commentId: F:Engine4.Buffer4.m_ProfilesCount
+  fullName: Engine4.Buffer4.m_ProfilesCount
+  nameWithType: Buffer4.m_ProfilesCount
+- uid: Engine4.Buffer4.m_Vertices
+  name: m_Vertices
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_m_Vertices
+  commentId: F:Engine4.Buffer4.m_Vertices
+  fullName: Engine4.Buffer4.m_Vertices
+  nameWithType: Buffer4.m_Vertices
+- uid: Engine4.Buffer4.m_VerticesCount
+  name: m_VerticesCount
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_m_VerticesCount
+  commentId: F:Engine4.Buffer4.m_VerticesCount
+  fullName: Engine4.Buffer4.m_VerticesCount
+  nameWithType: Buffer4.m_VerticesCount
 - uid: Engine4.Buffer4.offset
   name: offset
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_offset
   commentId: F:Engine4.Buffer4.offset
   fullName: Engine4.Buffer4.offset
   nameWithType: Buffer4.offset
-- uid: Engine4.Buffer4.profiles
-  name: profiles
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_profiles
-  commentId: F:Engine4.Buffer4.profiles
-  fullName: Engine4.Buffer4.profiles
-  nameWithType: Buffer4.profiles
+- uid: Engine4.Buffer4.ProfileDifference
+  name: ProfileDifference
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_ProfileDifference
+  commentId: P:Engine4.Buffer4.ProfileDifference
+  fullName: Engine4.Buffer4.ProfileDifference
+  nameWithType: Buffer4.ProfileDifference
+- uid: Engine4.Buffer4.ProfileDifference*
+  name: ProfileDifference
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_ProfileDifference_
+  commentId: Overload:Engine4.Buffer4.ProfileDifference
+  fullName: Engine4.Buffer4.ProfileDifference
+  nameWithType: Buffer4.ProfileDifference
+- uid: Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Color)
+  name: SetProfile(Int32, Color)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Color_
+  commentId: M:Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Color)
+  fullName: Engine4.Buffer4.SetProfile(System.Int32, UnityEngine.Color)
+  nameWithType: Buffer4.SetProfile(Int32, Color)
+- uid: Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Vector4,System.Int32)
+  name: SetProfile(Int32, Vector4, Int32)
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Vector4_System_Int32_
+  commentId: M:Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Vector4,System.Int32)
+  fullName: Engine4.Buffer4.SetProfile(System.Int32, UnityEngine.Vector4, System.Int32)
+  nameWithType: Buffer4.SetProfile(Int32, Vector4, Int32)
+- uid: Engine4.Buffer4.SetProfile*
+  name: SetProfile
+  href: api/Engine4.Buffer4.html#Engine4_Buffer4_SetProfile_
+  commentId: Overload:Engine4.Buffer4.SetProfile
+  fullName: Engine4.Buffer4.SetProfile
+  nameWithType: Buffer4.SetProfile
 - uid: Engine4.Buffer4.simplex
   name: simplex
   href: api/Engine4.Buffer4.html#Engine4_Buffer4_simplex
@@ -757,18 +799,6 @@ references:
   commentId: Overload:Engine4.Buffer4.Snapshot
   fullName: Engine4.Buffer4.Snapshot
   nameWithType: Buffer4.Snapshot
-- uid: Engine4.Buffer4.useProfile
-  name: useProfile
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_useProfile
-  commentId: F:Engine4.Buffer4.useProfile
-  fullName: Engine4.Buffer4.useProfile
-  nameWithType: Buffer4.useProfile
-- uid: Engine4.Buffer4.vertices
-  name: vertices
-  href: api/Engine4.Buffer4.html#Engine4_Buffer4_vertices
-  commentId: F:Engine4.Buffer4.vertices
-  fullName: Engine4.Buffer4.vertices
-  nameWithType: Buffer4.vertices
 - uid: Engine4.CapsuleCollider4
   name: CapsuleCollider4
   href: api/Engine4.CapsuleCollider4.html
@@ -955,48 +985,36 @@ references:
   commentId: F:Engine4.ConstantForce4.linearForce
   fullName: Engine4.ConstantForce4.linearForce
   nameWithType: ConstantForce4.linearForce
-- uid: Engine4.Debugger4
-  name: Debugger4
-  href: api/Engine4.Debugger4.html
-  commentId: T:Engine4.Debugger4
-  fullName: Engine4.Debugger4
-  nameWithType: Debugger4
-- uid: Engine4.Debugger4.#ctor
-  name: Debugger4()
-  href: api/Engine4.Debugger4.html#Engine4_Debugger4__ctor
-  commentId: M:Engine4.Debugger4.#ctor
-  fullName: Engine4.Debugger4.Debugger4()
-  nameWithType: Debugger4.Debugger4()
-- uid: Engine4.Debugger4.#ctor*
-  name: Debugger4
-  href: api/Engine4.Debugger4.html#Engine4_Debugger4__ctor_
-  commentId: Overload:Engine4.Debugger4.#ctor
-  fullName: Engine4.Debugger4.Debugger4
-  nameWithType: Debugger4.Debugger4
-- uid: Engine4.Debugger4.max
-  name: max
-  href: api/Engine4.Debugger4.html#Engine4_Debugger4_max
-  commentId: F:Engine4.Debugger4.max
-  fullName: Engine4.Debugger4.max
-  nameWithType: Debugger4.max
-- uid: Engine4.Debugger4.min
-  name: min
-  href: api/Engine4.Debugger4.html#Engine4_Debugger4_min
-  commentId: F:Engine4.Debugger4.min
-  fullName: Engine4.Debugger4.min
-  nameWithType: Debugger4.min
-- uid: Engine4.Debugger4.vertexFacing
-  name: vertexFacing
-  href: api/Engine4.Debugger4.html#Engine4_Debugger4_vertexFacing
-  commentId: F:Engine4.Debugger4.vertexFacing
-  fullName: Engine4.Debugger4.vertexFacing
-  nameWithType: Debugger4.vertexFacing
-- uid: Engine4.Debugger4.vertexLabels
-  name: vertexLabels
-  href: api/Engine4.Debugger4.html#Engine4_Debugger4_vertexLabels
-  commentId: F:Engine4.Debugger4.vertexLabels
-  fullName: Engine4.Debugger4.vertexLabels
-  nameWithType: Debugger4.vertexLabels
+- uid: Engine4.DirtyLevel
+  name: DirtyLevel
+  href: api/Engine4.DirtyLevel.html
+  commentId: T:Engine4.DirtyLevel
+  fullName: Engine4.DirtyLevel
+  nameWithType: DirtyLevel
+- uid: Engine4.DirtyLevel.Model
+  name: Model
+  href: api/Engine4.DirtyLevel.html#Engine4_DirtyLevel_Model
+  commentId: F:Engine4.DirtyLevel.Model
+  fullName: Engine4.DirtyLevel.Model
+  nameWithType: DirtyLevel.Model
+- uid: Engine4.DirtyLevel.Modifier
+  name: Modifier
+  href: api/Engine4.DirtyLevel.html#Engine4_DirtyLevel_Modifier
+  commentId: F:Engine4.DirtyLevel.Modifier
+  fullName: Engine4.DirtyLevel.Modifier
+  nameWithType: DirtyLevel.Modifier
+- uid: Engine4.DirtyLevel.None
+  name: None
+  href: api/Engine4.DirtyLevel.html#Engine4_DirtyLevel_None
+  commentId: F:Engine4.DirtyLevel.None
+  fullName: Engine4.DirtyLevel.None
+  nameWithType: DirtyLevel.None
+- uid: Engine4.DirtyLevel.Transform
+  name: Transform
+  href: api/Engine4.DirtyLevel.html#Engine4_DirtyLevel_Transform
+  commentId: F:Engine4.DirtyLevel.Transform
+  fullName: Engine4.DirtyLevel.Transform
+  nameWithType: DirtyLevel.Transform
 - uid: Engine4.Euler4
   name: Euler4
   href: api/Engine4.Euler4.html
@@ -1387,24 +1405,51 @@ references:
   commentId: Overload:Engine4.Internal.Buffer4Extension.AddTrimid
   fullName: Engine4.Internal.Buffer4Extension.AddTrimid
   nameWithType: Buffer4Extension.AddTrimid
+- uid: Engine4.Internal.Buffer4Extension.AddVertex(Engine4.Buffer4,Engine4.Vector4[])
+  name: AddVertex(Buffer4, Vector4[])
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddVertex_Engine4_Buffer4_Engine4_Vector4___
+  commentId: M:Engine4.Internal.Buffer4Extension.AddVertex(Engine4.Buffer4,Engine4.Vector4[])
+  name.vb: AddVertex(Buffer4, Vector4())
+  fullName: Engine4.Internal.Buffer4Extension.AddVertex(Engine4.Buffer4, Engine4.Vector4[])
+  fullName.vb: Engine4.Internal.Buffer4Extension.AddVertex(Engine4.Buffer4, Engine4.Vector4())
+  nameWithType: Buffer4Extension.AddVertex(Buffer4, Vector4[])
+  nameWithType.vb: Buffer4Extension.AddVertex(Buffer4, Vector4())
+- uid: Engine4.Internal.Buffer4Extension.AddVertex*
+  name: AddVertex
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddVertex_
+  commentId: Overload:Engine4.Internal.Buffer4Extension.AddVertex
+  fullName: Engine4.Internal.Buffer4Extension.AddVertex
+  nameWithType: Buffer4Extension.AddVertex
 - uid: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Color)
   name: Colorize(Buffer4, Color)
   href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Color_
   commentId: M:Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Color)
   fullName: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4, UnityEngine.Color)
   nameWithType: Buffer4Extension.Colorize(Buffer4, Color)
-- uid: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Gradient)
-  name: Colorize(Buffer4, Gradient)
-  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Gradient_
-  commentId: M:Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4,UnityEngine.Gradient)
-  fullName: Engine4.Internal.Buffer4Extension.Colorize(Engine4.Buffer4, UnityEngine.Gradient)
-  nameWithType: Buffer4Extension.Colorize(Buffer4, Gradient)
 - uid: Engine4.Internal.Buffer4Extension.Colorize*
   name: Colorize
   href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_
   commentId: Overload:Engine4.Internal.Buffer4Extension.Colorize
   fullName: Engine4.Internal.Buffer4Extension.Colorize
   nameWithType: Buffer4Extension.Colorize
+- uid: Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4,Engine4.Buffer4)
+  name: CopyTo(Buffer4, Buffer4)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_CopyTo_Engine4_Buffer4_Engine4_Buffer4_
+  commentId: M:Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4,Engine4.Buffer4)
+  fullName: Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4, Engine4.Buffer4)
+  nameWithType: Buffer4Extension.CopyTo(Buffer4, Buffer4)
+- uid: Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4,Engine4.Buffer4,System.Boolean)
+  name: CopyTo(Buffer4, Buffer4, Boolean)
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_CopyTo_Engine4_Buffer4_Engine4_Buffer4_System_Boolean_
+  commentId: M:Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4,Engine4.Buffer4,System.Boolean)
+  fullName: Engine4.Internal.Buffer4Extension.CopyTo(Engine4.Buffer4, Engine4.Buffer4, System.Boolean)
+  nameWithType: Buffer4Extension.CopyTo(Buffer4, Buffer4, Boolean)
+- uid: Engine4.Internal.Buffer4Extension.CopyTo*
+  name: CopyTo
+  href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_CopyTo_
+  commentId: Overload:Engine4.Internal.Buffer4Extension.CopyTo
+  fullName: Engine4.Internal.Buffer4Extension.CopyTo
+  nameWithType: Buffer4Extension.CopyTo
 - uid: Engine4.Internal.Buffer4Extension.Sequence(Engine4.Buffer4,Engine4.Internal.SequenceMode)
   name: Sequence(Buffer4, SequenceMode)
   href: api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_
@@ -1957,15 +2002,15 @@ references:
   commentId: Overload:Engine4.Internal.Utility.GetAverage
   fullName: Engine4.Internal.Utility.GetAverage
   nameWithType: Utility.GetAverage
-- uid: Engine4.Internal.Utility.GetBounding(System.Collections.Generic.List{Engine4.Vector4})
-  name: GetBounding(List<Vector4>)
-  href: api/Engine4.Internal.Utility.html#Engine4_Internal_Utility_GetBounding_System_Collections_Generic_List_Engine4_Vector4__
-  commentId: M:Engine4.Internal.Utility.GetBounding(System.Collections.Generic.List{Engine4.Vector4})
-  name.vb: GetBounding(List(Of Vector4))
-  fullName: Engine4.Internal.Utility.GetBounding(System.Collections.Generic.List<Engine4.Vector4>)
-  fullName.vb: Engine4.Internal.Utility.GetBounding(System.Collections.Generic.List(Of Engine4.Vector4))
-  nameWithType: Utility.GetBounding(List<Vector4>)
-  nameWithType.vb: Utility.GetBounding(List(Of Vector4))
+- uid: Engine4.Internal.Utility.GetBounding(Engine4.Vector4[],System.Int32)
+  name: GetBounding(Vector4[], Int32)
+  href: api/Engine4.Internal.Utility.html#Engine4_Internal_Utility_GetBounding_Engine4_Vector4___System_Int32_
+  commentId: M:Engine4.Internal.Utility.GetBounding(Engine4.Vector4[],System.Int32)
+  name.vb: GetBounding(Vector4(), Int32)
+  fullName: Engine4.Internal.Utility.GetBounding(Engine4.Vector4[], System.Int32)
+  fullName.vb: Engine4.Internal.Utility.GetBounding(Engine4.Vector4(), System.Int32)
+  nameWithType: Utility.GetBounding(Vector4[], Int32)
+  nameWithType.vb: Utility.GetBounding(Vector4(), Int32)
 - uid: Engine4.Internal.Utility.GetBounding*
   name: GetBounding
   href: api/Engine4.Internal.Utility.html#Engine4_Internal_Utility_GetBounding_
@@ -2269,6 +2314,36 @@ references:
   commentId: Overload:Engine4.Matrix4.Column3
   fullName: Engine4.Matrix4.Column3
   nameWithType: Matrix4.Column3
+- uid: Engine4.Matrix4.Delta(Engine4.Matrix4,Engine4.Matrix4)
+  name: Delta(Matrix4, Matrix4)
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_Delta_Engine4_Matrix4_Engine4_Matrix4_
+  commentId: M:Engine4.Matrix4.Delta(Engine4.Matrix4,Engine4.Matrix4)
+  fullName: Engine4.Matrix4.Delta(Engine4.Matrix4, Engine4.Matrix4)
+  nameWithType: Matrix4.Delta(Matrix4, Matrix4)
+- uid: Engine4.Matrix4.Delta(Engine4.Vector4,Engine4.Vector4)
+  name: Delta(Vector4, Vector4)
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_Delta_Engine4_Vector4_Engine4_Vector4_
+  commentId: M:Engine4.Matrix4.Delta(Engine4.Vector4,Engine4.Vector4)
+  fullName: Engine4.Matrix4.Delta(Engine4.Vector4, Engine4.Vector4)
+  nameWithType: Matrix4.Delta(Vector4, Vector4)
+- uid: Engine4.Matrix4.Delta*
+  name: Delta
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_Delta_
+  commentId: Overload:Engine4.Matrix4.Delta
+  fullName: Engine4.Matrix4.Delta
+  nameWithType: Matrix4.Delta
+- uid: Engine4.Matrix4.Determinant(Engine4.Matrix4)
+  name: Determinant(Matrix4)
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_Determinant_Engine4_Matrix4_
+  commentId: M:Engine4.Matrix4.Determinant(Engine4.Matrix4)
+  fullName: Engine4.Matrix4.Determinant(Engine4.Matrix4)
+  nameWithType: Matrix4.Determinant(Matrix4)
+- uid: Engine4.Matrix4.Determinant*
+  name: Determinant
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_Determinant_
+  commentId: Overload:Engine4.Matrix4.Determinant
+  fullName: Engine4.Matrix4.Determinant
+  nameWithType: Matrix4.Determinant
 - uid: Engine4.Matrix4.Diagonal
   name: Diagonal
   href: api/Engine4.Matrix4.html#Engine4_Matrix4_Diagonal
@@ -2341,18 +2416,6 @@ references:
   commentId: F:Engine4.Matrix4.ez
   fullName: Engine4.Matrix4.ez
   nameWithType: Matrix4.ez
-- uid: Engine4.Matrix4.GetDeterminant(Engine4.Matrix4)
-  name: GetDeterminant(Matrix4)
-  href: api/Engine4.Matrix4.html#Engine4_Matrix4_GetDeterminant_Engine4_Matrix4_
-  commentId: M:Engine4.Matrix4.GetDeterminant(Engine4.Matrix4)
-  fullName: Engine4.Matrix4.GetDeterminant(Engine4.Matrix4)
-  nameWithType: Matrix4.GetDeterminant(Matrix4)
-- uid: Engine4.Matrix4.GetDeterminant*
-  name: GetDeterminant
-  href: api/Engine4.Matrix4.html#Engine4_Matrix4_GetDeterminant_
-  commentId: Overload:Engine4.Matrix4.GetDeterminant
-  fullName: Engine4.Matrix4.GetDeterminant
-  nameWithType: Matrix4.GetDeterminant
 - uid: Engine4.Matrix4.identity
   name: identity
   href: api/Engine4.Matrix4.html#Engine4_Matrix4_identity
@@ -2389,6 +2452,30 @@ references:
   commentId: Overload:Engine4.Matrix4.Item
   fullName: Engine4.Matrix4.Item
   nameWithType: Matrix4.Item
+- uid: Engine4.Matrix4.LookAt(Engine4.Vector4)
+  name: LookAt(Vector4)
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_LookAt_Engine4_Vector4_
+  commentId: M:Engine4.Matrix4.LookAt(Engine4.Vector4)
+  fullName: Engine4.Matrix4.LookAt(Engine4.Vector4)
+  nameWithType: Matrix4.LookAt(Vector4)
+- uid: Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4)
+  name: LookAt(Vector4, Vector4)
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_
+  commentId: M:Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4)
+  fullName: Engine4.Matrix4.LookAt(Engine4.Vector4, Engine4.Vector4)
+  nameWithType: Matrix4.LookAt(Vector4, Vector4)
+- uid: Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
+  name: LookAt(Vector4, Vector4, Vector4)
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_
+  commentId: M:Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
+  fullName: Engine4.Matrix4.LookAt(Engine4.Vector4, Engine4.Vector4, Engine4.Vector4)
+  nameWithType: Matrix4.LookAt(Vector4, Vector4, Vector4)
+- uid: Engine4.Matrix4.LookAt*
+  name: LookAt
+  href: api/Engine4.Matrix4.html#Engine4_Matrix4_LookAt_
+  commentId: Overload:Engine4.Matrix4.LookAt
+  fullName: Engine4.Matrix4.LookAt
+  nameWithType: Matrix4.LookAt
 - uid: Engine4.Matrix4.op_Addition(Engine4.Matrix4,Engine4.Matrix4)
   name: Addition(Matrix4, Matrix4)
   href: api/Engine4.Matrix4.html#Engine4_Matrix4_op_Addition_Engine4_Matrix4_Engine4_Matrix4_
@@ -2650,36 +2737,36 @@ references:
   commentId: Overload:Engine4.Matrix4x5.op_Multiply
   fullName: Engine4.Matrix4x5.Multiply
   nameWithType: Matrix4x5.Multiply
-- uid: Engine4.Matrix4x5.over
-  name: over
-  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_over
-  commentId: P:Engine4.Matrix4x5.over
-  fullName: Engine4.Matrix4x5.over
-  nameWithType: Matrix4x5.over
-- uid: Engine4.Matrix4x5.over*
-  name: over
-  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_over_
-  commentId: Overload:Engine4.Matrix4x5.over
-  fullName: Engine4.Matrix4x5.over
-  nameWithType: Matrix4x5.over
+- uid: Engine4.Matrix4x5.overward
+  name: overward
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_overward
+  commentId: P:Engine4.Matrix4x5.overward
+  fullName: Engine4.Matrix4x5.overward
+  nameWithType: Matrix4x5.overward
+- uid: Engine4.Matrix4x5.overward*
+  name: overward
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_overward_
+  commentId: Overload:Engine4.Matrix4x5.overward
+  fullName: Engine4.Matrix4x5.overward
+  nameWithType: Matrix4x5.overward
 - uid: Engine4.Matrix4x5.position
   name: position
   href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_position
   commentId: F:Engine4.Matrix4x5.position
   fullName: Engine4.Matrix4x5.position
   nameWithType: Matrix4x5.position
-- uid: Engine4.Matrix4x5.right
-  name: right
-  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_right
-  commentId: P:Engine4.Matrix4x5.right
-  fullName: Engine4.Matrix4x5.right
-  nameWithType: Matrix4x5.right
-- uid: Engine4.Matrix4x5.right*
-  name: right
-  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_right_
-  commentId: Overload:Engine4.Matrix4x5.right
-  fullName: Engine4.Matrix4x5.right
-  nameWithType: Matrix4x5.right
+- uid: Engine4.Matrix4x5.rightward
+  name: rightward
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_rightward
+  commentId: P:Engine4.Matrix4x5.rightward
+  fullName: Engine4.Matrix4x5.rightward
+  nameWithType: Matrix4x5.rightward
+- uid: Engine4.Matrix4x5.rightward*
+  name: rightward
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_rightward_
+  commentId: Overload:Engine4.Matrix4x5.rightward
+  fullName: Engine4.Matrix4x5.rightward
+  nameWithType: Matrix4x5.rightward
 - uid: Engine4.Matrix4x5.rotation
   name: rotation
   href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_rotation
@@ -2698,18 +2785,18 @@ references:
   commentId: Overload:Engine4.Matrix4x5.ToTRS
   fullName: Engine4.Matrix4x5.ToTRS
   nameWithType: Matrix4x5.ToTRS
-- uid: Engine4.Matrix4x5.up
-  name: up
-  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_up
-  commentId: P:Engine4.Matrix4x5.up
-  fullName: Engine4.Matrix4x5.up
-  nameWithType: Matrix4x5.up
-- uid: Engine4.Matrix4x5.up*
-  name: up
-  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_up_
-  commentId: Overload:Engine4.Matrix4x5.up
-  fullName: Engine4.Matrix4x5.up
-  nameWithType: Matrix4x5.up
+- uid: Engine4.Matrix4x5.upward
+  name: upward
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_upward
+  commentId: P:Engine4.Matrix4x5.upward
+  fullName: Engine4.Matrix4x5.upward
+  nameWithType: Matrix4x5.upward
+- uid: Engine4.Matrix4x5.upward*
+  name: upward
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_upward_
+  commentId: Overload:Engine4.Matrix4x5.upward
+  fullName: Engine4.Matrix4x5.upward
+  nameWithType: Matrix4x5.upward
 - uid: Engine4.MonoBehaviour4
   name: MonoBehaviour4
   href: api/Engine4.MonoBehaviour4.html
@@ -5038,48 +5125,72 @@ references:
   commentId: Overload:Engine4.Renderer4.#ctor
   fullName: Engine4.Renderer4.Renderer4
   nameWithType: Renderer4.Renderer4
+- uid: Engine4.Renderer4.modelers
+  name: modelers
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_modelers
+  commentId: P:Engine4.Renderer4.modelers
+  fullName: Engine4.Renderer4.modelers
+  nameWithType: Renderer4.modelers
+- uid: Engine4.Renderer4.modelers*
+  name: modelers
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_modelers_
+  commentId: Overload:Engine4.Renderer4.modelers
+  fullName: Engine4.Renderer4.modelers
+  nameWithType: Renderer4.modelers
+- uid: Engine4.Renderer4.modifiers
+  name: modifiers
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_modifiers
+  commentId: P:Engine4.Renderer4.modifiers
+  fullName: Engine4.Renderer4.modifiers
+  nameWithType: Renderer4.modifiers
+- uid: Engine4.Renderer4.modifiers*
+  name: modifiers
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_modifiers_
+  commentId: Overload:Engine4.Renderer4.modifiers
+  fullName: Engine4.Renderer4.modifiers
+  nameWithType: Renderer4.modifiers
 - uid: Engine4.Renderer4.profile
   name: profile
   href: api/Engine4.Renderer4.html#Engine4_Renderer4_profile
   commentId: F:Engine4.Renderer4.profile
   fullName: Engine4.Renderer4.profile
   nameWithType: Renderer4.profile
-- uid: Engine4.Renderer4.ReacquireUploaders
-  name: ReacquireUploaders()
-  href: api/Engine4.Renderer4.html#Engine4_Renderer4_ReacquireUploaders
-  commentId: M:Engine4.Renderer4.ReacquireUploaders
-  fullName: Engine4.Renderer4.ReacquireUploaders()
-  nameWithType: Renderer4.ReacquireUploaders()
-- uid: Engine4.Renderer4.ReacquireUploaders*
-  name: ReacquireUploaders
-  href: api/Engine4.Renderer4.html#Engine4_Renderer4_ReacquireUploaders_
-  commentId: Overload:Engine4.Renderer4.ReacquireUploaders
-  fullName: Engine4.Renderer4.ReacquireUploaders
-  nameWithType: Renderer4.ReacquireUploaders
-- uid: Engine4.Renderer4.SetDirty(System.Boolean)
-  name: SetDirty(Boolean)
-  href: api/Engine4.Renderer4.html#Engine4_Renderer4_SetDirty_System_Boolean_
-  commentId: M:Engine4.Renderer4.SetDirty(System.Boolean)
-  fullName: Engine4.Renderer4.SetDirty(System.Boolean)
-  nameWithType: Renderer4.SetDirty(Boolean)
+- uid: Engine4.Renderer4.ReacquireModelers
+  name: ReacquireModelers()
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_ReacquireModelers
+  commentId: M:Engine4.Renderer4.ReacquireModelers
+  fullName: Engine4.Renderer4.ReacquireModelers()
+  nameWithType: Renderer4.ReacquireModelers()
+- uid: Engine4.Renderer4.ReacquireModelers*
+  name: ReacquireModelers
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_ReacquireModelers_
+  commentId: Overload:Engine4.Renderer4.ReacquireModelers
+  fullName: Engine4.Renderer4.ReacquireModelers
+  nameWithType: Renderer4.ReacquireModelers
+- uid: Engine4.Renderer4.ReacquireModifiers
+  name: ReacquireModifiers()
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_ReacquireModifiers
+  commentId: M:Engine4.Renderer4.ReacquireModifiers
+  fullName: Engine4.Renderer4.ReacquireModifiers()
+  nameWithType: Renderer4.ReacquireModifiers()
+- uid: Engine4.Renderer4.ReacquireModifiers*
+  name: ReacquireModifiers
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_ReacquireModifiers_
+  commentId: Overload:Engine4.Renderer4.ReacquireModifiers
+  fullName: Engine4.Renderer4.ReacquireModifiers
+  nameWithType: Renderer4.ReacquireModifiers
+- uid: Engine4.Renderer4.SetDirty(Engine4.DirtyLevel)
+  name: SetDirty(DirtyLevel)
+  href: api/Engine4.Renderer4.html#Engine4_Renderer4_SetDirty_Engine4_DirtyLevel_
+  commentId: M:Engine4.Renderer4.SetDirty(Engine4.DirtyLevel)
+  fullName: Engine4.Renderer4.SetDirty(Engine4.DirtyLevel)
+  nameWithType: Renderer4.SetDirty(DirtyLevel)
 - uid: Engine4.Renderer4.SetDirty*
   name: SetDirty
   href: api/Engine4.Renderer4.html#Engine4_Renderer4_SetDirty_
   commentId: Overload:Engine4.Renderer4.SetDirty
   fullName: Engine4.Renderer4.SetDirty
   nameWithType: Renderer4.SetDirty
-- uid: Engine4.Renderer4.uploaders
-  name: uploaders
-  href: api/Engine4.Renderer4.html#Engine4_Renderer4_uploaders
-  commentId: P:Engine4.Renderer4.uploaders
-  fullName: Engine4.Renderer4.uploaders
-  nameWithType: Renderer4.uploaders
-- uid: Engine4.Renderer4.uploaders*
-  name: uploaders
-  href: api/Engine4.Renderer4.html#Engine4_Renderer4_uploaders_
-  commentId: Overload:Engine4.Renderer4.uploaders
-  fullName: Engine4.Renderer4.uploaders
-  nameWithType: Renderer4.uploaders
 - uid: Engine4.Renderer4.visualization
   name: visualization
   href: api/Engine4.Renderer4.html#Engine4_Renderer4_visualization
@@ -5158,6 +5269,102 @@ references:
   commentId: F:Engine4.Rendering.Cylinder4.radius
   fullName: Engine4.Rendering.Cylinder4.radius
   nameWithType: Cylinder4.radius
+- uid: Engine4.Rendering.Debugger4
+  name: Debugger4
+  href: api/Engine4.Rendering.Debugger4.html
+  commentId: T:Engine4.Rendering.Debugger4
+  fullName: Engine4.Rendering.Debugger4
+  nameWithType: Debugger4
+- uid: Engine4.Rendering.Debugger4.#ctor
+  name: Debugger4()
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4__ctor
+  commentId: M:Engine4.Rendering.Debugger4.#ctor
+  fullName: Engine4.Rendering.Debugger4.Debugger4()
+  nameWithType: Debugger4.Debugger4()
+- uid: Engine4.Rendering.Debugger4.#ctor*
+  name: Debugger4
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4__ctor_
+  commentId: Overload:Engine4.Rendering.Debugger4.#ctor
+  fullName: Engine4.Rendering.Debugger4.Debugger4
+  nameWithType: Debugger4.Debugger4
+- uid: Engine4.Rendering.Debugger4.indiceGizmo
+  name: indiceGizmo
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4_indiceGizmo
+  commentId: F:Engine4.Rendering.Debugger4.indiceGizmo
+  fullName: Engine4.Rendering.Debugger4.indiceGizmo
+  nameWithType: Debugger4.indiceGizmo
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow
+  name: Debugger4.IndiceGizmoShow
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html
+  commentId: T:Engine4.Rendering.Debugger4.IndiceGizmoShow
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow
+  nameWithType: Debugger4.IndiceGizmoShow
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow.Color
+  name: Color
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html#Engine4_Rendering_Debugger4_IndiceGizmoShow_Color
+  commentId: F:Engine4.Rendering.Debugger4.IndiceGizmoShow.Color
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow.Color
+  nameWithType: Debugger4.IndiceGizmoShow.Color
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow.Index
+  name: Index
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html#Engine4_Rendering_Debugger4_IndiceGizmoShow_Index
+  commentId: F:Engine4.Rendering.Debugger4.IndiceGizmoShow.Index
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow.Index
+  nameWithType: Debugger4.IndiceGizmoShow.Index
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow.None
+  name: None
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html#Engine4_Rendering_Debugger4_IndiceGizmoShow_None
+  commentId: F:Engine4.Rendering.Debugger4.IndiceGizmoShow.None
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow.None
+  nameWithType: Debugger4.IndiceGizmoShow.None
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow.UV
+  name: UV
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html#Engine4_Rendering_Debugger4_IndiceGizmoShow_UV
+  commentId: F:Engine4.Rendering.Debugger4.IndiceGizmoShow.UV
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow.UV
+  nameWithType: Debugger4.IndiceGizmoShow.UV
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow.UV2
+  name: UV2
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html#Engine4_Rendering_Debugger4_IndiceGizmoShow_UV2
+  commentId: F:Engine4.Rendering.Debugger4.IndiceGizmoShow.UV2
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow.UV2
+  nameWithType: Debugger4.IndiceGizmoShow.UV2
+- uid: Engine4.Rendering.Debugger4.IndiceGizmoShow.UV3
+  name: UV3
+  href: api/Engine4.Rendering.Debugger4.IndiceGizmoShow.html#Engine4_Rendering_Debugger4_IndiceGizmoShow_UV3
+  commentId: F:Engine4.Rendering.Debugger4.IndiceGizmoShow.UV3
+  fullName: Engine4.Rendering.Debugger4.IndiceGizmoShow.UV3
+  nameWithType: Debugger4.IndiceGizmoShow.UV3
+- uid: Engine4.Rendering.Debugger4.indiceLabel
+  name: indiceLabel
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4_indiceLabel
+  commentId: F:Engine4.Rendering.Debugger4.indiceLabel
+  fullName: Engine4.Rendering.Debugger4.indiceLabel
+  nameWithType: Debugger4.indiceLabel
+- uid: Engine4.Rendering.Debugger4.max
+  name: max
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4_max
+  commentId: F:Engine4.Rendering.Debugger4.max
+  fullName: Engine4.Rendering.Debugger4.max
+  nameWithType: Debugger4.max
+- uid: Engine4.Rendering.Debugger4.min
+  name: min
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4_min
+  commentId: F:Engine4.Rendering.Debugger4.min
+  fullName: Engine4.Rendering.Debugger4.min
+  nameWithType: Debugger4.min
+- uid: Engine4.Rendering.Debugger4.vertexGizmo
+  name: vertexGizmo
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4_vertexGizmo
+  commentId: F:Engine4.Rendering.Debugger4.vertexGizmo
+  fullName: Engine4.Rendering.Debugger4.vertexGizmo
+  nameWithType: Debugger4.vertexGizmo
+- uid: Engine4.Rendering.Debugger4.vertexLabels
+  name: vertexLabels
+  href: api/Engine4.Rendering.Debugger4.html#Engine4_Rendering_Debugger4_vertexLabels
+  commentId: F:Engine4.Rendering.Debugger4.vertexLabels
+  fullName: Engine4.Rendering.Debugger4.vertexLabels
+  nameWithType: Debugger4.vertexLabels
 - uid: Engine4.Rendering.Frustum4
   name: Frustum4
   href: api/Engine4.Rendering.Frustum4.html
@@ -5245,7 +5452,13 @@ references:
 - uid: Engine4.Rendering.Gizmos4.color
   name: color
   href: api/Engine4.Rendering.Gizmos4.html#Engine4_Rendering_Gizmos4_color
-  commentId: F:Engine4.Rendering.Gizmos4.color
+  commentId: P:Engine4.Rendering.Gizmos4.color
+  fullName: Engine4.Rendering.Gizmos4.color
+  nameWithType: Gizmos4.color
+- uid: Engine4.Rendering.Gizmos4.color*
+  name: color
+  href: api/Engine4.Rendering.Gizmos4.html#Engine4_Rendering_Gizmos4_color_
+  commentId: Overload:Engine4.Rendering.Gizmos4.color
   fullName: Engine4.Rendering.Gizmos4.color
   nameWithType: Gizmos4.color
 - uid: Engine4.Rendering.Gizmos4.DrawCube(Engine4.Vector4,Engine4.Vector4)
@@ -5341,7 +5554,13 @@ references:
 - uid: Engine4.Rendering.Gizmos4.matrix
   name: matrix
   href: api/Engine4.Rendering.Gizmos4.html#Engine4_Rendering_Gizmos4_matrix
-  commentId: F:Engine4.Rendering.Gizmos4.matrix
+  commentId: P:Engine4.Rendering.Gizmos4.matrix
+  fullName: Engine4.Rendering.Gizmos4.matrix
+  nameWithType: Gizmos4.matrix
+- uid: Engine4.Rendering.Gizmos4.matrix*
+  name: matrix
+  href: api/Engine4.Rendering.Gizmos4.html#Engine4_Rendering_Gizmos4_matrix_
+  commentId: Overload:Engine4.Rendering.Gizmos4.matrix
   fullName: Engine4.Rendering.Gizmos4.matrix
   nameWithType: Gizmos4.matrix
 - uid: Engine4.Rendering.GizmosContainer4
@@ -5530,18 +5749,48 @@ references:
   commentId: Overload:Engine4.Rendering.Modeler4.#ctor
   fullName: Engine4.Rendering.Modeler4.Modeler4
   nameWithType: Modeler4.Modeler4
-- uid: Engine4.Rendering.Modeler4.UploadBuffer(Engine4.Buffer4)
-  name: UploadBuffer(Buffer4)
-  href: api/Engine4.Rendering.Modeler4.html#Engine4_Rendering_Modeler4_UploadBuffer_Engine4_Buffer4_
-  commentId: M:Engine4.Rendering.Modeler4.UploadBuffer(Engine4.Buffer4)
-  fullName: Engine4.Rendering.Modeler4.UploadBuffer(Engine4.Buffer4)
-  nameWithType: Modeler4.UploadBuffer(Buffer4)
-- uid: Engine4.Rendering.Modeler4.UploadBuffer*
-  name: UploadBuffer
-  href: api/Engine4.Rendering.Modeler4.html#Engine4_Rendering_Modeler4_UploadBuffer_
-  commentId: Overload:Engine4.Rendering.Modeler4.UploadBuffer
-  fullName: Engine4.Rendering.Modeler4.UploadBuffer
-  nameWithType: Modeler4.UploadBuffer
+- uid: Engine4.Rendering.Modeler4.CreateModel(Engine4.Buffer4)
+  name: CreateModel(Buffer4)
+  href: api/Engine4.Rendering.Modeler4.html#Engine4_Rendering_Modeler4_CreateModel_Engine4_Buffer4_
+  commentId: M:Engine4.Rendering.Modeler4.CreateModel(Engine4.Buffer4)
+  fullName: Engine4.Rendering.Modeler4.CreateModel(Engine4.Buffer4)
+  nameWithType: Modeler4.CreateModel(Buffer4)
+- uid: Engine4.Rendering.Modeler4.CreateModel*
+  name: CreateModel
+  href: api/Engine4.Rendering.Modeler4.html#Engine4_Rendering_Modeler4_CreateModel_
+  commentId: Overload:Engine4.Rendering.Modeler4.CreateModel
+  fullName: Engine4.Rendering.Modeler4.CreateModel
+  nameWithType: Modeler4.CreateModel
+- uid: Engine4.Rendering.Modifier4
+  name: Modifier4
+  href: api/Engine4.Rendering.Modifier4.html
+  commentId: T:Engine4.Rendering.Modifier4
+  fullName: Engine4.Rendering.Modifier4
+  nameWithType: Modifier4
+- uid: Engine4.Rendering.Modifier4.#ctor
+  name: Modifier4()
+  href: api/Engine4.Rendering.Modifier4.html#Engine4_Rendering_Modifier4__ctor
+  commentId: M:Engine4.Rendering.Modifier4.#ctor
+  fullName: Engine4.Rendering.Modifier4.Modifier4()
+  nameWithType: Modifier4.Modifier4()
+- uid: Engine4.Rendering.Modifier4.#ctor*
+  name: Modifier4
+  href: api/Engine4.Rendering.Modifier4.html#Engine4_Rendering_Modifier4__ctor_
+  commentId: Overload:Engine4.Rendering.Modifier4.#ctor
+  fullName: Engine4.Rendering.Modifier4.Modifier4
+  nameWithType: Modifier4.Modifier4
+- uid: Engine4.Rendering.Modifier4.ModifyModel(Engine4.Buffer4)
+  name: ModifyModel(Buffer4)
+  href: api/Engine4.Rendering.Modifier4.html#Engine4_Rendering_Modifier4_ModifyModel_Engine4_Buffer4_
+  commentId: M:Engine4.Rendering.Modifier4.ModifyModel(Engine4.Buffer4)
+  fullName: Engine4.Rendering.Modifier4.ModifyModel(Engine4.Buffer4)
+  nameWithType: Modifier4.ModifyModel(Buffer4)
+- uid: Engine4.Rendering.Modifier4.ModifyModel*
+  name: ModifyModel
+  href: api/Engine4.Rendering.Modifier4.html#Engine4_Rendering_Modifier4_ModifyModel_
+  commentId: Overload:Engine4.Rendering.Modifier4.ModifyModel
+  fullName: Engine4.Rendering.Modifier4.ModifyModel
+  nameWithType: Modifier4.ModifyModel
 - uid: Engine4.Rendering.ParticleExtended4
   name: ParticleExtended4
   href: api/Engine4.Rendering.ParticleExtended4.html
@@ -5626,12 +5875,6 @@ references:
   commentId: Overload:Engine4.Rendering.Primitive4.#ctor
   fullName: Engine4.Rendering.Primitive4.Primitive4
   nameWithType: Primitive4.Primitive4
-- uid: Engine4.Rendering.Primitive4.colorful
-  name: colorful
-  href: api/Engine4.Rendering.Primitive4.html#Engine4_Rendering_Primitive4_colorful
-  commentId: F:Engine4.Rendering.Primitive4.colorful
-  fullName: Engine4.Rendering.Primitive4.colorful
-  nameWithType: Primitive4.colorful
 - uid: Engine4.Rendering.Primitive4.radius
   name: radius
   href: api/Engine4.Rendering.Primitive4.html#Engine4_Rendering_Primitive4_radius
@@ -6889,6 +7132,18 @@ references:
   commentId: Overload:Engine4.Vector4.Equals
   fullName: Engine4.Vector4.Equals
   nameWithType: Vector4.Equals
+- uid: Engine4.Vector4.forward
+  name: forward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_forward
+  commentId: P:Engine4.Vector4.forward
+  fullName: Engine4.Vector4.forward
+  nameWithType: Vector4.forward
+- uid: Engine4.Vector4.forward*
+  name: forward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_forward_
+  commentId: Overload:Engine4.Vector4.forward
+  fullName: Engine4.Vector4.forward
+  nameWithType: Vector4.forward
 - uid: Engine4.Vector4.Invert(Engine4.Vector4)
   name: Invert(Vector4)
   href: api/Engine4.Vector4.html#Engine4_Vector4_Invert_Engine4_Vector4_
@@ -7216,6 +7471,30 @@ references:
   commentId: Overload:Engine4.Vector4.op_UnaryNegation
   fullName: Engine4.Vector4.UnaryNegation
   nameWithType: Vector4.UnaryNegation
+- uid: Engine4.Vector4.overward
+  name: overward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_overward
+  commentId: P:Engine4.Vector4.overward
+  fullName: Engine4.Vector4.overward
+  nameWithType: Vector4.overward
+- uid: Engine4.Vector4.overward*
+  name: overward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_overward_
+  commentId: Overload:Engine4.Vector4.overward
+  fullName: Engine4.Vector4.overward
+  nameWithType: Vector4.overward
+- uid: Engine4.Vector4.rightward
+  name: rightward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_rightward
+  commentId: P:Engine4.Vector4.rightward
+  fullName: Engine4.Vector4.rightward
+  nameWithType: Vector4.rightward
+- uid: Engine4.Vector4.rightward*
+  name: rightward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_rightward_
+  commentId: Overload:Engine4.Vector4.rightward
+  fullName: Engine4.Vector4.rightward
+  nameWithType: Vector4.rightward
 - uid: Engine4.Vector4.Sign(Engine4.Vector4)
   name: Sign(Vector4)
   href: api/Engine4.Vector4.html#Engine4_Vector4_Sign_Engine4_Vector4_
@@ -7228,6 +7507,18 @@ references:
   commentId: Overload:Engine4.Vector4.Sign
   fullName: Engine4.Vector4.Sign
   nameWithType: Vector4.Sign
+- uid: Engine4.Vector4.upward
+  name: upward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_upward
+  commentId: P:Engine4.Vector4.upward
+  fullName: Engine4.Vector4.upward
+  nameWithType: Vector4.upward
+- uid: Engine4.Vector4.upward*
+  name: upward
+  href: api/Engine4.Vector4.html#Engine4_Vector4_upward_
+  commentId: Overload:Engine4.Vector4.upward
+  fullName: Engine4.Vector4.upward
+  nameWithType: Vector4.upward
 - uid: Engine4.Vector4.w
   name: w
   href: api/Engine4.Vector4.html#Engine4_Vector4_w
@@ -7264,83 +7555,17 @@ references:
   commentId: Overload:Engine4.Vector4.zero
   fullName: Engine4.Vector4.zero
   nameWithType: Vector4.zero
-- uid: Engine4.Vertex4
-  name: Vertex4
-  href: api/Engine4.Vertex4.html
-  commentId: T:Engine4.Vertex4
-  fullName: Engine4.Vertex4
-  nameWithType: Vertex4
-- uid: Engine4.Vertex4.#ctor(Engine4.Vector4)
-  name: Vertex4(Vector4)
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4__ctor_Engine4_Vector4_
-  commentId: M:Engine4.Vertex4.#ctor(Engine4.Vector4)
-  fullName: Engine4.Vertex4.Vertex4(Engine4.Vector4)
-  nameWithType: Vertex4.Vertex4(Vector4)
-- uid: Engine4.Vertex4.#ctor(Engine4.Vector4,Engine4.Vector4)
-  name: Vertex4(Vector4, Vector4)
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4__ctor_Engine4_Vector4_Engine4_Vector4_
-  commentId: M:Engine4.Vertex4.#ctor(Engine4.Vector4,Engine4.Vector4)
-  fullName: Engine4.Vertex4.Vertex4(Engine4.Vector4, Engine4.Vector4)
-  nameWithType: Vertex4.Vertex4(Vector4, Vector4)
-- uid: Engine4.Vertex4.#ctor(Engine4.Vector4,Engine4.VertexProfile)
-  name: Vertex4(Vector4, VertexProfile)
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4__ctor_Engine4_Vector4_Engine4_VertexProfile_
-  commentId: M:Engine4.Vertex4.#ctor(Engine4.Vector4,Engine4.VertexProfile)
-  fullName: Engine4.Vertex4.Vertex4(Engine4.Vector4, Engine4.VertexProfile)
-  nameWithType: Vertex4.Vertex4(Vector4, VertexProfile)
-- uid: Engine4.Vertex4.#ctor(Engine4.Vector4,UnityEngine.Color)
-  name: Vertex4(Vector4, Color)
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4__ctor_Engine4_Vector4_UnityEngine_Color_
-  commentId: M:Engine4.Vertex4.#ctor(Engine4.Vector4,UnityEngine.Color)
-  fullName: Engine4.Vertex4.Vertex4(Engine4.Vector4, UnityEngine.Color)
-  nameWithType: Vertex4.Vertex4(Vector4, Color)
-- uid: Engine4.Vertex4.#ctor*
-  name: Vertex4
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4__ctor_
-  commentId: Overload:Engine4.Vertex4.#ctor
-  fullName: Engine4.Vertex4.Vertex4
-  nameWithType: Vertex4.Vertex4
-- uid: Engine4.Vertex4.op_Implicit(Engine4.Vector4)~Engine4.Vertex4
-  name: Implicit(Vector4 to Vertex4)
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4_op_Implicit_Engine4_Vector4__Engine4_Vertex4
-  commentId: M:Engine4.Vertex4.op_Implicit(Engine4.Vector4)~Engine4.Vertex4
-  name.vb: Widening(Vector4 to Vertex4)
-  fullName: Engine4.Vertex4.Implicit(Engine4.Vector4 to Engine4.Vertex4)
-  fullName.vb: Engine4.Vertex4.Widening(Engine4.Vector4 to Engine4.Vertex4)
-  nameWithType: Vertex4.Implicit(Vector4 to Vertex4)
-  nameWithType.vb: Vertex4.Widening(Vector4 to Vertex4)
-- uid: Engine4.Vertex4.op_Implicit*
-  name: Implicit
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4_op_Implicit_
-  commentId: Overload:Engine4.Vertex4.op_Implicit
-  name.vb: Widening
-  fullName: Engine4.Vertex4.Implicit
-  fullName.vb: Engine4.Vertex4.Widening
-  nameWithType: Vertex4.Implicit
-  nameWithType.vb: Vertex4.Widening
-- uid: Engine4.Vertex4.position
-  name: position
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4_position
-  commentId: F:Engine4.Vertex4.position
-  fullName: Engine4.Vertex4.position
-  nameWithType: Vertex4.position
-- uid: Engine4.Vertex4.profile
-  name: profile
-  href: api/Engine4.Vertex4.html#Engine4_Vertex4_profile
-  commentId: F:Engine4.Vertex4.profile
-  fullName: Engine4.Vertex4.profile
-  nameWithType: Vertex4.profile
 - uid: Engine4.VertexProfile
   name: VertexProfile
   href: api/Engine4.VertexProfile.html
   commentId: T:Engine4.VertexProfile
   fullName: Engine4.VertexProfile
   nameWithType: VertexProfile
-- uid: Engine4.VertexProfile.#ctor(UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
+- uid: Engine4.VertexProfile.#ctor(UnityEngine.Color,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4)
   name: VertexProfile(Color, Vector4, Vector4, Vector4)
-  href: api/Engine4.VertexProfile.html#Engine4_VertexProfile__ctor_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_
-  commentId: M:Engine4.VertexProfile.#ctor(UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)
-  fullName: Engine4.VertexProfile.VertexProfile(UnityEngine.Color, Engine4.Vector4, Engine4.Vector4, Engine4.Vector4)
+  href: api/Engine4.VertexProfile.html#Engine4_VertexProfile__ctor_UnityEngine_Color_UnityEngine_Vector4_UnityEngine_Vector4_UnityEngine_Vector4_
+  commentId: M:Engine4.VertexProfile.#ctor(UnityEngine.Color,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4)
+  fullName: Engine4.VertexProfile.VertexProfile(UnityEngine.Color, UnityEngine.Vector4, UnityEngine.Vector4, UnityEngine.Vector4)
   nameWithType: VertexProfile.VertexProfile(Color, Vector4, Vector4, Vector4)
 - uid: Engine4.VertexProfile.#ctor*
   name: VertexProfile
@@ -7390,6 +7615,24 @@ references:
   commentId: Overload:Engine4.VertexProfile.LerpUnclamped
   fullName: Engine4.VertexProfile.LerpUnclamped
   nameWithType: VertexProfile.LerpUnclamped
+- uid: Engine4.VertexProfile.Transform(UnityEngine.Matrix4x4,Engine4.VertexProfile)
+  name: Transform(Matrix4x4, VertexProfile)
+  href: api/Engine4.VertexProfile.html#Engine4_VertexProfile_Transform_UnityEngine_Matrix4x4_Engine4_VertexProfile_
+  commentId: M:Engine4.VertexProfile.Transform(UnityEngine.Matrix4x4,Engine4.VertexProfile)
+  fullName: Engine4.VertexProfile.Transform(UnityEngine.Matrix4x4, Engine4.VertexProfile)
+  nameWithType: VertexProfile.Transform(Matrix4x4, VertexProfile)
+- uid: Engine4.VertexProfile.Transform(UnityEngine.Matrix4x4,Engine4.VertexProfile,UnityEngine.Vector4)
+  name: Transform(Matrix4x4, VertexProfile, Vector4)
+  href: api/Engine4.VertexProfile.html#Engine4_VertexProfile_Transform_UnityEngine_Matrix4x4_Engine4_VertexProfile_UnityEngine_Vector4_
+  commentId: M:Engine4.VertexProfile.Transform(UnityEngine.Matrix4x4,Engine4.VertexProfile,UnityEngine.Vector4)
+  fullName: Engine4.VertexProfile.Transform(UnityEngine.Matrix4x4, Engine4.VertexProfile, UnityEngine.Vector4)
+  nameWithType: VertexProfile.Transform(Matrix4x4, VertexProfile, Vector4)
+- uid: Engine4.VertexProfile.Transform*
+  name: Transform
+  href: api/Engine4.VertexProfile.html#Engine4_VertexProfile_Transform_
+  commentId: Overload:Engine4.VertexProfile.Transform
+  fullName: Engine4.VertexProfile.Transform
+  nameWithType: VertexProfile.Transform
 - uid: Engine4.VertexProfile.uv
   name: uv
   href: api/Engine4.VertexProfile.html#Engine4_VertexProfile_uv
@@ -7510,12 +7753,12 @@ references:
   commentId: Overload:Engine4.Viewer4.projector
   fullName: Engine4.Viewer4.projector
   nameWithType: Viewer4.projector
-- uid: Engine4.Viewer4.SetDirty(System.Boolean)
-  name: SetDirty(Boolean)
-  href: api/Engine4.Viewer4.html#Engine4_Viewer4_SetDirty_System_Boolean_
-  commentId: M:Engine4.Viewer4.SetDirty(System.Boolean)
-  fullName: Engine4.Viewer4.SetDirty(System.Boolean)
-  nameWithType: Viewer4.SetDirty(Boolean)
+- uid: Engine4.Viewer4.SetDirty(Engine4.DirtyLevel)
+  name: SetDirty(DirtyLevel)
+  href: api/Engine4.Viewer4.html#Engine4_Viewer4_SetDirty_Engine4_DirtyLevel_
+  commentId: M:Engine4.Viewer4.SetDirty(Engine4.DirtyLevel)
+  fullName: Engine4.Viewer4.SetDirty(Engine4.DirtyLevel)
+  nameWithType: Viewer4.SetDirty(DirtyLevel)
 - uid: Engine4.Viewer4.SetDirty*
   name: SetDirty
   href: api/Engine4.Viewer4.html#Engine4_Viewer4_SetDirty_

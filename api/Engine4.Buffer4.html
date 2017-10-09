@@ -101,39 +101,76 @@
     <pre><code class="lang-csharp hljs">public Buffer4()</code></pre>
   </div>
   <a id="Engine4_Buffer4__ctor_" data-uid="Engine4.Buffer4.#ctor*"></a>
-  <h4 id="Engine4_Buffer4__ctor_Engine4_SimplexMode_System_Boolean_" data-uid="Engine4.Buffer4.#ctor(Engine4.SimplexMode,System.Boolean)">Buffer4(SimplexMode, Boolean)</h4>
+  <h4 id="Engine4_Buffer4__ctor_Engine4_SimplexMode_" data-uid="Engine4.Buffer4.#ctor(Engine4.SimplexMode)">Buffer4(SimplexMode)</h4>
   <div class="markdown level1 summary"><p>Create an empty buffer </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Buffer4(SimplexMode simplex, bool useProfile)</code></pre>
+    <pre><code class="lang-csharp hljs">public Buffer4(SimplexMode simplex)</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
-  <h4 id="Engine4_Buffer4_indices" data-uid="Engine4.Buffer4.indices">indices</h4>
+  <h4 id="Engine4_Buffer4_m_Indices" data-uid="Engine4.Buffer4.m_Indices">m_Indices</h4>
   <div class="markdown level1 summary"><p>Internal simplex (indices) buffer. </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;int&gt; indices</code></pre>
+    <pre><code class="lang-csharp hljs">public int[] m_Indices</code></pre>
   </div>
+  <h4 id="Engine4_Buffer4_m_IndicesCount" data-uid="Engine4.Buffer4.m_IndicesCount">m_IndicesCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_IndicesCount</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_m_IndicesCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get internal indices count </p>
+</div>
+  <h4 id="Engine4_Buffer4_m_Profiles" data-uid="Engine4.Buffer4.m_Profiles">m_Profiles</h4>
+  <div class="markdown level1 summary"><p>Internal vertex profile buffer (color, uv). </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexProfile[] m_Profiles</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_m_Profiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Vertex profile respects to indices, not vertices </p>
+</div>
+  <h4 id="Engine4_Buffer4_m_ProfilesCount" data-uid="Engine4.Buffer4.m_ProfilesCount">m_ProfilesCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_ProfilesCount</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_m_ProfilesCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get internal profiles </p>
+</div>
+  <h4 id="Engine4_Buffer4_m_Vertices" data-uid="Engine4.Buffer4.m_Vertices">m_Vertices</h4>
+  <div class="markdown level1 summary"><p>Internal vertex buffer </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4[] m_Vertices</code></pre>
+  </div>
+  <h4 id="Engine4_Buffer4_m_VerticesCount" data-uid="Engine4.Buffer4.m_VerticesCount">m_VerticesCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int m_VerticesCount</code></pre>
+  </div>
+  <h5 id="Engine4_Buffer4_m_VerticesCount_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Get internal vertices count </p>
+</div>
   <h4 id="Engine4_Buffer4_offset" data-uid="Engine4.Buffer4.offset">offset</h4>
-  <div class="markdown level1 summary"><p>A handy pointer to shift simplex buffer values relatively. </p>
+  <div class="markdown level1 summary"><p>A handy pointer to shift vertex buffer values relatively. </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int offset</code></pre>
   </div>
   <h5 id="Engine4_Buffer4_offset_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>It&apos;s much recommended to control this param using Align(). </p>
+  <div class="markdown level1 remarks"><p>It&apos;s very recommended to control this param using Align() instead. </p>
 </div>
-  <h4 id="Engine4_Buffer4_profiles" data-uid="Engine4.Buffer4.profiles">profiles</h4>
-  <div class="markdown level1 summary"><p>Internal vertex profile buffer (color, uv). </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;VertexProfile&gt; profiles</code></pre>
-  </div>
   <h4 id="Engine4_Buffer4_simplex" data-uid="Engine4.Buffer4.simplex">simplex</h4>
   <div class="markdown level1 summary"><p>The simplex type that required by the renderer.
 Useful if you want to create a custom shape blocks.</p>
@@ -145,19 +182,15 @@ Useful if you want to create a custom shape blocks.</p>
   <h5 id="Engine4_Buffer4_simplex_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Public for convenience. <strong>ONLY SET WHEN ISEMPTY IS TRUE.</strong> </p>
 </div>
-  <h4 id="Engine4_Buffer4_useProfile" data-uid="Engine4.Buffer4.useProfile">useProfile</h4>
-  <div class="markdown level1 summary"><p>Is it necessary to collect vertex profiles? </p>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Buffer4_ProfileDifference_" data-uid="Engine4.Buffer4.ProfileDifference*"></a>
+  <h4 id="Engine4_Buffer4_ProfileDifference" data-uid="Engine4.Buffer4.ProfileDifference">ProfileDifference</h4>
+  <div class="markdown level1 summary"><p>Get remaining profile needed </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool useProfile</code></pre>
-  </div>
-  <h4 id="Engine4_Buffer4_vertices" data-uid="Engine4.Buffer4.vertices">vertices</h4>
-  <div class="markdown level1 summary"><p>Internal vertex buffer </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected List&lt;Vector4&gt; vertices</code></pre>
+    <pre><code class="lang-csharp hljs">public int ProfileDifference { get; }</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -186,6 +219,14 @@ A prism is constructed from 3 trimids, v0-v1-v2 must be parallel (and in the sam
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddPrism(int v0, int v1, int v2, int v3, int v4, int v5)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_AddProfile_" data-uid="Engine4.Buffer4.AddProfile*"></a>
+  <h4 id="Engine4_Buffer4_AddProfile_Engine4_VertexProfile_" data-uid="Engine4.Buffer4.AddProfile(Engine4.VertexProfile)">AddProfile(VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add a new profile to remaining indice </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddProfile(VertexProfile profile)</code></pre>
   </div>
   <a id="Engine4_Buffer4_AddPyramid_" data-uid="Engine4.Buffer4.AddPyramid*"></a>
   <h4 id="Engine4_Buffer4_AddPyramid_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddPyramid(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddPyramid(Int32, Int32, Int32, Int32, Int32)</h4>
@@ -237,54 +278,6 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
     <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert)</code></pre>
   </div>
   <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
-  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.Vector4)">AddVertex(Vector4, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Add a vertex with given uv and return the index </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Vector4 uv)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
-  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_Engine4_VertexProfile_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,Engine4.VertexProfile)">AddVertex(Vector4, VertexProfile)</h4>
-  <div class="markdown level1 summary"><p>Add a vertex and return the index </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, VertexProfile profile)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
-  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color)">AddVertex(Vector4, Color)</h4>
-  <div class="markdown level1 summary"><p>Add a vertex with given color and return the index </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Color color)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
-  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4)">AddVertex(Vector4, Color, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Add a vertex with given color, uv and return the index </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Color color, Vector4 uv)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
-  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_UnityEngine_Color_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4,UnityEngine.Color,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">AddVertex(Vector4, Color, Vector4, Vector4, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Add a vertex with given color, uv, uv2, uv3 and return the index </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert, Color color, Vector4 uv, Vector4 uv2, Vector4 uv3)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
-  <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vertex4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vertex4)">AddVertex(Vertex4)</h4>
-  <div class="markdown level1 summary"><p>Add a vertex and return the index </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddVertex(Vertex4 vertex)</code></pre>
-  </div>
-  <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
   <h4 id="Engine4_Buffer4_AddVertex_System_Int32_" data-uid="Engine4.Buffer4.AddVertex(System.Int32)">AddVertex(Int32)</h4>
   <div class="markdown level1 summary"><p>Duplicate vertex and return the cloned index </p>
 </div>
@@ -321,6 +314,13 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="seealso">
       <div><a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Snapshot">Snapshot()</a></div>
   </div>
+  <a id="Engine4_Buffer4_Clean_" data-uid="Engine4.Buffer4.Clean*"></a>
+  <h4 id="Engine4_Buffer4_Clean" data-uid="Engine4.Buffer4.Clean">Clean()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clean()</code></pre>
+  </div>
   <a id="Engine4_Buffer4_Clear_" data-uid="Engine4.Buffer4.Clear*"></a>
   <h4 id="Engine4_Buffer4_Clear" data-uid="Engine4.Buffer4.Clear">Clear()</h4>
   <div class="markdown level1 summary"><p>Clear the buffer.</p>
@@ -344,6 +344,22 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_SetProfile_" data-uid="Engine4.Buffer4.SetProfile*"></a>
+  <h4 id="Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Color_" data-uid="Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Color)">SetProfile(Int32, Color)</h4>
+  <div class="markdown level1 summary"><p>Modify profile color at given indice index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProfile(int index, Color color)</code></pre>
+  </div>
+  <a id="Engine4_Buffer4_SetProfile_" data-uid="Engine4.Buffer4.SetProfile*"></a>
+  <h4 id="Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Vector4_System_Int32_" data-uid="Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Vector4,System.Int32)">SetProfile(Int32, Vector4, Int32)</h4>
+  <div class="markdown level1 summary"><p>Modify profile uv at given indice index </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetProfile(int index, Vector4 uv, int uvIndex)</code></pre>
   </div>
   <a id="Engine4_Buffer4_Snapshot_" data-uid="Engine4.Buffer4.Snapshot*"></a>
   <h4 id="Engine4_Buffer4_Snapshot" data-uid="Engine4.Buffer4.Snapshot">Snapshot()</h4>
@@ -380,6 +396,15 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPolygon_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddPolygon(Buffer4, Int32[])</a>
   </div>
   <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddVertex_Engine4_Buffer4_Engine4_Vector4___">Buffer4Extension.AddVertex(Buffer4, Vector4[])</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_CopyTo_Engine4_Buffer4_Engine4_Buffer4_">Buffer4Extension.CopyTo(Buffer4, Buffer4)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_CopyTo_Engine4_Buffer4_Engine4_Buffer4_System_Boolean_">Buffer4Extension.CopyTo(Buffer4, Buffer4, Boolean)</a>
+  </div>
+  <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Transform_Engine4_Buffer4_Engine4_Matrix4x5_">Buffer4Extension.Transform(Buffer4, Matrix4x5)</a>
   </div>
   <div>
@@ -387,9 +412,6 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   </div>
   <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Color_">Buffer4Extension.Colorize(Buffer4, Color)</a>
-  </div>
-  <div>
-      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Colorize_Engine4_Buffer4_UnityEngine_Gradient_">Buffer4Extension.Colorize(Buffer4, Gradient)</a>
   </div>
   <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_">Buffer4Extension.Sequence(Buffer4, SequenceMode)</a>

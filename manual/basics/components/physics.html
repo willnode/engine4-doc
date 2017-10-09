@@ -71,15 +71,15 @@
 
 <p>Besides its rendering capacibility, Engine4 also have been equipped with dedicated four-dimensional physics simulation library.</p>
 <p>These components are required in order to make the physics simulation work for a given object.</p>
-<h4 id="rigidbody4">Rigidbody4</h4>
+<h4 id="engine4rigidbody4"><a class="xref" href="../../../api/Engine4.Rigidbody4.html">Rigidbody4</a></h4>
 <pre><code class="lang-none">Overloadable: No
 Lies in: Every 4D object
 </code></pre><p><code>Rigidbody4</code> feeds collider and transform components to the internal engine and keep it in sync over fixed frame update. You can also change how the object react with its environment though its properties.</p>
-<h4 id="collider4">Collider4</h4>
+<h4 id="engine4collider4"><a class="xref" href="../../../api/Engine4.Collider4.html">Collider4</a></h4>
 <pre><code class="lang-none">Overloadable: No
 Lies in: Every 4D object (can have multiple)
 </code></pre><p><code>Collider4</code> defines the rigid shape of a rigidbody. You can put a collider as the child of rigidbody.</p>
-<h4 id="physics4">Physics4</h4>
+<h4 id="engine4physics4"><a class="xref" href="../../../api/Engine4.Physics4.html">Physics4</a></h4>
 <pre><code class="lang-none">Overloadable: No
 Lies in: Active Scene
 </code></pre><p><code>Physics4</code> is the <em>head</em> of the physics simulation. It lies together with <code>Viewer4</code>. Disabling the component pauses all physics execution.</p>

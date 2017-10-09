@@ -145,6 +145,14 @@ We create the duplicate because UnityEngine&apos;s variant is lack of static uti
   </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="Engine4_Vector4_forward_" data-uid="Engine4.Vector4.forward*"></a>
+  <h4 id="Engine4_Vector4_forward" data-uid="Engine4.Vector4.forward">forward</h4>
+  <div class="markdown level1 summary"><p>The vector pointing to front direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 forward { get; }</code></pre>
+  </div>
   <a id="Engine4_Vector4_Item_" data-uid="Engine4.Vector4.Item*"></a>
   <h4 id="Engine4_Vector4_Item_System_Int32_" data-uid="Engine4.Vector4.Item(System.Int32)">Item[Int32]</h4>
   <div class="markdown level1 summary"><p>Get or set a vector value in given axis index</p>
@@ -163,6 +171,30 @@ We create the duplicate because UnityEngine&apos;s variant is lack of static uti
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 one { get; }</code></pre>
+  </div>
+  <a id="Engine4_Vector4_overward_" data-uid="Engine4.Vector4.overward*"></a>
+  <h4 id="Engine4_Vector4_overward" data-uid="Engine4.Vector4.overward">overward</h4>
+  <div class="markdown level1 summary"><p>The vector pointing to over direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 overward { get; }</code></pre>
+  </div>
+  <a id="Engine4_Vector4_rightward_" data-uid="Engine4.Vector4.rightward*"></a>
+  <h4 id="Engine4_Vector4_rightward" data-uid="Engine4.Vector4.rightward">rightward</h4>
+  <div class="markdown level1 summary"><p>The vector pointing to right direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 rightward { get; }</code></pre>
+  </div>
+  <a id="Engine4_Vector4_upward_" data-uid="Engine4.Vector4.upward*"></a>
+  <h4 id="Engine4_Vector4_upward" data-uid="Engine4.Vector4.upward">upward</h4>
+  <div class="markdown level1 summary"><p>The vector pointing to up direction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector4 upward { get; }</code></pre>
   </div>
   <a id="Engine4_Vector4_zero_" data-uid="Engine4.Vector4.zero*"></a>
   <h4 id="Engine4_Vector4_zero" data-uid="Engine4.Vector4.zero">zero</h4>
@@ -206,7 +238,10 @@ We create the duplicate because UnityEngine&apos;s variant is lack of static uti
     <pre><code class="lang-csharp hljs">public static Vector4 Cross(Vector4 a, Vector4 b, Vector4 c)</code></pre>
   </div>
   <h5 id="Engine4_Vector4_Cross_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This cross operation finds the other vector that perpendicular to the three vector</p>
+  <div class="markdown level1 remarks"><p>
+This cross operation finds the other vector that perpendicular to the three vector.
+The convention used such that A and B is equivalent to the left hand rule if C is positive overward.
+</p>
 </div>
   <a id="Engine4_Vector4_Distance_" data-uid="Engine4.Vector4.Distance*"></a>
   <h4 id="Engine4_Vector4_Distance_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Vector4.Distance(Engine4.Vector4,Engine4.Vector4)">Distance(Vector4, Vector4)</h4>

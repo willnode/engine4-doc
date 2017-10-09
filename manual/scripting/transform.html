@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Gizmos | Engine4 Manual </title>
+    <title>Transform Manipulation | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Gizmos | Engine4 Manual ">
+    <meta name="title" content="Transform Manipulation | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,10 +67,67 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="gizmos">Gizmos</h1>
+<h1 id="transform-manipulation">Transform Manipulation</h1>
 
-<p>Engine4 have a gizmo solution specialized for drawing 4D objects in gizmo. Example usage are for displaying collider shapes in scene editor.</p>
-<p>In scripting, you can access via <a class="xref" href="../../api/Engine4.Rendering.Gizmos4.html">Gizmos4</a></p>
+<h2 id="basis">Basis</h2>
+<p>Engine4 has several structs (primitive data types) to aid transform manipulation.</p>
+<table>
+<thead>
+<tr>
+<th>Struct</th>
+<th>Description</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="xref" href="../../api/Engine4.Vector4.html">Vector4</a></td>
+<td>Four dimensional vector</td>
+<td>Storing direction and position</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/Engine4.Euler4.html">Euler4</a></td>
+<td>Six dimensional vector</td>
+<td>Storing rotation angles and velocities</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/Engine4.Matrix4.html">Matrix4</a></td>
+<td>4x4 basis matrix</td>
+<td>Storing and manipulating rotations</td>
+</tr>
+<tr>
+<td><a class="xref" href="../../api/Engine4.Matrix4x5.html">Matrix4x5</a></td>
+<td>4x5 basis matrix</td>
+<td>Storing rotational and translational transform altogether</td>
+</tr>
+</tbody>
+</table>
+<div class="NOTE"><h5>Note</h5><p>Engine4 does not provide Quaternion altough it is possible in 4D. The primary reason is that they do no longer maintain its main benefit in 4D and higher dimension, and very complicated.</p>
+</div>
+<h2 id="working-with-vector">Working with Vector</h2>
+<p>Vector is useful for translation and scaling between vectors.</p>
+<h2 id="working-with-rotation">Working with Rotation</h2>
+<p>The rule of thumb when working with rotation is always start with euler, then work with matrices, and try to never converting it back to euler.</p>
+<h3 id="where-euler-is-useful">Where Euler is useful</h3>
+<p>Euler is useful for storing a readable data.</p>
+<p>[image]</p>
+<p>And also interpolating between rotation via <code>Lerp</code>, <code>RotateToward</code> or <code>SmoothDampAngle</code>.</p>
+<p>[code]</p>
+<p>If you happen to interpolate the current rotation in matrix, try to convert to euler at <em>once</em>.</p>
+<p>[code]</p>
+<div class="WARNING"><h5>Warning</h5><p>This section is also telling you that <a class="xref" href="../../api/Engine4.Matrix4.html#Engine4_Matrix4_ToEuler">ToEuler()</a> is simply bad and should be avoided as possible. Even if the problem mentioned in <a href="/index.html">known issues</a> may be fixed soon.</p>
+</div>
+<h3 id="where-matrix-is-useful">Where Matrix is useful</h3>
+<p>Matrices is useful for rotating any vector.</p>
+<p>[code]</p>
+<p>And also for combining rotation because its multiplication has no problem with gimbal lock.</p>
+<p>[codecomparison]</p>
+<p>This also mean you can create</p>
+<h3 id="where-things-work-for-both-euler-and-matrix">Where things work for both Euler and Matrix.</h3>
+<p>If you want to inverse the rotation, you can use <a class="xref" href="../../api/Engine4.Matrix4.html#Engine4_Matrix4_Transpose_Engine4_Matrix4_">Transpose(Matrix4)</a> or  <a class="xref" href="../../api/Engine4.Euler4.html#Engine4_Euler4_op_UnaryNegation_Engine4_Euler4_">UnaryNegation(Euler4)</a></p>
+<p>[code]</p>
+<h3 id="where-habits-in-3d-do-not-work-in-4d-and-higher">Where habits in 3D do not work in 4D and higher</h3>
+<p>Angle around an axis is not exist because in 4D you need two vector (so do the pattern for higher dimension).</p>
 </article>
           </div>
         </div>

@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Profiles | Engine4 Manual </title>
+    <title>Custom Modifier | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Profiles | Engine4 Manual ">
+    <meta name="title" content="Custom Modifier | Engine4 Manual ">
     <meta name="generator" content="docfx 2.24.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -67,45 +67,10 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="profiles">Profiles</h1>
+<h1 id="custom-modifier">Custom Modifier</h1>
 
-<p>Profile is a way to add vertex metadata (i.e. <code>color</code> and <code>uv</code>) and can be done via <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_AddProfile_Engine4_VertexProfile_">AddProfile(VertexProfile)</a> or <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Color_">SetProfile(Int32, Color)</a> or  <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Vector4_System_Int32_">SetProfile(Int32, Vector4, Int32)</a>.</p>
-<div class="NOTE"><h5>Note</h5><p>Buffer profiles are discarded when <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_ProfileDifference">ProfileDifference</a> is not <code>0</code> or profile <a class="xref" href="../../../api/Engine4.Renderer4.html#Engine4_Renderer4_profile">profile</a> is set to <code>none</code></p>
-</div>
-<h2 id="uv-specification">UV Specification</h2>
-<p>Engine4 treats UVs based on their simplex type:</p>
-<table>
-<thead>
-<tr>
-<th>Simplex type</th>
-<th>UV dimension</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Point</td>
-<td>0D</td>
-</tr>
-<tr>
-<td>Line</td>
-<td>1D</td>
-</tr>
-<tr>
-<td>Triangle</td>
-<td>2D</td>
-</tr>
-<tr>
-<td>Tetrahedron</td>
-<td>3D</td>
-</tr>
-</tbody>
-</table>
-<p>[demographic]</p>
-<p>These specification is important as each Engine4 projector treat UVs differently:</p>
-<ul>
-<li>Frustum4 interpolate all UVs if it culled by frustum cone.</li>
-<li>CrossSection4 projects UV (eg. <code>3D</code> to <code>2D</code> for solid projection). This didn&#39;t happen for <code>UV3</code> (so user may use that for shader effects).</li>
-</ul>
+<p>You can create custom models by creating a script that deriving from <a class="xref" href="../../../api/Engine4.Rendering.Modifier4.html">Modifier4</a></p>
+<p>[script]</p>
 </article>
           </div>
         </div>
