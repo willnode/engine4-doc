@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../images/Engine4-Logo.png" alt="">
+                <img id="logo" class="svg" src="../../../images/icon_small.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -69,45 +69,63 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="rotation-in-4d">Rotation in 4D</h1>
 
-<p>Rotation in 4D is kind of weird if you haven&#39;t seen it yet. But deep in the analytical process, it&#39;s correct and has its own pattern. </p>
-<h2 id="introduction">Introduction</h2>
-<p>Take a look to image below where the tesseract is being rotated in 2D, 3D and 4D.</p>
-<p>[image]</p>
-<p><em>What&#39;s going on over here?</em></p>
-<p>Here&#39;s what happening:</p>
-<blockquote><p>info
-First things first, you need to be informed that rotation is applied around a <strong>plane</strong>, not from an axis. For example, rotation around X axis represents a rotation on YZ plane, etc. This is an important concept before stepping to a higher dimension.</p>
-</blockquote>
-<p>So how much rotation planes in 4D? The answer is <strong>6</strong>, and that is rotation on XY, YZ, XZ, XW, YW, ZW planes.</p>
-<p>From the image above, the first plane are the 2D rotation, the next two are 3D rotation, and the rest are 4D rotations. </p>
-<h2 id="make-it-easy">Make it easy</h2>
-<p>To keep things simple, Engine4 encode these planes into a single letter</p>
+<p>Rotation in Engine4 is described as either euler or matrix.</p>
+<h2 id="rotation-as-euler">Rotation as Euler</h2>
+<p>There are six planes of rotation in four dimension. They&#39;re denoted as <code>x</code>, <code>y</code>, <code>z</code>, <code>t</code>, <code>u</code> and <code>v</code>. The first three can be refered as 3D rotation part, and it is designed to be identical with rotations in 3D space.</p>
+<p>[image in transform]</p>
+<p><em>What&#39;s about the rest of three?</em></p>
+<p><code>t</code>, <code>u</code> and <code>v</code> refers to rotation planes that <em>related</em> with the fourth axis, and <code>X</code>, <code>Y</code>, <code>Z</code> axis, in order.</p>
+<h2 id="rotation-as-matrix">Rotation as matrix</h2>
+<p>Four dimensional rotation can be representated as 4x4 order matrix. The main benefit is that matrices do not suffer from gimbal lock. Its detailed implementation is dissuced in the <a href="">next article</a>.</p>
+<h2 id="no-quaternion">No quaternion</h2>
+<p>Engine4 does not implement quaternion for 4D. Note that this does not mean it is impossible. Quaternion is upgradable to 4D using <code>rotor</code> concepts described in Geometry Algebra. The primary reason is that they do no longer provide its main benefit in computation cost.</p>
+<h5 id="cost-comparison">Cost comparison</h5>
 <table>
 <thead>
 <tr>
-<th>Rotation on * plane</th>
-<th>YZ</th>
-<th>XZ</th>
-<th>XY</th>
-<th>XW</th>
-<th>YW</th>
-<th>ZW</th>
+<th>Primitive type</th>
+<th>Stored variable</th>
+<th>Multiplication cost</th>
+<th>Vector rotation cost</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Shortcoded as *</td>
-<td>x</td>
-<td>y</td>
-<td>z</td>
-<td>t</td>
-<td>u</td>
-<td>v</td>
+<td>3D Quaternion</td>
+<td>4</td>
+<td>16</td>
+<td>28</td>
+</tr>
+<tr>
+<td>3D (3x3) Matrix</td>
+<td>9</td>
+<td>27</td>
+<td>9</td>
+</tr>
+<tr>
+<td>4D Quaternion</td>
+<td>8</td>
+<td>64</td>
+<td>96</td>
+</tr>
+<tr>
+<td>4D (4x4) Matrix</td>
+<td>16</td>
+<td>64</td>
+<td>16</td>
 </tr>
 </tbody>
 </table>
-<p>You&#39;ll see the short code is used in some part of the library, like when editing the transformation of an object</p>
-<p>[transform image]</p>
+<p>[source]</p>
+<p>From the comparison table, we can infer why using quaternion is useful than matrix in 3D space:</p>
+<ul>
+<li>Memory Storage is down by 55%</li>
+<li>Multiplication between quaternion is 1.69 times faster</li>
+<li>Even though quaternion multiplication with vector is costly, most people trick them by converting to matrix first (in optimized way)</li>
+</ul>
+<p>In 4D combining rotations has the same overhead, so the benefit is gone. Meanwhile, the quaternion to matrix in 4D is much much expensive than 3D (not to mention it is so complicated that nobody have published the code so far) so it is practically useless to bring quaternion to higher dimension.</p>
+<h2 id="futher-explanation">Futher explanation</h2>
+<p>The next section discusses detailed convention used by the library. This article also extended to the scripting implementation for rotations.</p>
 </article>
           </div>
         </div>

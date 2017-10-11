@@ -1552,6 +1552,12 @@ references:
   commentId: Overload:Engine4.Internal.BufferPreset.MakeHypersphereMeridians
   fullName: Engine4.Internal.BufferPreset.MakeHypersphereMeridians
   nameWithType: BufferPreset.MakeHypersphereMeridians
+- uid: Engine4.Internal.INeedTransform4Scale
+  name: INeedTransform4Scale
+  href: api/Engine4.Internal.INeedTransform4Scale.html
+  commentId: T:Engine4.Internal.INeedTransform4Scale
+  fullName: Engine4.Internal.INeedTransform4Scale
+  nameWithType: INeedTransform4Scale
 - uid: Engine4.Internal.Matrix4AsEulerAttribute
   name: Matrix4AsEulerAttribute
   href: api/Engine4.Internal.Matrix4AsEulerAttribute.html
@@ -2815,6 +2821,18 @@ references:
   commentId: Overload:Engine4.MonoBehaviour4.#ctor
   fullName: Engine4.MonoBehaviour4.MonoBehaviour4
   nameWithType: MonoBehaviour4.MonoBehaviour4
+- uid: Engine4.MonoBehaviour4.Instantiate(UnityEngine.GameObject,Engine4.Vector4,Engine4.Matrix4)
+  name: Instantiate(GameObject, Vector4, Matrix4)
+  href: api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_Instantiate_UnityEngine_GameObject_Engine4_Vector4_Engine4_Matrix4_
+  commentId: M:Engine4.MonoBehaviour4.Instantiate(UnityEngine.GameObject,Engine4.Vector4,Engine4.Matrix4)
+  fullName: Engine4.MonoBehaviour4.Instantiate(UnityEngine.GameObject, Engine4.Vector4, Engine4.Matrix4)
+  nameWithType: MonoBehaviour4.Instantiate(GameObject, Vector4, Matrix4)
+- uid: Engine4.MonoBehaviour4.Instantiate*
+  name: Instantiate
+  href: api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_Instantiate_
+  commentId: Overload:Engine4.MonoBehaviour4.Instantiate
+  fullName: Engine4.MonoBehaviour4.Instantiate
+  nameWithType: MonoBehaviour4.Instantiate
 - uid: Engine4.MonoBehaviour4.renderer4
   name: renderer4
   href: api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_renderer4
@@ -6628,6 +6646,78 @@ references:
   commentId: Overload:Engine4.Tensor4.Column
   fullName: Engine4.Tensor4.Column
   nameWithType: Tensor4.Column
+- uid: Engine4.Tensor4.Column0
+  name: Column0
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column0
+  commentId: P:Engine4.Tensor4.Column0
+  fullName: Engine4.Tensor4.Column0
+  nameWithType: Tensor4.Column0
+- uid: Engine4.Tensor4.Column0*
+  name: Column0
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column0_
+  commentId: Overload:Engine4.Tensor4.Column0
+  fullName: Engine4.Tensor4.Column0
+  nameWithType: Tensor4.Column0
+- uid: Engine4.Tensor4.Column1
+  name: Column1
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column1
+  commentId: P:Engine4.Tensor4.Column1
+  fullName: Engine4.Tensor4.Column1
+  nameWithType: Tensor4.Column1
+- uid: Engine4.Tensor4.Column1*
+  name: Column1
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column1_
+  commentId: Overload:Engine4.Tensor4.Column1
+  fullName: Engine4.Tensor4.Column1
+  nameWithType: Tensor4.Column1
+- uid: Engine4.Tensor4.Column2
+  name: Column2
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column2
+  commentId: P:Engine4.Tensor4.Column2
+  fullName: Engine4.Tensor4.Column2
+  nameWithType: Tensor4.Column2
+- uid: Engine4.Tensor4.Column2*
+  name: Column2
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column2_
+  commentId: Overload:Engine4.Tensor4.Column2
+  fullName: Engine4.Tensor4.Column2
+  nameWithType: Tensor4.Column2
+- uid: Engine4.Tensor4.Column3
+  name: Column3
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column3
+  commentId: P:Engine4.Tensor4.Column3
+  fullName: Engine4.Tensor4.Column3
+  nameWithType: Tensor4.Column3
+- uid: Engine4.Tensor4.Column3*
+  name: Column3
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column3_
+  commentId: Overload:Engine4.Tensor4.Column3
+  fullName: Engine4.Tensor4.Column3
+  nameWithType: Tensor4.Column3
+- uid: Engine4.Tensor4.Column4
+  name: Column4
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column4
+  commentId: P:Engine4.Tensor4.Column4
+  fullName: Engine4.Tensor4.Column4
+  nameWithType: Tensor4.Column4
+- uid: Engine4.Tensor4.Column4*
+  name: Column4
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column4_
+  commentId: Overload:Engine4.Tensor4.Column4
+  fullName: Engine4.Tensor4.Column4
+  nameWithType: Tensor4.Column4
+- uid: Engine4.Tensor4.Column5
+  name: Column5
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column5
+  commentId: P:Engine4.Tensor4.Column5
+  fullName: Engine4.Tensor4.Column5
+  nameWithType: Tensor4.Column5
+- uid: Engine4.Tensor4.Column5*
+  name: Column5
+  href: api/Engine4.Tensor4.html#Engine4_Tensor4_Column5_
+  commentId: Overload:Engine4.Tensor4.Column5
+  fullName: Engine4.Tensor4.Column5
+  nameWithType: Tensor4.Column5
 - uid: Engine4.Tensor4.Cross(Engine4.Matrix4)
   name: Cross(Matrix4)
   href: api/Engine4.Tensor4.html#Engine4_Tensor4_Cross_Engine4_Matrix4_
@@ -6841,6 +6931,18 @@ references:
   commentId: Overload:Engine4.Transform4.#ctor
   fullName: Engine4.Transform4.Transform4
   nameWithType: Transform4.Transform4
+- uid: Engine4.Transform4.eulerAngles
+  name: eulerAngles
+  href: api/Engine4.Transform4.html#Engine4_Transform4_eulerAngles
+  commentId: P:Engine4.Transform4.eulerAngles
+  fullName: Engine4.Transform4.eulerAngles
+  nameWithType: Transform4.eulerAngles
+- uid: Engine4.Transform4.eulerAngles*
+  name: eulerAngles
+  href: api/Engine4.Transform4.html#Engine4_Transform4_eulerAngles_
+  commentId: Overload:Engine4.Transform4.eulerAngles
+  fullName: Engine4.Transform4.eulerAngles
+  nameWithType: Transform4.eulerAngles
 - uid: Engine4.Transform4.localEulerAngles
   name: localEulerAngles
   href: api/Engine4.Transform4.html#Engine4_Transform4_localEulerAngles

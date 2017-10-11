@@ -35,7 +35,7 @@
               </button>
               
               <a class="navbar-brand" href="../../../index.html">
-                <img id="logo" class="svg" src="../../../images/Engine4-Logo.png" alt="">
+                <img id="logo" class="svg" src="../../../images/icon_small.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -69,10 +69,55 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="notation-and-convention-rules">Notation and Convention Rules</h1>
 
-<p>Engine4 honor the convention used in Unity Game Engine. The direction of each XYZ does not change, including the rotation axes.</p>
-<p>In addition to XYZ for rightward, upward, forward direction - Engine4 denotes W as the <strong>overward</strong>, a direction belongs to the fourth dimension.</p>
-<p>the term overward and underward will be coined for the rest of the manual. The origin of the name has been coined in the 90s way back to this [paper].</p>
-<p>The notation rules continues to the next page ...</p>
+<p>Engine4 is care about the conventions that used across the library to avoid confusion in the long run.</p>
+<h2 id="the-fourth-axis">The fourth axis</h2>
+<p>The fourth axis is denoted by the letter <code>W</code>. This applies to whole library API. </p>
+<p>Additionally Engine4 uses <code>overward</code> for referencing a vector that points to <code>W</code>. The opposite vector may also be called as <code>underward</code>.</p>
+<div class="TIP"><h5>Tip</h5><p>There also exist a paper that use the same term. See <a href="http://steve.hollasch.net/thesis/">here</a>.</p>
+</div>
+<h2 id="the-three-d-part-convention-rules">The Three-D part convention rules</h2>
+<p>Engine4 honor the convention used in Unity Game Engine. The direction of each XYZ does not change, including the rotation axes, direction and its euler order.</p>
+<p>This means if rotation planes that related to <code>W</code> are set to zero, the object orientation will be the same with Unity.</p>
+<h2 id="rotation-convention">Rotation convention</h2>
+<p>A rotation is happening on plane rotations. For simplicity, the library denote that to a single letter.</p>
+<table>
+<thead>
+<tr>
+<th>Rotation on * plane</th>
+<th>Shortcoded as *</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>YZ</td>
+<td>x</td>
+</tr>
+<tr>
+<td>XZ</td>
+<td>y</td>
+</tr>
+<tr>
+<td>XY</td>
+<td>z</td>
+</tr>
+<tr>
+<td>XW</td>
+<td>t</td>
+</tr>
+<tr>
+<td>YW</td>
+<td>u</td>
+</tr>
+<tr>
+<td>ZW</td>
+<td>v</td>
+</tr>
+</tbody>
+</table>
+<h2 id="rotation-order-and-direction">Rotation order and direction</h2>
+<p>Euler to matrix conversion (and its inverse) codes are really different if the euler order are different.</p>
+<p>You make things clear, Engine4 defines <a class="xref" href="../../../api/Engine4.Matrix4.html#Engine4_Matrix4_Euler_Engine4_Euler4_">Euler(Euler4)</a> as conversion that creates matrix that rotates by <code>y</code>, then <code>z</code>, then <code>x</code>, then <code>t</code>, then <code>u</code>, then <code>v</code>.</p>
+<p>The rotation direction for <code>x</code>, <code>y</code> and <code>z</code> is preserved - clockwise based on axis perpendicular to each plane in 3D sense. For <code>t</code>, <code>u</code>, <code>v</code> is designed such at 90 positive deg rotation makes each 3D axis get replaced with positive over axis.</p>
 </article>
           </div>
         </div>

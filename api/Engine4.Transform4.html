@@ -37,7 +37,7 @@
               </button>
               
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="svg" src="../images/Engine4-Logo.png" alt="">
+                <img id="logo" class="svg" src="../images/icon_small.png" alt="">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -101,6 +101,14 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  <a id="Engine4_Transform4_eulerAngles_" data-uid="Engine4.Transform4.eulerAngles*"></a>
+  <h4 id="Engine4_Transform4_eulerAngles" data-uid="Engine4.Transform4.eulerAngles">eulerAngles</h4>
+  <div class="markdown level1 summary"><p>Rotation (in euler) to world space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Euler4 eulerAngles { get; set; }</code></pre>
+  </div>
   <a id="Engine4_Transform4_localEulerAngles_" data-uid="Engine4.Transform4.localEulerAngles*"></a>
   <h4 id="Engine4_Transform4_localEulerAngles" data-uid="Engine4.Transform4.localEulerAngles">localEulerAngles</h4>
   <div class="markdown level1 summary"><p>Rotation (in euler) relative to parent</p>
@@ -109,9 +117,6 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Euler4 localEulerAngles { get; set; }</code></pre>
   </div>
-  <h5 id="Engine4_Transform4_localEulerAngles_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Do not iteratively modify the rotation using this euler angle as gimbal lock is still happening in 4D.</p>
-</div>
   <a id="Engine4_Transform4_localPosition_" data-uid="Engine4.Transform4.localPosition*"></a>
   <h4 id="Engine4_Transform4_localPosition" data-uid="Engine4.Transform4.localPosition">localPosition</h4>
   <div class="markdown level1 summary"><p>Position relative to parent</p>
