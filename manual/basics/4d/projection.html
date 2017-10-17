@@ -76,16 +76,16 @@
 <p>[diagram]</p>
 <p>If the object goes out of scope, it gets culled by a set of planes, which the process is commonly known as <strong>frustum culling</strong>.</p>
 <p>[frustum cull]</p>
-<div class="TIP"><h5>Tip</h5><p>There&#39;s a lot more features and cool tricks to be discovered. More info <a href="/manual/rendering/projections/frustum.html">here</a>.</p>
+<div class="TIP"><h5>Tip</h5><p>There&#39;s a lot more features and cool tricks to be discovered. More info <a href="../../rendering/projections/frustum.html">here</a>.</p>
 </div>
 <h2 id="cross-section-projection">Cross section Projection</h2>
 <p>[image]</p>
 <p>Cross section takes a completely different way to project a higher dimension. Cross section does that by cutting an object and take the <em>slice</em> to lower dimension by rotating it back to an orientation that accesible with lower dimension objects.</p>
-<p><img src="/images/crosssection-demo.png" alt="image how it work"></p>
+<p><img src="../../../images/crosssection-demo.png" alt="image how it work"></p>
 <p><em><a href="http://eusebeia.dyndns.org/4d/vis/04-xsec">source</a></em></p>
 <p><em>If this kind of projection has been known for very long time why I didn&#39;t see any games have use it?</em></p>
 <p>Because you need to know how to cut down something into thing that renderable to 3D graphics (i.e. triangles). One way is to use <strong>tetrahedron</strong> as the building blocks. Why? Because tetrahedron is the simplest possible geometry shape that has a volume, and when it cutted, the result is always either a triangle or quad.</p>
-<p><img src="/images/tetrahedron-slice.png" alt="image tetra cutted"></p>
+<p><img src="../../../images/tetrahedron-slice.png" alt="image tetra cutted"></p>
 <p><em><a href="http://whistleralley.com/polyhedra/tetrahedron.htm">source</a></em></p>
 <div class="TIP"><h5>Tip</h5><p>Cross section is the default projection because its simplicity. More info<a href="/manual/rendering/projections/crosssection.html">here</a>.</p>
 </div>

@@ -1262,6 +1262,17 @@
     },
     {
       "type": "Resource",
+      "source_relative_path": "images/Badge_Filmic.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/Badge_Filmic.jpg"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
       "source_relative_path": "images/components-rendering.png",
       "output": {
         "resource": {
@@ -1444,7 +1455,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/4d.html",
-          "hash": "npyEDCH+d5r1UPfhQ3P5IA=="
+          "hash": "XOKHrwauqyo12nUfGztByw=="
         }
       },
       "is_incremental": false,
@@ -1480,7 +1491,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/4d/projection.html",
-          "hash": "tdF96dluPD8ksqHS37doYQ=="
+          "hash": "yMesLuOt6wMwEW3RABT4/g=="
         }
       },
       "is_incremental": false,
@@ -1516,7 +1527,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/components/hierarchy.html",
-          "hash": "sUav83Wb3/AA9+c/4HBiKQ=="
+          "hash": "lOTXwsXfAEZ0ylsh2sXNgQ=="
         }
       },
       "is_incremental": false,
@@ -1528,7 +1539,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/basics/components/inheritance.html",
-          "hash": "HSeV3q6Fa0Ni6xnDH1MDXw=="
+          "hash": "2cAlpq+JagLe2SMw/J6dfg=="
         }
       },
       "is_incremental": false,
@@ -1624,7 +1635,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "wa1pjBDjxCePpgNeBUHz7A=="
+          "hash": "GSew6WUQUUBDHvBfiE3bGw=="
         }
       },
       "is_incremental": false,
@@ -1684,7 +1695,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/modeling/buffer/simplexes.html",
-          "hash": "2THB5JV1b+xaKNH6yWepmg=="
+          "hash": "jI4nKO63hllyl9skv8pp6A=="
         }
       },
       "is_incremental": false,
@@ -1924,7 +1935,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/rendering/projections/frustum.html",
-          "hash": "y7pQCK5CtYPA2HnLWEm/GA=="
+          "hash": "cOvkq/w5cvi1uF0vJ+dGnA=="
         }
       },
       "is_incremental": false,
@@ -2058,14 +2069,6 @@
         "incrementalPhase": "build"
       },
       "processors": {
-        "ConceptualDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build"
-        },
         "RestApiDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -2076,9 +2079,17 @@
           "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
