@@ -70,25 +70,32 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <p>These are our recommended pratices when working with scripting for Engine4.</p>
-<h2 id="monobehaviour4">MonoBehaviour4</h2>
+<h2 id="engine4monobehaviour4"><a class="xref" href="../../api/Engine4.MonoBehaviour4.html">MonoBehaviour4</a></h2>
 <p>You can derive your custom script with <a class="xref" href="../../api/Engine4.MonoBehaviour4.html">MonoBehaviour4</a> to get quick shortcuts to core components such as <a class="xref" href="../../api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_transform4">transform4</a>, <a class="xref" href="../../api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_renderer4">renderer4</a>, <a class="xref" href="../../api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_rigidbody4">rigidbody4</a>, <a class="xref" href="../../api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_viewer4">viewer4</a>. MonoBehaviour4 inherits Unity&#39;s MonoBehaviour so all scripting functionalities are preserved.</p>
-<p>[template]</p>
-<h2 id="vector4-conflicts">Vector4 conflicts</h2>
+<pre><code class="lang-c#">using Engine4;
+
+public class MyComponent : MonoBehaviour4
+{
+
+}
+</code></pre><h2 id="vector4-conflicts">Vector4 conflicts</h2>
 <p>Yes, Engine4 define its own <a class="xref" href="../../api/Engine4.Vector4.html">Vector4</a> as we need more function than what available to UnityEngine&#39;s Vector4.</p>
 <p>To solve name conflicts, we suggest to add this snippet to all scripts that access Engine4 functionalities:</p>
 <pre><code class="lang-c#">using Vector4 = Engine4.Vector4;
 </code></pre><h2 id="changing-object-transform">Changing object transform</h2>
 <p>Object transform can be changed like usual, via <a class="xref" href="../../api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_transform4">transform4</a>.</p>
-<pre><code class="lang-c#">// example here
-</code></pre><p>See the next section for more information regarding to transform manipulation.</p>
+<pre><code class="lang-c#">transform4.position += Vector4.up * 10;
+</code></pre><p>See the <a href="transform.html">next section</a> for more information regarding to transform manipulation.</p>
 <h2 id="changing-renderer4modeler4modifier4-member-or-property">Changing Renderer4/Modeler4/Modifier4 member or property</h2>
 <p>Changing only its property simply won&#39;t work. You have to notify the renderer using @Engine4.Renderer4.SetDirty</p>
 <pre><code class="lang-c#">// make a change
 GetComponent&lt;Primitive4&gt;().radius = 2f;
 // notify
 renderer4.SetDirty(DirtyLevel.Model);
-</code></pre><p>Remember you don&#39;t have to call SetDirty if you only change the object transformation.</p>
-</article>
+</code></pre><p>Remember that changing object transformation doesn&#39;t require the code to call SetDiry as it&#39;s managed automatically behind the scene.</p>
+<pre><code class="lang-c#">transform4.position += Vector4.up * 10;
+// Done, no need to call SetDirty
+</code></pre></article>
           </div>
         </div>
       </div>

@@ -87,30 +87,33 @@
 <li>Optimized.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
-<p>These honest limitation is our TODOs for the next development of the library.</p>
+<p>The development goal of Engine4 is to make the library have similar capabilities like most game engine have.
+Therefore, we put these honest limitation below as our TODOs for the next development of the library.</p>
 <ul>
 <li>Currently does all the hardwork in single main thread (job system?).</li>
-<li>No support for rendering via graphic acceleration.</li>
-<li>No particle system generator (but we have its renderer).</li>
+<li>No support for rendering via hardware acceleration.</li>
+<li>No particle system generator (although we have its renderer).</li>
 <li>Only limited set of shapes that supported by the Physics Engine.</li>
 <li>Physics Engine doesn&#39;t include joints and character controller.</li>
 <li>Building shapes can only done via procedural creations.</li>
 <li>No dedicated 4D graphics solution included (skybox, lighting, fog etc.)</li>
-<li>Engine4 is not well suited for multi-scene scenarios.</li>
 <li>The documentation has many grammar mistake (contrib welcome anyway).</li>
 <li>There are no real games published with this library so far.</li>
 </ul>
 <h4 id="known-issues-to-be-resolved-during-beta-session">Known issues to be resolved during Beta Session</h4>
 <ul>
-<li>Documentation manual is still under work.</li>
+<li>Documentation manual is still uncomplete.</li>
 <li>Matrix to euler fail to work for 90 deg singularity cases (this issue only impacts editor experience).</li>
 <li>UvMapper4 doesn&#39;t generate UV correctly.</li>
-<li>Frustum4 doesn&#39;t correctly cull objects if too close.</li>
-<li>Components isn&#39;t organized in add component menu.</li>
+<li><del>Frustum4 doesn&#39;t correctly cull objects if too close.</del></li>
+<li><del>Components isn&#39;t organized in add component menu.</del></li>
 <li>Gizmos4&#39;s late update rendering.</li>
 <li><del>No INeedScaleTransform.</del></li>
+<li>Raycast and collision callback is yet to be implemented</li>
+<li>Does not properly handle multi-scene scenario.</li>
+<li>Can&#39;t build to any platform because editor snippet in runtime script.</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Beta session run until the rest of the month. During it, APIs may updated without notice.</p>
+<div class="NOTE"><h5>Note</h5><p>Beta session run until the rest of the month. During it, APIs may changed when stable version released without concerning compatibility.</p>
 </div>
 <h2 id="helpful-links">Helpful Links</h2>
 <p><a href="http://u3d.as/fdm">Asset Link</a> | <a href="https://willnode.github.io/engine4-doc/index.html">Online Documentation</a> | <a href="https://github.com/willnode/engine4-doc/">Offline Documentation</a> | <a href="https://forum.unity.com/threads/mesh-4d-engine-create-4d-objects-in-unity.320549/">Support Forum</a> | <a href="https://wellosoft.wordpress.com/">Developer Website</a></p>
