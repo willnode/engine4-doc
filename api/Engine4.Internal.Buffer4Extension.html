@@ -93,12 +93,36 @@
   <h3 id="methods">Methods
   </h3>
   <a id="Engine4_Internal_Buffer4Extension_AddBySequence_" data-uid="Engine4.Internal.Buffer4Extension.AddBySequence*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_Engine4_VertexProfile___" data-uid="Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.Internal.SequenceMode,Engine4.VertexProfile[])">AddBySequence(Buffer4, SequenceMode, VertexProfile[])</h4>
+  <div class="markdown level1 summary"><p>Add by given sequence</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddBySequence(this Buffer4 buffer, SequenceMode mode, params VertexProfile[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddBySequence_" data-uid="Engine4.Internal.Buffer4Extension.AddBySequence*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddBySequence(Engine4.Buffer4,Engine4.Internal.SequenceMode,System.Int32[])">AddBySequence(Buffer4, SequenceMode, Int32[])</h4>
   <div class="markdown level1 summary"><p>Add by given sequence</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void AddBySequence(this Buffer4 buffer, SequenceMode mode, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddCube_" data-uid="Engine4.Internal.Buffer4Extension.AddCube*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddCube_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddCube(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddCube(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Helper to add a cube from 8 existing verts index. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddCube(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2, VertexProfile v3, VertexProfile v4, VertexProfile v5, VertexProfile v6, VertexProfile v7)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddPoint_" data-uid="Engine4.Internal.Buffer4Extension.AddPoint*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddPoint(Engine4.Buffer4,Engine4.VertexProfile)">AddPoint(Buffer4, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add an artbitrary point. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPoint(this Buffer4 buffer, VertexProfile v0)</code></pre>
   </div>
   <a id="Engine4_Internal_Buffer4Extension_AddPoint_" data-uid="Engine4.Internal.Buffer4Extension.AddPoint*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddPoint(Engine4.Buffer4,System.Int32[])">AddPoint(Buffer4, Int32[])</h4>
@@ -116,6 +140,54 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void AddPolygon(this Buffer4 buffer, params int[] v)</code></pre>
   </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddPrism_" data-uid="Engine4.Internal.Buffer4Extension.AddPrism*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddPrism_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddPrism(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddPrism(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Helper to add a triangular prism from 6 existing verts index. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPrism(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2, VertexProfile v3, VertexProfile v4, VertexProfile v5)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddProfile*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddProfile_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddProfile(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile)">AddProfile(Buffer4, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add new profiles to remaining indice </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddProfile(this Buffer4 buffer, VertexProfile v0, VertexProfile v1)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddProfile*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddProfile_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddProfile(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddProfile(Buffer4, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add new profiles to remaining indice </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddProfile(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddProfile*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddProfile_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddProfile(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddProfile(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add new profiles to remaining indice </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddProfile(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2, VertexProfile v3)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddPyramid_" data-uid="Engine4.Internal.Buffer4Extension.AddPyramid*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddPyramid_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddPyramid(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddPyramid(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Helper to add a pyramid from 5 existing verts index. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddPyramid(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2, VertexProfile v3, VertexProfile v4)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddQuad_" data-uid="Engine4.Internal.Buffer4Extension.AddQuad*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddQuad_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddQuad(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddQuad(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add a flat quad. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddQuad(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2, VertexProfile v3)</code></pre>
+  </div>
   <a id="Engine4_Internal_Buffer4Extension_AddQuad_" data-uid="Engine4.Internal.Buffer4Extension.AddQuad*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_AddQuad_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddQuad(Engine4.Buffer4,System.Int32[])">AddQuad(Buffer4, Int32[])</h4>
   <div class="markdown level1 summary"><p>Add quads.</p>
@@ -123,6 +195,14 @@
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void AddQuad(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddSegment_" data-uid="Engine4.Internal.Buffer4Extension.AddSegment*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddSegment_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddSegment(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile)">AddSegment(Buffer4, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add a segment. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddSegment(this Buffer4 buffer, VertexProfile v0, VertexProfile v1)</code></pre>
   </div>
   <a id="Engine4_Internal_Buffer4Extension_AddSegment_" data-uid="Engine4.Internal.Buffer4Extension.AddSegment*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_AddSegment_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddSegment(Engine4.Buffer4,System.Int32[])">AddSegment(Buffer4, Int32[])</h4>
@@ -133,12 +213,28 @@
     <pre><code class="lang-csharp hljs">public static void AddSegment(this Buffer4 buffer, params int[] v)</code></pre>
   </div>
   <a id="Engine4_Internal_Buffer4Extension_AddTriangle_" data-uid="Engine4.Internal.Buffer4Extension.AddTriangle*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddTriangle_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddTriangle(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddTriangle(Buffer4, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add a flat triangle. (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddTriangle(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddTriangle_" data-uid="Engine4.Internal.Buffer4Extension.AddTriangle*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_AddTriangle_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddTriangle(Engine4.Buffer4,System.Int32[])">AddTriangle(Buffer4, Int32[])</h4>
   <div class="markdown level1 summary"><p>Add triangles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void AddTriangle(this Buffer4 buffer, params int[] v)</code></pre>
+  </div>
+  <a id="Engine4_Internal_Buffer4Extension_AddTrimid_" data-uid="Engine4.Internal.Buffer4Extension.AddTrimid*"></a>
+  <h4 id="Engine4_Internal_Buffer4Extension_AddTrimid_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_" data-uid="Engine4.Internal.Buffer4Extension.AddTrimid(Engine4.Buffer4,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile,Engine4.VertexProfile)">AddTrimid(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</h4>
+  <div class="markdown level1 summary"><p>Add a trimid (triangle pyramid). (profile)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddTrimid(this Buffer4 buffer, VertexProfile v0, VertexProfile v1, VertexProfile v2, VertexProfile v3)</code></pre>
   </div>
   <a id="Engine4_Internal_Buffer4Extension_AddTrimid_" data-uid="Engine4.Internal.Buffer4Extension.AddTrimid*"></a>
   <h4 id="Engine4_Internal_Buffer4Extension_AddTrimid_Engine4_Buffer4_System_Int32___" data-uid="Engine4.Internal.Buffer4Extension.AddTrimid(Engine4.Buffer4,System.Int32[])">AddTrimid(Buffer4, Int32[])</h4>

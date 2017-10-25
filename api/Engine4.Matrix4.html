@@ -311,7 +311,7 @@ This should not be confused with Unity&apos;s Matrix4x4.</p>
 </div>
   <a id="Engine4_Matrix4_LookAt_" data-uid="Engine4.Matrix4.LookAt*"></a>
   <h4 id="Engine4_Matrix4_LookAt_Engine4_Vector4_" data-uid="Engine4.Matrix4.LookAt(Engine4.Vector4)">LookAt(Vector4)</h4>
-  <div class="markdown level1 summary"><p>Get rotation matrix that points identity object to given overward axis</p>
+  <div class="markdown level1 summary"><p>Get rotation matrix that rotates identity object to given overward axis</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
@@ -319,7 +319,7 @@ This should not be confused with Unity&apos;s Matrix4x4.</p>
   </div>
   <a id="Engine4_Matrix4_LookAt_" data-uid="Engine4.Matrix4.LookAt*"></a>
   <h4 id="Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4)">LookAt(Vector4, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Get rotation matrix that points identity object to given overward and forward axis</p>
+  <div class="markdown level1 summary"><p>Get rotation matrix that rotates identity object to given overward and forward axis</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
@@ -327,12 +327,15 @@ This should not be confused with Unity&apos;s Matrix4x4.</p>
   </div>
   <a id="Engine4_Matrix4_LookAt_" data-uid="Engine4.Matrix4.LookAt*"></a>
   <h4 id="Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Matrix4.LookAt(Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">LookAt(Vector4, Vector4, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Get rotation matrix that points identity object to given overward and forward and upward axis</p>
+  <div class="markdown level1 summary"><p>Get rotation matrix that rotates identity object to given overward and forward and upward axis</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Matrix4 LookAt(Vector4 overward, Vector4 forward, Vector4 upward)</code></pre>
   </div>
+  <h5 id="Engine4_Matrix4_LookAt_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Forward and upward is a support direction, meaning they&apos;ll change if they&apos;re not perpendicular with overward.</p>
+</div>
   <a id="Engine4_Matrix4_ToEuler_" data-uid="Engine4.Matrix4.ToEuler*"></a>
   <h4 id="Engine4_Matrix4_ToEuler" data-uid="Engine4.Matrix4.ToEuler">ToEuler()</h4>
   <div class="markdown level1 summary"><p>Convert matrix into euler degree rotation</p>

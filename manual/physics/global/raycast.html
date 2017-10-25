@@ -69,9 +69,13 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="raycast">Raycast</h1>
 
-<div class="WARNING"><h5>Warning</h5><p>This feature hasn&#39;t been implemented</p>
-</div>
-</article>
+<p>Basic raycasting can be done by calling @Engine4.Physics.Physics4.Raycast(Engine4.Physics.RaycastHit4). You can get Physics4 easily with @Engine4.MonoBehaviour4.physics4 when deriving your mono from <a class="xref" href="../../../api/Engine4.MonoBehaviour4.html">MonoBehaviour4</a>.</p>
+<pre><code class="lang-c#">var hit = physics4.Raycast(new Ray4(transform4.overward));
+if (hit.hit)
+{
+    // Raycast succeeded!
+}
+</code></pre></article>
           </div>
         </div>
       </div>

@@ -199,7 +199,7 @@
   </div>
   <a id="Engine4_Bounds4_Contains_" data-uid="Engine4.Bounds4.Contains*"></a>
   <h4 id="Engine4_Bounds4_Contains_Engine4_Bounds4_" data-uid="Engine4.Bounds4.Contains(Engine4.Bounds4)">Contains(Bounds4)</h4>
-  <div class="markdown level1 summary"><p>Is this bound contains the whole area of the other bound? </p>
+  <div class="markdown level1 summary"><p>Is this bound contains the whole cell of the other bound? </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
@@ -213,6 +213,17 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Contains(Vector4 point)</code></pre>
   </div>
+  <a id="Engine4_Bounds4_Interpolate_" data-uid="Engine4.Bounds4.Interpolate*"></a>
+  <h4 id="Engine4_Bounds4_Interpolate_Engine4_Vector4_" data-uid="Engine4.Bounds4.Interpolate(Engine4.Vector4)">Interpolate(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Interpolate two vector by T.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 Interpolate(Vector4 t)</code></pre>
+  </div>
+  <h5 id="Engine4_Bounds4_Interpolate_Engine4_Vector4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The interpolation is not clamped </p>
+</div>
   <a id="Engine4_Bounds4_Intersect_" data-uid="Engine4.Bounds4.Intersect*"></a>
   <h4 id="Engine4_Bounds4_Intersect_Engine4_Bounds4_Engine4_Bounds4_" data-uid="Engine4.Bounds4.Intersect(Engine4.Bounds4,Engine4.Bounds4)">Intersect(Bounds4, Bounds4)</h4>
   <div class="markdown level1 summary"><p>Intersect two bounds </p>
@@ -239,11 +250,11 @@
   </div>
   <a id="Engine4_Bounds4_Raycast_" data-uid="Engine4.Bounds4.Raycast*"></a>
   <h4 id="Engine4_Bounds4_Raycast_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Bounds4.Raycast(Engine4.Vector4,Engine4.Vector4)">Raycast(Vector4, Vector4)</h4>
-  <div class="markdown level1 summary"><p>Check if given edge between points is colliding with the bound </p>
+  <div class="markdown level1 summary"><p>Check if given ray is colliding with the bound </p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool Raycast(Vector4 p0, Vector4 p1)</code></pre>
+    <pre><code class="lang-csharp hljs">public bool Raycast(Vector4 p, Vector4 d)</code></pre>
   </div>
   <a id="Engine4_Bounds4_Scale_" data-uid="Engine4.Bounds4.Scale*"></a>
   <h4 id="Engine4_Bounds4_Scale_Engine4_Bounds4_Engine4_Vector4_" data-uid="Engine4.Bounds4.Scale(Engine4.Bounds4,Engine4.Vector4)">Scale(Bounds4, Vector4)</h4>

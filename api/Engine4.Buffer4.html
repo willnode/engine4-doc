@@ -180,18 +180,8 @@ Useful if you want to create a custom shape blocks.</p>
     <pre><code class="lang-csharp hljs">public SimplexMode simplex</code></pre>
   </div>
   <h5 id="Engine4_Buffer4_simplex_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Public for convenience. <strong>ONLY SET WHEN ISEMPTY IS TRUE.</strong> </p>
+  <div class="markdown level1 remarks"><p>Public for speed. <strong>ONLY SET WHEN ISEMPTY IS TRUE.</strong> </p>
 </div>
-  <h3 id="properties">Properties
-  </h3>
-  <a id="Engine4_Buffer4_ProfileDifference_" data-uid="Engine4.Buffer4.ProfileDifference*"></a>
-  <h4 id="Engine4_Buffer4_ProfileDifference" data-uid="Engine4.Buffer4.ProfileDifference">ProfileDifference</h4>
-  <div class="markdown level1 summary"><p>Get remaining profile needed </p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int ProfileDifference { get; }</code></pre>
-  </div>
   <h3 id="methods">Methods
   </h3>
   <a id="Engine4_Buffer4_AddCube_" data-uid="Engine4.Buffer4.AddCube*"></a>
@@ -316,7 +306,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   </div>
   <a id="Engine4_Buffer4_Clean_" data-uid="Engine4.Buffer4.Clean*"></a>
   <h4 id="Engine4_Buffer4_Clean" data-uid="Engine4.Buffer4.Clean">Clean()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clear and Clean memory traces.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clean()</code></pre>
@@ -378,6 +369,9 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_System_Int32___">Buffer4Extension.AddBySequence(Buffer4, SequenceMode, Int32[])</a>
   </div>
   <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddBySequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_Engine4_VertexProfile___">Buffer4Extension.AddBySequence(Buffer4, SequenceMode, VertexProfile[])</a>
+  </div>
+  <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_System_Int32___">Buffer4Extension.AddPoint(Buffer4, Int32[])</a>
   </div>
   <div>
@@ -421,6 +415,39 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   </div>
   <div>
       <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_SequenceGrid_Engine4_Buffer4_System_Int32_System_Int32_System_Int32_System_Int32_">Buffer4Extension.SequenceGrid(Buffer4, Int32, Int32, Int32, Int32)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddProfile_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddProfile(Buffer4, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddProfile_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddProfile(Buffer4, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddProfile_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddProfile(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPoint_Engine4_Buffer4_Engine4_VertexProfile_">Buffer4Extension.AddPoint(Buffer4, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddSegment_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddSegment(Buffer4, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddTriangle_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddTriangle(Buffer4, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddQuad_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddQuad(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddTrimid_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddTrimid(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPyramid_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddPyramid(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPrism_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddPrism(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</a>
+  </div>
+  <div>
+      <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddCube_Engine4_Buffer4_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_Engine4_VertexProfile_">Buffer4Extension.AddCube(Buffer4, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile, VertexProfile)</a>
   </div>
 </article>
           </div>

@@ -69,9 +69,28 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="collision-callback">Collision Callback</h1>
 
-<div class="WARNING"><h5>Warning</h5><p>This feature hasn&#39;t been implemented</p>
-</div>
-</article>
+<p>Engine4 physics have its own collision callback, though it&#39;s require you to have more little setup. Also see <a class="xref" href="../../../api/Engine4.Physics.CollisionHit4.html">CollisionHit4</a> and @Engine4.Physics4.Collider4.callback .</p>
+<pre><code class="lang-c#">class MyComponent : MonoBehaviour4
+{
+
+    void OnEnable()
+    {
+        // Register
+        GetComponent&lt;Collider4&gt;().callback += OnCollisionCallback;
+    }
+
+    void OnDisable()
+    {
+        // Unregister
+        GetComponent&lt;Collider4&gt;().callback -= OnCollisionCallback;
+    }
+
+    void OnCollisionCallback (CollisionHit4 collision)
+    {
+        // Do something when this collider hit
+    }
+}
+</code></pre></article>
           </div>
         </div>
       </div>

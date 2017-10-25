@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Rigidbody4
+   | Engine4 Manual </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Rigidbody4
+   | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.24.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/icon_small.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-12">
+            <article class="content wrap" id="_content" data-uid="Engine4.Physics.Rigidbody4">
+  
+  
+  <h1 id="Engine4_Physics_Rigidbody4" data-uid="Engine4.Physics.Rigidbody4" class="text-break">Class Rigidbody4
+  </h1>
+  <div class="markdown level0 summary"><p>Rigidbody makes the object is participating in the physics simulations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Rigidbody4 : MonoBehaviour4</code></pre>
+  </div>
+  <div class="namespace">
+  <h5>Namespace <a class="xref" href="Engine4.Physics.html">Engine4.Physics</a></h5>
+  </div>
+  <div class="inheritance">
+    <h5>Inheritance </h5>
+     <div class="level0"><span class="xref">System.Object</span></div>  <div class="level1"><a class="xref" href="Engine4.MonoBehaviour4.html">MonoBehaviour4</a></div>  
+    <div class="level2"><span class="xref">Rigidbody4</span></div>  
+  <div class="derivations">
+    
+  </div>
+  </div>
+  <h5 id="Engine4_Physics_Rigidbody4_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>It&apos;s generally not a good idea if you put the same rigidbody in the same object,
+or in the parent, as both will change transformation together and causing deadlocks.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <a id="Engine4_Physics_Rigidbody4__ctor_" data-uid="Engine4.Physics.Rigidbody4.#ctor*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4__ctor" data-uid="Engine4.Physics.Rigidbody4.#ctor">Rigidbody4()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rigidbody4()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <a id="Engine4_Physics_Rigidbody4_angularDamping_" data-uid="Engine4.Physics.Rigidbody4.angularDamping*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_angularDamping" data-uid="Engine4.Physics.Rigidbody4.angularDamping">angularDamping</h4>
+  <div class="markdown level1 summary"><p>Angular damping of the body </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float angularDamping { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_angularVelocity_" data-uid="Engine4.Physics.Rigidbody4.angularVelocity*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_angularVelocity" data-uid="Engine4.Physics.Rigidbody4.angularVelocity">angularVelocity</h4>
+  <div class="markdown level1 summary"><p>Angular velocity of this rigidbody (radian/sec)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Euler4 angularVelocity { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_gravityScale_" data-uid="Engine4.Physics.Rigidbody4.gravityScale*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_gravityScale" data-uid="Engine4.Physics.Rigidbody4.gravityScale">gravityScale</h4>
+  <div class="markdown level1 summary"><p>Amount of gravity that affects the body </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float gravityScale { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_linearDamping_" data-uid="Engine4.Physics.Rigidbody4.linearDamping*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_linearDamping" data-uid="Engine4.Physics.Rigidbody4.linearDamping">linearDamping</h4>
+  <div class="markdown level1 summary"><p>Linear damping of the body </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float linearDamping { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_linearVelocity_" data-uid="Engine4.Physics.Rigidbody4.linearVelocity*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_linearVelocity" data-uid="Engine4.Physics.Rigidbody4.linearVelocity">linearVelocity</h4>
+  <div class="markdown level1 summary"><p>Linear velocity of this rigidbody (world unit/sec)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector4 linearVelocity { get; set; }</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_type_" data-uid="Engine4.Physics.Rigidbody4.type*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_type" data-uid="Engine4.Physics.Rigidbody4.type">type</h4>
+  <div class="markdown level1 summary"><p>Rigidbody type during simulation </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyType type { get; set; }</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <a id="Engine4_Physics_Rigidbody4_AddForce_" data-uid="Engine4.Physics.Rigidbody4.AddForce*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_AddForce_Engine4_Vector4_" data-uid="Engine4.Physics.Rigidbody4.AddForce(Engine4.Vector4)">AddForce(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add a force </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddForce(Vector4 force)</code></pre>
+  </div>
+  <h5 id="Engine4_Physics_Rigidbody4_AddForce_Engine4_Vector4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A force is affected by delta time and mass and it is generally accumulated over time. </p>
+</div>
+  <a id="Engine4_Physics_Rigidbody4_AddForceAtPosition_" data-uid="Engine4.Physics.Rigidbody4.AddForceAtPosition*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_AddForceAtPosition_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Physics.Rigidbody4.AddForceAtPosition(Engine4.Vector4,Engine4.Vector4)">AddForceAtPosition(Vector4, Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add force at position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddForceAtPosition(Vector4 force, Vector4 point)</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_AddImpulse_" data-uid="Engine4.Physics.Rigidbody4.AddImpulse*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_AddImpulse_Engine4_Vector4_" data-uid="Engine4.Physics.Rigidbody4.AddImpulse(Engine4.Vector4)">AddImpulse(Vector4)</h4>
+  <div class="markdown level1 summary"><p>Add an impulse </p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddImpulse(Vector4 impulse)</code></pre>
+  </div>
+  <h5 id="Engine4_Physics_Rigidbody4_AddImpulse_Engine4_Vector4__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>An impulse is not affected by delta time but mass and it is generally applied once. </p>
+</div>
+  <a id="Engine4_Physics_Rigidbody4_AddTorque_" data-uid="Engine4.Physics.Rigidbody4.AddTorque*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_AddTorque_Engine4_Euler4_" data-uid="Engine4.Physics.Rigidbody4.AddTorque(Engine4.Euler4)">AddTorque(Euler4)</h4>
+  <div class="markdown level1 summary"><p>Add torque (force in terms of rotation)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTorque(Euler4 torque)</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_Sleep_" data-uid="Engine4.Physics.Rigidbody4.Sleep*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_Sleep" data-uid="Engine4.Physics.Rigidbody4.Sleep">Sleep()</h4>
+  <div class="markdown level1 summary"><p>Set rigidbody to sleep</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Sleep()</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_ToString_" data-uid="Engine4.Physics.Rigidbody4.ToString*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_ToString_System_Boolean_" data-uid="Engine4.Physics.Rigidbody4.ToString(System.Boolean)">ToString(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Dump state to string for debugging ease.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(bool report)</code></pre>
+  </div>
+  <a id="Engine4_Physics_Rigidbody4_WakeUp_" data-uid="Engine4.Physics.Rigidbody4.WakeUp*"></a>
+  <h4 id="Engine4_Physics_Rigidbody4_WakeUp" data-uid="Engine4.Physics.Rigidbody4.WakeUp">WakeUp()</h4>
+  <div class="markdown level1 summary"><p>Wake up rigidbody if it sleeping</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WakeUp()</code></pre>
+  </div>
+</article>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">▲</a>
+            </span>
+            
+            <span>Copyright © 2017 Wello Soft</span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

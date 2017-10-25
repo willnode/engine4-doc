@@ -111,24 +111,63 @@
 <h3 id="where-euler-is-useful">Where Euler is useful</h3>
 <p>Euler is useful for storing a readable data.</p>
 <p>[image]</p>
-<p>And also interpolating between rotation via <code>Lerp</code>, <code>RotateToward</code> or <code>SmoothDampAngle</code>.</p>
-<p>[code]</p>
-<p>If you happen to interpolate the current rotation in matrix, try to convert to euler at <em>once</em>.</p>
-<p>[code]</p>
-<div class="WARNING"><h5>Warning</h5><p>This section is also telling you that @Engine4.Matrix4.ToEuler(Engine4.Matrix4) is simply bad and should be avoided as possible. Even if the problem mentioned in <a href="../../index.html">known issues</a> may be fixed soon.</p>
-</div>
-<h3 id="where-matrix-is-useful">Where Matrix is useful</h3>
+<p>You can also interpolate between rotation via @Engine4.Euler4.Lerp(Engine4.Euler4,Engine4.Euler4,System.Single), <code>RotateToward</code> or <code>SmoothDampAngle</code>.</p>
+<p>If you happen to interpolate the current rotation in matrix, try to convert to euler at <em>once</em>. This is necessary to avoid chaos.</p>
+<pre><code class="lang-c#">// In coroutine ....
+var current = transform4.eulerAngles;
+var target = new Euler4(4, 90); // 90 deg at T (XW plane)
+for(int i = 0; i &lt; 20; i++)
+{
+    transform4.eulerAngles = Euler4.Lerp(current, target, i / 20f);
+    yield return null;
+}
+</code></pre><pre><code class="lang-c#">// Every update with SmoothDampAngle ....
+Euler4 current;
+Euler4 target = new Euler4(4, 90); // 90 deg at T (XW plane)
+Euler4 speed;
+
+void Start() { current = transform4.eulerAngles; }
+
+void Update()
+{
+    current = Euler4.SmoothDampAngle(current, target, ref speed, 0.2f);
+}
+</code></pre><h3 id="where-matrix-is-useful">Where Matrix is useful</h3>
 <p>Matrices is useful for rotating any vector.</p>
 <p>[code]</p>
 <p>And also for combining rotation because its multiplication has no problem with gimbal lock.</p>
-<p>[codecomparison]</p>
-<p>This also mean you can create</p>
-<h3 id="where-things-work-for-both-euler-and-matrix">Where things work for both Euler and Matrix.</h3>
+<pre><code class="lang-c#">Euler4 A = transform4.eulerAngles, B = new Euler4(4, 90);
+Euler4 euler = A + B; // Dont&#39; do this! gimbal lock may happen!
+
+Matrix4 C = transform4.rotation, D = Matrix4.Euler4(4, 90);
+Matrix4 matrix = C * D; // No problem :)
+</code></pre><h3 id="where-things-work-for-both-euler-and-matrix">Where things work for both Euler and Matrix.</h3>
 <p>If you want to inverse the rotation, you can use <a class="xref" href="../../api/Engine4.Matrix4.html#Engine4_Matrix4_Transpose_Engine4_Matrix4_">Transpose(Matrix4)</a> or  <a class="xref" href="../../api/Engine4.Euler4.html#Engine4_Euler4_op_UnaryNegation_Engine4_Euler4_">UnaryNegation(Euler4)</a></p>
 <p>[code]</p>
 <h3 id="where-habits-in-3d-do-not-work-in-4d-and-higher">Where habits in 3D do not work in 4D and higher</h3>
 <p>Angle around an axis is not exist because in 4D you need two vector (so do the pattern for higher dimension).</p>
-</article>
+<h2 id="listening-to-transform-change">Listening to transform change</h2>
+<pre><code class="lang-c#">class MyComponent : MonoBehaviour4
+{
+
+    void OnEnable()
+    {
+        // Register
+        transform4.update += OnTransformUpdate;
+    }
+
+    void OnDisable()
+    {
+        // Unregister
+        transform4.update -= OnTransformUpdate;
+    }
+
+    void OnTransformUpdate ()
+    {
+        // Do something when this transform changed
+    }
+}
+</code></pre></article>
           </div>
         </div>
       </div>
