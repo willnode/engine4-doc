@@ -8,7 +8,7 @@
     <title>Sequence | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Sequence | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -74,7 +74,7 @@
 <pre><code class="lang-c#">using Engine4.Internal; // Sequencer (and other tools) is an extension method inside this namespace
 </code></pre><h2 id="example">Example</h2>
 <p>Suppose you want to create a looping lines that connects 20 vertices.</p>
-<pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer)
+<pre><code class="lang-c#">public override void CreateModel(Buffer4 buffer)
 {
     for(int i = 0; i &lt; 20; i++)
         buffer.AddVertex(new Vector4(i,0,0,0)); // create vertex
@@ -83,11 +83,9 @@
         buffer.AddSegment(i, (i + 1) % 20); // clever, doesn&#39;t it?
 }
 </code></pre><p>Instead of loop, you can simplify the segment creation with a single line.</p>
-<pre><code class="lang-c#">   // for(int i = 0; i &lt; 20; i++)
-   //     buffer.AddSegment(i, (i + 1) % 20); 
-    buffer.Sequence(SequenceMode.LineLoop); // cool!
+<pre><code class="lang-c#">    buffer.Sequence(SequenceMode.LineLoop); // cool!
 </code></pre><p>This is one of many <a class="xref" href="../../../api/Engine4.Internal.SequenceMode.html">sequencing presets</a>.</p>
-<p>[sequencepresets]</p>
+<p><img src="../../../images/modeling-sequencepresets.png" alt="sequencepresets"></p>
 <h2 id="grid-sequence">Grid Sequence</h2>
 <p>With <a class="xref" href="../../../api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_SequenceGrid_Engine4_Buffer4_System_Int32_System_Int32_System_Int32_System_Int32_">GridSequence</a> Creating grid based model become a lot easier.</p>
 <pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer) // creating tesseract

@@ -8,7 +8,7 @@
     <title>Simplex | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Simplex | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -96,10 +96,10 @@
 </tr>
 </tbody>
 </table>
-<p>Why this is matter? While 3D mesh are built with either points, segments or triangles, Buffer4 will allow you to <strong>create models from bunch of tethrahedron</strong>. The benefit is not just stop there, if you have seen <a class="xref" href="../../../api/Engine4.Renderer4.html">Renderer4</a> (click if you haven&#39;t read yet) then you know this legit dropdown:</p>
-<p>[visualizerchoices]</p>
+<p>Why this is matter? While 3D mesh are built with either points, segments or triangles, Buffer4 will allow you to <strong>create models from many tethrahedron</strong>. The benefit is not just stop there, if you have seen <a class="xref" href="../../../api/Engine4.Renderer4.html">Renderer4</a> then you know this legit dropdown:</p>
+<p><a href="../../../images/inspector-visualizermode.png">visualizerchoices</a></p>
 <p>Can generate the same shapes, but in different simplexes:</p>
-<p>[visualizerinaction]</p>
+<p><a href="../../../images/rendering-visualizerdemo.png">visualizerinaction</a></p>
 <p>This can happen because in very basic level All Modeler4 should be restricted by its <a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_simplex">simplex mode</a>:</p>
 <pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer)
 {
@@ -148,9 +148,9 @@
 <li><a class="xref" href="../../../api/Engine4.Buffer4.html#Engine4_Buffer4_AddCube_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_">AddCube</a></li>
 <li><a class="xref" href="../../../api/Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_AddPolygon_Engine4_Buffer4_System_Int32___">AddPolygon</a></li>
 </ul>
-<p><a href="sequencer.html">There is still more here</a></p>
+<p><a href="sequencer.html">There&#39;s more here</a></p>
 <p>The illustration below explains the vertex sequence that should be follow for these additional building blocks:</p>
-<p>[illustration]</p>
+<p><img src="../../../images/modeling-extrablocks.png" alt="illustration"></p>
 <h2 id="why-need-tetrahedron">Why need Tetrahedron?</h2>
 <p>Because cross section projection requires one higher level of given simplex mode. (<a href="../../basics/4d/projection.html">more info here</a>).</p>
 <p>This means while <a class="xref" href="../../../api/Engine4.Rendering.Frustum4.html">Frustum4</a> requires the same level (e.g. <code>Solid</code> -&gt; <code>Triangle</code>), <a class="xref" href="../../../api/Engine4.Rendering.CrossSection4.html">CrossSection4</a> does need its higher level (e.g. <code>Solid</code> -&gt; <code>Tetrahedron</code>). </p>

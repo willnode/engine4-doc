@@ -8,7 +8,7 @@
     <title>Custom Modifier | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Custom Modifier | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -70,7 +70,18 @@
 <h1 id="custom-modifier">Custom Modifier</h1>
 
 <p>You can create custom models by creating a script that deriving from <a class="xref" href="../../../api/Engine4.Rendering.Modifier4.html">Modifier4</a></p>
-<p>[script]</p>
+<pre><code class="lang-c#">using Engine4;
+using Engine4.Internal;
+using Engine4.Rendering;
+
+public class MyModel4 : Modifier4
+{
+    public override void ModifyModel(Buffer4 buffer)
+    {
+        // Build a model here
+    }
+}
+</code></pre><p>You can read more information related to <a class="xref" href="../../../api/Engine4.Buffer4.html">Buffer4</a> <a href="../buffer.html">here</a></p>
 </article>
           </div>
         </div>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Matrix4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -77,7 +77,7 @@
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public struct Matrix4</code></pre>
+    <pre><code class="lang-csharp hljs">public struct Matrix4 : IEquatable&lt;Matrix4&gt;</code></pre>
   </div>
   <h5 id="Engine4_Matrix4_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The matrix is represented in row major order.
@@ -270,15 +270,6 @@ This should not be confused with Unity&apos;s Matrix4x4.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Determinant(Matrix4 m)</code></pre>
   </div>
-  <a id="Engine4_Matrix4_Equals_" data-uid="Engine4.Matrix4.Equals*"></a>
-  <h4 id="Engine4_Matrix4_Equals_System_Object_" data-uid="Engine4.Matrix4.Equals(System.Object)">Equals(Object)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
-  </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
   <a id="Engine4_Matrix4_Euler_" data-uid="Engine4.Matrix4.Euler*"></a>
   <h4 id="Engine4_Matrix4_Euler_Engine4_Euler4_" data-uid="Engine4.Matrix4.Euler(Engine4.Euler4)">Euler(Euler4)</h4>
   <div class="markdown level1 summary"><p>Convert degree euler to orthogonal matrix rotation.</p>
@@ -472,6 +463,10 @@ The method won&apos;t check for orthogonality.</p>
   <h5 id="Engine4_Matrix4_op_Subtraction_Engine4_Matrix4_Engine4_Matrix4__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This operation could make the matrix not orthogonal anymore</p>
 </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
 </article>
           </div>
         </div>

@@ -8,7 +8,7 @@
     <title>Raycast | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Raycast | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -69,8 +69,8 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="raycast">Raycast</h1>
 
-<p>Basic raycasting can be done by calling @Engine4.Physics.Physics4.Raycast(Engine4.Physics.RaycastHit4). You can get Physics4 easily with @Engine4.MonoBehaviour4.physics4 when deriving your mono from <a class="xref" href="../../../api/Engine4.MonoBehaviour4.html">MonoBehaviour4</a>.</p>
-<pre><code class="lang-c#">var hit = physics4.Raycast(new Ray4(transform4.overward));
+<p>Basic raycasting can be done by calling @Engine4.Physics.Physics4.Raycast(Engine4.Physics.RaycastHit4). You can get Physics4 easily with <a class="xref" href="../../../api/Engine4.MonoBehaviour4.html#Engine4_MonoBehaviour4_physics4">physics4</a> when deriving your mono from <a class="xref" href="../../../api/Engine4.MonoBehaviour4.html">MonoBehaviour4</a>.</p>
+<pre><code class="lang-c#">RaycastHit4 hit = physics4.Raycast(new Ray4(transform4.position, transform4.overward));
 if (hit.hit)
 {
     // Raycast succeeded!

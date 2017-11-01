@@ -8,7 +8,7 @@
     <title>Rotation in 4D | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Rotation in 4D | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -72,11 +72,11 @@
 <p>Rotation in Engine4 is described as either euler or matrix.</p>
 <h2 id="rotation-as-euler">Rotation as Euler</h2>
 <p>There are six planes of rotation in four dimension. They&#39;re denoted as <code>x</code>, <code>y</code>, <code>z</code>, <code>t</code>, <code>u</code> and <code>v</code>. The first three can be refered as 3D rotation part, and it is designed to be identical with rotations in 3D space.</p>
-<p>[image in transform]</p>
+<p><a href="../../../images/inspector-euler.png">image in transform</a></p>
 <p><em>What&#39;s about the rest of three?</em></p>
 <p><code>t</code>, <code>u</code> and <code>v</code> refers to rotation planes that <em>related</em> with the fourth axis, and <code>X</code>, <code>Y</code>, <code>Z</code> axis, in order.</p>
 <h2 id="rotation-as-matrix">Rotation as matrix</h2>
-<p>Four dimensional rotation can be representated as 4x4 order matrix. The main benefit is that matrices do not suffer from gimbal lock. Its detailed implementation is dissuced in the <a href="">next article</a>.</p>
+<p>Four dimensional rotation can be representated as 4x4 order matrix. The main benefit is that matrices do not suffer from gimbal lock. Its detailed implementation is dissuced in the <a href="notation.html">next article</a>.</p>
 <h2 id="no-quaternion">No Quaternion</h2>
 <p>Engine4 does not implement quaternion for 4D. Note that this does not mean it is impossible. Quaternion is upgradable to 4D using <code>rotor</code> concepts described in Geometry Algebra. The primary reason is that they do no longer provide its main benefit in computation cost.</p>
 <h5 id="cost-comparison">Cost comparison</h5>
@@ -116,7 +116,7 @@
 </tr>
 </tbody>
 </table>
-<p>[source]</p>
+<p><a href="https://www.av8n.com/physics/rotations.htm">source</a></p>
 <p>From the comparison table, we can infer why using quaternion is useful than matrix in 3D space:</p>
 <ul>
 <li>Memory Storage is down by 55%</li>

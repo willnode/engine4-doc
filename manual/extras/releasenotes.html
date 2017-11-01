@@ -8,7 +8,7 @@
     <title>Release Notes | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Release Notes | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -69,6 +69,30 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="release-notes">Release Notes</h1>
 
+<h4 id="v31---nov-1-2017">V3.1 - Nov 1, 2017</h4>
+<blockquote><p>This is the first stable release after very basic features has been corrected and implemented properly. Most APIs have been documented by this version.</p>
+</blockquote>
+<ul>
+<li><code>NEW</code> Basic physics raycasting system</li>
+<li><code>NEW</code> Physics Collision callback system</li>
+<li><code>NEW</code> UV support, Tesseract and Hyperplane have UV implemented by default</li>
+<li><code>NEW</code> Matrix4.LookAt, Matrix4.Delta</li>
+<li><code>NEW</code> SimplexMode.Cubes</li>
+<li><code>IMPROVE</code> Multi scene support</li>
+<li><code>IMPROVE</code> Navigation UI now shows projection mode</li>
+<li><code>IMPROVE</code> Transform4 position gizmo now follows local/global</li>
+<li><code>IMPROVE</code> Primitive structs implements IEquatable<t> to improve performance</t></li>
+<li><code>IMPROVE</code> Projections uses array instead of List<t> to improve performance</t></li>
+<li><code>IMPROVE</code> Other several performance improvements</li>
+<li><code>FIX</code> Debugger4 causes player build fail</li>
+<li><code>FIX</code> Frustum culling get weird behaviour if too close</li>
+<li><code>FIX</code> Possible null exception on parenting system</li>
+<li><code>FIX</code> Physics forces discarded if done at init</li>
+<li><code>FIX</code> Matrix4.ToEuler sigularities</li>
+<li><code>CHANGE</code> Buffer4 profiles now applies to simplex index (indice) instead of vertices. Making vertex profiles should easier now.</li>
+<li><code>CHANGE</code> Solid visualizer now must able handle polygon-like vertices</li>
+<li><code>CHANGE</code> Moving physics component into Engine4.Physics and internal physics engine into Engine4.Physics.Internal</li>
+</ul>
 <h4 id="v30-beta---oct-10-2017">V3.0 (Beta) - Oct 10, 2017</h4>
 <p><code>Mesh 4D Engine</code> -&gt; <code>Engine4</code></p>
 <blockquote><p>V3.0 upgrade fully rewrites the library with more modular approach, better rendering system, including the brand new physics engine. The previous two diverse system now merged to one. Starting from this version the documentation have been improved as html-based. The version released as beta as few features haven&#39;t been finished.</p>

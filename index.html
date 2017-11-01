@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Welcome to Engine4 Manual v3.0 | Engine4 Manual </title>
+    <title>Welcome to Engine4 Manual v3.1 | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Welcome to Engine4 Manual v3.0 | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.24.0.0">
+    <meta name="title" content="Welcome to Engine4 Manual v3.1 | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -70,7 +70,7 @@
 </style>
 
 <p><img class="centerImage" src="images/icon_label.png" alt="Engine4 Logo"></p>
-<h1 id="welcome-to-engine4-manual-v30">Welcome to Engine4 Manual v3.0</h1>
+<h1 id="welcome-to-engine4-manual-v31">Welcome to Engine4 Manual v3.1</h1>
 <p>Engine4 is a library that empowers the ability create four-dimensional scenes inside Unity Game Engine. We aim to develop this library with range of features so you can build more complex scenes without even think how it works.</p>
 <p>If you new to Engine4 then go on, otherwise you can click the Manual for usage instructions.</p>
 <h2 id="the-main-goal">The Main Goal</h2>
@@ -78,13 +78,14 @@
 <h2 id="the-secret-sauce">The Secret Sauce</h2>
 <p>The library is doing the runtime hardwork without external depedencies. Any input data that feeded into the library are processed into a projected shape that is renderable with conventional 3D rendering engines.</p>
 <p>Note that because Unity is a 3D Game Engine. Engine4 mostly do not use advanced features inside as it is <em>limited</em> to 3D space. </p>
-<h2 id="major-features">Major Features</h2>
+<h2 id="features-highlight">Features Highlight</h2>
 <ul>
-<li>Builtin Datatypes, Camera, Transformation, Rendering, Builder, Gizmo, Physics Library.</li>
-<li>Full Scripting API and source code access without external libraries.</li>
+<li>Builtin Datatypes, Camera, Transformation, Rendering, Builder, Gizmo, Physics Library, in 4D.</li>
+<li>Shape building redefined. Make procedural creation easier for common scenarios.</li>
+<li>Full Scripting API and source code access without external libraries. </li>
 <li>HTML based documentation with documented scripting APIs.</li>
-<li>Cross platform.</li>
-<li>Optimized.</li>
+<li>Bundled with many scripting optimization in mind.</li>
+<li>Cross platform. Deploy anywhere you game can do.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
 <p>The development goal of Engine4 is to make the library have similar capabilities like most game engine have.
@@ -97,28 +98,17 @@ Therefore, we put these honest limitation below as our TODOs for the next develo
 <li>Physics Engine doesn&#39;t include joints and character controller.</li>
 <li>Building shapes can only done via procedural creations.</li>
 <li>No dedicated 4D graphics solution included (skybox, lighting, fog etc.)</li>
-<li>The documentation has many grammar mistake (contrib welcome anyway).</li>
+<li>The documentation may unfinished or have small grammar mistake.</li>
 <li>There are no real games published with this library so far.</li>
 </ul>
-<h4 id="known-issues-to-be-resolved-during-beta-session">Known issues to be resolved during Beta Session</h4>
+<h2 id="known-issues">Known Issues</h2>
+<p>These known issues is currently active in the latest version is listed here (sorted from the highest severety) and will be fixed in short time:</p>
 <ul>
-<li>Documentation manual is still uncomplete.</li>
-<li><del>Matrix to euler fail to work for 90 deg singularity cases.</del></li>
-<li><del>UvMapper4 doesn&#39;t generate UV correctly.</del> UvMapper is postponed feature, but UVs is ready and works.</li>
-<li><del>Frustum4 doesn&#39;t correctly cull objects if too close.</del></li>
-<li><del>Components isn&#39;t organized in add component menu.</del></li>
-<li>Gizmos4&#39;s late update rendering.</li>
-<li><del>No INeedScaleTransform.</del></li>
-<li><del>Raycast and collision callback is yet to be implemented</del></li>
-<li><del>Does not properly handle multi-scene scenario.</del></li>
-<li><del>Can&#39;t build to any platform because editor snippet in runtime script.</del></li>
+<li>Incorrect physics collision impacts</li>
+<li>Transform4 does not support multi selection.</li>
 </ul>
-<div class="NOTE"><h5>Note</h5><p>Beta session run until the rest of the month. During it, APIs may changed when stable version released without concerning compatibility.</p>
-</div>
-<div class="TIP"><h5>Tip</h5><p>Stripped issues means it is already been fixed, altough the fix is not published anywhere for now.</p>
-</div>
 <h2 id="helpful-links">Helpful Links</h2>
-<p><a href="http://u3d.as/fdm">Asset Link</a> | <a href="https://willnode.github.io/engine4-doc/index.html">Online Documentation</a> | <a href="https://github.com/willnode/engine4-doc/">Offline Documentation</a> | <a href="https://forum.unity.com/threads/mesh-4d-engine-create-4d-objects-in-unity.320549/">Support Forum</a> | <a href="https://wellosoft.wordpress.com/">Developer Website</a></p>
+<p><a href="http://u3d.as/fdm">Asset Link</a> | <a href="https://willnode.github.io/engine4-doc/index.html">Online Documentation</a> | <a href="https://github.com/willnode/engine4-doc/">Offline Documentation</a> | <a href="https://forum.unity.com/threads/mesh-4d-engine-create-4d-objects-in-unity.320549/">Support Forum</a> | <a href="https://wellosoft.net/">Developer Website</a> | <a href="manual/extras/releasenotes.html">Release Notes</a></p>
 </article>
           </div>
         </div>
