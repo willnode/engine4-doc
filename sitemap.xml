@@ -85,6 +85,18 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://wellosoft.net/engine4-doc/api/Engine4.Internal.ProjectorJob.html</loc>
+    <lastmod>2017-11-14T04:58:38+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://wellosoft.net/engine4-doc/api/Engine4.Internal.ProjectUnit.html</loc>
+    <lastmod>2017-11-14T04:58:38+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://wellosoft.net/engine4-doc/api/Engine4.Internal.Reflected.html</loc>
     <lastmod>2017-11-14T04:58:38+07:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -704,6 +716,12 @@
   </url>
   <url>
     <loc>http://wellosoft.net/engine4-doc/manual/rendering.html</loc>
+    <lastmod>2017-11-14T04:58:38+07:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://wellosoft.net/engine4-doc/manual/rendering/background.html</loc>
     <lastmod>2017-11-14T04:58:38+07:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

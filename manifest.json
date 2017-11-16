@@ -1,7 +1,8 @@
 {
   "sitemap": {
     "baseUrl": "http://wellosoft.net/engine4-doc/",
-    "changefreq": "monthly"
+    "changefreq": "monthly",
+    "lastmod": "2017-11-14T04:58:38+07:00"
   },
   "homepages": [],
   "source_base_path": "X:/@Web/engine4-src",
@@ -94,7 +95,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine4.DirtyLevel.html",
-          "hash": "DzrKjFwJdKntxQgVqaC/Kg=="
+          "hash": "Km8fQ1L2mDiwT8Ww9WdY3g=="
         }
       },
       "is_incremental": false,
@@ -186,6 +187,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Engine4.Internal.ProjectUnit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine4.Internal.ProjectUnit.html",
+          "hash": "sAhdaFBojrqk74YfZGS0jw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Engine4.Internal.ProjectorJob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Engine4.Internal.ProjectorJob.html",
+          "hash": "QCATVW8t9c1lB0ebyCppMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Engine4.Internal.Reflected.yml",
       "output": {
         ".html": {
@@ -202,7 +227,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine4.Internal.Runtime.html",
-          "hash": "b5eiUTPxipeewUjDGns5Mg=="
+          "hash": "i4oWC9qHDriLfd87Z3vkIw=="
         }
       },
       "is_incremental": false,
@@ -250,7 +275,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine4.Internal.html",
-          "hash": "ILZmZv9ePQJgtxQxIXk3Ew=="
+          "hash": "r1OqMZJ7oYDnUV+mdxkSIw=="
         }
       },
       "is_incremental": false,
@@ -274,7 +299,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine4.Matrix4x5.html",
-          "hash": "DY6X2ndLdFMC0o9xzJDAVA=="
+          "hash": "x36c1I6leLFvT0JcbZwRsg=="
         }
       },
       "is_incremental": false,
@@ -286,7 +311,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine4.MonoBehaviour4.html",
-          "hash": "LjS1T75anoKm3fyPMVScXg=="
+          "hash": "6qp5YmdB83KcOvsiE775fg=="
         }
       },
       "is_incremental": false,
@@ -910,7 +935,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Engine4.Viewer4.html",
-          "hash": "GN3PGISQuIpY9WnTLpD55Q=="
+          "hash": "j6qqb9VZ8FQbQkcafk3asw=="
         }
       },
       "is_incremental": false,
@@ -970,7 +995,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Ijl6WXK98NKocFbEoicdaQ=="
+          "hash": "kArXsyqXhDzM9ZIWoyixIQ=="
         }
       },
       "is_incremental": false,
@@ -1279,7 +1304,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "eMKIlGv+xA2AH1wWF5VBbg=="
+          "hash": "x9skNMKErPA8ZfA8tuIGgw=="
         }
       },
       "is_incremental": false,
@@ -1459,7 +1484,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/extras/about.html",
-          "hash": "Pz/K6aGB5p0hoP/ThoKmqQ=="
+          "hash": "P8+nVB2vyYl35LmDVO89EA=="
         }
       },
       "is_incremental": false,
@@ -1471,7 +1496,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/extras/releasenotes.html",
-          "hash": "OQ+USgEhcN7EF0+BXguu8w=="
+          "hash": "WGGAtHLuYbRwJnmVJSVm7A=="
         }
       },
       "is_incremental": false,
@@ -1743,6 +1768,18 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "manual/rendering/background.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/rendering/background.html",
+          "hash": "il4S4fqil7E5lAAiSuWD8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "manual/rendering/projection.md",
       "output": {
         ".html": {
@@ -1903,7 +1940,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/toc.html",
-          "hash": "LLg3uJxlIplTSKzeIIWVww=="
+          "hash": "4NHXahuvxkEdNd08FOeDyA=="
         }
       },
       "is_incremental": false,
@@ -1925,22 +1962,13 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
-        "TocDocumentProcessor": {
+        "RestApiDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build"
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
-          "incrementalPhase": "build"
-        },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
         "ResourceDocumentProcessor": {
@@ -1948,9 +1976,17 @@
           "details": "Processor ResourceDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "RestApiDocumentProcessor": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor RestApiDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

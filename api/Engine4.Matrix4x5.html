@@ -194,7 +194,7 @@
 </div>
   <a id="Engine4_Matrix4x5_op_Multiply_" data-uid="Engine4.Matrix4x5.op_Multiply*"></a>
   <h4 id="Engine4_Matrix4x5_op_Multiply_Engine4_Matrix4x5_Engine4_Bounds4_" data-uid="Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Bounds4)">Multiply(Matrix4x5, Bounds4)</h4>
-  <div class="markdown level1 summary"><p>?</p>
+  <div class="markdown level1 summary"><p>Convert to OBB, transform, then wrap it inside AABB back</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
@@ -211,6 +211,14 @@
   <h5 id="Engine4_Matrix4x5_op_Multiply_Engine4_Matrix4x5_Engine4_Matrix4x5__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The operation is not commutative </p>
 </div>
+  <a id="Engine4_Matrix4x5_op_Multiply_" data-uid="Engine4.Matrix4x5.op_Multiply*"></a>
+  <h4 id="Engine4_Matrix4x5_op_Multiply_Engine4_Matrix4x5_Engine4_Plane4_" data-uid="Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Plane4)">Multiply(Matrix4x5, Plane4)</h4>
+  <div class="markdown level1 summary"><p>Transform the right-hand plane</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Plane4 operator *(Matrix4x5 tx, Plane4 p)</code></pre>
+  </div>
   <a id="Engine4_Matrix4x5_op_Multiply_" data-uid="Engine4.Matrix4x5.op_Multiply*"></a>
   <h4 id="Engine4_Matrix4x5_op_Multiply_Engine4_Matrix4x5_Engine4_Vector4_" data-uid="Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Vector4)">Multiply(Matrix4x5, Vector4)</h4>
   <div class="markdown level1 summary"><p>Transforms a point</p>

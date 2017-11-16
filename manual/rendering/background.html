@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>About Engine4 | Engine4 Manual </title>
+    <title>Background Rendering | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="About Engine4 | Engine4 Manual ">
+    <meta name="title" content="Background Rendering | Engine4 Manual ">
     <meta name="generator" content="docfx 2.26.3.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -67,22 +67,26 @@
         <div class="article row grid-right">
           <div class="col-md-12">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="about-engine4">About Engine4</h1>
+<h1 id="background-rendering">Background Rendering</h1>
 
-<pre><code class="lang-none">Release Info
-
-version: 3.2
-date: Nov 16, 2017
-</code></pre><p>See <a href="../../index.html">documentation homepage</a> for useful links.</p>
-<hr>
-<p>Engine4 (c) Wildan Mubarok 2017.</p>
-<p>Engine4 is available as a managed library for <a href="https://unity3d.com">Unity Game Engine</a>.</p>
-<p>Engine4 Source is adhere to <a href="https://unity3d.com/legal/as_terms">Unity Asset Store EULA</a>.</p>
-<p>Engine4 Physics is powered by Zimpel Physics Engine (private repo at this state).</p>
-<p>Engine4 Documentation is powered by <a href="https://dotnet.github.io/docfx/">DocFX</a>.</p>
-<p>Engine4 Documentation Content is adhere to CC-BY-3.0. Code Snippets can be copied freely without mentioning back.</p>
-<p>Engine4 Project is an ambitious, long-term project with incredible passion <code>everything is upgradable</code>.</p>
-<p>-- <a href="https://willnode.github.io">willnode</a></p>
+<p>As of v1.2 Engine4 is capable to run rendering on background threads. To activate it, you need to check the <code>Background</code> checkbox in Viewer4 inspector.</p>
+<h2 id="how-it-works">How it Works</h2>
+<p>Every time an object need to update its projected 3D shape, they compute it directly in Unity&#39;s <code>Update()</code> call. This behaviour however is not optimal, as all Unity&#39;s operation is synchronous.</p>
+<p>However we have the solution. If background rendering is activated, all computational load in every 4D object get transferred in single object, namely a render worker. This worker then activate threads that will solve the computation. It will run as a completely different thread so it can run without pausing Unity&#39;s rendering process. The solved computation then sent back to each renderer and renderer itself only need to push the load into their mesh in another Update() call.</p>
+<p>The process above is repeated every time when a change is detected as long as the system active.</p>
+<h2 id="pros">Pros</h2>
+<ul>
+<li><strong>Asynchonous</strong>. Your FPS will never be impacted (hence constant) no matter how expensive is the overall operation. </li>
+<li><strong>Multi-threading</strong> in mind. All CPU cores will be fully utilized. And can run while unity is busy with their GPU workload.</li>
+<li><strong>Increase in response</strong>. With extra CPU time 4D objects will be rendered faster especially with devices with many core available.</li>
+</ul>
+<h2 id="cons">Cons</h2>
+<ul>
+<li><strong>Late update</strong>. Because it&#39;s a background operation, the computed mesh is always outdated by atleast a frame behind. However this doesn&#39;t impact gameplay experience (e.g. physics and transform checking by scripts).</li>
+<li><strong>Hard to debug</strong>. Because of above reason, you&#39;re likely to enable this feature only at builds</li>
+<li><strong>Update Tearing</strong>. It&#39;s true that the rendering process will be fast, but if not <em>fast enough</em> the mesh can be outdated by several frames, and this can be vary on each objects, refering to what we call as <em>tear in updates</em>:</li>
+</ul>
+<p>[image]</p>
 </article>
           </div>
         </div>

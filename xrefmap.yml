@@ -853,6 +853,12 @@ references:
   commentId: F:Engine4.DirtyLevel.Transform
   fullName: Engine4.DirtyLevel.Transform
   nameWithType: DirtyLevel.Transform
+- uid: Engine4.DirtyLevel.Visualizer
+  name: Visualizer
+  href: api/Engine4.DirtyLevel.html#Engine4_DirtyLevel_Visualizer
+  commentId: F:Engine4.DirtyLevel.Visualizer
+  fullName: Engine4.DirtyLevel.Visualizer
+  nameWithType: DirtyLevel.Visualizer
 - uid: Engine4.Euler4
   name: Euler4
   href: api/Engine4.Euler4.html
@@ -1573,6 +1579,144 @@ references:
   commentId: Overload:Engine4.Internal.Overloads.ComputeBasis
   fullName: Engine4.Internal.Overloads.ComputeBasis
   nameWithType: Overloads.ComputeBasis
+- uid: Engine4.Internal.ProjectorJob
+  name: ProjectorJob
+  href: api/Engine4.Internal.ProjectorJob.html
+  commentId: T:Engine4.Internal.ProjectorJob
+  fullName: Engine4.Internal.ProjectorJob
+  nameWithType: ProjectorJob
+- uid: Engine4.Internal.ProjectorJob.#ctor
+  name: ProjectorJob()
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob__ctor
+  commentId: M:Engine4.Internal.ProjectorJob.#ctor
+  fullName: Engine4.Internal.ProjectorJob.ProjectorJob()
+  nameWithType: ProjectorJob.ProjectorJob()
+- uid: Engine4.Internal.ProjectorJob.#ctor*
+  name: ProjectorJob
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob__ctor_
+  commentId: Overload:Engine4.Internal.ProjectorJob.#ctor
+  fullName: Engine4.Internal.ProjectorJob.ProjectorJob
+  nameWithType: ProjectorJob.ProjectorJob
+- uid: Engine4.Internal.ProjectorJob.AddJob(Engine4.Internal.ProjectUnit)
+  name: AddJob(ProjectUnit)
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_AddJob_Engine4_Internal_ProjectUnit_
+  commentId: M:Engine4.Internal.ProjectorJob.AddJob(Engine4.Internal.ProjectUnit)
+  fullName: Engine4.Internal.ProjectorJob.AddJob(Engine4.Internal.ProjectUnit)
+  nameWithType: ProjectorJob.AddJob(ProjectUnit)
+- uid: Engine4.Internal.ProjectorJob.AddJob*
+  name: AddJob
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_AddJob_
+  commentId: Overload:Engine4.Internal.ProjectorJob.AddJob
+  fullName: Engine4.Internal.ProjectorJob.AddJob
+  nameWithType: ProjectorJob.AddJob
+- uid: Engine4.Internal.ProjectorJob.Dispose
+  name: Dispose()
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_Dispose
+  commentId: M:Engine4.Internal.ProjectorJob.Dispose
+  fullName: Engine4.Internal.ProjectorJob.Dispose()
+  nameWithType: ProjectorJob.Dispose()
+- uid: Engine4.Internal.ProjectorJob.Dispose*
+  name: Dispose
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_Dispose_
+  commentId: Overload:Engine4.Internal.ProjectorJob.Dispose
+  fullName: Engine4.Internal.ProjectorJob.Dispose
+  nameWithType: ProjectorJob.Dispose
+- uid: Engine4.Internal.ProjectorJob.identifier
+  name: identifier
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_identifier
+  commentId: F:Engine4.Internal.ProjectorJob.identifier
+  fullName: Engine4.Internal.ProjectorJob.identifier
+  nameWithType: ProjectorJob.identifier
+- uid: Engine4.Internal.ProjectorJob.Initialize*
+  name: Initialize
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_Initialize_
+  commentId: Overload:Engine4.Internal.ProjectorJob.Initialize
+  fullName: Engine4.Internal.ProjectorJob.Initialize
+  nameWithType: ProjectorJob.Initialize
+- uid: Engine4.Internal.ProjectorJob.Initialize``1(``0)
+  name: Initialize<T>(T)
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_Initialize__1___0_
+  commentId: M:Engine4.Internal.ProjectorJob.Initialize``1(``0)
+  name.vb: Initialize(Of T)(T)
+  fullName: Engine4.Internal.ProjectorJob.Initialize<T>(T)
+  fullName.vb: Engine4.Internal.ProjectorJob.Initialize(Of T)(T)
+  nameWithType: ProjectorJob.Initialize<T>(T)
+  nameWithType.vb: ProjectorJob.Initialize(Of T)(T)
+- uid: Engine4.Internal.ProjectorJob.projectors
+  name: projectors
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_projectors
+  commentId: F:Engine4.Internal.ProjectorJob.projectors
+  fullName: Engine4.Internal.ProjectorJob.projectors
+  nameWithType: ProjectorJob.projectors
+- uid: Engine4.Internal.ProjectorJob.SyncProjector*
+  name: SyncProjector
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_SyncProjector_
+  commentId: Overload:Engine4.Internal.ProjectorJob.SyncProjector
+  fullName: Engine4.Internal.ProjectorJob.SyncProjector
+  nameWithType: ProjectorJob.SyncProjector
+- uid: Engine4.Internal.ProjectorJob.SyncProjector``1(``0)
+  name: SyncProjector<T>(T)
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_SyncProjector__1___0_
+  commentId: M:Engine4.Internal.ProjectorJob.SyncProjector``1(``0)
+  name.vb: SyncProjector(Of T)(T)
+  fullName: Engine4.Internal.ProjectorJob.SyncProjector<T>(T)
+  fullName.vb: Engine4.Internal.ProjectorJob.SyncProjector(Of T)(T)
+  nameWithType: ProjectorJob.SyncProjector<T>(T)
+  nameWithType.vb: ProjectorJob.SyncProjector(Of T)(T)
+- uid: Engine4.Internal.ProjectorJob.units
+  name: units
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_units
+  commentId: F:Engine4.Internal.ProjectorJob.units
+  fullName: Engine4.Internal.ProjectorJob.units
+  nameWithType: ProjectorJob.units
+- uid: Engine4.Internal.ProjectorJob.workers
+  name: workers
+  href: api/Engine4.Internal.ProjectorJob.html#Engine4_Internal_ProjectorJob_workers
+  commentId: F:Engine4.Internal.ProjectorJob.workers
+  fullName: Engine4.Internal.ProjectorJob.workers
+  nameWithType: ProjectorJob.workers
+- uid: Engine4.Internal.ProjectUnit
+  name: ProjectUnit
+  href: api/Engine4.Internal.ProjectUnit.html
+  commentId: T:Engine4.Internal.ProjectUnit
+  fullName: Engine4.Internal.ProjectUnit
+  nameWithType: ProjectUnit
+- uid: Engine4.Internal.ProjectUnit.#ctor(Engine4.Buffer4,Engine4.Matrix4x5,Engine4.Rendering.IVisualizer,Engine4.Renderer4)
+  name: ProjectUnit(Buffer4, Matrix4x5, IVisualizer, Renderer4)
+  href: api/Engine4.Internal.ProjectUnit.html#Engine4_Internal_ProjectUnit__ctor_Engine4_Buffer4_Engine4_Matrix4x5_Engine4_Rendering_IVisualizer_Engine4_Renderer4_
+  commentId: M:Engine4.Internal.ProjectUnit.#ctor(Engine4.Buffer4,Engine4.Matrix4x5,Engine4.Rendering.IVisualizer,Engine4.Renderer4)
+  fullName: Engine4.Internal.ProjectUnit.ProjectUnit(Engine4.Buffer4, Engine4.Matrix4x5, Engine4.Rendering.IVisualizer, Engine4.Renderer4)
+  nameWithType: ProjectUnit.ProjectUnit(Buffer4, Matrix4x5, IVisualizer, Renderer4)
+- uid: Engine4.Internal.ProjectUnit.#ctor*
+  name: ProjectUnit
+  href: api/Engine4.Internal.ProjectUnit.html#Engine4_Internal_ProjectUnit__ctor_
+  commentId: Overload:Engine4.Internal.ProjectUnit.#ctor
+  fullName: Engine4.Internal.ProjectUnit.ProjectUnit
+  nameWithType: ProjectUnit.ProjectUnit
+- uid: Engine4.Internal.ProjectUnit.buffer
+  name: buffer
+  href: api/Engine4.Internal.ProjectUnit.html#Engine4_Internal_ProjectUnit_buffer
+  commentId: F:Engine4.Internal.ProjectUnit.buffer
+  fullName: Engine4.Internal.ProjectUnit.buffer
+  nameWithType: ProjectUnit.buffer
+- uid: Engine4.Internal.ProjectUnit.matrix
+  name: matrix
+  href: api/Engine4.Internal.ProjectUnit.html#Engine4_Internal_ProjectUnit_matrix
+  commentId: F:Engine4.Internal.ProjectUnit.matrix
+  fullName: Engine4.Internal.ProjectUnit.matrix
+  nameWithType: ProjectUnit.matrix
+- uid: Engine4.Internal.ProjectUnit.renderer
+  name: renderer
+  href: api/Engine4.Internal.ProjectUnit.html#Engine4_Internal_ProjectUnit_renderer
+  commentId: F:Engine4.Internal.ProjectUnit.renderer
+  fullName: Engine4.Internal.ProjectUnit.renderer
+  nameWithType: ProjectUnit.renderer
+- uid: Engine4.Internal.ProjectUnit.visualizer
+  name: visualizer
+  href: api/Engine4.Internal.ProjectUnit.html#Engine4_Internal_ProjectUnit_visualizer
+  commentId: F:Engine4.Internal.ProjectUnit.visualizer
+  fullName: Engine4.Internal.ProjectUnit.visualizer
+  nameWithType: ProjectUnit.visualizer
 - uid: Engine4.Internal.Reflected
   name: Reflected
   href: api/Engine4.Internal.Reflected.html
@@ -1627,6 +1771,21 @@ references:
   commentId: T:Engine4.Internal.Runtime
   fullName: Engine4.Internal.Runtime
   nameWithType: Runtime
+- uid: Engine4.Internal.Runtime.CopyComponent*
+  name: CopyComponent
+  href: api/Engine4.Internal.Runtime.html#Engine4_Internal_Runtime_CopyComponent_
+  commentId: Overload:Engine4.Internal.Runtime.CopyComponent
+  fullName: Engine4.Internal.Runtime.CopyComponent
+  nameWithType: Runtime.CopyComponent
+- uid: Engine4.Internal.Runtime.CopyComponent``1(``0,``0,System.Reflection.BindingFlags)
+  name: CopyComponent<T>(T, T, BindingFlags)
+  href: api/Engine4.Internal.Runtime.html#Engine4_Internal_Runtime_CopyComponent__1___0___0_System_Reflection_BindingFlags_
+  commentId: M:Engine4.Internal.Runtime.CopyComponent``1(``0,``0,System.Reflection.BindingFlags)
+  name.vb: CopyComponent(Of T)(T, T, BindingFlags)
+  fullName: Engine4.Internal.Runtime.CopyComponent<T>(T, T, System.Reflection.BindingFlags)
+  fullName.vb: Engine4.Internal.Runtime.CopyComponent(Of T)(T, T, System.Reflection.BindingFlags)
+  nameWithType: Runtime.CopyComponent<T>(T, T, BindingFlags)
+  nameWithType.vb: Runtime.CopyComponent(Of T)(T, T, BindingFlags)
 - uid: Engine4.Internal.Runtime.CreateGameObject*
   name: CreateGameObject
   href: api/Engine4.Internal.Runtime.html#Engine4_Internal_Runtime_CreateGameObject_
@@ -2822,6 +2981,12 @@ references:
   commentId: M:Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Matrix4x5)
   fullName: Engine4.Matrix4x5.Multiply(Engine4.Matrix4x5, Engine4.Matrix4x5)
   nameWithType: Matrix4x5.Multiply(Matrix4x5, Matrix4x5)
+- uid: Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Plane4)
+  name: Multiply(Matrix4x5, Plane4)
+  href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_op_Multiply_Engine4_Matrix4x5_Engine4_Plane4_
+  commentId: M:Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Plane4)
+  fullName: Engine4.Matrix4x5.Multiply(Engine4.Matrix4x5, Engine4.Plane4)
+  nameWithType: Matrix4x5.Multiply(Matrix4x5, Plane4)
 - uid: Engine4.Matrix4x5.op_Multiply(Engine4.Matrix4x5,Engine4.Vector4)
   name: Multiply(Matrix4x5, Vector4)
   href: api/Engine4.Matrix4x5.html#Engine4_Matrix4x5_op_Multiply_Engine4_Matrix4x5_Engine4_Vector4_
@@ -6512,6 +6677,12 @@ references:
   commentId: Overload:Engine4.Viewer4.#ctor
   fullName: Engine4.Viewer4.Viewer4
   nameWithType: Viewer4.Viewer4
+- uid: Engine4.Viewer4.background
+  name: background
+  href: api/Engine4.Viewer4.html#Engine4_Viewer4_background
+  commentId: F:Engine4.Viewer4.background
+  fullName: Engine4.Viewer4.background
+  nameWithType: Viewer4.background
 - uid: Engine4.Viewer4.main
   name: main
   href: api/Engine4.Viewer4.html#Engine4_Viewer4_main
@@ -6542,6 +6713,18 @@ references:
   commentId: Overload:Engine4.Viewer4.projector
   fullName: Engine4.Viewer4.projector
   nameWithType: Viewer4.projector
+- uid: Engine4.Viewer4.projectorJob
+  name: projectorJob
+  href: api/Engine4.Viewer4.html#Engine4_Viewer4_projectorJob
+  commentId: P:Engine4.Viewer4.projectorJob
+  fullName: Engine4.Viewer4.projectorJob
+  nameWithType: Viewer4.projectorJob
+- uid: Engine4.Viewer4.projectorJob*
+  name: projectorJob
+  href: api/Engine4.Viewer4.html#Engine4_Viewer4_projectorJob_
+  commentId: Overload:Engine4.Viewer4.projectorJob
+  fullName: Engine4.Viewer4.projectorJob
+  nameWithType: Viewer4.projectorJob
 - uid: Engine4.Viewer4.SetDirty(Engine4.DirtyLevel)
   name: SetDirty(DirtyLevel)
   href: api/Engine4.Viewer4.html#Engine4_Viewer4_SetDirty_Engine4_DirtyLevel_
