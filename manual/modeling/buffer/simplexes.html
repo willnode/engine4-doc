@@ -8,7 +8,7 @@
     <title>Simplex | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Simplex | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
     <link rel="stylesheet" href="../../../styles/docfx.vendor.css">
@@ -104,7 +104,8 @@
 <pre><code class="lang-c#">public override void UploadBuffer(Buffer4 buffer)
 {
     // Build vertices here: buffer.AddVertex()
-    switch(buffer.simplex) // The buffer mode is determined internally based on the selected visualization mode 
+    switch(buffer.simplex) // The buffer mode is determined internally based on the selected visualization mode
+
     {
         case SimplexMode.Point: /* build the model based on points: buffer.AddPoint() */ break;
         case SimplexMode.Segment: /* build the model based on segments: buffer.AddSegment() */ break;
@@ -153,7 +154,7 @@
 <p><img src="../../../images/modeling-extrablocks.png" alt="illustration"></p>
 <h2 id="why-need-tetrahedron">Why need Tetrahedron?</h2>
 <p>Because cross section projection requires one higher level of given simplex mode. (<a href="../../basics/4d/projection.html">more info here</a>).</p>
-<p>This means while <a class="xref" href="../../../api/Engine4.Rendering.Frustum4.html">Frustum4</a> requires the same level (e.g. <code>Solid</code> -&gt; <code>Triangle</code>), <a class="xref" href="../../../api/Engine4.Rendering.CrossSection4.html">CrossSection4</a> does need its higher level (e.g. <code>Solid</code> -&gt; <code>Tetrahedron</code>). </p>
+<p>This means while <a class="xref" href="../../../api/Engine4.Rendering.Frustum4.html">Frustum4</a> requires the same level (e.g. <code>Solid</code> -&gt; <code>Triangle</code>), <a class="xref" href="../../../api/Engine4.Rendering.CrossSection4.html">CrossSection4</a> does need its higher level (e.g. <code>Solid</code> -&gt; <code>Tetrahedron</code>).</p>
 </article>
           </div>
         </div>
@@ -169,7 +170,8 @@
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../../styles/docfx.js"></script>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Common
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -91,6 +91,8 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Physics_Common_ALLOW_SLEEP" data-uid="Engine4.Physics.Common.ALLOW_SLEEP">ALLOW_SLEEP</h4>
   <div class="markdown level1 summary"><p>Enables or disables rigid body sleeping.
 It&apos;s an important optimization on every physics engine. 
@@ -100,6 +102,8 @@ It&apos;s recommended to leave this on.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const bool ALLOW_SLEEP = true</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_BAUMGARTE" data-uid="Engine4.Physics.Common.BAUMGARTE">BAUMGARTE</h4>
   <div class="markdown level1 summary"><p>How fast the collision must be resolved? (Default is 0.2)</p>
 </div>
@@ -107,6 +111,8 @@ It&apos;s recommended to leave this on.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const float BAUMGARTE = 0.2F</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_ENABLE_FRICTION" data-uid="Engine4.Physics.Common.ENABLE_FRICTION">ENABLE_FRICTION</h4>
   <div class="markdown level1 summary"><p>When two objects lay on each other should the simulator simulate friction?
 It&apos;s recommended to leave this on.</p>
@@ -115,6 +121,8 @@ It&apos;s recommended to leave this on.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const bool ENABLE_FRICTION = true</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_GRAVITY" data-uid="Engine4.Physics.Common.GRAVITY">GRAVITY</h4>
   <div class="markdown level1 summary"><p>Default gravity for all simulations.
 This parameter can be dynamically adjusted.</p>
@@ -123,6 +131,8 @@ This parameter can be dynamically adjusted.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 GRAVITY</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_ITERATIONS" data-uid="Engine4.Physics.Common.ITERATIONS">ITERATIONS</h4>
   <div class="markdown level1 summary"><p>Constant collision solving iteration.
 Higher values are more realistic, yet more expensive.
@@ -132,6 +142,8 @@ Default is 15, can be put between 5 to 20</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const int ITERATIONS = 15</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_MAX_DT" data-uid="Engine4.Physics.Common.MAX_DT">MAX_DT</h4>
   <div class="markdown level1 summary"><p>Maximum allowed delta time. This prevents objects bypassing 
 each other because of too large delta time. (Default is 0.02)</p>
@@ -140,6 +152,8 @@ each other because of too large delta time. (Default is 0.02)</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const float MAX_DT = 0.02F</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_MULTICONTACT_COUNT" data-uid="Engine4.Physics.Common.MULTICONTACT_COUNT">MULTICONTACT_COUNT</h4>
   <div class="markdown level1 summary"><p>Constant maximum multi contact count. Don&apos;t change.</p>
 </div>
@@ -147,6 +161,8 @@ each other because of too large delta time. (Default is 0.02)</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const int MULTICONTACT_COUNT = 16</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_PENETRATION_SLOP" data-uid="Engine4.Physics.Common.PENETRATION_SLOP">PENETRATION_SLOP</h4>
   <div class="markdown level1 summary"><p>Offset of allowed contact depth before kicked out by the solver.
 Allow very small number to avoid jitter. (Default is 0.05)</p>
@@ -155,6 +171,8 @@ Allow very small number to avoid jitter. (Default is 0.05)</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const float PENETRATION_SLOP = 0.02F</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_SIM_RANGE" data-uid="Engine4.Physics.Common.SIM_RANGE">SIM_RANGE</h4>
   <div class="markdown level1 summary"><p>Simulation range helps to avoid wasted time computation of computing
 Objects that out of range (e.g. object keeps falling down). 
@@ -164,6 +182,8 @@ The object is deactivated once becomes so.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly Bounds4 SIM_RANGE</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_SLEEP_ANGULAR" data-uid="Engine4.Physics.Common.SLEEP_ANGULAR">SLEEP_ANGULAR</h4>
   <div class="markdown level1 summary"><p>Maximum allowed angular velocity that makes a rigidbody sleeps (Default is 2 deg)</p>
 </div>
@@ -171,6 +191,8 @@ The object is deactivated once becomes so.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const float SLEEP_ANGULAR = 0.0349065848F</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_SLEEP_LINEAR" data-uid="Engine4.Physics.Common.SLEEP_LINEAR">SLEEP_LINEAR</h4>
   <div class="markdown level1 summary"><p>Maximum allowed linear velocity that makes a rigidbody sleeps (Default is 0.01)</p>
 </div>
@@ -178,6 +200,8 @@ The object is deactivated once becomes so.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public const float SLEEP_LINEAR = 0.01F</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Physics_Common_SLEEP_TIME" data-uid="Engine4.Physics.Common.SLEEP_TIME">SLEEP_TIME</h4>
   <div class="markdown level1 summary"><p>Simulator don&apos;t make rigidbody sleeps instantly. 
 They have a chance by given time to awake by itself. (Default is 0.5)</p>
@@ -188,6 +212,8 @@ They have a chance by given time to awake by itself. (Default is 0.5)</p>
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Physics_Common_MixFriction_" data-uid="Engine4.Physics.Common.MixFriction*"></a>
   <h4 id="Engine4_Physics_Common_MixFriction_Engine4_Physics_Internal_Shape_Engine4_Physics_Internal_Shape_" data-uid="Engine4.Physics.Common.MixFriction(Engine4.Physics.Internal.Shape,Engine4.Physics.Internal.Shape)">MixFriction(Shape, Shape)</h4>
   <div class="markdown level1 summary"><p>Friction (slide) mixing. Default is average</p>
@@ -196,6 +222,8 @@ They have a chance by given time to awake by itself. (Default is 0.5)</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float MixFriction(Shape A, Shape B)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Physics_Common_MixRestitution_" data-uid="Engine4.Physics.Common.MixRestitution*"></a>
   <h4 id="Engine4_Physics_Common_MixRestitution_Engine4_Physics_Internal_Shape_Engine4_Physics_Internal_Shape_" data-uid="Engine4.Physics.Common.MixRestitution(Engine4.Physics.Internal.Shape,Engine4.Physics.Internal.Shape)">MixRestitution(Shape, Shape)</h4>
   <div class="markdown level1 summary"><p>Restitution (bounce) mixing. Default is max</p>
@@ -219,7 +247,8 @@ They have a chance by given time to awake by itself. (Default is 0.5)</p>
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

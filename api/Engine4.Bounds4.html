@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Bounds4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,6 +81,8 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Engine4_Bounds4__ctor_" data-uid="Engine4.Bounds4.#ctor*"></a>
   <h4 id="Engine4_Bounds4__ctor_Engine4_Vector4_" data-uid="Engine4.Bounds4.#ctor(Engine4.Vector4)">Bounds4(Vector4)</h4>
   <div class="markdown level1 summary"><p>Create a bound with zero center and given extent </p>
@@ -89,6 +91,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Bounds4(Vector4 extent)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4__ctor_" data-uid="Engine4.Bounds4.#ctor*"></a>
   <h4 id="Engine4_Bounds4__ctor_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Bounds4.#ctor(Engine4.Vector4,Engine4.Vector4)">Bounds4(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Create a bound with given min and max position </p>
@@ -99,6 +103,8 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Bounds4_max" data-uid="Engine4.Bounds4.max">max</h4>
   <div class="markdown level1 summary"><p>Maximum position of the bound </p>
 </div>
@@ -106,6 +112,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 max</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Bounds4_min" data-uid="Engine4.Bounds4.min">min</h4>
   <div class="markdown level1 summary"><p>Minimum position of the bound </p>
 </div>
@@ -115,6 +123,8 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
   <a id="Engine4_Bounds4_center_" data-uid="Engine4.Bounds4.center*"></a>
   <h4 id="Engine4_Bounds4_center" data-uid="Engine4.Bounds4.center">center</h4>
   <div class="markdown level1 summary"><p>Center position of the bound </p>
@@ -123,6 +133,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 center { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_extent_" data-uid="Engine4.Bounds4.extent*"></a>
   <h4 id="Engine4_Bounds4_extent" data-uid="Engine4.Bounds4.extent">extent</h4>
   <div class="markdown level1 summary"><p>Extent (center to corner distance) of the bound </p>
@@ -131,6 +143,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 extent { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_infinite_" data-uid="Engine4.Bounds4.infinite*"></a>
   <h4 id="Engine4_Bounds4_infinite" data-uid="Engine4.Bounds4.infinite">infinite</h4>
   <div class="markdown level1 summary"><p>Returns a bound with negative infinity size</p>
@@ -139,6 +153,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Bounds4 infinite { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_size_" data-uid="Engine4.Bounds4.size*"></a>
   <h4 id="Engine4_Bounds4_size" data-uid="Engine4.Bounds4.size">size</h4>
   <div class="markdown level1 summary"><p>Size (edge to edge distance) of the bound </p>
@@ -147,6 +163,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 size { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_zero_" data-uid="Engine4.Bounds4.zero*"></a>
   <h4 id="Engine4_Bounds4_zero" data-uid="Engine4.Bounds4.zero">zero</h4>
   <div class="markdown level1 summary"><p>Returns a bound with zero size and zero center </p>
@@ -157,6 +175,8 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Bounds4_Allocate_" data-uid="Engine4.Bounds4.Allocate*"></a>
   <h4 id="Engine4_Bounds4_Allocate_Engine4_Vector4_" data-uid="Engine4.Bounds4.Allocate(Engine4.Vector4)">Allocate(Vector4)</h4>
   <div class="markdown level1 summary"><p>Expand the bound to given point </p>
@@ -165,6 +185,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Allocate(Vector4 pos)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Clamp_" data-uid="Engine4.Bounds4.Clamp*"></a>
   <h4 id="Engine4_Bounds4_Clamp_Engine4_Vector4_" data-uid="Engine4.Bounds4.Clamp(Engine4.Vector4)">Clamp(Vector4)</h4>
   <div class="markdown level1 summary"><p>Returns a point that either inside or touching the bound </p>
@@ -173,6 +195,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 Clamp(Vector4 point)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Clip_" data-uid="Engine4.Bounds4.Clip*"></a>
   <h4 id="Engine4_Bounds4_Clip_Engine4_Vector4_" data-uid="Engine4.Bounds4.Clip(Engine4.Vector4)">Clip(Vector4)</h4>
   <div class="markdown level1 summary"><p>Returns a point that either outside or touching the bound </p>
@@ -181,6 +205,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 Clip(Vector4 t)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Combine_" data-uid="Engine4.Bounds4.Combine*"></a>
   <h4 id="Engine4_Bounds4_Combine_Engine4_Bounds4_Engine4_Bounds4_" data-uid="Engine4.Bounds4.Combine(Engine4.Bounds4,Engine4.Bounds4)">Combine(Bounds4, Bounds4)</h4>
   <div class="markdown level1 summary"><p>Combine two bounds </p>
@@ -189,6 +215,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Bounds4 Combine(Bounds4 a, Bounds4 b)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Compare_" data-uid="Engine4.Bounds4.Compare*"></a>
   <h4 id="Engine4_Bounds4_Compare_Engine4_Vector4_Engine4_Bounds4_Engine4_Bounds4_" data-uid="Engine4.Bounds4.Compare(Engine4.Vector4,Engine4.Bounds4,Engine4.Bounds4)">Compare(Vector4, Bounds4, Bounds4)</h4>
   <div class="markdown level1 summary"><p>Compare which Bounds4 is the closest. Positive means L is closer </p>
@@ -197,6 +225,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Compare(Vector4 center, Bounds4 l, Bounds4 r)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Contains_" data-uid="Engine4.Bounds4.Contains*"></a>
   <h4 id="Engine4_Bounds4_Contains_Engine4_Bounds4_" data-uid="Engine4.Bounds4.Contains(Engine4.Bounds4)">Contains(Bounds4)</h4>
   <div class="markdown level1 summary"><p>Is this bound contains the whole cell of the other bound? </p>
@@ -205,6 +235,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Contains(Bounds4 other)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Contains_" data-uid="Engine4.Bounds4.Contains*"></a>
   <h4 id="Engine4_Bounds4_Contains_Engine4_Vector4_" data-uid="Engine4.Bounds4.Contains(Engine4.Vector4)">Contains(Vector4)</h4>
   <div class="markdown level1 summary"><p>Is this bound contains the given point </p>
@@ -213,6 +245,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Contains(Vector4 point)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Interpolate_" data-uid="Engine4.Bounds4.Interpolate*"></a>
   <h4 id="Engine4_Bounds4_Interpolate_Engine4_Vector4_" data-uid="Engine4.Bounds4.Interpolate(Engine4.Vector4)">Interpolate(Vector4)</h4>
   <div class="markdown level1 summary"><p>Interpolate two vector by T.</p>
@@ -224,6 +258,8 @@
   <h5 id="Engine4_Bounds4_Interpolate_Engine4_Vector4__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The interpolation is not clamped </p>
 </div>
+  
+  
   <a id="Engine4_Bounds4_Intersect_" data-uid="Engine4.Bounds4.Intersect*"></a>
   <h4 id="Engine4_Bounds4_Intersect_Engine4_Bounds4_Engine4_Bounds4_" data-uid="Engine4.Bounds4.Intersect(Engine4.Bounds4,Engine4.Bounds4)">Intersect(Bounds4, Bounds4)</h4>
   <div class="markdown level1 summary"><p>Intersect two bounds </p>
@@ -232,6 +268,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Bounds4 Intersect(Bounds4 a, Bounds4 b)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_IsIntersecting_" data-uid="Engine4.Bounds4.IsIntersecting*"></a>
   <h4 id="Engine4_Bounds4_IsIntersecting_Engine4_Bounds4_Engine4_Bounds4_" data-uid="Engine4.Bounds4.IsIntersecting(Engine4.Bounds4,Engine4.Bounds4)">IsIntersecting(Bounds4, Bounds4)</h4>
   <div class="markdown level1 summary"><p>Determine if and only if A partially contains B </p>
@@ -240,6 +278,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool IsIntersecting(Bounds4 a, Bounds4 b)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_IsIntersecting_" data-uid="Engine4.Bounds4.IsIntersecting*"></a>
   <h4 id="Engine4_Bounds4_IsIntersecting_Engine4_Plane4_" data-uid="Engine4.Bounds4.IsIntersecting(Engine4.Plane4)">IsIntersecting(Plane4)</h4>
   <div class="markdown level1 summary"><p>Is the plane hits part of the bound?</p>
@@ -248,6 +288,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsIntersecting(Plane4 plane)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Raycast_" data-uid="Engine4.Bounds4.Raycast*"></a>
   <h4 id="Engine4_Bounds4_Raycast_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Bounds4.Raycast(Engine4.Vector4,Engine4.Vector4)">Raycast(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Check if given ray is colliding with the bound </p>
@@ -256,6 +298,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool Raycast(Vector4 p, Vector4 d)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Bounds4_Scale_" data-uid="Engine4.Bounds4.Scale*"></a>
   <h4 id="Engine4_Bounds4_Scale_Engine4_Bounds4_Engine4_Vector4_" data-uid="Engine4.Bounds4.Scale(Engine4.Bounds4,Engine4.Vector4)">Scale(Bounds4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Scales the bound&apos;s extent </p>
@@ -279,7 +323,8 @@
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

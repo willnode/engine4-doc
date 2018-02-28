@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Buffer4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,8 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Engine4_Buffer4__ctor_" data-uid="Engine4.Buffer4.#ctor*"></a>
   <h4 id="Engine4_Buffer4__ctor" data-uid="Engine4.Buffer4.#ctor">Buffer4()</h4>
   <div class="markdown level1 summary"><p>Create an empty buffer </p>
@@ -100,6 +102,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Buffer4()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4__ctor_" data-uid="Engine4.Buffer4.#ctor*"></a>
   <h4 id="Engine4_Buffer4__ctor_Engine4_SimplexMode_" data-uid="Engine4.Buffer4.#ctor(Engine4.SimplexMode)">Buffer4(SimplexMode)</h4>
   <div class="markdown level1 summary"><p>Create an empty buffer </p>
@@ -110,6 +114,8 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Buffer4_m_Indices" data-uid="Engine4.Buffer4.m_Indices">m_Indices</h4>
   <div class="markdown level1 summary"><p>Internal simplex (indices) buffer. </p>
 </div>
@@ -117,6 +123,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int[] m_Indices</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Buffer4_m_IndicesCount" data-uid="Engine4.Buffer4.m_IndicesCount">m_IndicesCount</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -126,6 +134,8 @@
   <h5 id="Engine4_Buffer4_m_IndicesCount_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Get internal indices count </p>
 </div>
+  
+  
   <h4 id="Engine4_Buffer4_m_Profiles" data-uid="Engine4.Buffer4.m_Profiles">m_Profiles</h4>
   <div class="markdown level1 summary"><p>Internal vertex profile buffer (color, uv). </p>
 </div>
@@ -136,6 +146,8 @@
   <h5 id="Engine4_Buffer4_m_Profiles_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Vertex profile respects to indices, not vertices </p>
 </div>
+  
+  
   <h4 id="Engine4_Buffer4_m_ProfilesCount" data-uid="Engine4.Buffer4.m_ProfilesCount">m_ProfilesCount</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -145,6 +157,8 @@
   <h5 id="Engine4_Buffer4_m_ProfilesCount_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Get internal profiles </p>
 </div>
+  
+  
   <h4 id="Engine4_Buffer4_m_Vertices" data-uid="Engine4.Buffer4.m_Vertices">m_Vertices</h4>
   <div class="markdown level1 summary"><p>Internal vertex buffer </p>
 </div>
@@ -152,6 +166,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4[] m_Vertices</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Buffer4_m_VerticesCount" data-uid="Engine4.Buffer4.m_VerticesCount">m_VerticesCount</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
@@ -161,6 +177,8 @@
   <h5 id="Engine4_Buffer4_m_VerticesCount_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Get internal vertices count </p>
 </div>
+  
+  
   <h4 id="Engine4_Buffer4_offset" data-uid="Engine4.Buffer4.offset">offset</h4>
   <div class="markdown level1 summary"><p>A handy pointer to shift vertex buffer values relatively. </p>
 </div>
@@ -171,6 +189,8 @@
   <h5 id="Engine4_Buffer4_offset_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>It&apos;s very recommended to control this param using Align() instead. </p>
 </div>
+  
+  
   <h4 id="Engine4_Buffer4_simplex" data-uid="Engine4.Buffer4.simplex">simplex</h4>
   <div class="markdown level1 summary"><p>The simplex type that required by the renderer.
 Useful if you want to create a custom shape blocks.</p>
@@ -184,6 +204,8 @@ Useful if you want to create a custom shape blocks.</p>
 </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Buffer4_AddCube_" data-uid="Engine4.Buffer4.AddCube*"></a>
   <h4 id="Engine4_Buffer4_AddCube_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddCube(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddCube(Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Helper to add a cube from 8 existing verts index.
@@ -193,6 +215,8 @@ A cube is constructed from 5 trimids, v0-v1-v2-v3 must be parallel (and in the s
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddCube(int v0, int v1, int v2, int v3, int v4, int v5, int v6, int v7)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddPoint_" data-uid="Engine4.Buffer4.AddPoint*"></a>
   <h4 id="Engine4_Buffer4_AddPoint_System_Int32_" data-uid="Engine4.Buffer4.AddPoint(System.Int32)">AddPoint(Int32)</h4>
   <div class="markdown level1 summary"><p>Add an artbitrary point.</p>
@@ -201,6 +225,8 @@ A cube is constructed from 5 trimids, v0-v1-v2-v3 must be parallel (and in the s
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddPoint(int v0)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddPrism_" data-uid="Engine4.Buffer4.AddPrism*"></a>
   <h4 id="Engine4_Buffer4_AddPrism_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddPrism(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddPrism(Int32, Int32, Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Helper to add a triangular prism from 6 existing verts index.
@@ -210,6 +236,8 @@ A prism is constructed from 3 trimids, v0-v1-v2 must be parallel (and in the sam
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddPrism(int v0, int v1, int v2, int v3, int v4, int v5)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddProfile_" data-uid="Engine4.Buffer4.AddProfile*"></a>
   <h4 id="Engine4_Buffer4_AddProfile_Engine4_VertexProfile_" data-uid="Engine4.Buffer4.AddProfile(Engine4.VertexProfile)">AddProfile(VertexProfile)</h4>
   <div class="markdown level1 summary"><p>Add a new profile to remaining indice </p>
@@ -218,6 +246,8 @@ A prism is constructed from 3 trimids, v0-v1-v2 must be parallel (and in the sam
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddProfile(VertexProfile profile)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddPyramid_" data-uid="Engine4.Buffer4.AddPyramid*"></a>
   <h4 id="Engine4_Buffer4_AddPyramid_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddPyramid(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">AddPyramid(Int32, Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Helper to add a pyramid from 5 existing verts index.
@@ -227,6 +257,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddPyramid(int v0, int v1, int v2, int v3, int v4)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddQuad_" data-uid="Engine4.Buffer4.AddQuad*"></a>
   <h4 id="Engine4_Buffer4_AddQuad_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddQuad(System.Int32,System.Int32,System.Int32,System.Int32)">AddQuad(Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Add a flat quad. Must be either clockwise/counter-clockwise order.</p>
@@ -235,6 +267,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddQuad(int v0, int v1, int v2, int v3)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddSegment_" data-uid="Engine4.Buffer4.AddSegment*"></a>
   <h4 id="Engine4_Buffer4_AddSegment_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddSegment(System.Int32,System.Int32)">AddSegment(Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Add a segment. Order doesn&apos;t matter.</p>
@@ -243,6 +277,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddSegment(int v0, int v1)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddTriangle_" data-uid="Engine4.Buffer4.AddTriangle*"></a>
   <h4 id="Engine4_Buffer4_AddTriangle_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddTriangle(System.Int32,System.Int32,System.Int32)">AddTriangle(Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Add a flat triangle. Order doesn&apos;t matter.</p>
@@ -251,6 +287,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddTriangle(int v0, int v1, int v2)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddTrimid_" data-uid="Engine4.Buffer4.AddTrimid*"></a>
   <h4 id="Engine4_Buffer4_AddTrimid_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Buffer4.AddTrimid(System.Int32,System.Int32,System.Int32,System.Int32)">AddTrimid(Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Add a trimid (triangle pyramid) with given vert indexs. Order doesn&apos;t matter.</p>
@@ -259,6 +297,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void AddTrimid(int v0, int v1, int v2, int v3)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
   <h4 id="Engine4_Buffer4_AddVertex_Engine4_Vector4_" data-uid="Engine4.Buffer4.AddVertex(Engine4.Vector4)">AddVertex(Vector4)</h4>
   <div class="markdown level1 summary"><p>Add a vertex with default profile and return the index </p>
@@ -267,6 +307,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public int AddVertex(Vector4 vert)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_AddVertex_" data-uid="Engine4.Buffer4.AddVertex*"></a>
   <h4 id="Engine4_Buffer4_AddVertex_System_Int32_" data-uid="Engine4.Buffer4.AddVertex(System.Int32)">AddVertex(Int32)</h4>
   <div class="markdown level1 summary"><p>Duplicate vertex and return the cloned index </p>
@@ -278,6 +320,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <h5 id="Engine4_Buffer4_AddVertex_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Useful for sequencing operations </p>
 </div>
+  
+  
   <a id="Engine4_Buffer4_Align_" data-uid="Engine4.Buffer4.Align*"></a>
   <h4 id="Engine4_Buffer4_Align" data-uid="Engine4.Buffer4.Align">Align()</h4>
   <div class="markdown level1 summary"><p>Move buffer forward to the end.</p>
@@ -289,6 +333,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <h5 id="Engine4_Buffer4_Align_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Align are handy if used together with bulk operations (e.g. <a class="xref" href="Engine4.Internal.Buffer4Extension.html#Engine4_Internal_Buffer4Extension_Sequence_Engine4_Buffer4_Engine4_Internal_SequenceMode_">Sequence(Buffer4, SequenceMode)</a>)</p>
 </div>
+  
+  
   <a id="Engine4_Buffer4_Align_" data-uid="Engine4.Buffer4.Align*"></a>
   <h4 id="Engine4_Buffer4_Align_System_Int32_" data-uid="Engine4.Buffer4.Align(System.Int32)">Align(Int32)</h4>
   <div class="markdown level1 summary"><p>Move buffer toward the given snapshot.</p>
@@ -304,6 +350,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="seealso">
       <div><a class="xref" href="Engine4.Buffer4.html#Engine4_Buffer4_Snapshot">Snapshot()</a></div>
   </div>
+  
+  
   <a id="Engine4_Buffer4_Clean_" data-uid="Engine4.Buffer4.Clean*"></a>
   <h4 id="Engine4_Buffer4_Clean" data-uid="Engine4.Buffer4.Clean">Clean()</h4>
   <div class="markdown level1 summary"><p>Clear and Clean memory traces.</p>
@@ -312,6 +360,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clean()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_Clear_" data-uid="Engine4.Buffer4.Clear*"></a>
   <h4 id="Engine4_Buffer4_Clear" data-uid="Engine4.Buffer4.Clear">Clear()</h4>
   <div class="markdown level1 summary"><p>Clear the buffer.</p>
@@ -320,6 +370,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_Clear_" data-uid="Engine4.Buffer4.Clear*"></a>
   <h4 id="Engine4_Buffer4_Clear_Engine4_SimplexMode_" data-uid="Engine4.Buffer4.Clear(Engine4.SimplexMode)">Clear(SimplexMode)</h4>
   <div class="markdown level1 summary"><p>Clear the buffer.</p>
@@ -328,6 +380,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void Clear(SimplexMode mode)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_IsEmpty_" data-uid="Engine4.Buffer4.IsEmpty*"></a>
   <h4 id="Engine4_Buffer4_IsEmpty" data-uid="Engine4.Buffer4.IsEmpty">IsEmpty()</h4>
   <div class="markdown level1 summary"><p>Is the buffer empty? </p>
@@ -336,6 +390,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_SetProfile_" data-uid="Engine4.Buffer4.SetProfile*"></a>
   <h4 id="Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Color_" data-uid="Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Color)">SetProfile(Int32, Color)</h4>
   <div class="markdown level1 summary"><p>Modify profile color at given indice index </p>
@@ -344,6 +400,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetProfile(int index, Color color)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_SetProfile_" data-uid="Engine4.Buffer4.SetProfile*"></a>
   <h4 id="Engine4_Buffer4_SetProfile_System_Int32_UnityEngine_Vector4_System_Int32_" data-uid="Engine4.Buffer4.SetProfile(System.Int32,UnityEngine.Vector4,System.Int32)">SetProfile(Int32, Vector4, Int32)</h4>
   <div class="markdown level1 summary"><p>Modify profile uv at given indice index </p>
@@ -352,6 +410,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetProfile(int index, Vector4 uv, int uvIndex)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Buffer4_Snapshot_" data-uid="Engine4.Buffer4.Snapshot*"></a>
   <h4 id="Engine4_Buffer4_Snapshot" data-uid="Engine4.Buffer4.Snapshot">Snapshot()</h4>
   <div class="markdown level1 summary"><p>Send copy of current buffer position to be reused later.</p>
@@ -464,7 +524,8 @@ A pyramid is constructed from 2 trimids, v0 is the tip, the rest is the base.</p
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

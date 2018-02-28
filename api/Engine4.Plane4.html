@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Plane4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -81,6 +81,8 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Engine4_Plane4__ctor_" data-uid="Engine4.Plane4.#ctor*"></a>
   <h4 id="Engine4_Plane4__ctor_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Plane4.#ctor(Engine4.Vector4,Engine4.Vector4)">Plane4(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Create a new plane with given normal at given point</p>
@@ -89,6 +91,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Plane4(Vector4 norm, Vector4 point)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Plane4__ctor_" data-uid="Engine4.Plane4.#ctor*"></a>
   <h4 id="Engine4_Plane4__ctor_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Plane4.#ctor(Engine4.Vector4,Engine4.Vector4,Engine4.Vector4,Engine4.Vector4)">Plane4(Vector4, Vector4, Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Create a new plane from known vertices</p>
@@ -97,6 +101,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Plane4(Vector4 a, Vector4 b, Vector4 c, Vector4 d)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Plane4__ctor_" data-uid="Engine4.Plane4.#ctor*"></a>
   <h4 id="Engine4_Plane4__ctor_Engine4_Vector4_System_Single_" data-uid="Engine4.Plane4.#ctor(Engine4.Vector4,System.Single)">Plane4(Vector4, Single)</h4>
   <div class="markdown level1 summary"><p>Create a new plane with given normal and distance</p>
@@ -107,6 +113,8 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Plane4_distance" data-uid="Engine4.Plane4.distance">distance</h4>
   <div class="markdown level1 summary"><p>The distance of the plane</p>
 </div>
@@ -114,6 +122,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float distance</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Plane4_normal" data-uid="Engine4.Plane4.normal">normal</h4>
   <div class="markdown level1 summary"><p>The normal of the plane</p>
 </div>
@@ -123,6 +133,8 @@
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
   <a id="Engine4_Plane4_origin_" data-uid="Engine4.Plane4.origin*"></a>
   <h4 id="Engine4_Plane4_origin" data-uid="Engine4.Plane4.origin">origin</h4>
   <div class="markdown level1 summary"><p>Get origin of a plane</p>
@@ -133,6 +145,8 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Plane4_Distance_" data-uid="Engine4.Plane4.Distance*"></a>
   <h4 id="Engine4_Plane4_Distance_Engine4_Vector4_" data-uid="Engine4.Plane4.Distance(Engine4.Vector4)">Distance(Vector4)</h4>
   <div class="markdown level1 summary"><p>Get distance between a point and the nearest point on a plane.</p>
@@ -144,6 +158,8 @@
   <h5 id="Engine4_Plane4_Distance_Engine4_Vector4__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The method can return a negative value, which mean the point is behind the plae </p>
 </div>
+  
+  
   <a id="Engine4_Plane4_GetSide_" data-uid="Engine4.Plane4.GetSide*"></a>
   <h4 id="Engine4_Plane4_GetSide_Engine4_Vector4_" data-uid="Engine4.Plane4.GetSide(Engine4.Vector4)">GetSide(Vector4)</h4>
   <div class="markdown level1 summary"><p>Is the point is above or behind the plane?</p>
@@ -152,6 +168,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool GetSide(Vector4 point)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Plane4_Intersect_" data-uid="Engine4.Plane4.Intersect*"></a>
   <h4 id="Engine4_Plane4_Intersect_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Plane4.Intersect(Engine4.Vector4,Engine4.Vector4)">Intersect(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Given an edge represented as two points, return an interpolation where the point intersects</p>
@@ -163,6 +181,8 @@
   <h5 id="Engine4_Plane4_Intersect_Engine4_Vector4_Engine4_Vector4__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>The resulting interpolation is unclamped, can go beyond 0..1 </p>
 </div>
+  
+  
   <a id="Engine4_Plane4_Project_" data-uid="Engine4.Plane4.Project*"></a>
   <h4 id="Engine4_Plane4_Project_Engine4_Vector4_" data-uid="Engine4.Plane4.Project(Engine4.Vector4)">Project(Vector4)</h4>
   <div class="markdown level1 summary"><p>Project the point to the nearest point on the plane.</p>
@@ -171,6 +191,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector4 Project(Vector4 point)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Plane4_SameSide_" data-uid="Engine4.Plane4.SameSide*"></a>
   <h4 id="Engine4_Plane4_SameSide_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Plane4.SameSide(Engine4.Vector4,Engine4.Vector4)">SameSide(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Is the two point is in the same side of the plane?</p>
@@ -194,7 +216,8 @@
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

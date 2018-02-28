@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Welcome to Engine4 Manual v3.1 | Engine4 Manual </title>
+    <title>Welcome to Engine4 Manual v3.3 | Engine4 Manual </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Welcome to Engine4 Manual v3.1 | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="title" content="Welcome to Engine4 Manual v3.3 | Engine4 Manual ">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -70,43 +70,41 @@
 </style>
 
 <p><img class="centerImage" src="images/icon_label.png" alt="Engine4 Logo"></p>
-<h1 id="welcome-to-engine4-manual-v31">Welcome to Engine4 Manual v3.1</h1>
+<h1 id="welcome-to-engine4-manual-v33">Welcome to Engine4 Manual v3.3</h1>
 <p>Engine4 is a library that empowers the ability create four-dimensional scenes inside Unity Game Engine. We aim to develop this library with range of features so you can build more complex scenes without even think how it works.</p>
-<p>If you new to Engine4 then go on, otherwise you can click the Manual for usage instructions.</p>
+<p>If you are new to Engine4 then continue reading below, otherwise you can click the <a href="/manual">Manual</a> for usage instructions.</p>
 <h2 id="the-main-goal">The Main Goal</h2>
 <p>Engine4 helps you to create four dimensional scenes inside Unity Game Engine, so you can focus on creating games, not the technical challenges, and think that &#39;everything&#39; is upgradable to a higher dimension.</p>
 <p>If you have a plan to create four dimensional games, it&#39;s a lot better to start off from this library. There are some complex algorithms that you will never found anywhere else!</p>
 <h2 id="the-secret-sauce">The Secret Sauce</h2>
 <p>The library is doing the runtime hardwork without external depedencies. Any input data that feeded into the library are processed into a projected shape that is renderable with conventional 3D rendering engines.</p>
-<p>Note that because Unity is a 3D Game Engine. Engine4 mostly do not use advanced features inside as it is <em>limited</em> to 3D space. </p>
+<p>Note that because Unity is a 3D Game Engine. Engine4 mostly do not use advanced features inside as it is <em>limited</em> to 3D space.</p>
 <h2 id="features-highlight">Features Highlight</h2>
 <ul>
-<li>Builtin Datatypes, Camera, Transformation, Rendering, Builder, Gizmo, Physics Library, in 4D.</li>
-<li>Shape building redefined. Make procedural creation easier for common scenarios.</li>
-<li>Full Scripting API and source code access without external libraries. </li>
+<li>Builtin Datatypes, Camera, Transformation, Rendering, Builder, Gizmo, Physics Library, etc. All operating in 4D.</li>
+<li>Shape building redefined: Make procedural creation easier for common scenarios.</li>
+<li>Full Scripting API and source code access without any compiled libraries.</li>
 <li>HTML based documentation with documented scripting APIs.</li>
 <li>Bundled with many scripting optimization in mind.</li>
-<li>Cross platform. Deploy anywhere you game can do.</li>
+<li>Cross platform. Techically we can deploy to any device where unity supports.</li>
 </ul>
 <h2 id="limitations">Limitations</h2>
 <p>The development goal of Engine4 is to make the library have similar capabilities like most game engine have.
 Therefore, we put these honest limitation below as our TODOs for the next development of the library.</p>
 <ul>
-<li><del>Currently does all the hardwork in single main thread (job system?).</del></li>
-<li>No support for rendering via hardware acceleration.</li>
-<li>No particle system generator (although we have its renderer).</li>
-<li>Only limited set of shapes that supported by the Physics Engine.</li>
+<li>No support for rendering via GPU/hardware acceleration.</li>
+<li>No particle system generator (although Engine4 <em>does</em> we have a particle renderer).</li>
+<li>Only limited set of shapes (cube, sphere, capsule) that supported by the Physics Engine.</li>
 <li>Physics Engine doesn&#39;t include joints and character controller.</li>
-<li>Building shapes can only done via procedural creations.</li>
+<li>Building shapes can only done via procedural creations (FBX is for 3D model).</li>
 <li>No dedicated 4D graphics solution included (skybox, lighting, fog etc.)</li>
-<li>The documentation may unfinished or have small grammar mistake.</li>
+<li>The documentation may unfinished or might have small grammar mistake.</li>
 <li>There are no real games published with this library so far.</li>
 </ul>
 <h2 id="known-issues">Known Issues</h2>
-<p>These known issues is currently active in the latest version is listed here (sorted from the highest severety) and will be fixed in short time:</p>
+<p>These known issues is currently active in the latest version is listed here (sorted from the highest severety) and will be fixed in soon:</p>
 <ul>
-<li><del>Incorrect physics collision impacts</del></li>
-<li>Box to box collision some time is too aggresive.</li>
+<li>Box to box collision are too aggresive (check Example/Scenes/CannonBox).</li>
 <li>Transform4 does not support multi selection.</li>
 </ul>
 <h2 id="helpful-links">Helpful Links</h2>
@@ -126,7 +124,8 @@ Therefore, we put these honest limitation below as our TODOs for the next develo
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="styles/docfx.js"></script>

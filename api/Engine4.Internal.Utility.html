@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Utility
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,8 @@
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Internal_Utility_BoxVertices" data-uid="Engine4.Internal.Utility.BoxVertices">BoxVertices</h4>
   <div class="markdown level1 summary"><p>List of tesseract vertices permutations</p>
 </div>
@@ -99,6 +101,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static readonly Vector4[] BoxVertices</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Internal_Utility_QuadToTris" data-uid="Engine4.Internal.Utility.QuadToTris">QuadToTris</h4>
   <div class="markdown level1 summary"><p>Quad into Two triangles</p>
 </div>
@@ -108,6 +112,8 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Internal_Utility_AngleLoop_" data-uid="Engine4.Internal.Utility.AngleLoop*"></a>
   <h4 id="Engine4_Internal_Utility_AngleLoop_System_Single_" data-uid="Engine4.Internal.Utility.AngleLoop(System.Single)">AngleLoop(Single)</h4>
   <div class="markdown level1 summary"><p>Convert value range -pi to pi into 0 to 2pi</p>
@@ -116,6 +122,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float AngleLoop(float v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Atan2_" data-uid="Engine4.Internal.Utility.Atan2*"></a>
   <h4 id="Engine4_Internal_Utility_Atan2_System_Single_System_Single_" data-uid="Engine4.Internal.Utility.Atan2(System.Single,System.Single)">Atan2(Single, Single)</h4>
   <div class="markdown level1 summary"><p>Atan2 with better handling of near 0, 0 singularity</p>
@@ -124,6 +132,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Atan2(float y, float x)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Atan2AvoidPi_" data-uid="Engine4.Internal.Utility.Atan2AvoidPi*"></a>
   <h4 id="Engine4_Internal_Utility_Atan2AvoidPi_System_Single_System_Single_" data-uid="Engine4.Internal.Utility.Atan2AvoidPi(System.Single,System.Single)">Atan2AvoidPi(Single, Single)</h4>
   <div class="markdown level1 summary"><p>Atan2 with clear meaning that we don&apos;t want pi simply to avoid headache</p>
@@ -132,6 +142,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Atan2AvoidPi(float y, float x)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Clamp_" data-uid="Engine4.Internal.Utility.Clamp*"></a>
   <h4 id="Engine4_Internal_Utility_Clamp_System_Single_System_Single_System_Single_" data-uid="Engine4.Internal.Utility.Clamp(System.Single,System.Single,System.Single)">Clamp(Single, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Clamp T between A and B</p>
@@ -140,6 +152,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Clamp(float a, float b, float t)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Clamp01_" data-uid="Engine4.Internal.Utility.Clamp01*"></a>
   <h4 id="Engine4_Internal_Utility_Clamp01_System_Single_" data-uid="Engine4.Internal.Utility.Clamp01(System.Single)">Clamp01(Single)</h4>
   <div class="markdown level1 summary"><p>Clamp T between 0 and 1</p>
@@ -148,6 +162,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Clamp01(float t)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Clear_" data-uid="Engine4.Internal.Utility.Clear*"></a>
   <h4 id="Engine4_Internal_Utility_Clear__1_System_Collections_Generic_Stack___0____0_" data-uid="Engine4.Internal.Utility.Clear``1(System.Collections.Generic.Stack{``0},``0)">Clear&lt;T&gt;(Stack&lt;T&gt;, T)</h4>
   <div class="markdown level1 summary"><p>Clear and push a new item to the stack</p>
@@ -156,6 +172,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Clear&lt;T&gt;(this Stack&lt;T&gt; stack, T item)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_CrossInterpolate_" data-uid="Engine4.Internal.Utility.CrossInterpolate*"></a>
   <h4 id="Engine4_Internal_Utility_CrossInterpolate_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Internal.Utility.CrossInterpolate(Engine4.Vector4,Engine4.Vector4)">CrossInterpolate(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Internally do Plane4.Intersect(), then Vector4.Lerp()</p>
@@ -164,6 +182,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 CrossInterpolate(Vector4 x, Vector4 y)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_CrossInterpolate_" data-uid="Engine4.Internal.Utility.CrossInterpolate*"></a>
   <h4 id="Engine4_Internal_Utility_CrossInterpolate_Engine4_Vector4_Engine4_Vector4_System_Single__" data-uid="Engine4.Internal.Utility.CrossInterpolate(Engine4.Vector4,Engine4.Vector4,System.Single@)">CrossInterpolate(Vector4, Vector4, out Single)</h4>
   <div class="markdown level1 summary"><p>Internally do Plane4.Intersect(), then Vector4.Lerp(), and make the phase out</p>
@@ -172,6 +192,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 CrossInterpolate(Vector4 x, Vector4 y, out float phase)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Expand_" data-uid="Engine4.Internal.Utility.Expand*"></a>
   <h4 id="Engine4_Internal_Utility_Expand__1_System_Collections_Generic_List___0__System_Int32_" data-uid="Engine4.Internal.Utility.Expand``1(System.Collections.Generic.List{``0},System.Int32)">Expand&lt;T&gt;(List&lt;T&gt;, Int32)</h4>
   <div class="markdown level1 summary"><p>Expand list capacity to given capacity target</p>
@@ -180,6 +202,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Expand&lt;T&gt;(this List&lt;T&gt; list, int capacity)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Expand_" data-uid="Engine4.Internal.Utility.Expand*"></a>
   <h4 id="Engine4_Internal_Utility_Expand__2_System_Collections_Generic_List___0__System_Collections_Generic_List___1__" data-uid="Engine4.Internal.Utility.Expand``2(System.Collections.Generic.List{``0},System.Collections.Generic.List{``1})">Expand&lt;T, T2&gt;(List&lt;T&gt;, List&lt;T2&gt;)</h4>
   <div class="markdown level1 summary"><p>Expand list capacity to what another list has</p>
@@ -188,6 +212,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Expand&lt;T, T2&gt;(this List&lt;T&gt; list, List&lt;T2&gt; capacity)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_GetAverage_" data-uid="Engine4.Internal.Utility.GetAverage*"></a>
   <h4 id="Engine4_Internal_Utility_GetAverage_System_Collections_Generic_List_UnityEngine_Vector3__" data-uid="Engine4.Internal.Utility.GetAverage(System.Collections.Generic.List{UnityEngine.Vector3})">GetAverage(List&lt;Vector3&gt;)</h4>
   <div class="markdown level1 summary"><p>Get average value</p>
@@ -196,6 +222,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector3 GetAverage(this List&lt;Vector3&gt; v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_GetBounding_" data-uid="Engine4.Internal.Utility.GetBounding*"></a>
   <h4 id="Engine4_Internal_Utility_GetBounding_Engine4_Vector4___System_Int32_" data-uid="Engine4.Internal.Utility.GetBounding(Engine4.Vector4[],System.Int32)">GetBounding(Vector4[], Int32)</h4>
   <div class="markdown level1 summary"><p>Get bounding min-max</p>
@@ -204,6 +232,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Bounds4 GetBounding(this Vector4[] v, int count)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_GetValue_" data-uid="Engine4.Internal.Utility.GetValue*"></a>
   <h4 id="Engine4_Internal_Utility_GetValue__2_System_Collections_Generic_Dictionary___0___1____0___1_" data-uid="Engine4.Internal.Utility.GetValue``2(System.Collections.Generic.Dictionary{``0,``1},``0,``1)">GetValue&lt;K, V&gt;(Dictionary&lt;K, V&gt;, K, V)</h4>
   <div class="markdown level1 summary"><p>Get a unique hash from the vector</p>
@@ -212,6 +242,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static V GetValue&lt;K, V&gt;(this Dictionary&lt;K, V&gt; dict, K key, V fallback)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_GiveSign_" data-uid="Engine4.Internal.Utility.GiveSign*"></a>
   <h4 id="Engine4_Internal_Utility_GiveSign_Engine4_Vector4_System_Int32_System_Int32_" data-uid="Engine4.Internal.Utility.GiveSign(Engine4.Vector4,System.Int32,System.Int32)">GiveSign(Vector4, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Give sign to any nonzero vector elements</p>
@@ -220,6 +252,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 GiveSign(Vector4 v, int x, int y)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_GiveSign_" data-uid="Engine4.Internal.Utility.GiveSign*"></a>
   <h4 id="Engine4_Internal_Utility_GiveSign_Engine4_Vector4_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Internal.Utility.GiveSign(Engine4.Vector4,System.Int32,System.Int32,System.Int32)">GiveSign(Vector4, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Give sign to any nonzero vector elements</p>
@@ -228,6 +262,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 GiveSign(Vector4 v, int x, int y, int z)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_GiveSign_" data-uid="Engine4.Internal.Utility.GiveSign*"></a>
   <h4 id="Engine4_Internal_Utility_GiveSign_Engine4_Vector4_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="Engine4.Internal.Utility.GiveSign(Engine4.Vector4,System.Int32,System.Int32,System.Int32,System.Int32)">GiveSign(Vector4, Int32, Int32, Int32, Int32)</h4>
   <div class="markdown level1 summary"><p>Give sign to any nonzero vector elements</p>
@@ -236,6 +272,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 GiveSign(Vector4 v, int x, int y, int z, int w)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Hue_" data-uid="Engine4.Internal.Utility.Hue*"></a>
   <h4 id="Engine4_Internal_Utility_Hue" data-uid="Engine4.Internal.Utility.Hue">Hue()</h4>
   <div class="markdown level1 summary"><p>Get Hue variation in gradient</p>
@@ -244,6 +282,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Gradient Hue()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Hue_" data-uid="Engine4.Internal.Utility.Hue*"></a>
   <h4 id="Engine4_Internal_Utility_Hue_System_Single_" data-uid="Engine4.Internal.Utility.Hue(System.Single)">Hue(Single)</h4>
   <div class="markdown level1 summary"><p>Get Hue variation</p>
@@ -252,6 +292,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Color Hue(float h)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Invert_" data-uid="Engine4.Internal.Utility.Invert*"></a>
   <h4 id="Engine4_Internal_Utility_Invert_System_Single_" data-uid="Engine4.Internal.Utility.Invert(System.Single)">Invert(Single)</h4>
   <div class="markdown level1 summary"><p>Inverse function (x =&gt; 1 / x)</p>
@@ -260,6 +302,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Invert(float i)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Random_" data-uid="Engine4.Internal.Utility.Random*"></a>
   <h4 id="Engine4_Internal_Utility_Random" data-uid="Engine4.Internal.Utility.Random">Random()</h4>
   <div class="markdown level1 summary"><p>Next random integer</p>
@@ -268,6 +312,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static int Random()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_RemoveFast_" data-uid="Engine4.Internal.Utility.RemoveFast*"></a>
   <h4 id="Engine4_Internal_Utility_RemoveFast__1_System_Collections_Generic_List___0____0_" data-uid="Engine4.Internal.Utility.RemoveFast``1(System.Collections.Generic.List{``0},``0)">RemoveFast&lt;T&gt;(List&lt;T&gt;, T)</h4>
   <div class="markdown level1 summary"><p>Quickly remove an item if list order doesn&apos;t matter.</p>
@@ -276,6 +322,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void RemoveFast&lt;T&gt;(this List&lt;T&gt; list, T item)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_SetW_" data-uid="Engine4.Internal.Utility.SetW*"></a>
   <h4 id="Engine4_Internal_Utility_SetW_UnityEngine_Vector3_System_Single_" data-uid="Engine4.Internal.Utility.SetW(UnityEngine.Vector3,System.Single)">SetW(Vector3, Single)</h4>
   <div class="markdown level1 summary"><p>Sets the w and return Vector4</p>
@@ -284,6 +332,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 SetW(this Vector3 xyz, float w)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Sign_" data-uid="Engine4.Internal.Utility.Sign*"></a>
   <h4 id="Engine4_Internal_Utility_Sign_System_Single_" data-uid="Engine4.Internal.Utility.Sign(System.Single)">Sign(Single)</h4>
   <div class="markdown level1 summary"><p>Sign function (x =&gt; x / Abs(x))</p>
@@ -295,6 +345,8 @@
   <h5 id="Engine4_Internal_Utility_Sign_System_Single__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This function will never return zero compared with .NET Math</p>
 </div>
+  
+  
   <a id="Engine4_Internal_Utility_Swap_" data-uid="Engine4.Internal.Utility.Swap*"></a>
   <h4 id="Engine4_Internal_Utility_Swap__1___0____0__" data-uid="Engine4.Internal.Utility.Swap``1(``0@,``0@)">Swap&lt;T&gt;(ref T, ref T)</h4>
   <div class="markdown level1 summary"><p>Swap two object</p>
@@ -303,6 +355,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Swap&lt;T&gt;(ref T l, ref T r)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Tidy_" data-uid="Engine4.Internal.Utility.Tidy*"></a>
   <h4 id="Engine4_Internal_Utility_Tidy_Engine4_Euler4_" data-uid="Engine4.Internal.Utility.Tidy(Engine4.Euler4)">Tidy(Euler4)</h4>
   <div class="markdown level1 summary"><p>Remove unnecessary trailing digits for debugging ease.</p>
@@ -311,6 +365,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 Tidy(Euler4 v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Tidy_" data-uid="Engine4.Internal.Utility.Tidy*"></a>
   <h4 id="Engine4_Internal_Utility_Tidy_Engine4_Matrix4_" data-uid="Engine4.Internal.Utility.Tidy(Engine4.Matrix4)">Tidy(Matrix4)</h4>
   <div class="markdown level1 summary"><p>Remove unnecessary trailing digits for debugging ease.</p>
@@ -319,6 +375,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Matrix4 Tidy(Matrix4 v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Tidy_" data-uid="Engine4.Internal.Utility.Tidy*"></a>
   <h4 id="Engine4_Internal_Utility_Tidy_Engine4_Vector4_" data-uid="Engine4.Internal.Utility.Tidy(Engine4.Vector4)">Tidy(Vector4)</h4>
   <div class="markdown level1 summary"><p>Remove unnecessary trailing digits for debugging ease.</p>
@@ -327,6 +385,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Vector4 Tidy(Vector4 v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_Tidy_" data-uid="Engine4.Internal.Utility.Tidy*"></a>
   <h4 id="Engine4_Internal_Utility_Tidy_System_Single_" data-uid="Engine4.Internal.Utility.Tidy(System.Single)">Tidy(Single)</h4>
   <div class="markdown level1 summary"><p>Remove unnecessary trailing digits for debugging ease.</p>
@@ -335,6 +395,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Tidy(float v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_VectorToKey_" data-uid="Engine4.Internal.Utility.VectorToKey*"></a>
   <h4 id="Engine4_Internal_Utility_VectorToKey_Engine4_Vector4_" data-uid="Engine4.Internal.Utility.VectorToKey(Engine4.Vector4)">VectorToKey(Vector4)</h4>
   <div class="markdown level1 summary"><p>Get a unique hash from the vector</p>
@@ -343,6 +405,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static int VectorToKey(Vector4 v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Utility_VectorToKey_" data-uid="Engine4.Internal.Utility.VectorToKey*"></a>
   <h4 id="Engine4_Internal_Utility_VectorToKey_UnityEngine_Vector3_" data-uid="Engine4.Internal.Utility.VectorToKey(UnityEngine.Vector3)">VectorToKey(Vector3)</h4>
   <div class="markdown level1 summary"><p>Get a unique hash from the vector</p>
@@ -366,7 +430,8 @@
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

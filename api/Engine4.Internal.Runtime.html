@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Runtime
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,8 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Internal_Runtime_CopyComponent_" data-uid="Engine4.Internal.Runtime.CopyComponent*"></a>
   <h4 id="Engine4_Internal_Runtime_CopyComponent__1___0___0_System_Reflection_BindingFlags_" data-uid="Engine4.Internal.Runtime.CopyComponent``1(``0,``0,System.Reflection.BindingFlags)">CopyComponent&lt;T&gt;(T, T, BindingFlags)</h4>
   <div class="markdown level1 summary"><p>Copy component values to another</p>
@@ -100,6 +102,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void CopyComponent&lt;T&gt;(T source, T dest, BindingFlags flags = BindingFlags.Instance | BindingFlags.Public | BindingFlags.FlattenHierarchy)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_CreateGameObject_" data-uid="Engine4.Internal.Runtime.CreateGameObject*"></a>
   <h4 id="Engine4_Internal_Runtime_CreateGameObject__1_System_String_UnityEngine_HideFlags_" data-uid="Engine4.Internal.Runtime.CreateGameObject``1(System.String,UnityEngine.HideFlags)">CreateGameObject&lt;T&gt;(String, HideFlags)</h4>
   <div class="markdown level1 summary"><p>Create a new GameObject with hideFlags</p>
@@ -108,6 +112,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T CreateGameObject&lt;T&gt;(string name, HideFlags flags)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_Destroy_" data-uid="Engine4.Internal.Runtime.Destroy*"></a>
   <h4 id="Engine4_Internal_Runtime_Destroy_UnityEngine_Object_" data-uid="Engine4.Internal.Runtime.Destroy(UnityEngine.Object)">Destroy(Object)</h4>
   <div class="markdown level1 summary"><p>Safer way to destroy an object</p>
@@ -116,6 +122,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static void Destroy(Object obj)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_Dump_" data-uid="Engine4.Internal.Runtime.Dump*"></a>
   <h4 id="Engine4_Internal_Runtime_Dump_UnityEngine_Mesh_" data-uid="Engine4.Internal.Runtime.Dump(UnityEngine.Mesh)">Dump(Mesh)</h4>
   <div class="markdown level1 summary"><p>Dump Mesh to Readable CSV format</p>
@@ -124,6 +132,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static string Dump(Mesh m)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_GetComponentFromParent_" data-uid="Engine4.Internal.Runtime.GetComponentFromParent*"></a>
   <h4 id="Engine4_Internal_Runtime_GetComponentFromParent__1_UnityEngine_Transform_" data-uid="Engine4.Internal.Runtime.GetComponentFromParent``1(UnityEngine.Transform)">GetComponentFromParent&lt;T&gt;(Transform)</h4>
   <div class="markdown level1 summary"><p>Find a component starting from its parent</p>
@@ -132,6 +142,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T GetComponentFromParent&lt;T&gt;(Transform start)where T : class</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_GetCurrentCamera_" data-uid="Engine4.Internal.Runtime.GetCurrentCamera*"></a>
   <h4 id="Engine4_Internal_Runtime_GetCurrentCamera" data-uid="Engine4.Internal.Runtime.GetCurrentCamera">GetCurrentCamera()</h4>
   <div class="markdown level1 summary"><p>Get either main camera or scene camera.</p>
@@ -140,6 +152,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Transform GetCurrentCamera()</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_GetOrAddComponent_" data-uid="Engine4.Internal.Runtime.GetOrAddComponent*"></a>
   <h4 id="Engine4_Internal_Runtime_GetOrAddComponent__1_UnityEngine_GameObject_" data-uid="Engine4.Internal.Runtime.GetOrAddComponent``1(UnityEngine.GameObject)">GetOrAddComponent&lt;T&gt;(GameObject)</h4>
   <div class="markdown level1 summary"><p>Get or add a component</p>
@@ -148,6 +162,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static T GetOrAddComponent&lt;T&gt;(GameObject gameObject)where T : Component</code></pre>
   </div>
+  
+  
   <a id="Engine4_Internal_Runtime_TransferTransform3DTo4D_" data-uid="Engine4.Internal.Runtime.TransferTransform3DTo4D*"></a>
   <h4 id="Engine4_Internal_Runtime_TransferTransform3DTo4D_UnityEngine_GameObject_" data-uid="Engine4.Internal.Runtime.TransferTransform3DTo4D(UnityEngine.GameObject)">TransferTransform3DTo4D(GameObject)</h4>
   <div class="markdown level1 summary"><p>Push 3D data to 4D</p>
@@ -171,7 +187,8 @@
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

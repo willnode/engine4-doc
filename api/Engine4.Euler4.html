@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Struct Euler4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -86,6 +86,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Engine4_Euler4__ctor_" data-uid="Engine4.Euler4.#ctor*"></a>
   <h4 id="Engine4_Euler4__ctor_System_Int32_System_Single_" data-uid="Engine4.Euler4.#ctor(System.Int32,System.Single)">Euler4(Int32, Single)</h4>
   <div class="markdown level1 summary"><p>Create an euler data with a value for given axis index.</p>
@@ -97,6 +99,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <h5 id="Engine4_Euler4__ctor_System_Int32_System_Single__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>See <a class="xref" href="Engine4.Euler4.html#Engine4_Euler4_Item_System_Int32_">Item[Int32]</a> for axis index. Other axis will set as zero by default</p>
 </div>
+  
+  
   <a id="Engine4_Euler4__ctor_" data-uid="Engine4.Euler4.#ctor*"></a>
   <h4 id="Engine4_Euler4__ctor_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="Engine4.Euler4.#ctor(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">Euler4(Single, Single, Single, Single, Single, Single)</h4>
   <div class="markdown level1 summary"><p>Create an euler data with given individual values.</p>
@@ -105,6 +109,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Euler4(float x, float y, float z, float t, float u, float v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4__ctor_" data-uid="Engine4.Euler4.#ctor*"></a>
   <h4 id="Engine4_Euler4__ctor_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="Engine4.Euler4.#ctor(UnityEngine.Vector3,UnityEngine.Vector3)">Euler4(Vector3, Vector3)</h4>
   <div class="markdown level1 summary"><p>Create an euler data with given individual values (with a pair of Vector3).</p>
@@ -115,6 +121,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Euler4_t" data-uid="Engine4.Euler4.t">t</h4>
   <div class="markdown level1 summary"><p>XW Plane </p>
 </div>
@@ -122,6 +130,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float t</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Euler4_u" data-uid="Engine4.Euler4.u">u</h4>
   <div class="markdown level1 summary"><p>YW Plane </p>
 </div>
@@ -129,6 +139,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float u</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Euler4_v" data-uid="Engine4.Euler4.v">v</h4>
   <div class="markdown level1 summary"><p>ZW Plane </p>
 </div>
@@ -136,6 +148,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float v</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Euler4_x" data-uid="Engine4.Euler4.x">x</h4>
   <div class="markdown level1 summary"><p>YZ Plane </p>
 </div>
@@ -143,6 +157,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float x</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Euler4_y" data-uid="Engine4.Euler4.y">y</h4>
   <div class="markdown level1 summary"><p>ZX Plane </p>
 </div>
@@ -150,6 +166,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public float y</code></pre>
   </div>
+  
+  
   <h4 id="Engine4_Euler4_z" data-uid="Engine4.Euler4.z">z</h4>
   <div class="markdown level1 summary"><p>XY Plane </p>
 </div>
@@ -159,6 +177,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
   <a id="Engine4_Euler4_Item_" data-uid="Engine4.Euler4.Item*"></a>
   <h4 id="Engine4_Euler4_Item_System_Int32_" data-uid="Engine4.Euler4.Item(System.Int32)">Item[Int32]</h4>
   <div class="markdown level1 summary"><p>Get or set a vector value in given axis index</p>
@@ -170,6 +190,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <h5 id="Engine4_Euler4_Item_System_Int32__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Axis index in order: X, Y, Z, T, U, V</p>
 </div>
+  
+  
   <a id="Engine4_Euler4_tuv_" data-uid="Engine4.Euler4.tuv*"></a>
   <h4 id="Engine4_Euler4_tuv" data-uid="Engine4.Euler4.tuv">tuv</h4>
   <div class="markdown level1 summary"><p>Get TUV part if the euler</p>
@@ -178,6 +200,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector3 tuv { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_xyz_" data-uid="Engine4.Euler4.xyz*"></a>
   <h4 id="Engine4_Euler4_xyz" data-uid="Engine4.Euler4.xyz">xyz</h4>
   <div class="markdown level1 summary"><p>Get XYZ part of the euler</p>
@@ -186,6 +210,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Vector3 xyz { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_zero_" data-uid="Engine4.Euler4.zero*"></a>
   <h4 id="Engine4_Euler4_zero" data-uid="Engine4.Euler4.zero">zero</h4>
   <div class="markdown level1 summary"><p>Euler with zero values</p>
@@ -196,6 +222,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Euler4_Cross_" data-uid="Engine4.Euler4.Cross*"></a>
   <h4 id="Engine4_Euler4_Cross_Engine4_Vector4_Engine4_Vector4_" data-uid="Engine4.Euler4.Cross(Engine4.Vector4,Engine4.Vector4)">Cross(Vector4, Vector4)</h4>
   <div class="markdown level1 summary"><p>Creates an euler rotation from two vector</p>
@@ -207,6 +235,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <h5 id="Engine4_Euler4_Cross_Engine4_Vector4_Engine4_Vector4__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method is equivalent to the wedge operation between vector and vector in Geometry Algebra. It is used by internal physics engine. </p>
 </div>
+  
+  
   <a id="Engine4_Euler4_Dot_" data-uid="Engine4.Euler4.Dot*"></a>
   <h4 id="Engine4_Euler4_Dot_Engine4_Euler4_Engine4_Euler4_" data-uid="Engine4.Euler4.Dot(Engine4.Euler4,Engine4.Euler4)">Dot(Euler4, Euler4)</h4>
   <div class="markdown level1 summary"><p>Get the dot product of the euler</p>
@@ -215,6 +245,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float Dot(Euler4 a, Euler4 b)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_LengthSq_" data-uid="Engine4.Euler4.LengthSq*"></a>
   <h4 id="Engine4_Euler4_LengthSq_Engine4_Euler4_" data-uid="Engine4.Euler4.LengthSq(Engine4.Euler4)">LengthSq(Euler4)</h4>
   <div class="markdown level1 summary"><p>Get the squared length of the euler</p>
@@ -223,6 +255,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static float LengthSq(Euler4 v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_LerpAngle_" data-uid="Engine4.Euler4.LerpAngle*"></a>
   <h4 id="Engine4_Euler4_LerpAngle_Engine4_Euler4_Engine4_Euler4_System_Single_" data-uid="Engine4.Euler4.LerpAngle(Engine4.Euler4,Engine4.Euler4,System.Single)">LerpAngle(Euler4, Euler4, Single)</h4>
   <div class="markdown level1 summary"><p>Interpolate euler rotation degree from A to B by T in each axes</p>
@@ -236,6 +270,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
 </div>
   <h3 id="operators">Operators
   </h3>
+  
+  
   <a id="Engine4_Euler4_op_Addition_" data-uid="Engine4.Euler4.op_Addition*"></a>
   <h4 id="Engine4_Euler4_op_Addition_Engine4_Euler4_Engine4_Euler4_" data-uid="Engine4.Euler4.op_Addition(Engine4.Euler4,Engine4.Euler4)">Addition(Euler4, Euler4)</h4>
   <div class="markdown level1 summary"><p>Axis-wisely add two euler values</p>
@@ -244,6 +280,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 operator +(Euler4 lhs, Euler4 rhs)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Division_" data-uid="Engine4.Euler4.op_Division*"></a>
   <h4 id="Engine4_Euler4_op_Division_Engine4_Euler4_System_Single_" data-uid="Engine4.Euler4.op_Division(Engine4.Euler4,System.Single)">Division(Euler4, Single)</h4>
   <div class="markdown level1 summary"><p>Axis-wisely divide an euler values with a number</p>
@@ -252,6 +290,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 operator /(Euler4 lhs, float f)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Equality_" data-uid="Engine4.Euler4.op_Equality*"></a>
   <h4 id="Engine4_Euler4_op_Equality_Engine4_Euler4_Engine4_Euler4_" data-uid="Engine4.Euler4.op_Equality(Engine4.Euler4,Engine4.Euler4)">Equality(Euler4, Euler4)</h4>
   <div class="markdown level1 summary"><p>Equivalence check </p>
@@ -260,6 +300,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator ==(Euler4 lhs, Euler4 rhs)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Inequality_" data-uid="Engine4.Euler4.op_Inequality*"></a>
   <h4 id="Engine4_Euler4_op_Inequality_Engine4_Euler4_Engine4_Euler4_" data-uid="Engine4.Euler4.op_Inequality(Engine4.Euler4,Engine4.Euler4)">Inequality(Euler4, Euler4)</h4>
   <div class="markdown level1 summary"><p>Inequivalence check </p>
@@ -268,6 +310,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static bool operator !=(Euler4 lhs, Euler4 rhs)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Multiply_" data-uid="Engine4.Euler4.op_Multiply*"></a>
   <h4 id="Engine4_Euler4_op_Multiply_Engine4_Euler4_Engine4_Euler4_" data-uid="Engine4.Euler4.op_Multiply(Engine4.Euler4,Engine4.Euler4)">Multiply(Euler4, Euler4)</h4>
   <div class="markdown level1 summary"><p>Axis-wisely scale both euler.</p>
@@ -276,6 +320,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 operator *(Euler4 a, Euler4 b)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Multiply_" data-uid="Engine4.Euler4.op_Multiply*"></a>
   <h4 id="Engine4_Euler4_op_Multiply_Engine4_Euler4_System_Single_" data-uid="Engine4.Euler4.op_Multiply(Engine4.Euler4,System.Single)">Multiply(Euler4, Single)</h4>
   <div class="markdown level1 summary"><p>Axis-wisely scale an euler values with a number</p>
@@ -284,6 +330,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 operator *(Euler4 lhs, float f)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Multiply_" data-uid="Engine4.Euler4.op_Multiply*"></a>
   <h4 id="Engine4_Euler4_op_Multiply_System_Single_Engine4_Euler4_" data-uid="Engine4.Euler4.op_Multiply(System.Single,Engine4.Euler4)">Multiply(Single, Euler4)</h4>
   <div class="markdown level1 summary"><p>Axis-wisely scale an euler values with a number</p>
@@ -292,6 +340,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 operator *(float f, Euler4 lhs)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_Subtraction_" data-uid="Engine4.Euler4.op_Subtraction*"></a>
   <h4 id="Engine4_Euler4_op_Subtraction_Engine4_Euler4_Engine4_Euler4_" data-uid="Engine4.Euler4.op_Subtraction(Engine4.Euler4,Engine4.Euler4)">Subtraction(Euler4, Euler4)</h4>
   <div class="markdown level1 summary"><p>Axis-wisely subtract two euler values</p>
@@ -300,6 +350,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Euler4 operator -(Euler4 lhs, Euler4 rhs)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Euler4_op_UnaryNegation_" data-uid="Engine4.Euler4.op_UnaryNegation*"></a>
   <h4 id="Engine4_Euler4_op_UnaryNegation_Engine4_Euler4_" data-uid="Engine4.Euler4.op_UnaryNegation(Engine4.Euler4)">UnaryNegation(Euler4)</h4>
   <div class="markdown level1 summary"><p>Negate each euler axis</p>
@@ -332,7 +384,8 @@ represented as an euler rotation, or angular velocity of an object.</p>
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

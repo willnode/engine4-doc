@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Viewer4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -97,6 +97,8 @@ Hence only one viewer is allowed in scene.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Engine4_Viewer4__ctor_" data-uid="Engine4.Viewer4.#ctor*"></a>
   <h4 id="Engine4_Viewer4__ctor" data-uid="Engine4.Viewer4.#ctor">Viewer4()</h4>
   <div class="markdown level1 summary"></div>
@@ -106,6 +108,8 @@ Hence only one viewer is allowed in scene.</p>
   </div>
   <h3 id="fields">Fields
   </h3>
+  
+  
   <h4 id="Engine4_Viewer4_background" data-uid="Engine4.Viewer4.background">background</h4>
   <div class="markdown level1 summary"><p>Should renderers do the computation in separate thread? (recommended)</p>
 </div>
@@ -116,6 +120,8 @@ Hence only one viewer is allowed in scene.</p>
   <h5 id="Engine4_Viewer4_background_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Changes to this variable requires a call to <span class="xref">Engine4.Viewer4.Validate</span> to take effect.</p>
 </div>
+  
+  
   <h4 id="Engine4_Viewer4_projection" data-uid="Engine4.Viewer4.projection">projection</h4>
   <div class="markdown level1 summary"><p>Projection mode used by the viewer</p>
 </div>
@@ -126,6 +132,8 @@ Hence only one viewer is allowed in scene.</p>
   <h5 id="Engine4_Viewer4_projection_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Changes to this variable requires a call to <span class="xref">Engine4.Viewer4.Validate</span> to take effect.</p>
 </div>
+  
+  
   <h4 id="Engine4_Viewer4_update" data-uid="Engine4.Viewer4.update">update</h4>
   <div class="markdown level1 summary"><p>Event to be called when something updated in viewer
 By default it is filled by Viewer4</p>
@@ -136,6 +144,8 @@ By default it is filled by Viewer4</p>
   </div>
   <h3 id="properties">Properties
   </h3>
+  
+  
   <a id="Engine4_Viewer4_main_" data-uid="Engine4.Viewer4.main*"></a>
   <h4 id="Engine4_Viewer4_main" data-uid="Engine4.Viewer4.main">main</h4>
   <div class="markdown level1 summary"><p>Main access to the Viewer4</p>
@@ -144,6 +154,8 @@ By default it is filled by Viewer4</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static Viewer4 main { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Viewer4_projector_" data-uid="Engine4.Viewer4.projector*"></a>
   <h4 id="Engine4_Viewer4_projector" data-uid="Engine4.Viewer4.projector">projector</h4>
   <div class="markdown level1 summary"><p>Get access to internal projector</p>
@@ -152,6 +164,8 @@ By default it is filled by Viewer4</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Projector4 projector { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Viewer4_projectorJob_" data-uid="Engine4.Viewer4.projectorJob*"></a>
   <h4 id="Engine4_Viewer4_projectorJob" data-uid="Engine4.Viewer4.projectorJob">projectorJob</h4>
   <div class="markdown level1 summary"><p>Get access to internal multithreaded projector</p>
@@ -160,6 +174,8 @@ By default it is filled by Viewer4</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public ProjectorJob projectorJob { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Viewer4_viewerToWorldMatrix_" data-uid="Engine4.Viewer4.viewerToWorldMatrix*"></a>
   <h4 id="Engine4_Viewer4_viewerToWorldMatrix" data-uid="Engine4.Viewer4.viewerToWorldMatrix">viewerToWorldMatrix</h4>
   <div class="markdown level1 summary"><p>Camera to world matrix transformation</p>
@@ -168,6 +184,8 @@ By default it is filled by Viewer4</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public Matrix4x5 viewerToWorldMatrix { get; }</code></pre>
   </div>
+  
+  
   <a id="Engine4_Viewer4_worldToViewerMatrix_" data-uid="Engine4.Viewer4.worldToViewerMatrix*"></a>
   <h4 id="Engine4_Viewer4_worldToViewerMatrix" data-uid="Engine4.Viewer4.worldToViewerMatrix">worldToViewerMatrix</h4>
   <div class="markdown level1 summary"><p>World to camera matrix transformation</p>
@@ -178,6 +196,8 @@ By default it is filled by Viewer4</p>
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Viewer4_SetDirty_" data-uid="Engine4.Viewer4.SetDirty*"></a>
   <h4 id="Engine4_Viewer4_SetDirty_Engine4_DirtyLevel_" data-uid="Engine4.Viewer4.SetDirty(Engine4.DirtyLevel)">SetDirty(DirtyLevel)</h4>
   <div class="markdown level1 summary"><p>Force a global invalidation</p>
@@ -201,7 +221,8 @@ By default it is filled by Viewer4</p>
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class Projector4
    | Engine4 Manual ">
-    <meta name="generator" content="docfx 2.26.3.0">
+    <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -92,6 +92,8 @@
   </div>
   <h3 id="constructors">Constructors
   </h3>
+  
+  
   <a id="Engine4_Rendering_Projector4__ctor_" data-uid="Engine4.Rendering.Projector4.#ctor*"></a>
   <h4 id="Engine4_Rendering_Projector4__ctor" data-uid="Engine4.Rendering.Projector4.#ctor">Projector4()</h4>
   <div class="markdown level1 summary"></div>
@@ -101,6 +103,8 @@
   </div>
   <h3 id="methods">Methods
   </h3>
+  
+  
   <a id="Engine4_Rendering_Projector4_IsCullable_" data-uid="Engine4.Rendering.Projector4.IsCullable*"></a>
   <h4 id="Engine4_Rendering_Projector4_IsCullable_Engine4_SphereBounds4_" data-uid="Engine4.Rendering.Projector4.IsCullable(Engine4.SphereBounds4)">IsCullable(SphereBounds4)</h4>
   <div class="markdown level1 summary"><p>For static objects, see if given object AABB can be culled out completely</p>
@@ -109,6 +113,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract bool IsCullable(SphereBounds4 bound)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Rendering_Projector4_Project_" data-uid="Engine4.Rendering.Projector4.Project*"></a>
   <h4 id="Engine4_Rendering_Projector4_Project_Engine4_Buffer4_Engine4_Matrix4x5_Engine4_Rendering_IVisualizer_" data-uid="Engine4.Rendering.Projector4.Project(Engine4.Buffer4,Engine4.Matrix4x5,Engine4.Rendering.IVisualizer)">Project(Buffer4, Matrix4x5, IVisualizer)</h4>
   <div class="markdown level1 summary"><p>Dynamic projection</p>
@@ -117,6 +123,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract void Project(Buffer4 from, Matrix4x5 transform, IVisualizer to)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Rendering_Projector4_Project_" data-uid="Engine4.Rendering.Projector4.Project*"></a>
   <h4 id="Engine4_Rendering_Projector4_Project_Engine4_Vector4_" data-uid="Engine4.Rendering.Projector4.Project(Engine4.Vector4)">Project(Vector4)</h4>
   <div class="markdown level1 summary"><p>Arbitrary (4D to 3D) point projection </p>
@@ -125,6 +133,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract Vector3 Project(Vector4 v)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Rendering_Projector4_Project_" data-uid="Engine4.Rendering.Projector4.Project*"></a>
   <h4 id="Engine4_Rendering_Projector4_Project_Engine4_Vector4_System_Boolean__" data-uid="Engine4.Rendering.Projector4.Project(Engine4.Vector4,System.Boolean@)">Project(Vector4, out Boolean)</h4>
   <div class="markdown level1 summary"><p>Arbitrary (4D to 3D) point projection with cull verification</p>
@@ -133,6 +143,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract Vector3 Project(Vector4 v, out bool culled)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Rendering_Projector4_Setup_" data-uid="Engine4.Rendering.Projector4.Setup*"></a>
   <h4 id="Engine4_Rendering_Projector4_Setup_Engine4_Matrix4x5_" data-uid="Engine4.Rendering.Projector4.Setup(Engine4.Matrix4x5)">Setup(Matrix4x5)</h4>
   <div class="markdown level1 summary"><p>Called by the viewer to initialize the projction</p>
@@ -141,6 +153,8 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract void Setup(Matrix4x5 viewer)</code></pre>
   </div>
+  
+  
   <a id="Engine4_Rendering_Projector4_SimplexModeForVisualizing_" data-uid="Engine4.Rendering.Projector4.SimplexModeForVisualizing*"></a>
   <h4 id="Engine4_Rendering_Projector4_SimplexModeForVisualizing_Engine4_SimplexMode_" data-uid="Engine4.Rendering.Projector4.SimplexModeForVisualizing(Engine4.SimplexMode)">SimplexModeForVisualizing(SimplexMode)</h4>
   <div class="markdown level1 summary"><p>Adapt to simplex requirement for this projection.</p>
@@ -164,7 +178,8 @@
             <span>Copyright © 2017 Wello Soft</span>
           </div>
         </div>
-      </footer>    </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>
