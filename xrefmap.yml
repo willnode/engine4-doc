@@ -6743,6 +6743,18 @@ references:
   commentId: F:Engine4.Viewer4.update
   fullName: Engine4.Viewer4.update
   nameWithType: Viewer4.update
+- uid: Engine4.Viewer4.Validate
+  name: Validate()
+  href: api/Engine4.Viewer4.html#Engine4_Viewer4_Validate
+  commentId: M:Engine4.Viewer4.Validate
+  fullName: Engine4.Viewer4.Validate()
+  nameWithType: Viewer4.Validate()
+- uid: Engine4.Viewer4.Validate*
+  name: Validate
+  href: api/Engine4.Viewer4.html#Engine4_Viewer4_Validate_
+  commentId: Overload:Engine4.Viewer4.Validate
+  fullName: Engine4.Viewer4.Validate
+  nameWithType: Viewer4.Validate
 - uid: Engine4.Viewer4.viewerToWorldMatrix
   name: viewerToWorldMatrix
   href: api/Engine4.Viewer4.html#Engine4_Viewer4_viewerToWorldMatrix

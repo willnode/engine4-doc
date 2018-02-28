@@ -111,14 +111,14 @@ Hence only one viewer is allowed in scene.</p>
   
   
   <h4 id="Engine4_Viewer4_background" data-uid="Engine4.Viewer4.background">background</h4>
-  <div class="markdown level1 summary"><p>Should renderers do the computation in separate thread? (recommended)</p>
+  <div class="markdown level1 summary"><p>Should renderers do the computation in separate thread? (experimental)</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public bool background</code></pre>
   </div>
   <h5 id="Engine4_Viewer4_background_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Changes to this variable requires a call to <span class="xref">Engine4.Viewer4.Validate</span> to take effect.</p>
+  <div class="markdown level1 remarks"><p>Changes to this variable requires a call to <a class="xref" href="Engine4.Viewer4.html#Engine4_Viewer4_Validate">Validate()</a> to take effect.</p>
 </div>
   
   
@@ -130,12 +130,12 @@ Hence only one viewer is allowed in scene.</p>
     <pre><code class="lang-csharp hljs">public ProjectionMode projection</code></pre>
   </div>
   <h5 id="Engine4_Viewer4_projection_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Changes to this variable requires a call to <span class="xref">Engine4.Viewer4.Validate</span> to take effect.</p>
+  <div class="markdown level1 remarks"><p>Changes to this variable requires a call to <a class="xref" href="Engine4.Viewer4.html#Engine4_Viewer4_Validate">Validate()</a> to take effect.</p>
 </div>
   
   
   <h4 id="Engine4_Viewer4_update" data-uid="Engine4.Viewer4.update">update</h4>
-  <div class="markdown level1 summary"><p>Event to be called when something updated in viewer
+  <div class="markdown level1 summary"><p>Event to be called when something updated in viewer.
 By default it is filled by Viewer4</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -205,6 +205,15 @@ By default it is filled by Viewer4</p>
   <div class="markdown level1 conceptual"></div>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public void SetDirty(DirtyLevel level)</code></pre>
+  </div>
+  
+  
+  <a id="Engine4_Viewer4_Validate_" data-uid="Engine4.Viewer4.Validate*"></a>
+  <h4 id="Engine4_Viewer4_Validate" data-uid="Engine4.Viewer4.Validate">Validate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Validate()</code></pre>
   </div>
 </article>
           </div>
